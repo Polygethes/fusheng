@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "sceneId": "scene_xyy_wangti_tavern",
+  "characterId": "char_xyy_xiezenshi",
+  "status": "behavior-accepted",
+  "authoritySurfaces": {
+    "sceneFacts": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "TAVERN_SCENE_TOPOLOGY",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/scene-contract.json",
+        "src/worldbuilding/skills.js"
+      ]
+    },
+    "psychology": {
+      "path": "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+      "symbol": "getValidatedCharacterAnchorRuntime",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_xiezenshi/character-foundation.json",
+        "src/data/validatedCharacterAnchorRegistry.js"
+      ]
+    },
+    "voice": {
+      "path": "src/server/pipeline/tavernCharacterVoice.mjs",
+      "symbol": "buildTavernVoiceContract",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_xiezenshi/character-foundation.json",
+        "src/server/ecology/validatedCharacterAnchorRuntime.mjs"
+      ]
+    },
+    "relationships": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "buildTavernOwnedRelationshipContext",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_xiezenshi/memory-seed.json",
+        "src/server/ecology/tavernRelationshipSeeds.mjs",
+        "src/server/ecology/tavernRelationshipDynamics.mjs"
+      ]
+    },
+    "memory": {
+      "path": "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+      "symbol": "mergeValidatedCharacterAnchorMemoryState",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_xiezenshi/memory-seed.json",
+        "src/data/validatedCharacterAnchorRegistry.js",
+        "src/engine/characterAgentMemory.js"
+      ]
+    },
+    "presence": {
+      "path": "src/server/pipeline/presenceResolver.mjs",
+      "symbol": "resolvePresenceDecision",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_xiezenshi/character-foundation.json",
+        "src/server/ecology/tavernEcologyProfile.mjs"
+      ]
+    },
+    "candidateCompilation": {
+      "path": "src/server/pipeline/tavernEcologyRuntime.mjs",
+      "symbol": "ecologyAgentCandidateBundle",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_xiezenshi/character-foundation.json",
+        "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+        "src/server/ecology/tavernEcologyProfile.mjs"
+      ]
+    },
+    "validation": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "normalizeTavernCharacterDecision",
+      "derivedProjectionPaths": [
+        "src/engine/semanticTurnValidator.js",
+        "src/server/pipeline/tavernCausalEconomy.mjs"
+      ]
+    }
+  },
+  "acceptanceTests": [
+    {
+      "category": "agent_non_top_choice",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "unresolved_desire_survives_delay",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "rumor_differs_from_direct_knowledge",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "private_zone_blocks_propagation",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "relationship_changes_expression_not_desire",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "voice_changes_by_function",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "body_state_changes_behavior",
+      "passed": true,
+      "evidenceLevel": "candidate-pressure-only",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "non_luozhao_portability",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    }
+  ],
+  "remainingGaps": [
+    {
+      "id": "xiezenshi_numeric_calibration",
+      "status": "open",
+      "boundary": "人物专属数值仍未由作者校准；当前数值只来自有标记的 engine operational defaults。"
+    },
+    {
+      "id": "qualitative_relationship_dimensions",
+      "status": "open",
+      "boundary": "competenceRespect、effortRespect 等定性维度进入 Agent，但在缺少机器触发条件与范围前不自动写入通用关系数值。"
+    },
+    {
+      "id": "real_model_behavior_acceptance",
+      "status": "pending",
+      "boundary": "确定性合同不替代真实远程模型的语言与行动自然度验收。"
+    },
+    {
+      "id": "other_character_anchor_completion",
+      "status": "pending",
+      "boundary": "其他酒馆人物仍按各自锚定门禁推进，未 validated 的档案不会提前进入生成 registry。"
+    }
+  ],
+  "runtimeBoundary": {
+    "agentInputArtifactIds": [
+      "characterFoundation",
+      "memorySeed"
+    ],
+    "forbiddenAgentInputArtifactIds": [
+      "anchorPayload",
+      "calibrationEvidence",
+      "holdouts"
+    ],
+    "compilerMayReadAuthoringArtifacts": true,
+    "agentReceivesCompiledProjectionOnly": true
+  }
+}

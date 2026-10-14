@@ -1,0 +1,79 @@
+模拟：望梯酒馆 · 人物自决 v2.7 two-call 协议 · 由 pi 会话模型（我）充当三位角色的人物代理
+回合结算：20 / 行动与对话回合：17  世界事件与版本见正文
+========================================================================
+【回合 1】谢真石（xiezenshi） · 日计划 · 唤醒:day_planning_due
+  结算: primitive=- status=- worldVersion=-
+【回合 2】周珉（zhoumin） · 日计划 · 唤醒:day_planning_due
+  结算: primitive=- status=- worldVersion=-
+【回合 3】谢真石（xiezenshi） · 行动/对话 · 唤醒:continuation_due
+  意图: 先同周珉打个招呼，问他药材包是否给娘的，让他先把来意放下。
+  台词: 「周珉，来了。……这包是给娘的药？先坐。我去后院把柴水补上，回头说话。」
+  结算: primitive=speak status=success worldVersion=1
+【回合 4】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 多看两眼那名提短剑男子的身形步态，对照心中所记辨认他是不是谢真石。
+  （无公开表现）
+  结算: primitive=observe status=success worldVersion=2
+【回合 5】洛照（luozhao） · 日计划 · 唤醒:day_planning_due
+  结算: primitive=- status=- worldVersion=-
+【回合 6】周珉（zhoumin） · 行动/对话 · 唤醒:world_evidence
+  意图: 回真石的话：药正是给伯母的，清单随身，问他是现在收下还是等他忙完再交割。
+  台词: 「正是给伯母的药，清单我也带着。……你是这会儿就收，还是等你把柴水忙完，我再一并交到你手上？」
+  结算: primitive=speak status=success worldVersion=3
+【回合 7】谢真石（xiezenshi） · 行动/对话 · 唤醒:world_evidence
+  意图: 照方才应下的话去后院，补柴打水。
+  （无公开表现）
+  结算: primitive=move status=success worldVersion=4
+【回合 8】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 退到近门的侧凳坐定，正对后院入口的方向。
+  （无公开表现）
+  结算: primitive=move status=success worldVersion=5
+【回合 9】周珉（zhoumin） · 行动/对话 · 唤醒:world_evidence
+  意图: 听话坐到近柜台的空位，把药包搁在看得见的地方等他。
+  （无公开表现）
+  结算: primitive=move status=success worldVersion=6
+【回合 10】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 守在后院入口的方向，看他什么时候回来。
+  （无公开表现）
+  结算: primitive=observe status=success worldVersion=7
+【回合 11】周珉（zhoumin） · 行动/对话 · 唤醒:world_evidence
+  意图: 留意后院入口，他一露头就起身相迎。
+  （无公开表现）
+  结算: primitive=observe status=success worldVersion=8
+【回合 12】谢真石（xiezenshi） · 行动/对话 · 唤醒:world_evidence
+  意图: 拿起劈柴斧，接下来劈柴。
+  （无公开表现）
+  结算: primitive=handle status=success worldVersion=9
+【回合 13】周珉（zhoumin） · 行动/对话 · 唤醒:world_evidence
+  意图: 朝后院扬声问一声：要不要我搭把手，把柴水一起赶完。
+  台词: 「真石，我一个人坐着也是坐着——要不要我过去搭把手？柴水好歹能赶完一半。」
+  结算: primitive=speak status=success worldVersion=10
+【回合 14】谢真石（xiezenshi） · 行动/对话 · 唤醒:world_evidence
+  意图: 回话应他：水缸那头劳他搭手，柴我自己来。
+  台词: 「好。水缸那头劳你，柴我来。」
+  结算: primitive=speak status=success worldVersion=11
+【回合 15】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 盯住他劈柴的手势与步法，从做工里读功夫。
+  （无公开表现）
+  结算: primitive=observe status=success worldVersion=12
+【回合 16】周珉（zhoumin） · 行动/对话 · 唤醒:world_evidence
+  意图: 应声动身，穿过后院去灶边挑水。
+  （无公开表现）
+  结算: primitive=move status=success worldVersion=13
+【回合 17】谢真石（xiezenshi） · 行动/对话 · 唤醒:world_evidence
+  意图: 开劈——第一斧下去，柴堆的事就算开了头。
+  （无公开表现）
+  结算: primitive=use_affordance status=success worldVersion=14
+【回合 18】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 起身朝后院通名：报姓名来意，问他可是谢真石，言明帖在身上。
+  台词: 「请教——可是谢真石谢兄当面？在下洛照，有拜帖求见。」
+  结算: primitive=speak status=success worldVersion=15
+【回合 19】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 把拜帖取出握在手里，朝后院的方向站定，等他应声。
+  （无公开表现）
+  结算: primitive=handle status=success worldVersion=16
+【回合 20】洛照（luozhao） · 行动/对话 · 唤醒:world_evidence
+  意图: 走到门槛边，离后院近些，省得再扬嗓子。
+  （无公开表现）
+  结算: primitive=move status=success worldVersion=17
+========================================================================
+插曲：谢真石:7 的一次候选被拒重试后死亡（回复洛照未落地）；周珉:7 的选择阶段一次被拒重试

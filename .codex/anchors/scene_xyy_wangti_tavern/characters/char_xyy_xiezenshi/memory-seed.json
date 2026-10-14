@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "ownerCharacterId": "char_xyy_xiezenshi",
+  "status": "seeded_qualitative",
+  "numericCalibrationStatus": "unassigned",
+  "emptyReason": "",
+  "sourcePolicy": {
+    "rule": "Only owned experience, self-action, current subjective belief, or a directly received sourced request may enter this seed.",
+    "unassignedNumericFields": ["confidence", "retentionStrength", "accessibility", "importance"],
+    "forbiddenProspectiveEvents": [
+      "周珉已经当众连续逼问举荐",
+      "谢恒的间接建议已经实际发生并证明有效",
+      "有人已经在湖边目击谢真石沉水",
+      "谢真石已经答应或完成举荐",
+      "谢真石已经因重大选择改变自我认识"
+    ]
+  },
+  "episodes": [
+    {
+      "id": "episode:xiezenshi:childhood-unnamed-lake-discovery",
+      "objectiveEventId": "autobiographical:xiezenshi:childhood-unnamed-lake-discovery",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_self_memory",
+      "source": {
+        "kind": "memory",
+        "immediateSourceCharacterId": "char_xyy_xiezenshi",
+        "speakerCharacterId": "",
+        "characterChain": ["char_xyy_xiezenshi"],
+        "confidence": null,
+        "confidenceBand": "user_confirmed_owned_recollection",
+        "evidenceIds": ["E_XZ_ACCIDENTAL_LAKE_DISCOVERY_001"]
+      },
+      "perceivedAt": {
+        "storyTime": "childhood",
+        "worldDay": null,
+        "seconds": null,
+        "timePrecision": "unknown"
+      },
+      "locationId": "location_xyy_unnamed_lake",
+      "zoneId": "",
+      "perception": {
+        "modality": "autobiographical_memory",
+        "modalities": ["autobiographical_memory"],
+        "content": "小时候因一次内容尚未确认的意外来到这处无名湖边。",
+        "topic": "无名湖的来历",
+        "fragments": [
+          {
+            "modality": "autobiographical_memory",
+            "content": "意外抵达湖边；意外内容、同行者、危险和结果均未知。",
+            "topic": "无名湖的来历"
+          }
+        ]
+      },
+      "semanticFrame": {
+        "id": "frame:xiezenshi:discover-unnamed-lake",
+        "kind": "autobiographical_episode",
+        "predicate": "discover_location_by_accident",
+        "topicId": "xiezenshi_unnamed_lake_origin",
+        "roles": {"actor": "char_xyy_xiezenshi"},
+        "object": {"id": "location_xyy_unnamed_lake", "label": "无名湖边"},
+        "truthValue": "owned_recollection",
+        "lexicalAnchors": ["湖边", "小时候", "意外"],
+        "importance": null
+      },
+      "interpretations": [
+        {
+          "claim": "这里只确认意外抵达，不把未知内容补写成创伤、落水、追杀、受罚或家庭冲突。",
+          "status": "boundary"
+        }
+      ],
+      "retrievalCues": ["无名湖", "童年", "意外抵达", "寻找僻静处"],
+      "retentionStrength": null,
+      "accessibility": null,
+      "importance": null,
+      "protected": false
+    },
+    {
+      "id": "episode:xiezenshi:repeated-water-immersion-habit",
+      "objectiveEventId": "autobiographical-summary:xiezenshi:repeated-water-immersion-habit",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_repeated_self_action_summary",
+      "source": {
+        "kind": "memory",
+        "immediateSourceCharacterId": "char_xyy_xiezenshi",
+        "speakerCharacterId": "",
+        "characterChain": ["char_xyy_xiezenshi"],
+        "confidence": null,
+        "confidenceBand": "user_confirmed_owned_habit",
+        "evidenceIds": ["E_XZ_CHILDHOOD_WATER_HABIT_001", "E_XZ_WATER_IMMERSION_REGULATION_001"]
+      },
+      "perceivedAt": {
+        "storyTime": "childhood_to_current",
+        "worldDay": null,
+        "seconds": null,
+        "timePrecision": "repeated_summary"
+      },
+      "locationId": "location_xyy_unnamed_lake",
+      "zoneId": "",
+      "perception": {
+        "modality": "autobiographical_summary",
+        "modalities": ["body", "autobiographical_memory"],
+        "content": "从小时候起，自己会在这处湖中沉水，让自己安静下来。",
+        "topic": "沉水安静的习惯",
+        "fragments": [
+          {
+            "modality": "body",
+            "content": "沉入水中是为了减少刺激并恢复安静，不带自毁目的。",
+            "topic": "自我调节"
+          }
+        ]
+      },
+      "semanticFrame": {
+        "id": "frame:xiezenshi:water-immersion-self-regulation",
+        "kind": "autobiographical_summary",
+        "predicate": "repeat_self_regulation_by_water_immersion",
+        "topicId": "xiezenshi_calm_recovery_habit",
+        "roles": {"actor": "char_xyy_xiezenshi", "target": "char_xyy_xiezenshi"},
+        "object": {"id": "action_water_immersion", "label": "沉水安静"},
+        "truthValue": "owned_habit",
+        "lexicalAnchors": ["沉水", "安静", "湖边", "小时候"],
+        "importance": null
+      },
+      "interpretations": [
+        {
+          "claim": "熟悉的调节行动会提高候选可检索性，但不能强制选择，也不能创造水域或安全条件。",
+          "status": "confirmed_function"
+        }
+      ],
+      "retrievalCues": ["高压失序", "想安静", "独处", "可达水域", "无名湖"],
+      "retentionStrength": null,
+      "accessibility": null,
+      "importance": null,
+      "protected": false
+    },
+    {
+      "id": "episode:xiezenshi:received-zhou-recommendation-request",
+      "objectiveEventId": "authoritative-current-fact:xiezenshi:zhou-recommendation-request",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_direct_request",
+      "source": {
+        "kind": "firsthand",
+        "immediateSourceCharacterId": "char_xyy_zhoumin",
+        "speakerCharacterId": "char_xyy_zhoumin",
+        "characterChain": ["char_xyy_zhoumin"],
+        "confidence": null,
+        "confidenceBand": "user_confirmed_direct_request",
+        "evidenceIds": ["E_XZ_RECOMMENDATION_001"]
+      },
+      "perceivedAt": {
+        "storyTime": "before_or_at_current_tavern_simulation",
+        "worldDay": null,
+        "seconds": null,
+        "timePrecision": "exact_time_unknown"
+      },
+      "locationId": "unknown_direct_contact_location",
+      "locationStatus": "not_confirmed",
+      "zoneId": "",
+      "perception": {
+        "modality": "direct_speech_semantic_summary",
+        "modalities": ["direct_speech_semantic_summary"],
+        "content": "周珉请求谢真石为他提供举荐，使他获得进入宗门参加考核的机会；具体原话、时点与地点尚未确认。",
+        "topic": "周珉的宗门考核举荐请求",
+        "fragments": []
+      },
+      "semanticFrame": {
+        "id": "frame:xiezenshi:zhou-recommendation-request",
+        "kind": "social_request",
+        "predicate": "request_recommendation",
+        "topicId": "zhou_sect_assessment_recommendation",
+        "roles": {
+          "requester": "char_xyy_zhoumin",
+          "requestedActor": "char_xyy_xiezenshi",
+          "beneficiary": "char_xyy_zhoumin",
+          "ultimateRecipient": "institution_xyy_sect_elders"
+        },
+        "object": {"id": "sect_assessment_access", "label": "宗门考核资格"},
+        "requestedAct": "由谢真石提供有效举荐，使周珉获得参加宗门考核的机会",
+        "decisionValue": "",
+        "truthValue": "requested",
+        "lexicalAnchors": ["举荐", "周珉", "宗门考核"],
+        "importance": null
+      },
+      "interpretations": [
+        {
+          "claim": "请求已经存在，但谢真石尚未因此被记为已经答应、承诺、完成举荐或保证考核结果。",
+          "status": "semantic_boundary"
+        }
+      ],
+      "retrievalCues": ["周珉", "举荐", "考核线", "亲眼验证", "待答复"],
+      "retentionStrength": null,
+      "accessibility": null,
+      "importance": null,
+      "protected": true
+    }
+  ],
+  "beliefs": [
+    {
+      "id": "belief:xiezenshi:body-endurance-and-hidden-ailment",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_body_knowledge",
+      "provenance": {
+        "kind": "firsthand_self_experience",
+        "evidenceIds": ["E_XZ_BODY_001", "E_XZ_BODY_002", "E_XZ_BODY_LINK_001", "E_XZ_BODY_SEVERITY_001"]
+      },
+      "propositionKey": "self_body::endurance_and_hidden_ailment",
+      "currentValue": "先天持久力不足；过度练剑在这一弱点上诱发当前隐疾；腿软颤抖只在极端状态出现。",
+      "confidence": null,
+      "confidenceBand": "user_confirmed_firsthand_body_knowledge",
+      "status": "supported_qualitative",
+      "supportingEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_BODY_001", "E_XZ_BODY_LINK_001", "E_XZ_BODY_SEVERITY_001"],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [{"kind": "firsthand_self_experience", "characterChain": ["char_xyy_xiezenshi"]}],
+      "lastUpdatedAtSeconds": null
+    },
+    {
+      "id": "belief:xiezenshi:xieheng-may-help-martially",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "current_subjective_inference",
+      "provenance": {
+        "kind": "inference_from_known_father_skill",
+        "evidenceIds": ["E_XZ_XH_MARTIAL_HELP_001"]
+      },
+      "propositionKey": "xieheng::martial_help_affordance",
+      "currentValue": "谢恒学过武，可能有经验并能提供帮助。",
+      "confidence": null,
+      "confidenceBand": "possible_not_guaranteed",
+      "status": "uncertain_supported",
+      "supportingEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_XH_MARTIAL_HELP_001"],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [{"kind": "owned_inference", "characterChain": ["char_xyy_xiezenshi"]}],
+      "lastUpdatedAtSeconds": null
+    },
+    {
+      "id": "belief:xiezenshi:zhou-ability-near-threshold",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_long_term_appraisal",
+      "provenance": {
+        "kind": "owned_appraisal_from_unspecified_direct_history",
+        "evidenceIds": ["E_XZ_REL_001", "E_XZ_RECOMMENDATION_001"],
+        "underlyingEpisodeStatus": "specific_experiences_not_yet_named"
+      },
+      "propositionKey": "zhoumin::assessment_ability",
+      "currentValue": "能力不高，在宗门考核及格线上下。",
+      "confidence": null,
+      "confidenceBand": "current_character_appraisal",
+      "status": "supported_subjective_belief",
+      "supportingEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_RECOMMENDATION_001"],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [{"kind": "owned_direct_history_summary", "characterChain": ["char_xyy_xiezenshi"]}],
+      "lastUpdatedAtSeconds": null
+    },
+    {
+      "id": "belief:xiezenshi:zhou-is-good-person",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_relationship_appraisal",
+      "provenance": {
+        "kind": "owned_relationship_appraisal",
+        "evidenceIds": ["E_XZ_REL_001", "E_XZ_RECOMMENDATION_001"],
+        "underlyingEpisodeStatus": "specific_experiences_not_yet_named"
+      },
+      "propositionKey": "zhoumin::character_appraisal",
+      "currentValue": "人不错，是一起长大的好朋友。",
+      "confidence": null,
+      "confidenceBand": "current_character_appraisal",
+      "status": "supported_subjective_belief",
+      "supportingEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_REL_001", "E_XZ_RECOMMENDATION_001"],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [{"kind": "owned_direct_history_summary", "characterChain": ["char_xyy_xiezenshi"]}],
+      "lastUpdatedAtSeconds": null
+    },
+    {
+      "id": "belief:xiezenshi:upcoming-assessment-and-return",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "self_knowledge",
+      "provenance": {
+        "kind": "current_self_knowledge",
+        "evidenceIds": ["E_XZ_PRESENCE_001", "E_XZ_DESIRE_HELP_001", "E_XZ_ASSESSMENT_EXCLUSION_SELF_THREAT_001"]
+      },
+      "propositionKey": "self_future::sword_pavilion_assessment_and_return",
+      "currentValue": "剑阁考核临近，自己即将返回宗门；若隐疾使自己无法参评，将构成明确的自我威胁。",
+      "confidence": null,
+      "confidenceBand": "user_confirmed_self_knowledge",
+      "status": "supported_qualitative",
+      "supportingEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_PRESENCE_001", "E_XZ_ASSESSMENT_EXCLUSION_SELF_THREAT_001"],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [{"kind": "self_knowledge", "characterChain": ["char_xyy_xiezenshi"]}],
+      "lastUpdatedAtSeconds": null
+    },
+    {
+      "id": "belief:xiezenshi:recommendation-request-is-open",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "firsthand_direct_request",
+      "provenance": {
+        "kind": "firsthand",
+        "evidenceIds": ["E_XZ_RECOMMENDATION_001"]
+      },
+      "propositionKey": "request_recommendation::zhou_sect_assessment",
+      "semanticFrameId": "frame:xiezenshi:zhou-recommendation-request",
+      "currentValue": "requested",
+      "confidence": null,
+      "confidenceBand": "user_confirmed_direct_request",
+      "status": "supported_open_request",
+      "supportingEpisodeIds": ["episode:xiezenshi:received-zhou-recommendation-request"],
+      "supportingEvidenceIds": ["E_XZ_RECOMMENDATION_001"],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [{"kind": "firsthand", "characterChain": ["char_xyy_zhoumin"]}],
+      "lastUpdatedAtSeconds": null
+    }
+  ],
+  "commitments": [
+    {
+      "id": "commitment:xiezenshi:zhou-recommendation-request-open",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "sourceType": "received_directional_request",
+      "provenance": {
+        "kind": "firsthand_direct_request",
+        "evidenceIds": ["E_XZ_RECOMMENDATION_001"]
+      },
+      "commitmentKind": "open_request_not_promise",
+      "ownerRole": "requestedActor",
+      "counterpartyCharacterId": "char_xyy_zhoumin",
+      "beneficiaryCharacterId": "char_xyy_zhoumin",
+      "ultimateRecipientCharacterId": "institution_xyy_sect_elders",
+      "semanticFrame": {
+        "id": "frame:xiezenshi:zhou-recommendation-request",
+        "kind": "social_request",
+        "predicate": "request_recommendation",
+        "topicId": "zhou_sect_assessment_recommendation",
+        "roles": {
+          "requester": "char_xyy_zhoumin",
+          "requestedActor": "char_xyy_xiezenshi",
+          "beneficiary": "char_xyy_zhoumin",
+          "ultimateRecipient": "institution_xyy_sect_elders"
+        },
+        "object": {"id": "sect_assessment_access", "label": "宗门考核资格"},
+        "requestedAct": "由谢真石提供有效举荐，使周珉获得参加宗门考核的机会",
+        "decisionValue": "",
+        "truthValue": "requested",
+        "lexicalAnchors": ["举荐", "宗门考核"],
+        "importance": null
+      },
+      "requestedAct": "由谢真石提供有效举荐，使周珉获得参加宗门考核的机会",
+      "topicId": "zhou_sect_assessment_recommendation",
+      "status": "open",
+      "outcome": "",
+      "sourceEpisodeIds": ["episode:xiezenshi:received-zhou-recommendation-request"],
+      "openedAtSeconds": null,
+      "updatedAtSeconds": null,
+      "importance": null,
+      "notYet": ["accepted", "promised", "recommended", "passed", "admitted"]
+    }
+  ],
+  "impressions": [
+    {
+      "id": "impression:xiezenshi:toward-xieheng",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "targetCharacterId": "char_xyy_xieheng",
+      "sourceType": "user_confirmed_relationship_summary",
+      "provenance": {
+        "kind": "owned_relationship_impression",
+        "evidenceIds": ["E_XZ_REL_XH_001"]
+      },
+      "summary": "想依靠父亲，但关系不和睦，并觉得父亲不那么理解自己。",
+      "dimensions": {
+        "dependenceDesire": "present",
+        "perceivedUnderstanding": "low",
+        "relationshipStrain": "present",
+        "affection": "not_inferred",
+        "globalTrust": "not_inferred"
+      },
+      "sourceEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_REL_XH_001"],
+      "numericStatus": "unassigned"
+    },
+    {
+      "id": "impression:xiezenshi:toward-zhoumin",
+      "ownerCharacterId": "char_xyy_xiezenshi",
+      "targetCharacterId": "char_xyy_zhoumin",
+      "sourceType": "user_confirmed_relationship_summary",
+      "provenance": {
+        "kind": "owned_relationship_impression",
+        "evidenceIds": ["E_XZ_REL_001", "E_XZ_RECOMMENDATION_001"]
+      },
+      "summary": "一起长大的好朋友；认为他人不错，能力在考核及格线上下。",
+      "dimensions": {
+        "familiarity": "high_qualitative",
+        "friendship": "present",
+        "characterAppraisal": "positive",
+        "abilityAppraisal": "near_threshold",
+        "boundaryDoubt": "not_initialized_without_actual_violation"
+      },
+      "sourceEpisodeIds": [],
+      "supportingEvidenceIds": ["E_XZ_REL_001", "E_XZ_RECOMMENDATION_001"],
+      "numericStatus": "unassigned"
+    }
+  ],
+  "selfNarrative": {
+    "status": "no_explicit_identity_claim_authorized",
+    "emptyReason": "The user has confirmed threats and desires but has not authorized a first-person identity claim. A consequential in-world choice and owned evidence are required before self-narrative revision.",
+    "currentClaims": [],
+    "versions": []
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "sceneId": "scene_xyy_wangti_tavern",
+  "characterId": "char_xyy_luozhao",
+  "status": "runtime-mapped",
+  "authoritySurfaces": {
+    "sceneFacts": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "TAVERN_SCENE_TOPOLOGY",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/scene-contract.json",
+        "src/worldbuilding/skills.js"
+      ]
+    },
+    "psychology": {
+      "path": "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+      "symbol": "getValidatedCharacterAnchorRuntime",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_luozhao/character-foundation.json",
+        "src/data/validatedCharacterAnchorRegistry.js"
+      ]
+    },
+    "voice": {
+      "path": "src/server/pipeline/tavernCharacterVoice.mjs",
+      "symbol": "buildTavernVoiceContract",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_luozhao/character-foundation.json",
+        "src/server/ecology/validatedCharacterAnchorRuntime.mjs"
+      ]
+    },
+    "relationships": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "buildTavernOwnedRelationshipContext",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_luozhao/memory-seed.json",
+        "src/server/ecology/tavernRelationshipSeeds.mjs",
+        "src/server/ecology/tavernRelationshipDynamics.mjs"
+      ]
+    },
+    "memory": {
+      "path": "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+      "symbol": "mergeValidatedCharacterAnchorMemoryState",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_luozhao/memory-seed.json",
+        "src/data/validatedCharacterAnchorRegistry.js",
+        "src/engine/characterAgentMemory.js"
+      ]
+    },
+    "presence": {
+      "path": "src/server/pipeline/presenceResolver.mjs",
+      "symbol": "resolvePresenceDecision",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_luozhao/character-foundation.json",
+        "src/server/ecology/tavernEcologyProfile.mjs"
+      ]
+    },
+    "candidateCompilation": {
+      "path": "src/server/pipeline/tavernEcologyRuntime.mjs",
+      "symbol": "ecologyAgentCandidateBundle",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_luozhao/character-foundation.json",
+        "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+        "src/server/ecology/tavernEcologyProfile.mjs"
+      ]
+    },
+    "validation": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "normalizeTavernCharacterDecision",
+      "derivedProjectionPaths": [
+        "src/engine/semanticTurnValidator.js",
+        "src/server/pipeline/tavernCausalEconomy.mjs",
+        "src/server/simulation/characterPostChoiceContinuity.mjs"
+      ]
+    }
+  },
+  "acceptanceTests": [],
+  "remainingGaps": [
+    {
+      "id": "luozhao_numeric_personality_calibration",
+      "status": "open",
+      "boundary": "通用人格八维尚未由作者数值校准；运行数学使用有标记的中性 engine defaults，领域差异来自 foundation dispositions、threats、inhibitors 与当下状态。"
+    },
+    {
+      "id": "luozhao_real_tavern_behavior_acceptance",
+      "status": "pending",
+      "boundary": "Gate 7 只证明正式 Agent 使用唯一人物底座；洛照在真实多人物酒馆中的行动、语言和后果仍须独立 Gate 8 样本与作者验收。"
+    }
+  ],
+  "runtimeBoundary": {
+    "agentInputArtifactIds": [
+      "characterFoundation",
+      "memorySeed"
+    ],
+    "forbiddenAgentInputArtifactIds": [
+      "anchorPayload",
+      "calibrationEvidence",
+      "holdouts"
+    ],
+    "compilerMayReadAuthoringArtifacts": true,
+    "agentReceivesCompiledProjectionOnly": true
+  }
+}

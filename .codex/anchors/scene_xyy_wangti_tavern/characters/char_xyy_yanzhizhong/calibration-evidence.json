@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "recordType": "character-calibration-suite",
+  "characterId": "char_xyy_yanzhizhong",
+  "status": "draft",
+  "source": {
+    "artifact": "anchor-payload.json",
+    "sha256": "c33094bfd6a97f4eb831efc7d0cb6efe96cb6f7d3b79b04bad8102f8dca17a32",
+    "role": "authoring-and-audit-only"
+  },
+  "controlledContrasts": [],
+  "speechSamples": [],
+  "relationshipCases": [],
+  "holdouts": []
+}

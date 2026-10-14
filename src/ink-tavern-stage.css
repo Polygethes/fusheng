@@ -1,0 +1,446 @@
+/* Shared three-quarter top-down tavern scene. World outcomes own semantic
+   position; this layer deterministically projects them onto a walkable map. */
+
+.ink-tavern-stage {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  color: #e8e2d7;
+  background: #0f1311;
+  border: 1px solid #3f4942;
+}
+
+.ink-tavern-stage[data-stage-state="running"] { border-color: #8d7650; }
+.ink-tavern-stage[data-stage-state="error"] { border-color: var(--danger, #d56868); }
+
+.ink-tavern-stage-fallback {
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 28px;
+  color: #afb5ae;
+  font-family: ui-serif, "Songti SC", STSong, Georgia, serif;
+  text-align: center;
+}
+
+.ink-tavern-stage-head {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 14px 9px;
+  background: #171c18;
+  border-bottom: 1px solid #3d463f;
+}
+
+.ink-tavern-stage-head p,
+.ink-tavern-stage-head h3 { margin: 0; }
+
+.ink-tavern-stage-head p {
+  margin-bottom: 2px;
+  color: #b29a75;
+  font: 500 11px/1.35 Inter, "PingFang SC", system-ui, sans-serif;
+}
+
+.ink-tavern-stage-head h3 {
+  color: #e7e1d4;
+  font-family: ui-serif, "Songti SC", STSong, Georgia, serif;
+  font-size: 18px;
+  font-weight: 550;
+  letter-spacing: 0.04em;
+}
+
+.ink-tavern-stage-clock {
+  color: #bac0ba;
+  font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.ink-tavern-scene {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 1672 / 941;
+  overflow: hidden;
+  background: #111613;
+}
+
+.ink-tavern-backdrop,
+.ink-tavern-paper-grain,
+.ink-tavern-zones,
+.ink-tavern-actors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ink-tavern-backdrop {
+  z-index: 0;
+  display: block;
+  object-fit: contain;
+  image-rendering: auto;
+  filter: saturate(0.82) contrast(1.04) brightness(0.92);
+  transition: filter 220ms ease-out;
+  user-select: none;
+}
+
+.ink-tavern-scene[data-time-of-day="night"] .ink-tavern-backdrop {
+  filter: saturate(0.66) contrast(1.08) brightness(0.62) sepia(0.08) hue-rotate(7deg);
+}
+
+.ink-tavern-scene[data-time-of-day="dawn"] .ink-tavern-backdrop {
+  filter: saturate(0.74) contrast(1.04) brightness(0.8) sepia(0.08);
+}
+
+.ink-tavern-scene[data-time-of-day="noon"] .ink-tavern-backdrop {
+  filter: saturate(0.82) contrast(1.03) brightness(0.96);
+}
+
+.ink-tavern-scene[data-time-of-day="afternoon"] .ink-tavern-backdrop {
+  filter: saturate(0.8) contrast(1.05) brightness(0.88) sepia(0.06);
+}
+
+.ink-tavern-scene[data-time-of-day="dusk"] .ink-tavern-backdrop {
+  filter: saturate(0.72) contrast(1.07) brightness(0.72) sepia(0.14);
+}
+
+.ink-tavern-paper-grain {
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.12;
+  background:
+    radial-gradient(circle at 22% 34%, rgb(238 229 207 / 0.16) 0 0.7px, transparent 0.9px),
+    radial-gradient(circle at 68% 63%, rgb(12 18 14 / 0.34) 0 0.6px, transparent 0.8px);
+  background-size: 8px 10px, 13px 15px;
+  mix-blend-mode: soft-light;
+}
+
+.ink-tavern-zones {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ink-tavern-zone {
+  position: absolute;
+  left: var(--zone-x);
+  top: var(--zone-y);
+  padding: 2px 5px;
+  color: rgb(235 229 214 / 0.78);
+  background: rgb(14 18 16 / 0.72);
+  font: 500 clamp(8px, 0.65vw, 10px)/1.35 Inter, "PingFang SC", system-ui, sans-serif;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.ink-tavern-actors {
+  z-index: 4;
+  pointer-events: none;
+}
+
+.ink-tavern-actor {
+  position: absolute;
+  inset: 0;
+  z-index: var(--actor-depth, 1);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform: translate3d(var(--actor-x), var(--actor-y), 0);
+  will-change: transform;
+}
+
+.ink-tavern-local-motion {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ink-tavern-figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5.1%;
+  height: 15.5%;
+  display: grid;
+  place-items: end center;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.68));
+  pointer-events: auto;
+  transform: translate(-50%, -100%);
+  transform-origin: 50% 100%;
+}
+
+/* Keep the visible sprite small while giving touch users a reliable target. */
+.ink-tavern-figure::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: max(100%, 44px);
+  height: max(100%, 44px);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.ink-tavern-figure:focus-visible {
+  outline: 2px solid #d4b375;
+  outline-offset: 2px;
+}
+
+.ink-tavern-action-motion,
+.ink-tavern-gait-motion {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: end center;
+  transform-origin: 50% 100%;
+}
+
+.ink-tavern-sprite {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center bottom;
+  image-rendering: pixelated;
+  user-select: none;
+}
+
+.ink-tavern-actor[data-facing="west"] .ink-tavern-sprite { transform: scaleX(-1); }
+
+.ink-tavern-actor[data-sprite-kind="portrait"] .ink-tavern-figure {
+  width: 5.1%;
+  height: 15.5%;
+}
+
+.ink-tavern-fallback-mark {
+  width: 24px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: #ded6c6;
+  background: #344039;
+  border: 1px solid #796b53;
+  font-family: ui-serif, "Songti SC", STSong, Georgia, serif;
+  font-size: 14px;
+}
+
+.ink-tavern-actor-name {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  bottom: -14px;
+  min-width: max-content;
+  padding: 1px 4px;
+  color: #f0eadf;
+  background: rgb(16 21 18 / 0.88);
+  font: 500 clamp(8px, 0.62vw, 10px)/1.35 Inter, "PingFang SC", system-ui, sans-serif;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.ink-tavern-speech {
+  position: absolute;
+  z-index: 8;
+  left: 58%;
+  bottom: 56%;
+  width: max-content;
+  max-width: min(190px, 20vw);
+  padding: 6px 8px;
+  color: #242824;
+  background: rgb(239 233 218 / 0.96);
+  border: 1px solid rgb(91 82 63 / 0.76);
+  font-family: ui-serif, "Songti SC", STSong, Georgia, serif;
+  font-size: clamp(10px, 0.82vw, 12px);
+  line-height: 1.5;
+  text-align: left;
+  transform: translateX(-8%);
+}
+
+.ink-tavern-speech::after {
+  position: absolute;
+  left: 10px;
+  bottom: -6px;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  border-right: 1px solid rgb(91 82 63 / 0.76);
+  border-bottom: 1px solid rgb(91 82 63 / 0.76);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.ink-tavern-actor-inspector {
+  position: absolute;
+  z-index: 12;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  width: 176px;
+  padding: 8px 9px;
+  color: #dedfd9;
+  background: rgb(15 19 17 / 0.96);
+  border: 1px solid #776b55;
+  text-align: left;
+  transform: translateX(-50%);
+}
+
+.ink-tavern-actor-inspector strong,
+.ink-tavern-actor-inspector span { display: block; }
+
+.ink-tavern-actor-inspector strong {
+  margin-bottom: 3px;
+  color: #f0e7d7;
+  font: 600 12px/1.4 Inter, "PingFang SC", system-ui, sans-serif;
+}
+
+.ink-tavern-actor-inspector span {
+  color: #bac0ba;
+  font: 11px/1.55 Inter, "PingFang SC", system-ui, sans-serif;
+}
+
+.ink-tavern-actor-inspector[hidden],
+.ink-tavern-speech[hidden] { display: none; }
+
+.ink-tavern-actor[data-zone="courtyard"] .ink-tavern-actor-inspector,
+.ink-tavern-actor[data-zone="stairs"] .ink-tavern-actor-inspector,
+.ink-tavern-actor[data-zone="guest_room"] .ink-tavern-actor-inspector {
+  top: calc(100% + 12px);
+  bottom: auto;
+}
+
+.ink-tavern-actor[data-zone="courtyard"] .ink-tavern-speech,
+.ink-tavern-actor[data-zone="stairs"] .ink-tavern-speech,
+.ink-tavern-actor[data-zone="guest_room"] .ink-tavern-speech {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
+.ink-tavern-actor.is-current .ink-tavern-figure {
+  filter:
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.68))
+    drop-shadow(0 0 6px rgb(207 175 114 / 0.48));
+}
+
+.ink-tavern-actor.is-ready:not(.is-current) .ink-tavern-actor-name::before {
+  color: #c6a66d;
+  content: "· ";
+}
+
+.ink-tavern-latest-line {
+  position: absolute;
+  z-index: 10;
+  right: 12px;
+  bottom: 10px;
+  max-width: 58%;
+  padding: 7px 9px;
+  color: #ece5d8;
+  background: rgb(13 17 15 / 0.88);
+  font-family: ui-serif, "Songti SC", STSong, Georgia, serif;
+  font-size: clamp(10px, 0.82vw, 12px);
+  line-height: 1.55;
+  pointer-events: none;
+}
+
+.ink-tavern-stage-caption {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  color: #b7bdb6;
+  background: #171c18;
+  border-top: 1px solid #3d463f;
+  font-family: ui-serif, "Songti SC", STSong, Georgia, serif;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.ink-tavern-stage[data-stage-state="running"] .ink-tavern-stage-caption::before {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  margin-right: 8px;
+  background: #c29e62;
+  content: "";
+  animation: ink-tavern-running 900ms steps(2, end) infinite;
+}
+
+.ink-tavern-stage[data-stage-state="error"] .ink-tavern-stage-caption { color: #e4b3b3; }
+
+@keyframes ink-tavern-gait-topdown {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-2px) rotate(-0.6deg); }
+}
+
+@keyframes ink-tavern-action-topdown {
+  0%, 100% { transform: scale(1); }
+  48% { transform: scale(1.045); }
+}
+
+@keyframes ink-tavern-running {
+  0%, 49% { opacity: 0.35; }
+  50%, 100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ink-tavern-actor.is-walking .ink-tavern-gait-motion {
+    animation: ink-tavern-gait-topdown 420ms steps(2, end) infinite;
+  }
+
+  .ink-tavern-actor.is-acting .ink-tavern-action-motion {
+    animation: ink-tavern-action-topdown 520ms ease-out both;
+  }
+}
+
+@media (max-width: 820px) {
+  .ink-tavern-stage-head { min-height: 52px; }
+  .ink-tavern-figure,
+  .ink-tavern-actor[data-sprite-kind="portrait"] .ink-tavern-figure { width: 5.8%; height: 15.5%; }
+  .ink-tavern-speech { max-width: 34vw; }
+}
+
+@media (max-width: 560px) {
+  .ink-tavern-stage-head { align-items: flex-end; }
+  .ink-tavern-stage-head h3 { font-size: 16px; }
+  .ink-tavern-stage-clock { font-size: 9px; }
+  .ink-tavern-zone { display: none; }
+  .ink-tavern-figure,
+  .ink-tavern-actor[data-sprite-kind="portrait"] .ink-tavern-figure { width: 6.5%; height: 15.5%; }
+  .ink-tavern-actor-name { bottom: -12px; font-size: 8px; }
+  .ink-tavern-speech { display: none; }
+  .ink-tavern-actor-inspector { width: min(164px, 58vw); }
+  .ink-tavern-latest-line {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    display: block;
+    max-width: none;
+    font-size: 10px;
+  }
+  .ink-tavern-latest-line[hidden] { display: none; }
+  .ink-tavern-stage-caption { min-height: 50px; font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ink-tavern-backdrop,
+  .ink-tavern-actor,
+  .ink-tavern-local-motion,
+  .ink-tavern-action-motion,
+  .ink-tavern-gait-motion,
+  .ink-tavern-figure,
+  .ink-tavern-stage-caption::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}

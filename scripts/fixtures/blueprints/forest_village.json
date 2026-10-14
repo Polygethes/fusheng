@@ -1,0 +1,1012 @@
+{
+  "blueprintVersion": 1,
+  "meta": {
+    "id": "forest_village",
+    "title": "雾松岭",
+    "premise": "雾松岭古木参天、深山幽谷，猎户和樵户依林而居，谷底磨坊的水声日夜不绝。深秋头一场霜要来了，秋收的粮谷得赶在午前磨好装袋，密林深处又发现了野兽的爪痕。",
+    "genre": "古风山村",
+    "tone": "清冷里有人情",
+    "language": "zh-Hans",
+    "startDay": "霜降当日",
+    "startClock": "07:30",
+    "startLabel": "清晨卯末",
+    "seed": 88
+  },
+  "town": {
+    "name": "雾松岭",
+    "terrain": {
+      "river": null,
+      "forest": "north",
+      "hills": "east",
+      "fields": null
+    },
+    "sites": [
+      {
+        "id": "valley_mill",
+        "type": "mill",
+        "name": "谷口水磨坊",
+        "householdId": "su_house"
+      },
+      {
+        "id": "hunter_lodge",
+        "type": "farmhouse",
+        "name": "猎户大院",
+        "householdId": "lu_house"
+      },
+      {
+        "id": "wood_shack",
+        "type": "home",
+        "name": "樵夫木舍",
+        "householdId": "yan_house"
+      },
+      {
+        "id": "herb_cottage",
+        "type": "herb_shop",
+        "name": "山间药舍",
+        "householdId": "ye_house"
+      },
+      {
+        "id": "ancient_forest",
+        "type": "forest",
+        "name": "老松密林"
+      },
+      {
+        "id": "mountain_spring",
+        "type": "well",
+        "name": "冷泉井台"
+      },
+      {
+        "id": "ridge_slope",
+        "type": "hill",
+        "name": "望山石台"
+      }
+    ]
+  },
+  "households": [
+    {
+      "id": "su_house",
+      "name": "苏家",
+      "siteId": "valley_mill"
+    },
+    {
+      "id": "lu_house",
+      "name": "陆家",
+      "siteId": "hunter_lodge"
+    },
+    {
+      "id": "yan_house",
+      "name": "严家",
+      "siteId": "wood_shack"
+    },
+    {
+      "id": "ye_house",
+      "name": "叶家",
+      "siteId": "herb_cottage"
+    }
+  ],
+  "residents": [
+    {
+      "id": "su_zhangmo",
+      "name": "苏掌磨",
+      "age": 50,
+      "role": "磨坊主 / 水磨老师傅",
+      "householdId": "su_house",
+      "workSiteId": "valley_mill",
+      "appearance": {
+        "skin": "#c89470",
+        "hair": "#4a4238",
+        "robe": "#586250",
+        "sash": "#384232",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.65,
+        "introversion": 0.5,
+        "persistence": 0.8,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.4,
+        "care": 0.65,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "farming"
+      ],
+      "speech": {
+        "style": "厚道沉静，声调不疾不徐。",
+        "samples": [
+          "水磨转得匀，面粉才起筋。"
+        ]
+      },
+      "situation": "深秋粮熟，各家送来的秋谷堆满磨房，急需修补水磨木齿并全力赶磨。",
+      "desires": [
+        {
+          "verb": "磨好",
+          "object": "秋收粮谷",
+          "outcome": "赶在正午前把陆家的新谷磨成细面",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "童叟无欺，谷粒不漏"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "12:00",
+          "activity": "在水磨坊掌磨磨粮",
+          "siteId": "valley_mill"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨夜",
+          "content": "听见磨槽木轴吱呀响，一早用香油仔细润了轴。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "su_waner",
+      "name": "苏婉儿",
+      "age": 18,
+      "role": "磨坊细娘 / 苏师傅独女",
+      "householdId": "su_house",
+      "workSiteId": "valley_mill",
+      "appearance": {
+        "skin": "#edd0ba",
+        "hair": "#28201a",
+        "robe": "#768c74",
+        "sash": "#4c604a",
+        "styles": [
+          "apron"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.55,
+        "introversion": 0.4,
+        "persistence": 0.7,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.3,
+        "care": 0.75,
+        "caution": 0.55,
+        "impulsivity": 0.35
+      },
+      "skills": [
+        "farming",
+        "cooking"
+      ],
+      "speech": {
+        "style": "温软清脆，手脚利索。",
+        "samples": [
+          "爹，筛好的白面我都扎好口了。"
+        ]
+      },
+      "situation": "在磨房边帮忙点验分装面袋，照看水闸。",
+      "desires": [
+        {
+          "verb": "装好",
+          "object": "精细面袋",
+          "outcome": "把筛净的面粉称好扎袋交给乡邻",
+          "strength": 0.75
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "12:00",
+          "activity": "在磨房过秤扎口袋",
+          "siteId": "valley_mill"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今晨",
+          "content": "给早起送谷的陆虎递了一碗温热的米汤。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "lu_dalie",
+      "name": "陆大猎",
+      "age": 47,
+      "role": "岭上老猎头",
+      "householdId": "lu_house",
+      "workSiteId": "hunter_lodge",
+      "appearance": {
+        "skin": "#a67250",
+        "hair": "#342820",
+        "robe": "#4a3c32",
+        "sash": "#2c2018",
+        "styles": [
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.75,
+        "introversion": 0.6,
+        "persistence": 0.85,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.5,
+        "care": 0.6,
+        "caution": 0.75,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "低沉干脆，猎人机敏。",
+        "samples": [
+          "密林里有风吹草动，就得扣紧机括。"
+        ]
+      },
+      "situation": "深山老林近来有野兽足迹逼近岭口，正检修猎弩护院。",
+      "desires": [
+        {
+          "verb": "修好",
+          "object": "铁角猎弩",
+          "outcome": "在猎户大院给猎弩上好机弦，并备好防兽陷阱",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "不伤护崽之兽"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在大院堂屋检视整饬猎具",
+          "siteId": "hunter_lodge"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前天",
+          "content": "在老松林深处发现了两道抓痕极深的熊爪印。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "lu_hu",
+      "name": "陆虎",
+      "age": 20,
+      "role": "年轻猎户 / 陆大猎长子",
+      "householdId": "lu_house",
+      "workSiteId": "valley_mill",
+      "appearance": {
+        "skin": "#bc8460",
+        "hair": "#241c18",
+        "robe": "#645040",
+        "sash": "#382a20",
+        "styles": [],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.4,
+        "persistence": 0.7,
+        "conscientiousness": 0.65,
+        "competitiveness": 0.6,
+        "care": 0.6,
+        "caution": 0.5,
+        "impulsivity": 0.55
+      },
+      "skills": [
+        "farming",
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "响亮豪迈，有一把大力气。",
+        "samples": [
+          "苏叔，这百斤谷子我扛进磨房！"
+        ]
+      },
+      "situation": "帮家里把收割的沉谷扛到磨坊，暗中想多见见婉儿。",
+      "desires": [
+        {
+          "verb": "运送",
+          "object": "秋收粮谷",
+          "outcome": "顺利将整担粮谷送到磨坊协助磨面",
+          "strength": 0.8
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在磨坊扛粮打杂帮手",
+          "siteId": "valley_mill"
+        }
+      ],
+      "memories": [
+        {
+          "when": "清晨",
+          "content": "肩头扛着沉甸甸的粮麻袋，步履如飞。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "lu_yan",
+      "name": "陆燕",
+      "age": 16,
+      "role": "猎户小女",
+      "householdId": "lu_house",
+      "workSiteId": "hunter_lodge",
+      "appearance": {
+        "skin": "#dfb496",
+        "hair": "#28201a",
+        "robe": "#8c6e5c",
+        "sash": "#503e32",
+        "styles": [
+          "braid"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.55,
+        "introversion": 0.35,
+        "persistence": 0.6,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.45,
+        "care": 0.7,
+        "caution": 0.5,
+        "impulsivity": 0.4
+      },
+      "skills": [
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "性情活泼敏捷，爱说爱笑。",
+        "samples": [
+          "哥，爹让你磨完面早点回院子！"
+        ]
+      },
+      "situation": "在院中晒肉干、整理山货，照顾家禽。",
+      "desires": [
+        {
+          "verb": "晒好",
+          "object": "山货肉脯",
+          "outcome": "把猎户大院里的山货翻晒得干干净净",
+          "strength": 0.6
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在猎户大院晾晒山货",
+          "siteId": "hunter_lodge"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天",
+          "content": "同叶晴在冷泉边采了半篮野生木瓜。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "yan_qiao",
+      "name": "严樵",
+      "age": 42,
+      "role": "老樵夫",
+      "householdId": "yan_house",
+      "workSiteId": "ancient_forest",
+      "appearance": {
+        "skin": "#b07e58",
+        "hair": "#3a3028",
+        "robe": "#4c483c",
+        "sash": "#2c2a22",
+        "styles": [
+          "short"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.65,
+        "introversion": 0.6,
+        "persistence": 0.8,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.35,
+        "care": 0.6,
+        "caution": 0.7,
+        "impulsivity": 0.25
+      },
+      "skills": [
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "憨厚朴实，话语简短。",
+        "samples": [
+          "老林里的松脂木，烧起来最暖堂。"
+        ]
+      },
+      "situation": "答应给磨坊备几大捆修磨的硬松木，一早进林伐木。",
+      "desires": [
+        {
+          "verb": "砍足",
+          "object": "油松木",
+          "outcome": "从密林砍回整捆干实老松木",
+          "strength": 0.75
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在密林深处砍柴劈松木",
+          "siteId": "ancient_forest"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三天前",
+          "content": "苏掌磨向他预订了修理磨槽转轴的硬松木料。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "yan_dashen",
+      "name": "严大婶",
+      "age": 40,
+      "role": "樵妇 / 严樵之妻",
+      "householdId": "yan_house",
+      "workSiteId": "wood_shack",
+      "appearance": {
+        "skin": "#cca080",
+        "hair": "#342820",
+        "robe": "#62584c",
+        "sash": "#3e362e",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.4,
+        "persistence": 0.65,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.3,
+        "care": 0.75,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "和气厚道，爱帮衬邻里。",
+        "samples": [
+          "当家的进山，我这柴火灶烧得滚热等他。"
+        ]
+      },
+      "situation": "在家编柴捆、烧热水，照料屋舍柴堆。",
+      "desires": [
+        {
+          "verb": "码好",
+          "object": "柴堆",
+          "outcome": "把樵夫木舍院角的新柴码得整整齐齐",
+          "strength": 0.6
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在木舍院中收拾柴禾",
+          "siteId": "wood_shack"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今晨",
+          "content": "帮叶老采药人送了一篮干松针引火。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "ye_caiyao",
+      "name": "叶老采药",
+      "age": 60,
+      "role": "岭上老药翁",
+      "householdId": "ye_house",
+      "workSiteId": "ancient_forest",
+      "appearance": {
+        "skin": "#b88a66",
+        "hair": "#504840",
+        "robe": "#445448",
+        "sash": "#26342a",
+        "styles": [
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.65,
+        "persistence": 0.8,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.3,
+        "care": 0.75,
+        "caution": 0.7,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "herbalism"
+      ],
+      "speech": {
+        "style": "声音清癯悠长，知悉草木性理。",
+        "samples": [
+          "崖边的石斛沾着晨露，这时候采最好。"
+        ]
+      },
+      "situation": "深秋露重，赶早采收石崖阴处的九节菖蒲与老松茯苓。",
+      "desires": [
+        {
+          "verb": "采得",
+          "object": "松茯苓",
+          "outcome": "在老松密林掘出三块品相完好的茯苓",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "采七留三，不绝药脉"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在密林边寻采秋药",
+          "siteId": "ancient_forest"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前天",
+          "content": "在山崖阴坡看准了一株老松树下的茯苓菌窝。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "ye_qing",
+      "name": "叶晴",
+      "age": 19,
+      "role": "药舍姑娘 / 叶老孙女",
+      "householdId": "ye_house",
+      "workSiteId": "herb_cottage",
+      "appearance": {
+        "skin": "#ebc8ae",
+        "hair": "#28201a",
+        "robe": "#5a7466",
+        "sash": "#34483e",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.4,
+        "persistence": 0.7,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.4,
+        "care": 0.7,
+        "caution": 0.6,
+        "impulsivity": 0.35
+      },
+      "skills": [
+        "herbalism"
+      ],
+      "speech": {
+        "style": "清脆灵动，带着山野草药的香气。",
+        "samples": [
+          "爷爷，晒药筛子我都摆在望山台上了。"
+        ]
+      },
+      "situation": "在药舍翻晒秋药，研磨防冻驱寒的药散。",
+      "desires": [
+        {
+          "verb": "理好",
+          "object": "防寒药散",
+          "outcome": "制成几罐防寒药膏分送磨坊与猎户",
+          "strength": 0.65
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在药舍翻晒药材配散",
+          "siteId": "herb_cottage"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天",
+          "content": "答应婉儿帮她调一盒润肤的山茶油膏。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "ye_sheng",
+      "name": "叶生",
+      "age": 13,
+      "role": "药童 / 叶老幼孙",
+      "householdId": "ye_house",
+      "workSiteId": "herb_cottage",
+      "appearance": {
+        "skin": "#e0b898",
+        "hair": "#261e18",
+        "robe": "#708478",
+        "sash": "#44544a",
+        "styles": [],
+        "child": true
+      },
+      "personality": {
+        "autonomy": 0.45,
+        "introversion": 0.3,
+        "persistence": 0.45,
+        "conscientiousness": 0.5,
+        "competitiveness": 0.5,
+        "care": 0.6,
+        "caution": 0.45,
+        "impulsivity": 0.65
+      },
+      "skills": [
+        "herbalism"
+      ],
+      "speech": {
+        "style": "童声欢快，脚步轻快得像小鹿。",
+        "samples": [
+          "姐，冷泉井台那边打水的人可多了！"
+        ]
+      },
+      "situation": "提着小水桶往返冷泉打水，给药草浇灌洗泥。",
+      "desires": [
+        {
+          "verb": "打满",
+          "object": "冷泉水桶",
+          "outcome": "从冷泉打回整桶清泉用于洗药",
+          "strength": 0.6
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在药舍与冷泉井台间汲水",
+          "siteId": "herb_cottage"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今晨",
+          "content": "在井台石缝里抓到了一只碧绿的小树蛙。"
+        }
+      ],
+      "secrets": []
+    }
+  ],
+  "relationships": [
+    {
+      "from": "su_waner",
+      "to": "su_zhangmo",
+      "label": "父女 / 贴心孝顺",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 85,
+        "protection": 55
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "su_zhangmo",
+      "to": "su_waner",
+      "label": "父女 / 疼爱娇护",
+      "address": [
+        "婉儿"
+      ],
+      "feelings": {
+        "love": 85,
+        "protection": 75
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "lu_hu",
+      "to": "lu_dalie",
+      "label": "父子 / 崇拜服从",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 80,
+        "power": 60
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "lu_dalie",
+      "to": "lu_hu",
+      "label": "父子 / 历练栽培",
+      "address": [
+        "虎子"
+      ],
+      "feelings": {
+        "love": 80,
+        "power": 65
+      },
+      "unspoken": "骨头硬了，能接老子的猎弓了。",
+      "misreading": ""
+    },
+    {
+      "from": "lu_yan",
+      "to": "lu_dalie",
+      "label": "父女 / 亲呢依恋",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "yan_dashen",
+      "to": "yan_qiao",
+      "label": "夫妻 / 踏实相守",
+      "address": [
+        "当家的"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "yan_qiao",
+      "to": "yan_dashen",
+      "label": "夫妻 / 关照牵挂",
+      "address": [
+        "孩子他娘"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "ye_qing",
+      "to": "ye_caiyao",
+      "label": "祖孙 / 尊崇受教",
+      "address": [
+        "爷爷"
+      ],
+      "feelings": {
+        "love": 90,
+        "dependence": 65
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "ye_caiyao",
+      "to": "ye_qing",
+      "label": "祖孙 / 慈爱衣钵",
+      "address": [
+        "晴儿"
+      ],
+      "feelings": {
+        "love": 90,
+        "protection": 70
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "ye_sheng",
+      "to": "ye_qing",
+      "label": "姐弟 / 亲近听话",
+      "address": [
+        "阿姐"
+      ],
+      "feelings": {
+        "love": 80
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "lu_hu",
+      "to": "su_waner",
+      "label": "少年爱慕 / 殷勤帮手",
+      "address": [
+        "婉儿妹妹"
+      ],
+      "feelings": {
+        "love": 75,
+        "protection": 60
+      },
+      "unspoken": "就盼着多帮你扛几袋粮食。",
+      "misreading": ""
+    },
+    {
+      "from": "su_waner",
+      "to": "lu_hu",
+      "label": "青梅竹马 / 害羞关照",
+      "address": [
+        "陆虎哥"
+      ],
+      "feelings": {
+        "love": 70
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "su_zhangmo",
+      "to": "yan_qiao",
+      "label": "工邻相托 / 定木之约",
+      "address": [
+        "老严"
+      ],
+      "feelings": {
+        "love": 50,
+        "dependence": 50
+      },
+      "unspoken": "磨轴就全指望你挑的好木头了。",
+      "misreading": ""
+    },
+    {
+      "from": "lu_dalie",
+      "to": "ye_caiyao",
+      "label": "同山旧友 / 互通山情",
+      "address": [
+        "叶老叔"
+      ],
+      "feelings": {
+        "love": 65
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "ye_qing",
+      "to": "su_waner",
+      "label": "山间闺友 / 互赠互伴",
+      "address": [
+        "婉儿"
+      ],
+      "feelings": {
+        "love": 75
+      },
+      "unspoken": "",
+      "misreading": ""
+    }
+  ],
+  "opening": {
+    "situation": "深秋清晨雾松岭寒意逼人，各家合力赶磨秋谷，老松密林深处尚有野兽爪痕隐忧。",
+    "positions": {
+      "su_zhangmo": "valley_mill",
+      "su_waner": "valley_mill",
+      "lu_dalie": "hunter_lodge",
+      "lu_hu": "valley_mill",
+      "lu_yan": "hunter_lodge",
+      "yan_qiao": "ancient_forest",
+      "yan_dashen": "wood_shack",
+      "ye_caiyao": "ancient_forest",
+      "ye_qing": "herb_cottage",
+      "ye_sheng": "herb_cottage"
+    },
+    "objects": [
+      {
+        "name": "秋收粮谷",
+        "siteId": "valley_mill",
+        "holder": null,
+        "madeAt": "valley_mill",
+        "needed": 3,
+        "known": "public",
+        "state": {}
+      },
+      {
+        "name": "精细面袋",
+        "siteId": "valley_mill",
+        "holder": null,
+        "state": {
+          "packed": false,
+          "count": 1
+        },
+        "known": "public"
+      },
+      {
+        "name": "油松木",
+        "siteId": "ancient_forest",
+        "holder": null,
+        "madeAt": "ancient_forest",
+        "needed": 1,
+        "known": "public",
+        "state": {},
+        "madeWith": "cut_firewood"
+      },
+      {
+        "name": "松茯苓",
+        "siteId": "ancient_forest",
+        "holder": null,
+        "madeAt": "ancient_forest",
+        "needed": 1,
+        "known": "public",
+        "state": {},
+        "madeWith": "forage_herbs"
+      }
+    ],
+    "deadlines": [
+      {
+        "label": "午前苏掌磨与陆虎合力磨好秋收粮谷",
+        "dueClock": "11:30",
+        "responsible": [
+          "su_zhangmo",
+          "lu_hu"
+        ],
+        "knownBy": [
+          "su_zhangmo",
+          "lu_hu",
+          "su_waner",
+          "lu_dalie"
+        ],
+        "conditions": [
+          {
+            "kind": "object_ready",
+            "object": "秋收粮谷"
+          }
+        ],
+        "consequence": "秋谷未能及时磨出细面，山岭各家存粮受耽搁且耽误过冬。"
+      }
+    ],
+    "mysteries": [
+      "望山台石崖凹处那尊生满青苔的古老石雕究竟是何年所立"
+    ],
+    "events": [],
+    "visitors": []
+  }
+}

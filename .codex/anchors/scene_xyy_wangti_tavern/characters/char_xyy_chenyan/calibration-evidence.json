@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "recordType": "character-calibration-suite",
+  "characterId": "char_xyy_chenyan",
+  "status": "draft",
+  "source": {
+    "artifact": "anchor-payload.json",
+    "sha256": "1114f69625bb230848c1c2f691d149dfa389f16479f8bfd1f11c987ad8488cb7",
+    "role": "authoring-and-audit-only"
+  },
+  "controlledContrasts": [],
+  "speechSamples": [],
+  "relationshipCases": [],
+  "holdouts": []
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "runtimeSurface": "character-foundation",
+  "characterId": "char_xyy_xiemu",
+  "status": "draft",
+  "numericCalibrationStatus": "unassigned",
+  "identityModel": {
+    "conflicts": [],
+    "openChoiceAxes": []
+  },
+  "stablePsychology": {
+    "corePursuits": [],
+    "selfThreats": [],
+    "dispositions": {}
+  },
+  "dynamicPsychology": {
+    "stateVariables": []
+  },
+  "epistemics": {
+    "sourceReliability": {},
+    "knownEntities": [],
+    "beliefUpdatePolicy": {}
+  },
+  "sceneBindings": [
+    {
+      "sceneId": "scene_xyy_wangti_tavern",
+      "reasonForPresence": "",
+      "entryCause": "",
+      "currentPurpose": "",
+      "responsibilityRoleIds": [],
+      "knownAffordanceIds": [],
+      "prohibitedKnowledge": [],
+      "exitConditions": []
+    }
+  ],
+  "desires": [],
+  "inhibitors": [],
+  "speechPolicy": {
+    "silenceDefault": "",
+    "explanationCostRange": [
+      0,
+      1
+    ],
+    "socialMaintenanceRange": [
+      0,
+      1
+    ],
+    "pragmaticForms": [],
+    "praiseConditions": [],
+    "pressureMutation": [],
+    "relationshipRegisters": {},
+    "forbiddenRegisters": []
+  },
+  "relationshipModel": {
+    "dimensions": [],
+    "updateRules": [],
+    "forbiddenCollapses": []
+  },
+  "memoryPolicy": {
+    "seedRef": "memory-seed.json",
+    "encodingBiases": {},
+    "retrievalBiases": {}
+  }
+}

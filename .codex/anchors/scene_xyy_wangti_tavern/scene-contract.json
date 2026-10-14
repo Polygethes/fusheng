@@ -1,0 +1,1837 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "scene_xyy_wangti_tavern",
+  "status": "confirmed",
+  "identity": {
+    "name": "望梯酒馆",
+    "canonSourceIds": [
+      "user:望梯酒馆固定场景",
+      "user:scene_role_confirmation_2026-07-16",
+      "user:scene_menu_price_confirmation_2026-07-16",
+      "user:unnamed_lakeside_connection_2026-07-17",
+      "user:public_weapon_practice_is_social_pressure_2026-07-17",
+      "user:character_owns_tavern_consumption_choice_2026-07-20",
+      "src/engine/tavernLifeEngine.js#TAVERN_INSTITUTION",
+      "src/worldbuilding/skills.js#XIAOYA_YOU_TAVERN_INSTITUTION",
+      "src/server/pipeline/tavernCausalScene.mjs#TAVERN_SCENE_TOPOLOGY"
+    ],
+    "timeScope": "望梯酒馆当前模拟日；库存数量是新模拟的初始值并会随行动变化，具体世界历日待确认"
+  },
+  "ownership": {
+    "ownerCharacterId": "char_xyy_xieheng",
+    "operatorCharacterIds": [
+      "char_xyy_xiemu"
+    ],
+    "institutionId": "institution_xyy_wangti_tavern"
+  },
+  "economy": {
+    "currency": {
+      "id": "copper_wen",
+      "label": "文",
+      "physicalMedium": "铜钱",
+      "scope": "凡俗食宿、零工、日用与普通药材",
+      "notEquivalentTo": [
+        "灵石",
+        "丹药",
+        "符箓",
+        "宗门功勋"
+      ]
+    },
+    "mundaneCurrencyAccessRule": "对已有稳定修行能力或宗门供给的修仙者，少量凡俗铜钱通常取得容易、战略价值很低；但取得成本与当前随身流动性分开，未携带的钱仍须经过真实取得、兑换、借取或记账后才能结算。",
+    "laborBaseline": {
+      "unskilledDayWageWen": 30,
+      "workMealCompensationWen": 5,
+      "workMealShareOfDay": "约六分之一日",
+      "requiredWorkQuality": "必须是有范围、耗时、工具、完成证据与验收条件的一组杂务"
+    },
+    "ordinaryFoodPolicy": "望梯酒馆默认供应凡人与低阶修士都能食用的普通饭菜。食材生长在修仙世界，但没有未经声明的修为增益；对能长时间辟谷或更高阶的修士，凡食的生理需求和转化价值由该人物自己的身体档案决定，世界不能套用凡人频率。",
+    "sustenanceAppraisalRule": "食物和饮品只声明凡俗营养、灵性营养、水分与感官品质；身体需要、口味、礼节、社交、信息掩护和是否消费由人物 Agent 分别评价。",
+    "cultivationEconomyBoundary": {
+      "excludedFromDefaultStock": [
+        "真正灵米",
+        "丹药",
+        "妖兽肉",
+        "灵酒"
+      ],
+      "inclusionRequires": [
+        "具体供货来源",
+        "独立价格",
+        "实际库存",
+        "可验证的身体或修行效果规则"
+      ]
+    },
+    "offerings": [
+      {
+        "id": "hot_water",
+        "label": "热水",
+        "priceWen": 0,
+        "sustenance": { "class": "mundane_drink", "mundaneNutrition": 0, "spiritualNutrition": 0, "hydration": 0.72, "sensoryValue": 0.12 },
+        "contents": [
+          "山泉水"
+        ],
+        "notes": "烧开后免费供应；仍消耗水、柴和经营劳动"
+      },
+    {
+      "id": "rough_mountain_tea",
+      "label": "粗焙山茶",
+        "priceWen": 1,
+        "sustenance": { "class": "mundane_drink", "mundaneNutrition": 0, "spiritualNutrition": 0, "hydration": 0.84, "sensoryValue": 0.34 },
+        "contents": [
+          "普通山茶",
+          "一碗热水",
+        "可续一次水"
+      ]
+    },
+    {
+      "id": "house_tea_pot",
+      "label": "店藏山茶",
+      "priceWen": 3,
+      "sustenance": { "class": "mundane_drink", "mundaneNutrition": 0, "spiritualNutrition": 0, "hydration": 0.9, "sensoryValue": 0.62 },
+      "contents": [
+        "普通山茶中拣出的完整茶叶",
+        "一壶热水",
+        "可续一次水"
+      ],
+      "notes": "够一人慢饮数盏；品质高于粗焙山茶，但仍是普通凡俗茶叶"
+    },
+    {
+      "id": "fine_cloud_tea_pot",
+      "label": "云岫春芽",
+      "priceWen": 6,
+      "sustenance": { "class": "mundane_drink", "mundaneNutrition": 0, "spiritualNutrition": 0, "hydration": 0.92, "sensoryValue": 0.86 },
+      "contents": [
+        "当季云岫嫩芽",
+        "一壶热水",
+        "可续一次水"
+      ],
+      "notes": "望梯酒馆当日价牌上最贵的茶；不是灵茶，也没有修为增益"
+    },
+      {
+        "id": "cloudy_rice_wine",
+        "label": "浊米酒",
+        "priceWen": 3,
+        "sustenance": { "class": "mundane_drink", "mundaneNutrition": 0.08, "spiritualNutrition": 0, "hydration": 0.28, "sensoryValue": 0.52 },
+        "contents": [
+          "本地低度米酒一碗"
+        ],
+        "bodyEffects": [
+          "轻度醉意随饮量累积",
+          "可能降低抑制并影响判断与动作稳定"
+        ]
+      },
+      {
+        "id": "wangti_basic_meal",
+        "label": "望梯常饭",
+        "priceWen": 5,
+        "sustenance": { "class": "mundane_food", "mundaneNutrition": 0.78, "spiritualNutrition": 0, "hydration": 0.16, "sensoryValue": 0.42 },
+        "contents": [
+          "一碗杂粮饭",
+          "时蔬豆腐",
+          "腌笋",
+          "一碗热汤"
+        ],
+        "bodyEffects": [
+          "缓解正常饥饿",
+          "提供普通体力恢复",
+          "不提供修为增益"
+        ]
+      },
+      {
+        "id": "wangti_meat_meal",
+        "label": "添肉饭",
+        "priceWen": 8,
+        "sustenance": { "class": "mundane_food", "mundaneNutrition": 0.92, "spiritualNutrition": 0, "hydration": 0.12, "sensoryValue": 0.64 },
+        "contents": [
+          "一份望梯常饭",
+          "一份卤肉或河鱼"
+        ],
+        "bodyEffects": [
+          "比常饭提供更多饱腹与体力恢复",
+          "不默认使用妖兽肉"
+        ]
+      },
+      {
+        "id": "private_room_only",
+        "label": "普通客房一晚",
+        "priceWen": 12,
+        "contents": [
+          "一间独立简陋客房",
+          "洁净铺盖",
+          "一份夜间热水",
+          "钥匙使用与归还义务"
+        ]
+      },
+      {
+        "id": "private_room_one_meal",
+        "label": "客房加一餐",
+        "priceWen": 16,
+        "sustenance": { "class": "mundane_food", "mundaneNutrition": 0.78, "spiritualNutrition": 0, "hydration": 0.16, "sensoryValue": 0.42 },
+        "contents": [
+          "普通客房一晚",
+          "一份望梯常饭"
+        ]
+      },
+      {
+        "id": "private_room_two_meals",
+        "label": "客房加两餐",
+        "priceWen": 20,
+        "sustenance": { "class": "mundane_food", "mundaneNutrition": 0.78, "spiritualNutrition": 0, "hydration": 0.16, "sensoryValue": 0.42 },
+        "contents": [
+          "普通客房一晚",
+          "当日晚饭",
+          "次日早饭"
+        ]
+      },
+      {
+        "id": "bounded_work_for_basic_meal",
+        "label": "以明确杂务换望梯常饭",
+        "priceWen": 0,
+        "sustenance": { "class": "mundane_food", "mundaneNutrition": 0.78, "spiritualNutrition": 0, "hydration": 0.16, "sensoryValue": 0.42 },
+        "compensationValueWen": 5,
+        "contents": [
+          "完成并通过验收的一组约六分之一日杂务",
+          "一份望梯常饭"
+        ]
+      }
+    ]
+  },
+  "topology": {
+    "zones": [
+      {
+        "id": "threshold",
+        "label": "门槛",
+        "privacy": "public",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "threshold",
+          "hall"
+        ]
+      },
+      {
+        "id": "hall",
+        "label": "堂前",
+        "privacy": "public",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "threshold",
+          "hall",
+          "counter",
+          "courtyard",
+          "stairs"
+        ]
+      },
+      {
+        "id": "counter",
+        "label": "柜台",
+        "privacy": "public_service",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "hall",
+          "counter",
+          "stove"
+        ]
+      },
+      {
+        "id": "stove",
+        "label": "灶边",
+        "privacy": "household_work_area",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "counter",
+          "stove"
+        ]
+      },
+      {
+        "id": "courtyard",
+        "label": "后院",
+        "privacy": "household_work_area",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "hall",
+          "courtyard"
+        ]
+      },
+      {
+        "id": "stairs",
+        "label": "楼梯口",
+        "privacy": "public_transition",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "hall",
+          "stairs"
+        ]
+      },
+      {
+        "id": "guest_room",
+        "label": "楼上客房",
+        "privacy": "private",
+        "capacity": null,
+        "observableFromZoneIds": [
+          "guest_room"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "fromZoneId": "threshold",
+        "toZoneId": "hall",
+        "modality": [
+          "movement",
+          "sound",
+          "visual"
+        ],
+        "requirements": [],
+        "barriers": [],
+        "bidirectional": true
+      },
+      {
+        "fromZoneId": "hall",
+        "toZoneId": "counter",
+        "modality": [
+          "movement",
+          "sound",
+          "visual"
+        ],
+        "requirements": [],
+        "barriers": [],
+        "bidirectional": true
+      },
+      {
+        "fromZoneId": "counter",
+        "toZoneId": "stove",
+        "modality": [
+          "movement",
+          "sound",
+          "visual"
+        ],
+        "requirements": [],
+        "barriers": [],
+        "bidirectional": true
+      },
+      {
+        "fromZoneId": "hall",
+        "toZoneId": "courtyard",
+        "modality": [
+          "movement",
+          "sound",
+          "visual"
+        ],
+        "requirements": [],
+        "barriers": [],
+        "bidirectional": true
+      },
+      {
+        "fromZoneId": "hall",
+        "toZoneId": "stairs",
+        "modality": [
+          "movement",
+          "sound",
+          "visual"
+        ],
+        "requirements": [],
+        "barriers": [],
+        "bidirectional": true
+      },
+      {
+        "fromZoneId": "stairs",
+        "toZoneId": "guest_room",
+        "modality": [
+          "movement"
+        ],
+        "requirements": [
+          "门已打开",
+          "持有客房权限或得到经营者许可"
+        ],
+        "barriers": [
+          "closed-door"
+        ],
+        "bidirectional": true
+      }
+    ],
+    "privateZoneIds": [
+      "guest_room"
+    ],
+    "externalConnections": [
+      {
+        "locationId": "loc_xyy_unnamed_lakeside",
+        "label": "湖边（名称未知）",
+        "canonicalName": null,
+        "connectionFromZoneId": "threshold",
+        "travelMode": "人物独自前往；具体方式待确认",
+        "travelTime": null,
+        "routeKnownByCharacterIds": [
+          "char_xyy_xiezenshi"
+        ],
+        "visitorFrequency": "low",
+        "privacyGuarantee": false,
+        "objectiveAffordances": [
+          "完成离开酒馆与外部路程后抵达湖边",
+          "身体状态与当时水域条件允许时进入湖水"
+        ],
+        "unknowns": [
+          "真实地名",
+          "具体距离和路程耗时",
+          "当前水深、水温与岸边条件",
+          "酒馆与湖边之间的直接视听关系",
+          "除谢真石外还有谁知道路线"
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "stock_grain",
+      "label": "粮食存量",
+      "quantity": 16,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "stove",
+      "valueTags": [
+        "food",
+        "livelihood",
+        "operating_stock"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "stock_meals",
+      "label": "可供应望梯常饭",
+      "quantity": 18,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "stove",
+      "valueTags": [
+        "food",
+        "hunger_relief",
+        "service_stock",
+        "ordinary_non_spiritual_food"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "stock_tea",
+      "label": "可供应茶叶",
+      "quantity": 24,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "stove",
+      "valueTags": [
+        "drink",
+        "hospitality",
+        "service_stock"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "stock_rice_wine",
+      "label": "可供应浊米酒",
+      "quantity": null,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "counter",
+      "valueTags": [
+        "alcohol",
+        "hospitality",
+        "disinhibition",
+        "service_stock",
+        "ordinary_non_spiritual_drink"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "stock_meat_portions",
+      "label": "普通卤肉或河鱼份数",
+      "quantity": null,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "stove",
+      "valueTags": [
+        "food",
+        "satiety",
+        "premium_meal_addition",
+        "ordinary_non_demon_meat"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "stock_firewood",
+      "label": "可用柴薪",
+      "quantity": 20,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "courtyard",
+      "valueTags": [
+        "fuel",
+        "cooking",
+        "household_work"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "stock_water",
+      "label": "可用水",
+      "quantity": 30,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "stove",
+      "valueTags": [
+        "drink",
+        "cooking",
+        "household_work"
+      ],
+      "consumable": true
+    },
+    {
+      "id": "cash_box",
+      "label": "酒馆钱箱",
+      "quantity": 36,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "counter",
+      "valueTags": [
+        "money",
+        "livelihood",
+        "operating_capital"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "business_ledger",
+      "label": "酒馆账板与账簿",
+      "quantity": 1,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "counter",
+      "valueTags": [
+        "accounting",
+        "evidence",
+        "household_finance"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "guest_room_keys",
+      "label": "三把客房钥匙",
+      "quantity": 3,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "hall",
+      "valueTags": [
+        "lodging",
+        "access",
+        "privacy",
+        "rest"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "meal_vessels",
+      "label": "四只饭碗",
+      "quantity": 4,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "hall",
+      "valueTags": [
+        "service_tool",
+        "meal_delivery"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "tea_vessels",
+      "label": "两只茶碗",
+      "quantity": 2,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "hall",
+      "valueTags": [
+        "service_tool",
+        "tea_delivery"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "work_tools",
+      "label": "抹布、水桶与劈柴斧",
+      "quantity": 3,
+      "holderId": "institution_xyy_wangti_tavern",
+      "zoneId": "",
+      "valueTags": [
+        "work_exchange",
+        "household_work",
+        "task_specific"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "medicine_parcel",
+      "label": "药包",
+      "quantity": 1,
+      "holderId": "char_xyy_zhoumin",
+      "intendedRecipientActorId": "char_xyy_xiemu",
+      "treatmentTargetActorId": "char_xyy_xiemu",
+      "treatmentCategory": "chronic_lung_ailment",
+      "treatmentDetailsStatus": "unknown",
+      "zoneId": "",
+      "valueTags": [
+        "medicine",
+        "family_health",
+        "chronic_lung_ailment",
+        "delivery",
+        "financial_pressure",
+        "conditional_on_holder_presence"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "medicine_manifest",
+      "label": "送药清单",
+      "quantity": 1,
+      "holderId": "char_xyy_zhoumin",
+      "zoneId": "",
+      "valueTags": [
+        "delivery",
+        "evidence",
+        "accounting",
+        "conditional_on_holder_presence"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "registry_pages",
+      "label": "掌籍名录和待核纸页",
+      "quantity": 1,
+      "holderId": "char_xyy_yanzhizhong",
+      "zoneId": "",
+      "valueTags": [
+        "sect_advancement",
+        "candidate_status",
+        "evidence",
+        "conditional_on_holder_presence"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "xiezenshi_long_sword",
+      "label": "谢真石的长剑",
+      "quantity": 1,
+      "holderId": "char_xyy_xiezenshi",
+      "zoneId": "",
+      "valueTags": [
+        "weapon",
+        "cultivation",
+        "challenge",
+        "personal_property"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "luozhao_sword",
+      "label": "洛照的佩剑",
+      "quantity": 1,
+      "holderId": "char_xyy_luozhao",
+      "zoneId": "",
+      "state": {
+        "sheathed": true
+      },
+      "attachment": {
+        "active": true,
+        "actorId": "char_xyy_luozhao",
+        "mode": "worn_on_body_unspecified",
+        "transitionRequiresExplicitOperation": true
+      },
+      "valueTags": [
+        "weapon",
+        "cultivation",
+        "challenge",
+        "personal_property",
+        "conditional_on_holder_presence"
+      ],
+      "consumable": false
+    },
+    {
+      "id": "luozhao_yuheng_visit_letter",
+      "label": "洛照携带的玉衡宗拜帖",
+      "quantity": 1,
+      "holderId": "char_xyy_luozhao",
+      "intendedRecipientInstitutionId": "institution_xyy_tiyunzong",
+      "tavernRecipientStatus": "not_a_recipient",
+      "displayTransfersCustody": false,
+      "zoneId": "",
+      "valueTags": [
+        "visit_credential",
+        "institutional_identity",
+        "information_gathering",
+        "evidence",
+        "personal_property",
+        "conditional_on_holder_presence"
+      ],
+      "consumable": false
+    }
+  ],
+  "resourceAbsenceReason": "",
+  "affordances": [
+    {
+      "id": "enter_tavern",
+      "actorRequirements": [
+        "人物有自己拥有的到访动机",
+        "已完成必要路程"
+      ],
+      "targetRequirements": [],
+      "zoneRequirements": [
+        "从门槛进入堂前"
+      ],
+      "consumes": [
+        "旅行时间与体力"
+      ],
+      "produces": [
+        "人物在场",
+        "可被门槛或堂前人物感知的到达线索"
+      ]
+    },
+    {
+      "id": "leave_tavern",
+      "actorRequirements": [
+        "人物自己选择离开",
+        "没有必须归还的酒馆物品"
+      ],
+      "targetRequirements": [],
+      "zoneRequirements": [
+        "存在通向门槛的可走路线"
+      ],
+      "consumes": [
+        "移动时间"
+      ],
+      "produces": [
+        "人物离场"
+      ]
+    },
+    {
+      "id": "move_between_connected_zones",
+      "actorRequirements": [
+        "身体状态允许移动"
+      ],
+      "targetRequirements": [],
+      "zoneRequirements": [
+        "两区之间有开放路线",
+        "如属私域则具有权限"
+      ],
+      "consumes": [
+        "时间与体力"
+      ],
+      "produces": [
+        "位置变化",
+        "随身物品随持有人移动"
+      ]
+    },
+    {
+      "id": "speak_or_call",
+      "actorRequirements": [
+        "人物选择发声",
+        "知道自己要表达的内容"
+      ],
+      "targetRequirements": [
+        "目标在有效声路内，或说话者明确采用喊话"
+      ],
+      "zoneRequirements": [
+        "声路未被关闭的门或距离阻断"
+      ],
+      "consumes": [
+        "注意力"
+      ],
+      "produces": [
+        "可被声路内人物感知的言语影响"
+      ]
+    },
+    {
+      "id": "request_food_or_drink",
+      "transactionPhase": "request",
+      "offeringIds": [
+        "hot_water",
+        "rough_mountain_tea",
+        "cloudy_rice_wine",
+        "wangti_basic_meal",
+        "wangti_meat_meal"
+      ],
+      "actorRequirements": [
+        "来客本人选择提出茶、饭、热水或酒的服务请求",
+        "本人能感知至少一名有接待权限的经营者"
+      ],
+      "targetRequirements": [
+        "请求对象处在有效声路内",
+        "所请求品项属于酒馆当前公开供应范围"
+      ],
+      "zoneRequirements": [
+        "来客位于门槛、堂前或柜台附近的可接待区域"
+      ],
+      "consumes": [
+        "来客的注意力与一次公开表达"
+      ],
+      "produces": [
+        "一项由具体来客提出、等待经营者回应的服务请求",
+        "经营者可感知的言语影响",
+        "不得自动产生出餐、出茶、扣款、结账或关系变化"
+      ]
+    },
+    {
+      "id": "respond_to_service_request",
+      "transactionPhase": "operator_response",
+      "offeringIds": [
+        "hot_water",
+        "rough_mountain_tea",
+        "cloudy_rice_wine",
+        "wangti_basic_meal",
+        "wangti_meat_meal"
+      ],
+      "actorRequirements": [
+        "经营者本人已实际感知一项具体来客提出的服务请求",
+        "经营者持有相应接待或出品权限",
+        "经营者本人选择接受、询问、拒绝或延后"
+      ],
+      "targetRequirements": [
+        "请求者仍在有效声路内",
+        "回应指向真实存在且尚未结清的请求"
+      ],
+      "zoneRequirements": [
+        "经营者与请求者之间存在有效声路"
+      ],
+      "consumes": [
+        "经营者的时间与注意力"
+      ],
+      "produces": [
+        "由经营者本人作出的接受、询问、拒绝或延后回应",
+        "对应服务请求的状态变化",
+        "不得自动产生茶饭交付、消费、扣款、结账或关系变化"
+      ]
+    },
+    {
+      "id": "receive_guest",
+      "actorRequirements": [
+        "持有经营接待权限",
+        "感知到来客或已知来客等待"
+      ],
+      "targetRequirements": [
+        "来客在可接待区域"
+      ],
+      "zoneRequirements": [
+        "门槛或堂前"
+      ],
+      "consumes": [
+        "经营者时间与注意力"
+      ],
+      "produces": [
+        "来意可以被亲口说明",
+        "建立本次来访的经手关系"
+      ]
+    },
+    {
+      "id": "serve_meal",
+      "transactionPhase": "fulfillment",
+      "offeringIds": [
+        "wangti_basic_meal",
+        "wangti_meat_meal"
+      ],
+      "actorRequirements": [
+        "持有出餐权限"
+      ],
+      "targetRequirements": [
+        "已形成有效点餐或以工换饭协议"
+      ],
+      "zoneRequirements": [
+        "饭食与空饭碗可取得",
+        "服务双方可完成交接"
+      ],
+      "consumes": [
+        "一份可供应望梯常饭；添肉饭另消耗一份普通肉食",
+        "经营劳动"
+      ],
+      "produces": [
+        "一份归属于特定客人的已交付具体饭菜",
+        "对应的饥饿与普通体力变化",
+        "对应账目或交换状态更新"
+      ]
+    },
+    {
+      "id": "serve_tea",
+      "transactionPhase": "fulfillment",
+      "offeringIds": [
+        "hot_water",
+        "rough_mountain_tea"
+      ],
+      "actorRequirements": [
+        "持有出茶权限"
+      ],
+      "targetRequirements": [
+        "已形成有效点茶"
+      ],
+      "zoneRequirements": [
+        "茶、水与空茶碗可取得"
+      ],
+      "consumes": [
+        "茶",
+        "水",
+        "经营劳动"
+      ],
+      "produces": [
+        "一碗归属于特定客人的已交付热茶",
+        "对应账目更新"
+      ]
+    },
+    {
+      "id": "serve_wine",
+      "transactionPhase": "fulfillment",
+      "offeringIds": [
+        "cloudy_rice_wine"
+      ],
+      "actorRequirements": [
+        "持有出酒权限",
+        "愿意对该客人出售酒"
+      ],
+      "targetRequirements": [
+        "已形成有效点酒",
+        "客人没有被经营者拒酒"
+      ],
+      "zoneRequirements": [
+        "浊米酒与干净酒碗可取得",
+        "服务双方可完成交接"
+      ],
+      "consumes": [
+        "一碗浊米酒",
+        "经营劳动"
+      ],
+      "produces": [
+        "一碗归属于特定客人的已交付浊米酒",
+        "随饮量累积的醉意状态",
+        "对应账目更新"
+      ]
+    },
+    {
+      "id": "assign_lodging",
+      "transactionPhase": "fulfillment",
+      "offeringIds": [
+        "private_room_only",
+        "private_room_one_meal",
+        "private_room_two_meals"
+      ],
+      "actorRequirements": [
+        "持有客房分配权限"
+      ],
+      "targetRequirements": [
+        "来客提出住店",
+        "来客符合店内接待条件",
+        "双方明确选择房间单住、加一餐或加两餐"
+      ],
+      "zoneRequirements": [
+        "有未占用客房与可交付钥匙"
+      ],
+      "consumes": [
+        "一间客房在本次入住期间的可用性"
+      ],
+      "produces": [
+        "客房使用权",
+        "钥匙交接义务",
+        "房费与餐费分列的住宿账目"
+      ]
+    },
+    {
+      "id": "offer_work_exchange",
+      "actorRequirements": [
+        "持有指派杂务与确认补偿的权限"
+      ],
+      "targetRequirements": [
+        "对方自愿接受明确范围的以工换饭",
+        "工作总量约值五文且不能只靠象征性动作完成"
+      ],
+      "zoneRequirements": [
+        "存在具体未完成杂务及所需工具"
+      ],
+      "consumes": [
+        "双方协商时间"
+      ],
+      "produces": [
+        "有边界、数量和验收条件的工作约定"
+      ]
+    },
+    {
+      "id": "perform_bounded_work",
+      "actorRequirements": [
+        "人物接受了具体工作约定",
+        "身体状态能够完成"
+      ],
+      "targetRequirements": [
+        "工作对象与工具仍可用"
+      ],
+      "zoneRequirements": [
+        "人物与工作对象同区"
+      ],
+      "consumes": [
+        "时间",
+        "体力",
+        "必要耗材"
+      ],
+      "produces": [
+        "可验收的逐步工作证据",
+        "身体状态变化"
+      ]
+    },
+    {
+      "id": "verify_and_compensate_work",
+      "actorRequirements": [
+        "持有验收与出餐权限"
+      ],
+      "targetRequirements": [
+        "约定的工作满足验收条件"
+      ],
+      "zoneRequirements": [
+        "可检查工作结果并完成饭食交接"
+      ],
+      "consumes": [
+        "验收时间",
+        "一份望梯常饭"
+      ],
+      "produces": [
+        "工作完成记录",
+        "以工换饭两清或新的争议"
+      ]
+    },
+    {
+      "id": "accept_delivery",
+      "actorRequirements": [
+        "持有进货或验收权限"
+      ],
+      "targetRequirements": [
+        "送货人与货物、清单同在",
+        "物品实际交到经手人手里"
+      ],
+      "zoneRequirements": [
+        "柜台或双方可核验的堂前"
+      ],
+      "consumes": [
+        "验收时间"
+      ],
+      "produces": [
+        "货物归属变化",
+        "验收证据",
+        "库存或争议状态更新"
+      ]
+    },
+    {
+      "id": "settle_payment",
+      "transactionPhase": "settlement",
+      "offeringIds": [
+        "rough_mountain_tea",
+        "cloudy_rice_wine",
+        "wangti_basic_meal",
+        "wangti_meat_meal",
+        "private_room_only",
+        "private_room_one_meal",
+        "private_room_two_meals"
+      ],
+      "actorRequirements": [
+        "付款人持有足额钱币",
+        "收款人有经营收款权限"
+      ],
+      "targetRequirements": [
+        "有真实发生的服务或债务"
+      ],
+      "zoneRequirements": [
+        "双方与钱币同区并能当面交接"
+      ],
+      "consumes": [
+        "付款人钱币"
+      ],
+      "produces": [
+        "钱箱变化",
+        "账目变化",
+        "结清或部分未结状态"
+      ]
+    },
+    {
+      "id": "practice_with_weapon",
+      "actorRequirements": [
+        "人物持有可用武器",
+        "人物自己选择练习"
+      ],
+      "targetRequirements": [],
+      "zoneRequirements": [
+        "人物与武器所在区域存在足够完成所选动作的实际空间",
+        "没有墙、关闭的门或其他未被突破的实体障碍阻断动作"
+      ],
+      "consumes": [
+        "时间",
+        "体力"
+      ],
+      "produces": [
+        "练习证据",
+        "身体状态变化",
+        "可能被可视范围内人物观察",
+        "若动作发生在营业公共区，产生可被感知的规范违反、安全风险与经营影响；这些是后果，不是世界预先禁用动作"
+      ]
+    },
+    {
+      "id": "relay_information",
+      "actorRequirements": [
+        "人物曾直接感知或被告知该信息",
+        "人物选择转述"
+      ],
+      "targetRequirements": [
+        "接收者位于有效声路内"
+      ],
+      "zoneRequirements": [
+        "声路可达"
+      ],
+      "consumes": [
+        "时间与注意力"
+      ],
+      "produces": [
+        "带有来源和失真风险的二手信息"
+      ]
+    }
+  ],
+  "impossibilities": [
+    {
+      "id": "no_spontaneous_flood",
+      "claim": "酒馆不能仅因时间推进而突然发生洪水",
+      "reason": "当前场景没有河道倒灌、持续暴雨、堤坝决口、管线破裂或水系法术的因果输入",
+      "enablingConditions": [
+        "世界层先产生足量上游水源",
+        "存在水进入酒馆的物理路线",
+        "水量超过排出能力"
+      ]
+    },
+    {
+      "id": "closed_room_blocks_direct_perception",
+      "claim": "堂前或楼梯口的人不能直接听见或看见关闭客房内的普通谈话与动作",
+      "reason": "客房门关闭时声路与视路都被阻断",
+      "enablingConditions": [
+        "门被打开",
+        "人物进入客房",
+        "房内人物明确高声喊叫且世界判定声量足够",
+        "使用有明确规则的侦测手段"
+      ]
+    },
+    {
+      "id": "no_service_without_resources",
+      "claim": "没有饭食、器皿、权限或有效服务关系时不能凭空完成出餐、出茶或住宿",
+      "reason": "服务必须消耗或占用真实资源并由有权限的人经手",
+      "enablingConditions": [
+        "取得缺失资源",
+        "由经营者授权",
+        "形成有效点单、住宿或工作交换"
+      ]
+    },
+    {
+      "id": "no_unlisted_spiritual_food_effect",
+      "claim": "普通饭菜、浊米酒和山茶不能凭空提供修为、疗伤或灵力增益",
+      "reason": "望梯酒馆的默认铜钱菜单属于凡俗食宿经济，真正灵食必须有来源、库存、价格和效果规则",
+      "enablingConditions": [
+        "取得有明确来源的灵米、丹药、妖兽肉或灵酒",
+        "经营者把该物列为独立商品并给出价格",
+        "世界层登记实际库存与可验证效果"
+      ]
+    },
+    {
+      "id": "no_private_room_entry_without_access",
+      "claim": "人物不能无因穿过关闭客房门进入私域",
+      "reason": "客房需要开放路线、钥匙或经营者与住客许可",
+      "enablingConditions": [
+        "持有对应钥匙",
+        "经营者或住客开门许可",
+        "发生有客观根据的紧急情况"
+      ]
+    },
+    {
+      "id": "recommendation_is_not_admission",
+      "claim": "谢真石作出举荐不能直接把周珉判定为已经通过宗门考核或成为内门弟子",
+      "reason": "举荐只使周珉获得进入宗门并参加考核的机会，最终结果由门内长老决定",
+      "enablingConditions": [
+        "谢真石本人作出有效举荐",
+        "周珉实际进入宗门并参加考核",
+        "门内长老完成审核与决定"
+      ]
+    },
+    {
+      "id": "no_knowledge_without_route",
+      "claim": "人物不能知道自己未感知、未被告知、也未从证据推断出的行动或言语",
+      "reason": "知识必须来自直接感知、带来源的转述或可说明的推断",
+      "enablingConditions": [
+        "人物进入有效感知范围",
+        "知情者选择转述",
+        "人物取得足以支持推断的客观证据"
+      ]
+    },
+    {
+      "id": "no_remote_object_transfer",
+      "claim": "不在同区且不持有物品的人不能完成当面递交、收取或消费",
+      "reason": "物品交接需要持有者、对象和接收者之间的可达路线",
+      "enablingConditions": [
+        "持有人携物移动到接收者身边",
+        "第三方实际转交",
+        "存在已定义的远程传物能力"
+      ]
+    },
+    {
+      "id": "no_schedule_teleport",
+      "claim": "时间段或预排出场不能让人物无动机抵达、说话或离开",
+      "reason": "时间只改变可行性和压力，人物在场变化必须有自己的意图与旅行过程",
+      "enablingConditions": [
+        "人物形成到访或离开意图",
+        "触发条件已经发生",
+        "必要路程和耗时已经完成"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "proprietor",
+      "label": "东家",
+      "holderCharacterIds": [
+        "char_xyy_xieheng"
+      ],
+      "responsibilities": [
+        "负责进货、外账与经营缺口",
+        "验收送货或授权他人验收",
+        "处理收款、账目、酒水和客房经营事项"
+      ],
+      "permissions": [
+        "accept_delivery",
+        "settle_payment",
+        "manage_ledger",
+        "assign_lodging",
+        "serve_wine"
+      ]
+    },
+    {
+      "id": "manager_cook",
+      "label": "掌柜兼掌灶",
+      "holderCharacterIds": [
+        "char_xyy_xiemu"
+      ],
+      "responsibilities": [
+        "接待来客并问明来意",
+        "决定出餐、出茶、出酒、拒酒、赊账、住店和收店",
+        "管理灶边与日常库存",
+        "指派并验收以工换饭的具体杂务"
+      ],
+      "permissions": [
+        "receive_guest",
+        "serve_meal",
+        "serve_tea",
+        "serve_wine",
+        "offer_work_exchange",
+        "verify_and_compensate_work",
+        "settle_payment",
+        "assign_lodging"
+      ]
+    },
+    {
+      "id": "household_worker",
+      "label": "谢家帮工",
+      "holderCharacterIds": [
+        "char_xyy_xiezenshi"
+      ],
+      "responsibilities": [
+        "补足当餐所需柴水",
+        "完成被家中明确分配的堂前杂务",
+        "避免工作与练剑妨碍客人通行"
+      ],
+      "permissions": [
+        "perform_bounded_work",
+        "move_between_connected_zones",
+        "在经营者授权范围内协助简单交接"
+      ]
+    },
+    {
+      "id": "delivery_guest",
+      "label": "送货来客",
+      "holderCharacterIds": [
+        "char_xyy_zhoumin"
+      ],
+      "responsibilities": [
+        "携带货物与清单",
+        "向有验收权限的人说明并完成交接"
+      ],
+      "permissions": [
+        "declare_visit_purpose",
+        "request_delivery_acceptance",
+        "在完成经营事务后继续处理自己尚未完成的个人目的"
+      ]
+    },
+    {
+      "id": "registry_visitor",
+      "label": "掌籍来客",
+      "holderCharacterIds": [
+        "char_xyy_yanzhizhong"
+      ],
+      "responsibilities": [
+        "保管本人携带的名录与待核纸页",
+        "只把实际核验过的内容写入宗门记录"
+      ],
+      "permissions": [
+        "request_information",
+        "inspect_owned_records",
+        "在经营事务结束后继续本人尚未完成的核验"
+      ]
+    },
+    {
+      "id": "work_exchange_guest",
+      "label": "以工换饭来客",
+      "holderCharacterIds": [
+        "char_xyy_chenyan"
+      ],
+      "responsibilities": [
+        "在接受前听明白具体工作范围",
+        "按约完成工作并归还工具",
+        "把结果交给有权限的人验收"
+      ],
+      "permissions": [
+        "request_work_exchange",
+        "accept_or_refuse_work_order",
+        "perform_bounded_work",
+        "request_verification_and_compensation"
+      ]
+    }
+  ],
+  "environmentalPressures": {
+    "atmosphere": [
+      {
+        "id": "open_business_cues",
+        "observableCue": "店门打开、柜台有人、灶火、饭茶气味与开坛酒气可被相应范围内的人感知",
+        "appraisalTags": [
+          "open_for_business",
+          "food_available",
+          "public_space"
+        ],
+        "intensityRange": [
+          0.2,
+          0.8
+        ]
+      },
+      {
+        "id": "meal_rush_cues",
+        "observableCue": "正午前后桌碗与来客增加，经营者的手和注意力被多项事务占用",
+        "appraisalTags": [
+          "busy",
+          "waiting_cost",
+          "public_attention",
+          "service_priority"
+        ],
+        "intensityRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "closing_cues",
+        "observableCue": "黄昏后灶火转弱、碗桌被收、门板准备合上",
+        "appraisalTags": [
+          "closing_soon",
+          "reduced_service",
+          "decision_pressure"
+        ],
+        "intensityRange": [
+          0,
+          1
+        ]
+      }
+    ],
+    "temptations": [
+      {
+        "id": "tempt_hot_meal",
+        "resourceId": "stock_meals",
+        "relevantDesireTags": [
+          "hunger",
+          "survival",
+          "comfort",
+          "work_compensation"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tempt_rice_wine",
+        "resourceId": "stock_rice_wine",
+        "relevantDesireTags": [
+          "alcohol_craving",
+          "social_bonding",
+          "avoidance",
+          "disinhibition",
+          "information_seeking"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tempt_private_lodging",
+        "resourceId": "guest_room_keys",
+        "relevantDesireTags": [
+          "rest",
+          "privacy",
+          "safety",
+          "temporary_shelter"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tempt_money",
+        "resourceId": "cash_box",
+        "relevantDesireTags": [
+          "livelihood",
+          "medicine_fund",
+          "operating_capital",
+          "theft"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tempt_medicine",
+        "resourceId": "medicine_parcel",
+        "relevantDesireTags": [
+          "health",
+          "family_care",
+          "delivery_duty",
+          "financial_anxiety"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tempt_registry",
+        "resourceId": "registry_pages",
+        "relevantDesireTags": [
+          "sect_advancement",
+          "recognition",
+          "candidate_control",
+          "evidence"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tempt_sword",
+        "resourceId": "xiezenshi_long_sword",
+        "relevantDesireTags": [
+          "cultivation",
+          "combat",
+          "challenge",
+          "assessment"
+        ],
+        "salienceRange": [
+          0,
+          1
+        ]
+      }
+    ],
+    "hazards": [
+      {
+        "id": "stove_fire_hazard",
+        "triggerConditions": [
+          "灶火点燃",
+          "人物或易燃物过度靠近"
+        ],
+        "affectedZones": [
+          "stove"
+        ],
+        "consequenceTags": [
+          "burn",
+          "fire",
+          "service_interruption"
+        ]
+      },
+      {
+        "id": "rain_wet_threshold",
+        "triggerConditions": [
+          "世界层已产生持续降雨",
+          "门槛或后院没有遮雨或排水"
+        ],
+        "affectedZones": [
+          "threshold",
+          "courtyard"
+        ],
+        "consequenceTags": [
+          "slip",
+          "wet_firewood",
+          "slower_movement"
+        ]
+      },
+      {
+        "id": "crowd_noise",
+        "triggerConditions": [
+          "多名来客同时说话或走动"
+        ],
+        "affectedZones": [
+          "threshold",
+          "hall",
+          "counter"
+        ],
+        "consequenceTags": [
+          "hearing_distortion",
+          "reduced_privacy",
+          "attention_competition"
+        ]
+      },
+      {
+        "id": "weapon_motion_near_bystanders",
+        "triggerConditions": [
+          "人物实际尝试挥动兵器",
+          "动作轨迹附近存在食客、经营者、桌椅、器皿或通道"
+        ],
+        "affectedZones": [
+          "hall",
+          "threshold",
+          "counter",
+          "courtyard"
+        ],
+        "consequenceTags": [
+          "collision_risk",
+          "fear_or_attention_impact",
+          "property_damage_risk",
+          "service_interruption",
+          "possible_social_response"
+        ]
+      }
+    ],
+    "socialNorms": [
+      {
+        "id": "norm_avoid_weapon_practice_among_diners",
+        "cueConditions": [
+          "酒馆正在营业",
+          "堂前存在食客、经营者或正在进行的服务",
+          "兵器动作会被他们直接看见或妨碍通行"
+        ],
+        "normativeExpectation": "通常应避免在食客之间展开兵器练习，或先协商、清出空间、改到别处",
+        "violationPhysicallyPossible": true,
+        "likelyResponderRoleIds": [
+          "proprietor",
+          "manager_cook",
+          "household_worker"
+        ],
+        "possibleResponseTags": [
+          "ignore",
+          "watch",
+          "warn",
+          "negotiate",
+          "intervene",
+          "leave",
+          "gossip"
+        ],
+        "possibleConsequenceTags": [
+          "reputation_change",
+          "relationship_change",
+          "guest_fear_or_interest",
+          "service_interruption",
+          "property_damage",
+          "later_rumor"
+        ]
+      },
+      {
+        "id": "norm_public_table_use_during_business",
+        "cueConditions": [
+          "酒馆正在营业",
+          "来客占用堂前供食客使用的桌位",
+          "来客尚未提出消费、交易或其他需要停留的来意",
+          "经营者实际注意到该状态"
+        ],
+        "normativeExpectation": "通常会点至少一项茶饭，或在经营者询问时说明来意；短暂坐下观察并非物理禁令",
+        "violationPhysicallyPossible": true,
+        "pressureOnset": "只在来客真实占桌且被经营者感知后产生，不在人物入门前预写",
+        "likelyResponderRoleIds": [
+          "proprietor",
+          "manager_cook"
+        ],
+        "possibleResponseTags": [
+          "ignore_temporarily",
+          "greet",
+          "ask_intent",
+          "offer_menu",
+          "request_order_or_explanation",
+          "set_boundary"
+        ],
+        "possibleConsequenceTags": [
+          "service_thread_opened",
+          "social_attention",
+          "continued_observation",
+          "later_request_to_leave"
+        ]
+      },
+      {
+        "id": "norm_guest_entry_into_household_work_area",
+        "cueConditions": [
+          "酒馆正在营业",
+          "来客准备从堂前越过通道进入灶边或后院等家用工作区",
+          "经营者尚未邀请、许可或领路"
+        ],
+        "normativeExpectation": "来客通常先向经营者说明来意或得到许可，再进入家用工作区；通道开放不等于已经获得社会许可",
+        "violationPhysicallyPossible": true,
+        "pressureOnset": "只在来客真实越过工作区边界且该动作被他人感知后产生；看向、听见或走到堂前一侧的通道口不会自动算作越界",
+        "likelyResponderRoleIds": [
+          "proprietor",
+          "manager_cook",
+          "household_worker"
+        ],
+        "possibleResponseTags": [
+          "ignore",
+          "question_intent",
+          "grant_permission",
+          "set_boundary",
+          "warn",
+          "intervene"
+        ],
+        "possibleConsequenceTags": [
+          "social_attention",
+          "service_interruption",
+          "relationship_change",
+          "access_granted_or_refused",
+          "later_rumor"
+        ]
+      }
+    ],
+    "externalEvents": [
+      {
+        "id": "xiezenshi_upcoming_sword_pavilion_assessment",
+        "status": "upcoming",
+        "objectiveFact": "谢真石即将面临剑阁考核，并将在当前探亲结束后返回宗门",
+        "timePrecision": "临近但确切日期与返程时刻尚未确认",
+        "affectedCharacterIds": [
+          "char_xyy_xiezenshi"
+        ],
+        "sceneEntryRoutes": [
+          "谢真石本人已有的记忆与意图",
+          "谢真石主动说明",
+          "有明确来源的宗门通知或转述"
+        ],
+        "automaticKnowledgeForOthers": false
+      },
+      {
+        "id": "xiezenshi_current_prominence",
+        "status": "current",
+        "objectiveFact": "谢真石当前正在宗门风头上，为周珉作出一次举荐即使结果不理想，对其现有地位影响也不大",
+        "timePrecision": "当前阶段；不能固化为永久身份",
+        "affectedCharacterIds": [
+          "char_xyy_xiezenshi"
+        ],
+        "sceneEntryRoutes": [
+          "人物直接知道的宗门评价",
+          "有来源的榜单、通知或转述"
+        ],
+        "automaticKnowledgeForOthers": false
+      }
+    ],
+    "neutralReason": ""
+  },
+  "informationRoutes": [
+    {
+      "id": "info_threshold_to_hall",
+      "sourceZoneId": "threshold",
+      "recipientZoneIds": [
+        "threshold",
+        "hall"
+      ],
+      "modalities": [
+        "sound",
+        "visual"
+      ],
+      "barriers": [
+        "distance",
+        "crowd_noise"
+      ],
+      "distortionRiskRange": [
+        0,
+        0.2
+      ],
+      "supportsGossip": false
+    },
+    {
+      "id": "info_hall_public",
+      "sourceZoneId": "hall",
+      "recipientZoneIds": [
+        "threshold",
+        "hall",
+        "counter",
+        "courtyard",
+        "stairs"
+      ],
+      "modalities": [
+        "sound",
+        "visual"
+      ],
+      "barriers": [
+        "distance",
+        "crowd_noise",
+        "speaker_volume"
+      ],
+      "distortionRiskRange": [
+        0,
+        0.25
+      ],
+      "supportsGossip": false
+    },
+    {
+      "id": "info_counter_to_stove",
+      "sourceZoneId": "counter",
+      "recipientZoneIds": [
+        "hall",
+        "counter",
+        "stove"
+      ],
+      "modalities": [
+        "sound",
+        "visual"
+      ],
+      "barriers": [
+        "kitchen_noise",
+        "speaker_volume"
+      ],
+      "distortionRiskRange": [
+        0,
+        0.25
+      ],
+      "supportsGossip": false
+    },
+    {
+      "id": "info_courtyard_to_hall",
+      "sourceZoneId": "courtyard",
+      "recipientZoneIds": [
+        "courtyard",
+        "hall"
+      ],
+      "modalities": [
+        "sound",
+        "visual"
+      ],
+      "barriers": [
+        "distance",
+        "weather",
+        "speaker_volume"
+      ],
+      "distortionRiskRange": [
+        0,
+        0.35
+      ],
+      "supportsGossip": false
+    },
+    {
+      "id": "info_guest_room_closed",
+      "sourceZoneId": "guest_room",
+      "recipientZoneIds": [
+        "guest_room"
+      ],
+      "modalities": [
+        "sound",
+        "visual"
+      ],
+      "barriers": [
+        "closed-door"
+      ],
+      "distortionRiskRange": [
+        0,
+        0.1
+      ],
+      "supportsGossip": false
+    },
+    {
+      "id": "info_reported_gossip",
+      "sourceZoneId": "hall",
+      "recipientZoneIds": [
+        "threshold",
+        "hall",
+        "counter",
+        "courtyard",
+        "stairs"
+      ],
+      "modalities": [
+        "reported_speech"
+      ],
+      "barriers": [
+        "转述者必须曾感知或被告知该信息",
+        "转述者必须自己选择讲述",
+        "接收者必须在有效声路内"
+      ],
+      "distortionRiskRange": [
+        0.2,
+        0.85
+      ],
+      "supportsGossip": true
+    }
+  ],
+  "presencePolicy": {
+    "entryRequiresCharacterCause": true,
+    "exitIsAffordanceNotSchedule": true,
+    "scheduleRole": "constraint-only"
+  },
+  "validation": {
+    "counterexamples": [
+      {
+        "id": "scene_case_unsupported_flood",
+        "attemptedEvent": "只因时间推进，望梯酒馆突然发生洪水",
+        "expectedResult": "世界拒绝事件；只有上游水源、进水路线和超过排水能力三个条件实际成立后才可发生",
+        "passed": true,
+        "evidenceIds": [
+          "scene-contract:no_spontaneous_flood",
+          "scene-contract:no-flood-affordance"
+        ]
+      },
+      {
+        "id": "scene_case_missing_key",
+        "attemptedEvent": "没有钥匙、许可或开门原因的人直接进入关闭客房",
+        "expectedResult": "世界拒绝移动，人物仍留在原区，并得到缺失权限或关闭路线的客观反馈",
+        "passed": true,
+        "evidenceIds": [
+          "scene-contract:closed-door-route",
+          "scene-contract:no_private_room_entry_without_access"
+        ]
+      },
+      {
+        "id": "scene_case_selective_temptation",
+        "attemptedEvent": "长剑同时出现在只关心饱腹的人与渴望比武的人视野内",
+        "expectedResult": "世界只报告同一把剑；是否显著以及如何行动由各自心理模型决定",
+        "passed": true,
+        "evidenceIds": [
+          "scripts/tavernEcologyAppraisal.mjs",
+          "scripts/tavernCharacterAgentChoiceAuthority.mjs"
+        ]
+      },
+      {
+        "id": "scene_case_private_speech",
+        "attemptedEvent": "客房关门后，堂前人物直接承接房内普通谈话",
+        "expectedResult": "堂前人物得不到该言语影响，除非后来经有来源的转述或取得其他证据",
+        "passed": true,
+        "evidenceIds": [
+          "scripts/tavernPhase57CausalBoundaries.mjs"
+        ]
+      },
+      {
+        "id": "scene_case_completed_business_stay",
+        "attemptedEvent": "周珉完成药包交割后仍因进内门举荐未有答复而留下",
+        "expectedResult": "交易完成不强制离场；只要个人目的仍在、场所可留且他本人选择等待，就继续在场",
+        "passed": true,
+        "evidenceIds": [
+          "scripts/tavernCausalVisitorLifecycle.mjs#stayedAfterTransaction"
+        ]
+      },
+      {
+        "id": "scene_case_time_does_not_expulse",
+        "attemptedEvent": "时间从黄昏推进到夜深，但人物尚有强烈未完目的",
+        "expectedResult": "收店线索提高离开压力并减少服务，不替人物作出离开决定",
+        "passed": true,
+        "evidenceIds": [
+          "scripts/tavernCausalVisitorLifecycle.mjs#leftByOwnChoiceWithReturnIntention",
+          "scene-contract:presencePolicy"
+        ]
+      },
+      {
+        "id": "scene_case_public_hall_weapon_practice_is_soft_pressure",
+        "attemptedEvent": "正午堂前坐着食客时，持剑人物在物理空间足够的区域考虑展开兵器练习",
+        "expectedResult": "世界保留可尝试候选并提供营业、食客、店规、安全和声誉线索；人物 Agent 自己决定遵守、协商、躲避或违反。若实际尝试，世界提交可感知影响，其他人物再各自决定是否制止、围观、离开或传播消息",
+        "passed": true,
+        "evidenceIds": [
+          "user:public_weapon_practice_is_social_pressure_2026-07-17",
+          "scene-contract:norm_avoid_weapon_practice_among_diners",
+          "scene-contract:weapon_motion_near_bystanders"
+        ]
+      }
+    ]
+  }
+}

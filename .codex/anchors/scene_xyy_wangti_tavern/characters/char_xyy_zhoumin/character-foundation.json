@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "runtimeSurface": "character-foundation",
+  "characterId": "char_xyy_zhoumin",
+  "status": "validated",
+  "numericCalibrationStatus": "unassigned",
+  "identityModel": {
+    "conflicts": [],
+    "openChoiceAxes": [
+      {
+        "id": "axis_zhoumin_pressure_and_moral_compromise",
+        "valuesInConflict": [
+          "进入内门并改善母亲与自己的处境",
+          "保持友情与不出卖朋友的个人边界"
+        ],
+        "contexts": [
+          "母亲期待、乡里目光与考核受阻同时升高",
+          "出现能通过欺瞒、利用友情或伤害他人换取优势的真实机会"
+        ],
+        "resolution": "story-open"
+      },
+      {
+        "id": "axis_zhoumin_friend_survival_vs_confidentiality",
+        "valuesInConflict": [
+          "保护谢真石的生命",
+          "守住朋友向自己开放的隐私并避免破坏信任"
+        ],
+        "contexts": [
+          "周珉通过直接观察或可靠来源确认谢真石面临生命危险",
+          "存在周珉有理由相信能够施救、但需要获知部分秘密的人",
+          "守密、有限披露、寻找其他救法的时间与后果不同"
+        ],
+        "resolution": "story-open"
+      }
+    ]
+  },
+  "stablePsychology": {
+    "corePursuits": [
+      {
+        "id": "pursuit_zhoumin_worldly_inner_court_success",
+        "desiredSelfState": "成为拥有内门身份、钱与地位、能改善自己母亲生活并获得筑基机会的人",
+        "weightRange": [
+          0.6,
+          0.95
+        ]
+      }
+    ],
+    "selfThreats": [
+      {
+        "id": "threat_zhoumin_be_proven_no_prospects",
+        "fearedSelfState": "被证明是一个没出息的人",
+        "activationRange": [
+          0.6,
+          0.95
+        ]
+      }
+    ],
+    "dispositions": {
+      "closeRelationshipThreatSensitivity": {
+        "range": [
+          0.55,
+          0.9
+        ],
+        "scope": "未经证实、涉及亲近关系恶意或轻视的消息；不外推到剑术标准和一般事务"
+      },
+      "faceExposureCostUnderUnverifiedIntimateThreat": {
+        "range": [
+          0.55,
+          0.9
+        ],
+        "scope": "低证据时直接暴露怀疑、被拒或被看出在意的关系场景"
+      },
+      "covertVerificationPreference": {
+        "range": [
+          0.5,
+          0.9
+        ],
+        "scope": "世界存在真实可用观察、旁证或迂回信息路线的亲近关系威胁场景"
+      }
+    }
+  },
+  "dynamicPsychology": {
+    "stateVariables": [
+      {
+        "id": "state_zhoumin_status_failure_pressure",
+        "baselineRange": [
+          0.2,
+          0.55
+        ],
+        "decayRange": [
+          0.05,
+          0.35
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_uncertainty_about_xiezenshi_willingness",
+        "baselineRange": [
+          0,
+          0.25
+        ],
+        "decayRange": [
+          0.05,
+          0.35
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_concealed_relationship_doubt",
+        "baselineRange": [
+          0,
+          0.2
+        ],
+        "decayRange": [
+          0.03,
+          0.3
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_progress_hope",
+        "baselineRange": [
+          0.1,
+          0.5
+        ],
+        "decayRange": [
+          0.05,
+          0.35
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_friend_survival_alarm",
+        "baselineRange": [
+          0,
+          0
+        ],
+        "decayRange": [
+          0,
+          0.25
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_post_disclosure_confidentiality_guilt",
+        "baselineRange": [
+          0,
+          0
+        ],
+        "decayRange": [
+          0.02,
+          0.25
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_post_disclosure_lifesaving_conviction",
+        "baselineRange": [
+          0,
+          0
+        ],
+        "decayRange": [
+          0.01,
+          0.2
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "state_zhoumin_verified_maternal_mortality_crisis",
+        "baselineRange": [
+          0,
+          0
+        ],
+        "decayRange": [
+          0,
+          0.2
+        ],
+        "bounds": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "epistemics": {
+    "sourceReliability": {
+      "unattributedHearsay": {
+        "range": [
+          0.05,
+          0.35
+        ]
+      }
+    },
+    "knownEntities": [],
+    "beliefUpdatePolicy": {
+      "unverifiedCloseRelationshipMaliceClaim": {
+        "storeAs": "sourced_report_not_objective_fact",
+        "lowEvidenceEffect": "raise_concealed_doubt_and_private_verification_priority",
+        "relationshipDeltaRequires": "direct_or_strongly_corroborated_evidence",
+        "cannotChooseAction": true,
+        "cannotCreateMissingEvidence": true
+      }
+    }
+  },
+  "sceneBindings": [
+    {
+      "sceneId": "scene_xyy_wangti_tavern",
+      "reasonForPresence": "给谢母送药，并找谢真石求剑术指点、推进进入内门的举荐路径",
+      "entryCause": "周珉本人形成来访意图，携带药包和清单，从梯云宗外门完成到酒馆的路程",
+      "currentPurpose": "分别完成药包交割、求得具体剑术指导、推进由谢真石举荐自己参加内门考核",
+      "responsibilityRoleIds": [
+        "delivery_guest"
+      ],
+      "knownAffordanceIds": [
+        "move_between_connected_zones",
+        "leave_tavern"
+      ],
+      "prohibitedKnowledge": [
+        "谢真石从未向他透露的无名湖沉水习惯",
+        "谢母肺部旧疾的精确病名、药方、剂量与来源",
+        "门内长老尚未作出的考核决定"
+      ],
+      "exitConditions": [
+        "由周珉本人选择离开",
+        "没有必须归还的酒馆物品且存在通向门槛的可走路线",
+        "未完成的求教或举荐目的可保留为返回意图，不能被离场视为满足"
+      ]
+    }
+  ],
+  "desires": [
+    {
+      "id": "desire_zhoumin_become_inner_court_disciple",
+      "ownerCharacterId": "char_xyy_zhoumin",
+      "desiredState": {
+        "subjectCharacterId": "char_xyy_zhoumin",
+        "verb": "成为",
+        "object": "梯云宗内门弟子",
+        "observableOutcome": "梯云宗有权机构正式确认周珉的内门弟子身份"
+      },
+      "target": {
+        "type": "institutional_status",
+        "id": "status_xyy_tiyunzong_inner_court",
+        "label": "梯云宗内门弟子"
+      },
+      "baselineRange": [
+        0.6,
+        0.95
+      ],
+      "activationCues": [
+        "回想或听见母亲要求他进入内门",
+        "看见内门弟子的地位、钱、资源与筑基机会",
+        "乡里评价或内外门身份差距变得显著",
+        "出现可验证的举荐、指导或考核机会"
+      ],
+      "progressEvidence": [
+        "谢真石给出针对周珉剑法的具体指导",
+        "谢真石明确答应并实际完成有效举荐",
+        "宗门确认周珉取得参加内门考核的资格",
+        "周珉在考核路径上留下可验证的能力进展"
+      ],
+      "satisfactionCondition": {
+        "type": "institutional_status_confirmed",
+        "criteria": {
+          "subjectCharacterId": "char_xyy_zhoumin",
+          "institutionId": "institution_xyy_tiyunzong",
+          "statusId": "status_xyy_tiyunzong_inner_court",
+          "confirmed": true
+        }
+      },
+      "unresolvedDynamics": {
+        "retentionRange": [
+          0.6,
+          1
+        ],
+        "frustrationGainRange": [
+          0.2,
+          0.7
+        ],
+        "cueGainRange": [
+          0.2,
+          1
+        ],
+        "resolutionGainRange": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "inhibitors": [
+    {
+      "id": "inhibitor_zhoumin_do_not_betray_friend",
+      "conditionPattern": "候选行动要求周珉以出卖朋友换取自己的内门、钱、地位、物质或筑基机会",
+      "costChannel": "norm_or_identity_cost+relationship_harm",
+      "weightRange": [
+        0.75,
+        1
+      ],
+      "meaning": "出卖朋友会同时威胁周珉对自己做人方式的判断和现有友情。",
+      "doesNotMean": "不是物理不可行，不等于永远不会与朋友冲突、拒绝朋友、向朋友施压或在重大选择中越界；经确认的朋友生命危险可能让救命价值压过保密成本，但不会删除该成本。"
+    }
+  ],
+  "speechPolicy": {
+    "silenceDefault": "亲近对象明确关闭当前身体话题且没有新的可靠危险证据时，停止追问，不用占位回应填充；保留以后因新证据重新行动的可能。",
+    "explanationCostRange": [
+      0,
+      1
+    ],
+    "socialMaintenanceRange": [
+      0,
+      1
+    ],
+    "pragmaticForms": [
+      "接受亲近对象提供的真实进展路径时，可以用单词级直接答复",
+      "证据与长期结果矛盾时，直接向关系当事人追问可执行标准",
+      "重大关系冲突中先承认自己的行为，再接受责怪并说明不能退让的理由",
+      "真实评价优先说明身体动作是否产生可验证变化，而不是抽象奉承",
+      "亲近关系恶意消息证据不足时，隐藏怀疑并优先私下核实，不用直接对质暴露在意"
+    ],
+    "praiseConditions": [
+      "必须由周珉亲身验证谢真石的具体指导确实令动作变顺，才可使用效果型肯定"
+    ],
+    "pressureMutation": [
+      "第一次受阻且仍有真实指导时接受进展；已有可验证进步却反复受阻且解释不足时，转为直接索取具体标准"
+    ],
+    "relationshipRegisters": {
+      "char_xyy_xiezenshi": [
+        "童年好友之间可直呼其事，不使用官样转述",
+        "发生自己造成的关系伤害时承认行为归属，不把责任推给旁人",
+        "可以直接询问能力标准；在未经证实的背叛怀疑上先维护表面关系并私下核实"
+      ]
+    },
+    "forbiddenRegisters": [
+      "把具体追问改写成无功能的回应标签或纯确认声",
+      "为追问标准凭空添加明早、宗门催信或其他未确认期限",
+      "把救命辩护扩写成长篇自我洗白",
+      "低证据友情恶意消息出现时自动生成当面对质或固定掩饰台词"
+    ]
+  },
+  "relationshipModel": {
+    "dimensions": [
+      "care",
+      "obligation"
+    ],
+    "updateRules": [
+      {
+        "observedPattern": "谢真石实际提供对周珉有价值的指导，且周珉感知并接受这项帮助",
+        "appraisal": "朋友认真帮助自己取得内门路径上的真实进展，增加关照与回报小帮助的意愿",
+        "deltas": {
+          "care": [
+            0.05,
+            0.25
+          ],
+          "obligation": [
+            0.05,
+            0.35
+          ]
+        }
+      },
+      {
+        "observedPattern": "谢真石停止继续指导，但周珉没有感知到欺骗、伤害或故意吊着自己的可靠证据",
+        "appraisal": "受教形成的即时回报义务可以自然衰减，童年友情带来的关照仍保留",
+        "deltas": {
+          "care": [
+            0,
+            0
+          ],
+          "obligation": [
+            -0.15,
+            0
+          ]
+        }
+      },
+      {
+        "observedPattern": "周珉通过直接或强佐证证据确认谢真石故意让自己持续等待，却不给真实推进或坦白理由",
+        "appraisal": "受教回报不再足以维持原有日常帮助强度，但朋友生命安全仍由独立 care/价值轴保护",
+        "deltas": {
+          "care": [
+            0,
+            0
+          ],
+          "obligation": [
+            -0.45,
+            -0.15
+          ]
+        }
+      }
+    ],
+    "forbiddenCollapses": [
+      "把得到指导后‘对谢真石更好’压缩成没有原因的单一好感值",
+      "把已确认的小帮助外推成信任、依赖、服从、牺牲、永久照护或亲密的全面上升",
+      "把感谢指导解释成进入内门欲望已经满足",
+      "把正常停止指导误判为故意吊着，或让 obligation 下降自动清零 care 与生命危险救助"
+    ]
+  },
+  "memoryPolicy": {
+    "seedRef": "memory-seed.json",
+    "encodingBiases": {},
+    "retrievalBiases": {}
+  }
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>望梯客栈 · 人物现场</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/v27-test.css" />
+  </head>
+  <body class="v27-body">
+    <header class="v27-chrome">
+      <a class="v27-back" href="/" aria-label="返回人物小镇">
+        <span aria-hidden="true">←</span>
+        <span class="v27-back-label">人物小镇</span>
+      </a>
+      <div class="v27-brand">
+        <span>人物现场</span>
+        <h1 id="v27-title">望梯客栈</h1>
+      </div>
+      <div class="v27-chrome-actions">
+        <div class="v27-runtime-state" id="runtime-status" aria-live="polite">正在确认运行时…</div>
+        <button
+          class="v27-icon-button"
+          id="open-inspector"
+          type="button"
+          aria-controls="v27-inspector"
+          aria-expanded="false"
+        >检查</button>
+      </div>
+    </header>
+
+    <main class="v27-workspace" id="v27-workspace">
+      <section class="v27-stage-workspace" aria-labelledby="stage-workspace-title">
+        <h2 class="v27-visually-hidden" id="stage-workspace-title">酒馆人物活动现场</h2>
+        <section
+          id="ink-tavern-stage"
+          class="ink-tavern-stage"
+          data-stage-state="idle"
+          data-ink-tavern-game-stage="true"
+          aria-labelledby="ink-tavern-stage-title"
+          aria-describedby="ink-tavern-stage-boundary"
+        >
+          <p id="ink-tavern-stage-boundary" class="ink-tavern-stage-fallback">
+            正在展开客栈。人物位置与对白只来自世界公开结算。
+          </p>
+        </section>
+        <div class="v27-inline-alert" id="run-alert" role="alert" hidden></div>
+      </section>
+
+      <section class="v27-runbar" aria-label="人物运行控制">
+        <label class="v27-consent">
+          <input id="model-consent" type="checkbox" disabled />
+          <span id="model-consent-copy">授权本次选择：单回合最多 3 次模型调用；连续运行固定 5 回合、总计最多 15 次。</span>
+        </label>
+        <div class="v27-generation-controls">
+          <button class="v27-primary" id="run-model" type="button" disabled>推进一回合</button>
+          <button class="v27-secondary" id="run-auto" type="button" disabled>连续运行 5 回合</button>
+          <button class="v27-stop" id="stop-auto" type="button" hidden>本轮完成后停止</button>
+        </div>
+        <div class="v27-run-state">
+          <strong id="run-meta" aria-live="polite">世界尚未起时</strong>
+          <span id="run-explanation">人物会从当前世界继续行动，不会复读验收样本。</span>
+        </div>
+      </section>
+
+      <nav class="v27-turnrail" aria-label="回合时间线">
+        <div class="v27-playback-controls" aria-label="历史回放控制">
+          <button id="history-prev" type="button" aria-label="上一回合" disabled>‹</button>
+          <button id="history-play" type="button" aria-label="播放历史" aria-pressed="false" disabled>播放</button>
+          <button id="history-next" type="button" aria-label="下一回合" disabled>›</button>
+          <button id="history-latest" type="button" disabled>回到现场</button>
+          <output id="history-position" for="turn-scrubber">初始状态</output>
+        </div>
+        <label class="v27-scrubber-label" for="turn-scrubber">
+          <span class="v27-visually-hidden">选择历史回合</span>
+          <input id="turn-scrubber" type="range" min="0" max="0" value="0" step="1" disabled />
+        </label>
+        <ol class="v27-turn-timeline" id="turn-timeline" data-v27-action-ledger="true">
+          <li class="v27-turn-empty">运行一个回合后，因果节拍会出现在这里。</li>
+        </ol>
+      </nav>
+    </main>
+
+    <dialog class="v27-inspector" id="v27-inspector" aria-labelledby="v27-inspector-title">
+      <header class="v27-inspector-head">
+        <div>
+          <span>观察者视角</span>
+          <h2 id="v27-inspector-title" tabindex="-1">当前世界</h2>
+        </div>
+        <button
+          class="v27-icon-button"
+          type="button"
+          data-action="close-v27-inspector"
+          aria-label="关闭检查器"
+        >关闭</button>
+      </header>
+
+      <div class="v27-inspector-tabs" role="tablist" aria-label="检查内容">
+        <button id="inspector-tab-cause" type="button" role="tab" aria-controls="inspector-cause" aria-selected="true" data-inspector-tab="cause">因果</button>
+        <button id="inspector-tab-actor" type="button" role="tab" aria-controls="inspector-actor" aria-selected="false" data-inspector-tab="actor">人物</button>
+        <button id="inspector-tab-run" type="button" role="tab" aria-controls="inspector-run" aria-selected="false" data-inspector-tab="run">运行</button>
+      </div>
+
+      <div class="v27-inspector-scroll">
+        <section id="inspector-cause" role="tabpanel" aria-labelledby="inspector-tab-cause">
+          <div id="run-output" class="v27-empty">
+            <p>选择一个回合，就能看到人物行动、世界结算与下一步影响。</p>
+          </div>
+        </section>
+
+        <section id="inspector-actor" role="tabpanel" aria-labelledby="inspector-tab-actor" hidden>
+          <div id="actor-output" class="v27-empty">
+            <p>点击舞台里的人物，查看他此刻公开的位置与行动内因。</p>
+          </div>
+        </section>
+
+        <section id="inspector-run" role="tabpanel" aria-labelledby="inspector-tab-run" hidden>
+          <div class="v27-run-details">
+            <p class="v27-model-session-status" id="model-session-status">尚未建立真实双人物持久会话。</p>
+            <p id="model-consent-details">
+              公开行动回合默认合并为 2 次基础调用：第一次完成人物评估与候选生成，本地数学公式评价候选；第二次由人物读取数学反馈后自主选择、调节并提交。每回合最多 1 次协议修正，合计上限 3 次。日计划或反思回合只调用 1 次。
+            </p>
+            <p id="model-batch-details">
+              连续运行固定为 5 个真实人物回合，严格串行，最多 15 次调用；停止、错误、完成或刷新都会让本次授权失效。只发送隔离的人物底座、私人记忆、关系、心理参数与当前酒馆投影；不发送仓库、密钥、本地路径或配置。当前内核为 Phase 92 原子四阶段链。
+            </p>
+            <div class="v27-diagnostic-actions">
+              <button class="v27-secondary" id="run-local" type="button">运行本地结构自检</button>
+              <button class="v27-danger-button" id="reset-model-session" type="button" disabled>重置人物会话</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </dialog>
+
+    <div class="v27-live-region v27-visually-hidden" id="v27-live-region" aria-live="polite"></div>
+    <script type="module" src="/src/v27-test.js"></script>
+  </body>
+</html>

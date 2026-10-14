@@ -1,0 +1,2546 @@
+{
+  "status": "complete",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "medium",
+  "requestedActorTurns": 10,
+  "completedActorTurns": 10,
+  "activeExecutionElapsedMs": 2777736,
+  "wallClockElapsedMs": 3046453,
+  "transport": "codex-cli",
+  "characterAgentCallMode": "two-call",
+  "enableDayPlanning": true,
+  "allRunsProviderRequests": 35,
+  "completedRunProviderRequests": 31,
+  "runs": [
+    {
+      "status": "failed",
+      "startedAt": "2026-09-07T03:52:01.811Z",
+      "finishedAt": "2026-09-07T03:52:08.601Z",
+      "elapsedMs": 6790,
+      "completedActorTurns": 0,
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "calls": [
+        {
+          "index": 1,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "start",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 6654,
+          "promptBytes": 130016,
+          "accepted": null,
+          "error": {
+            "code": "CODEX_TRUSTED_CHANNEL_FAILED",
+            "message": "受信任 Codex 通道退出（code=1, signal=none）",
+            "exitCode": 1
+          },
+          "providerErrors": [],
+          "outputPath": null,
+          "outputSha256": null
+        }
+      ],
+      "rejections": [],
+      "error": {
+        "message": "Turn 1 failed: CODEX_TRUSTED_CHANNEL_FAILED: Persistent tavern session command failed."
+      },
+      "failedCommands": [
+        {
+          "actorTurn": 1,
+          "status": 500,
+          "code": "CODEX_TRUSTED_CHANNEL_FAILED",
+          "worldVersion": 0,
+          "sessionRevision": 2
+        }
+      ],
+      "resumptions": [],
+      "controlledInterruption": null
+    },
+    {
+      "status": "failed",
+      "startedAt": "2026-09-07T03:53:28.713Z",
+      "finishedAt": "2026-09-07T03:53:33.941Z",
+      "elapsedMs": 5227,
+      "completedActorTurns": 0,
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "calls": [
+        {
+          "index": 1,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "start",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 5091,
+          "promptBytes": 130016,
+          "accepted": null,
+          "error": {
+            "code": "CODEX_TRUSTED_CHANNEL_FAILED",
+            "message": "受信任 Codex 通道退出（code=1, signal=none）",
+            "exitCode": 1
+          },
+          "providerErrors": [
+            {
+              "type": "error",
+              "message": "{\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=('properties', 'appraisal', 'properties', 'epistemicPositions', 'items'), 'required' is required to be supplied and to be an array including every key in properties. Missing 'carriedUnchanged'.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}"
+            },
+            {
+              "type": "turn.failed",
+              "error": {
+                "message": "{\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=('properties', 'appraisal', 'properties', 'epistemicPositions', 'items'), 'required' is required to be supplied and to be an array including every key in properties. Missing 'carriedUnchanged'.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}"
+              }
+            }
+          ],
+          "outputPath": null,
+          "outputSha256": null
+        }
+      ],
+      "rejections": [],
+      "error": {
+        "message": "Turn 1 failed: CODEX_TRUSTED_CHANNEL_FAILED: Persistent tavern session command failed."
+      },
+      "failedCommands": [
+        {
+          "actorTurn": 1,
+          "status": 500,
+          "code": "CODEX_TRUSTED_CHANNEL_FAILED",
+          "worldVersion": 0,
+          "sessionRevision": 2
+        }
+      ],
+      "resumptions": [],
+      "controlledInterruption": null
+    },
+    {
+      "status": "failed",
+      "startedAt": "2026-09-07T03:57:27.849Z",
+      "finishedAt": "2026-09-07T04:01:48.698Z",
+      "elapsedMs": 260848,
+      "completedActorTurns": 0,
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "calls": [
+        {
+          "index": 1,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "start",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 184642,
+          "promptBytes": 130016,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-QodATC/model-outputs/001.json",
+          "outputSha256": "270218e8e7c8131cf826027234e1d3b267b5bdf28669f7887780f268034115c0",
+          "usageReportedByCli": {
+            "input_tokens": 61017,
+            "cached_input_tokens": 0,
+            "output_tokens": 5445,
+            "reasoning_output_tokens": 1787
+          }
+        },
+        {
+          "index": 2,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 76049,
+          "promptBytes": 130999,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-QodATC/model-outputs/002.json",
+          "outputSha256": "ce7a5e076e8c31b060e241b9bd54b0ab2cd4c144eff9466e5ccf6be4d5a9933f",
+          "usageReportedByCli": {
+            "input_tokens": 159352,
+            "cached_input_tokens": 0,
+            "output_tokens": 9325,
+            "reasoning_output_tokens": 2010
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "turn": 1,
+          "stage": "subjective_appraisal_and_candidates",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+          "characterId": "char_xyy_luozhao",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "DESIRE_GROUNDING_PERSISTENT_MARKED_LATENT",
+              "path": "desireGroundings[0].activationState",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 1,
+          "stage": "subjective_appraisal_and_candidates",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+          "characterId": "char_xyy_luozhao",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "AGENT_CANDIDATE_PREREQUISITE_STEP_MISMATCH",
+              "path": "generatedCandidates[3].feasibilityHandling",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        }
+      ],
+      "error": {
+        "message": "Turn 1 failed: CHARACTER_AGENT_CANDIDATES_REJECTED: Persistent tavern session command failed."
+      },
+      "failedCommands": [
+        {
+          "actorTurn": 1,
+          "status": 500,
+          "code": "CHARACTER_AGENT_CANDIDATES_REJECTED",
+          "worldVersion": 0,
+          "sessionRevision": 2
+        }
+      ],
+      "resumptions": [],
+      "controlledInterruption": null
+    },
+    {
+      "status": "complete",
+      "startedAt": "2026-09-07T04:10:08.589Z",
+      "finishedAt": "2026-09-07T05:00:55.042Z",
+      "elapsedMs": 2777736,
+      "completedActorTurns": 10,
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "calls": [
+        {
+          "index": 1,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "start",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 89402,
+          "promptBytes": 130016,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/001.json",
+          "outputSha256": "99360c0257e93fb5d345c2f26ff1c10183cc6760a495ffe2422475235d6cce2f",
+          "usageReportedByCli": {
+            "input_tokens": 62051,
+            "cached_input_tokens": 0,
+            "output_tokens": 4531,
+            "reasoning_output_tokens": 1077
+          }
+        },
+        {
+          "index": 2,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 41542,
+          "promptBytes": 294978,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/002.json",
+          "outputSha256": "6a469f64c60f1b77f9cf5488e68ef942a3ba35a668f3d30e5da3a5b0e7855fe8",
+          "usageReportedByCli": {
+            "input_tokens": 186406,
+            "cached_input_tokens": 0,
+            "output_tokens": 6308,
+            "reasoning_output_tokens": 1943
+          }
+        },
+        {
+          "index": 3,
+          "actorTurn": 1,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 14805,
+          "promptBytes": 26854,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/003.json",
+          "outputSha256": "19fddd98fce83923d6296a75e23c008d2a21a337dbf3b3dfdfa95a145cbda9b8",
+          "usageReportedByCli": {
+            "input_tokens": 317581,
+            "cached_input_tokens": 0,
+            "output_tokens": 6634,
+            "reasoning_output_tokens": 2034
+          }
+        },
+        {
+          "index": 4,
+          "actorTurn": 2,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "start",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 110056,
+          "promptBytes": 155860,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/004.json",
+          "outputSha256": "38fd70ab38d9973c16a022311ef08aa22e495c3c1cfc4792a88c68b7702ffe14",
+          "usageReportedByCli": {
+            "input_tokens": 68233,
+            "cached_input_tokens": 0,
+            "output_tokens": 5810,
+            "reasoning_output_tokens": 993
+          }
+        },
+        {
+          "index": 5,
+          "actorTurn": 2,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 42374,
+          "promptBytes": 366031,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/005.json",
+          "outputSha256": "72ab9ad0d3ba2d2bf9601816b7b3e7808e94677d42565de6e03355f76c20246d",
+          "usageReportedByCli": {
+            "input_tokens": 217347,
+            "cached_input_tokens": 0,
+            "output_tokens": 7545,
+            "reasoning_output_tokens": 1760
+          }
+        },
+        {
+          "index": 6,
+          "actorTurn": 2,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 15976,
+          "promptBytes": 31735,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/006.json",
+          "outputSha256": "5381032c70eb95ebcaaadc8af496b5b138054da1bf04ae434249859337452971",
+          "usageReportedByCli": {
+            "input_tokens": 373853,
+            "cached_input_tokens": 0,
+            "output_tokens": 7976,
+            "reasoning_output_tokens": 1928
+          }
+        },
+        {
+          "index": 7,
+          "actorTurn": 3,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 133224,
+          "promptBytes": 157628,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/007.json",
+          "outputSha256": "3f08a9a5b7c938aeb94e28cba2dbb25a5c8a311628cc36d307f2879da9313444",
+          "usageReportedByCli": {
+            "input_tokens": 504219,
+            "cached_input_tokens": 0,
+            "output_tokens": 13659,
+            "reasoning_output_tokens": 3382
+          }
+        },
+        {
+          "index": 8,
+          "actorTurn": 3,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 42198,
+          "promptBytes": 364474,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/008.json",
+          "outputSha256": "58daf18bca098eb010ad8305ed3de6f33f8335385863aa391a1affa8a19626a6",
+          "usageReportedByCli": {
+            "input_tokens": 772124,
+            "cached_input_tokens": 0,
+            "output_tokens": 15419,
+            "reasoning_output_tokens": 4027
+          }
+        },
+        {
+          "index": 9,
+          "actorTurn": 4,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 168032,
+          "promptBytes": 189764,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/009.json",
+          "outputSha256": "ef352e37e7a07c25b7cfbd7c5cefc2bbdf65211c8c56d4f01b9d68dc3cce94f5",
+          "usageReportedByCli": {
+            "input_tokens": 594979,
+            "cached_input_tokens": 0,
+            "output_tokens": 16851,
+            "reasoning_output_tokens": 4408
+          }
+        },
+        {
+          "index": 10,
+          "actorTurn": 4,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 137390,
+          "promptBytes": 191293,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/010.json",
+          "outputSha256": "44eec93c7dd6fc19c4ba984e410d3af15eebb399a79cac7961310e8316e01b57",
+          "usageReportedByCli": {
+            "input_tokens": 873092,
+            "cached_input_tokens": 18944,
+            "output_tokens": 23667,
+            "reasoning_output_tokens": 4768
+          }
+        },
+        {
+          "index": 11,
+          "actorTurn": 4,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 75452,
+          "promptBytes": 434023,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/011.json",
+          "outputSha256": "a156ce860a8e4ad9541b6e50dc315cf35af069cba3b29b93768b383c27364bb2",
+          "usageReportedByCli": {
+            "input_tokens": 1061444,
+            "cached_input_tokens": 18944,
+            "output_tokens": 25390,
+            "reasoning_output_tokens": 5427
+          }
+        },
+        {
+          "index": 12,
+          "actorTurn": 4,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 132903,
+          "promptBytes": 189764,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/012.json",
+          "outputSha256": "d7a6780904c1b77bc79bf38cf0c0c01e0873de35c935f20c74389c6525d15678",
+          "usageReportedByCli": {
+            "input_tokens": 1313388,
+            "cached_input_tokens": 44928,
+            "output_tokens": 32086,
+            "reasoning_output_tokens": 5782
+          }
+        },
+        {
+          "index": 13,
+          "actorTurn": 4,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 68180,
+          "promptBytes": 433978,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/013.json",
+          "outputSha256": "b1650aaf8d64ca0f6b4221985235fa7b0cdeebc47124eed845bf644a1bc4eed0",
+          "usageReportedByCli": {
+            "input_tokens": 1501820,
+            "cached_input_tokens": 44928,
+            "output_tokens": 33912,
+            "reasoning_output_tokens": 6493
+          }
+        },
+        {
+          "index": 14,
+          "actorTurn": 5,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 203886,
+          "promptBytes": 195308,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/014.json",
+          "outputSha256": "860af0795dbe6bcbf1d505256c4295d91a4a69244c5bc3e29cb1f91276050a1b",
+          "usageReportedByCli": {
+            "input_tokens": 916729,
+            "cached_input_tokens": 143232,
+            "output_tokens": 21662,
+            "reasoning_output_tokens": 4027
+          }
+        },
+        {
+          "index": 15,
+          "actorTurn": 5,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 44429,
+          "promptBytes": 417531,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/015.json",
+          "outputSha256": "c8d3c4a4359af18fe282c7f9bb37e188e6338033a07580a4eb28cede755b56a3",
+          "usageReportedByCli": {
+            "input_tokens": 1156430,
+            "cached_input_tokens": 143232,
+            "output_tokens": 23634,
+            "reasoning_output_tokens": 4901
+          }
+        },
+        {
+          "index": 16,
+          "actorTurn": 5,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 18682,
+          "promptBytes": 35443,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/016.json",
+          "outputSha256": "16035fcc91ee4a93be5e04a5356fa40dd87d016a91c42e9942a2582b5b786839",
+          "usageReportedByCli": {
+            "input_tokens": 1402511,
+            "cached_input_tokens": 143232,
+            "output_tokens": 24029,
+            "reasoning_output_tokens": 5040
+          }
+        },
+        {
+          "index": 17,
+          "actorTurn": 6,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 158530,
+          "promptBytes": 224695,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/017.json",
+          "outputSha256": "70711644cf5cdc246f070cdc4a8e782073199645e41caa9691156422f756ca45",
+          "usageReportedByCli": {
+            "input_tokens": 1761745,
+            "cached_input_tokens": 44928,
+            "output_tokens": 42253,
+            "reasoning_output_tokens": 8385
+          }
+        },
+        {
+          "index": 18,
+          "actorTurn": 6,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 181811,
+          "promptBytes": 228642,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/018.json",
+          "outputSha256": "a4409bc536be6660491ec14dc9085a8c413c69096836a6b468192000fa94eb5c",
+          "usageReportedByCli": {
+            "input_tokens": 1917352,
+            "cached_input_tokens": 44928,
+            "output_tokens": 50093,
+            "reasoning_output_tokens": 9401
+          }
+        },
+        {
+          "index": 19,
+          "actorTurn": 6,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 45646,
+          "promptBytes": 477184,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/019.json",
+          "outputSha256": "12968dfbf4b345016aedb94b6a21ee16e6c636323b982ca099acce330b1c9749",
+          "usageReportedByCli": {
+            "input_tokens": 2182951,
+            "cached_input_tokens": 44928,
+            "output_tokens": 51940,
+            "reasoning_output_tokens": 10180
+          }
+        },
+        {
+          "index": 20,
+          "actorTurn": 7,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 135488,
+          "promptBytes": 222023,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/020.json",
+          "outputSha256": "6913ae99a8ccc10341ce48b7a823e277b9612a9883ea8eba9657c65ae215b1dd",
+          "usageReportedByCli": {
+            "input_tokens": 1554037,
+            "cached_input_tokens": 143232,
+            "output_tokens": 29937,
+            "reasoning_output_tokens": 6014
+          }
+        },
+        {
+          "index": 21,
+          "actorTurn": 7,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 75148,
+          "promptBytes": 225970,
+          "accepted": null,
+          "error": {
+            "code": "ENOENT",
+            "message": "ENOENT: no such file or directory, open '/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/gtown-codex-character-model-iUJ6VP/0002-subjective_appraisal_and_candidates.output.json'"
+          },
+          "providerErrors": [],
+          "outputPath": null,
+          "outputSha256": null
+        },
+        {
+          "index": 22,
+          "actorTurn": 7,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 101664,
+          "promptBytes": 222023,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/022.json",
+          "outputSha256": "de4dc1d436edd36935c03dfae83a8953c209ed287af284ce0836e2d74f7228f0",
+          "usageReportedByCli": {
+            "input_tokens": 1825012,
+            "cached_input_tokens": 357632,
+            "output_tokens": 34884,
+            "reasoning_output_tokens": 6469
+          }
+        },
+        {
+          "index": 23,
+          "actorTurn": 7,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 63812,
+          "promptBytes": 377764,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/023.json",
+          "outputSha256": "b21402a715112000ada4c6dc5313e571c49a31c9c4a74cb72a500fa6e80ce3b5",
+          "usageReportedByCli": {
+            "input_tokens": 2004019,
+            "cached_input_tokens": 357632,
+            "output_tokens": 36802,
+            "reasoning_output_tokens": 7237
+          }
+        },
+        {
+          "index": 24,
+          "actorTurn": 8,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 163437,
+          "promptBytes": 251010,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/024.json",
+          "outputSha256": "403b1a6bb981b08ba7e81edd3f613f6af8ede80cbd02f40a57b4d4ae4f353b02",
+          "usageReportedByCli": {
+            "input_tokens": 2342015,
+            "cached_input_tokens": 44928,
+            "output_tokens": 59084,
+            "reasoning_output_tokens": 10901
+          }
+        },
+        {
+          "index": 25,
+          "actorTurn": 8,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 43328,
+          "promptBytes": 505633,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/025.json",
+          "outputSha256": "99dcf701f6546f27a942ca8e2892fba0a86ee0d322b968754b004bda82c6d84f",
+          "usageReportedByCli": {
+            "input_tokens": 2617296,
+            "cached_input_tokens": 44928,
+            "output_tokens": 60742,
+            "reasoning_output_tokens": 11406
+          }
+        },
+        {
+          "index": 26,
+          "actorTurn": 8,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 44177,
+          "promptBytes": 39693,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/026.json",
+          "outputSha256": "4d6eaaa2b770e068c1784ab6907a9f70b4cf6b559522770e01d1ef169ab48bf6",
+          "usageReportedByCli": {
+            "input_tokens": 2704199,
+            "cached_input_tokens": 44928,
+            "output_tokens": 61248,
+            "reasoning_output_tokens": 11615
+          }
+        },
+        {
+          "index": 27,
+          "actorTurn": 9,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 126269,
+          "promptBytes": 230213,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/027.json",
+          "outputSha256": "a71bd52eadecaadc8ae5107ae2d18ce273a442875423d8219b60fd9efc628bbf",
+          "usageReportedByCli": {
+            "input_tokens": 2256460,
+            "cached_input_tokens": 357632,
+            "output_tokens": 43350,
+            "reasoning_output_tokens": 8222
+          }
+        },
+        {
+          "index": 28,
+          "actorTurn": 9,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 77693,
+          "promptBytes": 411251,
+          "accepted": false,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/028.json",
+          "outputSha256": "62f9e21ec93aa62cce4828e1ade01577639327541fd52c285af3b09ade84ca90",
+          "usageReportedByCli": {
+            "input_tokens": 2444471,
+            "cached_input_tokens": 357632,
+            "output_tokens": 45180,
+            "reasoning_output_tokens": 8795
+          }
+        },
+        {
+          "index": 29,
+          "actorTurn": 9,
+          "characterId": "char_xyy_luozhao",
+          "phase": "awaiting_agent_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 15990,
+          "promptBytes": 37400,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/029.json",
+          "outputSha256": "6973b931825ec6f845dbfcd0dba7815d8ef9961c9aaf83c7e70c10bd4a5dc9fa",
+          "usageReportedByCli": {
+            "input_tokens": 2637602,
+            "cached_input_tokens": 357632,
+            "output_tokens": 45594,
+            "reasoning_output_tokens": 8913
+          }
+        },
+        {
+          "index": 30,
+          "actorTurn": 10,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 157918,
+          "promptBytes": 258524,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/030.json",
+          "outputSha256": "156151f49cc8599dbfd557c1c4b2b31b809e9c0eabe943c2bfc659ee3a1b4a75",
+          "usageReportedByCli": {
+            "input_tokens": 2875063,
+            "cached_input_tokens": 44928,
+            "output_tokens": 69619,
+            "reasoning_output_tokens": 12911
+          }
+        },
+        {
+          "index": 31,
+          "actorTurn": 10,
+          "characterId": "char_xyy_xiezenshi",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "sessionOperation": "resume",
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "medium",
+          "elapsedMs": 45760,
+          "promptBytes": 527936,
+          "accepted": true,
+          "providerErrors": [],
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/031.json",
+          "outputSha256": "76fd2d4970ee3b8bd92fbe4406ac89e226b1e4da05cc51d30df0d000675d5237",
+          "usageReportedByCli": {
+            "input_tokens": 3169883,
+            "cached_input_tokens": 44928,
+            "output_tokens": 71424,
+            "reasoning_output_tokens": 13690
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "turn": 1,
+          "stage": "agent_choice_and_turn_commit",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+          "characterId": "char_xyy_luozhao",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.sourceEmotionIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_CHANNEL_MISSING",
+              "path": "privateExpressionTrace.affectiveInfluence.primaryChannelId",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "stage": "agent_choice_and_turn_commit",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:1",
+          "characterId": "char_xyy_xiezenshi",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.sourceEmotionIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_CHANNEL_MISSING",
+              "path": "privateExpressionTrace.affectiveInfluence.primaryChannelId",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "stage": "subjective_appraisal_and_candidates",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "characterId": "char_xyy_xiezenshi",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 4,
+          "stage": "agent_choice_and_turn_commit",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "characterId": "char_xyy_xiezenshi",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_CHANNEL_MISSING",
+              "path": "privateExpressionTrace.affectiveInfluence.primaryChannelId",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 5,
+          "stage": "agent_choice_and_turn_commit",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "characterId": "char_xyy_luozhao",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_CHANNEL_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.primaryChannelId",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 6,
+          "stage": "subjective_appraisal_and_candidates",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "characterId": "char_xyy_xiezenshi",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[1].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[1].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[2].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[2].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[4].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[4].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[1].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[2].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[4].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 7,
+          "stage": "subjective_appraisal_and_candidates",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "characterId": "char_xyy_luozhao",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[1].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[1].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[2].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[2].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+              "path": "epistemicPositions[3].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+              "path": "epistemicPositions[3].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[0].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[1].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[2].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN",
+              "path": "subjectiveAppraisal.epistemicPositions[3].basisEvidenceIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 8,
+          "stage": "agent_choice_and_turn_commit",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "characterId": "char_xyy_xiezenshi",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.sourceEmotionIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.sourceEmotionIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        },
+        {
+          "turn": 9,
+          "stage": "agent_choice_and_turn_commit",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "characterId": "char_xyy_luozhao",
+          "repairAttempt": 1,
+          "issues": [
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.sourceEmotionIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            },
+            {
+              "code": "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+              "path": "privateExpressionTrace.affectiveInfluence.sourceEmotionIds",
+              "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+            }
+          ]
+        }
+      ],
+      "failedCommands": [
+        {
+          "actorTurn": 4,
+          "status": 500,
+          "code": "CHARACTER_AGENT_TURN_COMMIT_REJECTED",
+          "worldVersion": 3,
+          "sessionRevision": 8
+        },
+        {
+          "actorTurn": 7,
+          "status": 500,
+          "code": "ENOENT",
+          "worldVersion": 6,
+          "sessionRevision": 16
+        }
+      ],
+      "resumptions": [
+        {
+          "resumedAt": "2026-09-07T04:27:32.130Z",
+          "completedActorTurns": 3,
+          "previousError": {
+            "message": "Turn 4 failed: CHARACTER_AGENT_TURN_COMMIT_REJECTED: Persistent tavern session command failed."
+          },
+          "providerRequestsAlreadyUsed": 11
+        },
+        {
+          "resumedAt": "2026-09-07T04:46:54.066Z",
+          "completedActorTurns": 6,
+          "previousError": {
+            "message": "Turn 7 failed: ENOENT: Persistent tavern session command failed."
+          },
+          "providerRequestsAlreadyUsed": 21
+        }
+      ],
+      "controlledInterruption": {
+        "reason": "Controlled interruption of uncommitted turn 7 to load retained-knowledge fix; six committed turns remain unchanged.",
+        "callIndex": 21,
+        "stoppedAt": "2026-09-07T04:45:17.644Z",
+        "completedActorTurns": 6
+      }
+    }
+  ],
+  "turns": [
+    {
+      "index": 1,
+      "elapsedMs": 145934,
+      "characterId": "char_xyy_luozhao",
+      "characterName": "洛照",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+      "turnKind": "action",
+      "wakeKind": "opportunity_window",
+      "publicRealization": {
+        "actionType": "speak",
+        "targetCharacterId": "char_xyy_xiezenshi",
+        "speech": "谢真石在这里吗？",
+        "visibleAction": "",
+        "observableAffectiveTexture": []
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:1",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_luozhao:1",
+        "actorId": "char_xyy_luozhao",
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 1,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_luozhao",
+            "utterance": "谢真石在这里吗？",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:1",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": ""
+            }
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "speech_emitted",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:1:speech",
+            "vocalMode": "conversational"
+          },
+          {
+            "kind": "speech_delivered",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:1:speech",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "directed": true,
+            "overheard": false,
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_luozhao",
+            "utterance": "谢真石在这里吗？",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:1",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": ""
+            }
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:1:speech:char_xyy_xiezenshi",
+            "eventKind": "speech",
+            "modality": "sound",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:1:speech",
+            "content": "谢真石在这里吗？",
+            "directed": true,
+            "overheard": false,
+            "speechAct": "ask",
+            "speechFunctions": [
+              "ask"
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:1",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": ""
+            },
+            "observableAffectiveTexture": [],
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:1:char_xyy_luozhao:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 1,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "speak",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "speech_emitted",
+                  "speech_delivered"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "utterance_emitted"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 1,
+      "worldVersion": 1,
+      "providerRequests": 3,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/001.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/002.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/003.json"
+      ]
+    },
+    {
+      "index": 2,
+      "elapsedMs": 168587,
+      "characterId": "char_xyy_xiezenshi",
+      "characterName": "谢真石",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:1",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "speak",
+        "targetCharacterId": "char_xyy_luozhao",
+        "speech": "我就是。你是谁，找我什么事？",
+        "visibleAction": "",
+        "observableAffectiveTexture": []
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:1",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_xiezenshi:1",
+        "actorId": "char_xyy_xiezenshi",
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 2,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_xiezenshi",
+            "utterance": "我就是。你是谁，找我什么事？",
+            "targetCharacterId": "char_xyy_luozhao",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:1",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:1"
+            }
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "speech_emitted",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:1:speech",
+            "vocalMode": "conversational"
+          },
+          {
+            "kind": "speech_delivered",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:1:speech",
+            "targetCharacterId": "char_xyy_luozhao",
+            "directed": true,
+            "overheard": false,
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_xiezenshi",
+            "utterance": "我就是。你是谁，找我什么事？",
+            "targetCharacterId": "char_xyy_luozhao",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:1",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:1"
+            }
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:1:speech:char_xyy_luozhao",
+            "eventKind": "speech",
+            "modality": "sound",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:1:speech",
+            "content": "我就是。你是谁，找我什么事？",
+            "directed": true,
+            "overheard": false,
+            "speechAct": "ask",
+            "speechFunctions": [
+              "ask"
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:1",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:1"
+            },
+            "observableAffectiveTexture": [],
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:1:char_xyy_xiezenshi:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 2,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "speak",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "speech_emitted",
+                  "speech_delivered"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "utterance_emitted"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 1,
+      "worldVersion": 2,
+      "providerRequests": 3,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/004.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/005.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/006.json"
+      ]
+    },
+    {
+      "index": 3,
+      "elapsedMs": 175605,
+      "characterId": "char_xyy_luozhao",
+      "characterName": "洛照",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "speak",
+        "targetCharacterId": "char_xyy_xiezenshi",
+        "speech": "洛照。我来找你试剑。这里不合适，换个地方。",
+        "visibleAction": "",
+        "observableAffectiveTexture": [
+          {
+            "channel": "attentionLock",
+            "modality": "visual",
+            "feature": "听见对方自报身份后，她的目光在对方身上骤然定住片刻。"
+          }
+        ]
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:2",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_luozhao:2",
+        "actorId": "char_xyy_luozhao",
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 3,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_luozhao",
+            "utterance": "洛照。我来找你试剑。这里不合适，换个地方。",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [
+              {
+                "channel": "attentionLock",
+                "modality": "visual",
+                "feature": "听见对方自报身份后，她的目光在对方身上骤然定住片刻。"
+              }
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:2",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:1"
+            }
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "speech_emitted",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:2:speech",
+            "vocalMode": "conversational"
+          },
+          {
+            "kind": "speech_delivered",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:2:speech",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "directed": true,
+            "overheard": false,
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_luozhao",
+            "utterance": "洛照。我来找你试剑。这里不合适，换个地方。",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [
+              {
+                "channel": "attentionLock",
+                "modality": "visual",
+                "feature": "听见对方自报身份后，她的目光在对方身上骤然定住片刻。"
+              }
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:2",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:1"
+            }
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:2:speech:char_xyy_xiezenshi",
+            "eventKind": "speech",
+            "modality": "sound",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:2:speech",
+            "content": "洛照。我来找你试剑。这里不合适，换个地方。",
+            "directed": true,
+            "overheard": false,
+            "speechAct": "answer",
+            "speechFunctions": [
+              "answer"
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:2",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:1"
+            },
+            "observableAffectiveTexture": [
+              {
+                "channel": "attentionLock",
+                "modality": "visual",
+                "feature": "听见对方自报身份后，她的目光在对方身上骤然定住片刻。"
+              }
+            ],
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:2:char_xyy_luozhao:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 3,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "speak",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "speech_emitted",
+                  "speech_delivered"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "utterance_emitted"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 0,
+      "worldVersion": 3,
+      "providerRequests": 2,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/007.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/008.json"
+      ]
+    },
+    {
+      "index": 4,
+      "elapsedMs": 201316,
+      "characterId": "char_xyy_xiezenshi",
+      "characterName": "谢真石",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "speak",
+        "targetCharacterId": "char_xyy_luozhao",
+        "speech": "先别急着试。你为什么专程找我？再亮一式给我看看——真有本事，我再跟你换地方。",
+        "visibleAction": "",
+        "observableAffectiveTexture": [
+          {
+            "channel": "gaze",
+            "modality": "visual",
+            "feature": "她的目光转向对方佩剑与握剑的手，停留得比方才更久。"
+          }
+        ]
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:2",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_xiezenshi:2",
+        "actorId": "char_xyy_xiezenshi",
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 4,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_xiezenshi",
+            "utterance": "先别急着试。你为什么专程找我？再亮一式给我看看——真有本事，我再跟你换地方。",
+            "targetCharacterId": "char_xyy_luozhao",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [
+              {
+                "channel": "gaze",
+                "modality": "visual",
+                "feature": "她的目光转向对方佩剑与握剑的手，停留得比方才更久。"
+              }
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:2",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:2"
+            }
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "speech_emitted",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:2:speech",
+            "vocalMode": "conversational"
+          },
+          {
+            "kind": "speech_delivered",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:2:speech",
+            "targetCharacterId": "char_xyy_luozhao",
+            "directed": true,
+            "overheard": false,
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_xiezenshi",
+            "utterance": "先别急着试。你为什么专程找我？再亮一式给我看看——真有本事，我再跟你换地方。",
+            "targetCharacterId": "char_xyy_luozhao",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [
+              {
+                "channel": "gaze",
+                "modality": "visual",
+                "feature": "她的目光转向对方佩剑与握剑的手，停留得比方才更久。"
+              }
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:2",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:2"
+            }
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:2:speech:char_xyy_luozhao",
+            "eventKind": "speech",
+            "modality": "sound",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:2:speech",
+            "content": "先别急着试。你为什么专程找我？再亮一式给我看看——真有本事，我再跟你换地方。",
+            "directed": true,
+            "overheard": false,
+            "speechAct": "answer",
+            "speechFunctions": [
+              "answer"
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:2",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:2"
+            },
+            "observableAffectiveTexture": [
+              {
+                "channel": "gaze",
+                "modality": "visual",
+                "feature": "她的目光转向对方佩剑与握剑的手，停留得比方才更久。"
+              }
+            ],
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:2:char_xyy_xiezenshi:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 4,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "speak",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "speech_emitted",
+                  "speech_delivered"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "utterance_emitted"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 0,
+      "worldVersion": 4,
+      "providerRequests": 2,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/009.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/010.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/011.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/012.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/013.json"
+      ]
+    },
+    {
+      "index": 5,
+      "elapsedMs": 267218,
+      "characterId": "char_xyy_luozhao",
+      "characterName": "洛照",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "act",
+        "targetCharacterId": "",
+        "speech": "",
+        "visibleAction": "她的手落向剑柄与鞘口，肩胯随即错开，开始以连鞘长剑演一式。",
+        "observableAffectiveTexture": []
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:3",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_luozhao:3",
+        "actorId": "char_xyy_luozhao",
+        "primitive": "practice",
+        "status": "success",
+        "worldVersion": 5,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "actor_practicing",
+            "actorId": "char_xyy_luozhao",
+            "visibleAction": "她的手落向剑柄与鞘口，肩胯随即错开，开始以连鞘长剑演一式。"
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "actor_practicing",
+            "actorId": "char_xyy_luozhao"
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "actor_practicing",
+            "actorId": "char_xyy_luozhao",
+            "visibleAction": "她的手落向剑柄与鞘口，肩胯随即错开，开始以连鞘长剑演一式。"
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_luozhao:3:actor_practicing:char_xyy_xiezenshi",
+            "eventKind": "actor_practicing",
+            "modality": "visual",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "她的手落向剑柄与鞘口，肩胯随即错开，开始以连鞘长剑演一式。"
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:3:char_xyy_luozhao:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 64,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "practice",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "actor_practicing"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "actor_practicing"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 60
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 1,
+      "worldVersion": 5,
+      "providerRequests": 3,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/014.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/015.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/016.json"
+      ]
+    },
+    {
+      "index": 6,
+      "elapsedMs": 386225,
+      "characterId": "char_xyy_xiezenshi",
+      "characterName": "谢真石",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "act",
+        "targetCharacterId": "char_xyy_luozhao",
+        "speech": "",
+        "visibleAction": "",
+        "observableAffectiveTexture": [
+          {
+            "channel": "attentionLock",
+            "modality": "visual",
+            "feature": "她的视线从剑柄移向肩胯与落脚处，紧随正在展开的剑式，没有挪开。"
+          }
+        ]
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:3",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_xiezenshi:3",
+        "actorId": "char_xyy_xiezenshi",
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 6,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "attention_oriented",
+            "actorId": "char_xyy_xiezenshi",
+            "targetId": "char_xyy_luozhao",
+            "modality": "visual"
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "visual_attention_established",
+            "targetId": "char_xyy_luozhao"
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "attention_oriented",
+            "actorId": "char_xyy_xiezenshi",
+            "targetId": "char_xyy_luozhao",
+            "modality": "visual"
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_xiezenshi:3:observation:char_xyy_xiezenshi",
+            "eventKind": "observation_result",
+            "modality": "visual",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "sourceObjectId": "",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "身上可见一柄带鞘长剑",
+            "semanticFrame": {
+              "observationResult": {
+                "targetKind": "character",
+                "attentionTags": [
+                  "weapon",
+                  "movement"
+                ],
+                "observableFeatures": [
+                  {
+                    "kind": "held_object",
+                    "text": "身上可见一柄带鞘长剑",
+                    "domainTags": [
+                      "carried-object",
+                      "sword",
+                      "weapon"
+                    ],
+                    "objectId": "luozhao_sword"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:3:char_xyy_xiezenshi:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 65,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "observe",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "visual_attention_established"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "attention_oriented"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 1,
+      "worldVersion": 6,
+      "providerRequests": 3,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/017.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/018.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/019.json"
+      ]
+    },
+    {
+      "index": 7,
+      "elapsedMs": 165708,
+      "characterId": "char_xyy_luozhao",
+      "characterName": "洛照",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "act",
+        "targetCharacterId": "char_xyy_xiezenshi",
+        "speech": "",
+        "visibleAction": "她收住演式后的余势，转而静候堂前那人的回应。",
+        "observableAffectiveTexture": []
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:4",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_luozhao:4",
+        "actorId": "char_xyy_luozhao",
+        "primitive": "listen",
+        "status": "partial",
+        "worldVersion": 7,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "listening_oriented",
+            "actorId": "char_xyy_luozhao",
+            "targetId": "char_xyy_xiezenshi",
+            "targetKind": "character"
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "auditory_attention_established",
+            "targetId": "char_xyy_xiezenshi",
+            "targetKind": "character"
+          }
+        ],
+        "failedEffects": [
+          {
+            "code": "LISTEN_NO_AUDIBLE_SIGNAL",
+            "targetId": "char_xyy_xiezenshi",
+            "targetKind": "character"
+          }
+        ],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "listening_oriented",
+            "actorId": "char_xyy_luozhao",
+            "targetId": "char_xyy_xiezenshi",
+            "targetKind": "character"
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:4:char_xyy_luozhao:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "content": "刚才的动作只完成了一部分。",
+            "directed": true,
+            "occurredAtSeconds": 66,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "partial",
+                "primitive": "listen",
+                "failureCodes": [
+                  "LISTEN_NO_AUDIBLE_SIGNAL"
+                ],
+                "resolvedEffectKinds": [
+                  "auditory_attention_established"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "listening_oriented"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 0,
+      "worldVersion": 7,
+      "providerRequests": 2,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/020.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/022.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/023.json"
+      ]
+    },
+    {
+      "index": 8,
+      "elapsedMs": 251169,
+      "characterId": "char_xyy_xiezenshi",
+      "characterName": "谢真石",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "speak",
+        "targetCharacterId": "char_xyy_luozhao",
+        "speech": "我刚才只看见你带着剑，没看清招。把那一式完整演完。还有——你为什么偏要找我？",
+        "visibleAction": "",
+        "observableAffectiveTexture": []
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:4",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_xiezenshi:4",
+        "actorId": "char_xyy_xiezenshi",
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 8,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_xiezenshi",
+            "utterance": "我刚才只看见你带着剑，没看清招。把那一式完整演完。还有——你为什么偏要找我？",
+            "targetCharacterId": "char_xyy_luozhao",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:4",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:2"
+            }
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "speech_emitted",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+            "vocalMode": "conversational"
+          },
+          {
+            "kind": "speech_delivered",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+            "targetCharacterId": "char_xyy_luozhao",
+            "directed": true,
+            "overheard": false,
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_xiezenshi",
+            "utterance": "我刚才只看见你带着剑，没看清招。把那一式完整演完。还有——你为什么偏要找我？",
+            "targetCharacterId": "char_xyy_luozhao",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:4",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:2"
+            }
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech:char_xyy_luozhao",
+            "eventKind": "speech",
+            "modality": "sound",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+            "content": "我刚才只看见你带着剑，没看清招。把那一式完整演完。还有——你为什么偏要找我？",
+            "directed": true,
+            "overheard": false,
+            "speechAct": "ask",
+            "speechFunctions": [
+              "ask"
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:4",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:2"
+            },
+            "observableAffectiveTexture": [],
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:4:char_xyy_xiezenshi:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 67,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "speak",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "speech_emitted",
+                  "speech_delivered"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "utterance_emitted"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 1,
+      "worldVersion": 8,
+      "providerRequests": 3,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/024.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/025.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/026.json"
+      ]
+    },
+    {
+      "index": 9,
+      "elapsedMs": 220179,
+      "characterId": "char_xyy_luozhao",
+      "characterName": "洛照",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "speak",
+        "targetCharacterId": "char_xyy_xiezenshi",
+        "speech": "来找你，是想亲自看看我在你剑下能走多远。招可以再演一次。看完，换地方试。",
+        "visibleAction": "",
+        "observableAffectiveTexture": []
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:5",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_luozhao:5",
+        "actorId": "char_xyy_luozhao",
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 9,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_luozhao",
+            "utterance": "来找你，是想亲自看看我在你剑下能走多远。招可以再演一次。看完，换地方试。",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:5",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:4"
+            }
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "speech_emitted",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:5:speech",
+            "vocalMode": "conversational"
+          },
+          {
+            "kind": "speech_delivered",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:5:speech",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "directed": true,
+            "overheard": false,
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "utterance_emitted",
+            "actorId": "char_xyy_luozhao",
+            "utterance": "来找你，是想亲自看看我在你剑下能走多远。招可以再演一次。看完，换地方试。",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "vocalMode": "conversational",
+            "visibleAction": "",
+            "observableAffectiveTexture": [],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:5",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:4"
+            }
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:5:speech:char_xyy_xiezenshi",
+            "eventKind": "speech",
+            "modality": "sound",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:5:speech",
+            "content": "来找你，是想亲自看看我在你剑下能走多远。招可以再演一次。看完，换地方试。",
+            "directed": true,
+            "overheard": false,
+            "speechAct": "answer",
+            "speechFunctions": [
+              "answer"
+            ],
+            "provenance": {
+              "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:5",
+              "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_luozhao:1",
+              "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:4"
+            },
+            "observableAffectiveTexture": [],
+            "vocalMode": "conversational",
+            "soundDistance": 1
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:5:char_xyy_luozhao:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "recipientCharacterId": "char_xyy_luozhao",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 68,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "speak",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "speech_emitted",
+                  "speech_delivered"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "utterance_emitted"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 1,
+      "worldVersion": 9,
+      "providerRequests": 3,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/027.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/028.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/029.json"
+      ]
+    },
+    {
+      "index": 10,
+      "elapsedMs": 203911,
+      "characterId": "char_xyy_xiezenshi",
+      "characterName": "谢真石",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "publicRealization": {
+        "actionType": "act",
+        "targetCharacterId": "char_xyy_luozhao",
+        "speech": "",
+        "visibleAction": "他没有接话，视线随即从来人脸上移向握剑的手与下盘。",
+        "observableAffectiveTexture": [
+          {
+            "channel": "attentionLock",
+            "modality": "visual",
+            "feature": "目光一落到对方的握剑与落脚处便明显定住，没有再分向堂中别处。"
+          }
+        ]
+      },
+      "outcome": {
+        "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:5",
+        "eventId": "world-event:action-attempt:agent-turn:char_xyy_xiezenshi:5",
+        "actorId": "char_xyy_xiezenshi",
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 10,
+        "revalidatedFromWorldVersion": null,
+        "attemptSurface": [
+          {
+            "kind": "attention_oriented",
+            "actorId": "char_xyy_xiezenshi",
+            "targetId": "char_xyy_luozhao",
+            "modality": "visual"
+          }
+        ],
+        "resolvedEffects": [
+          {
+            "kind": "visual_attention_established",
+            "targetId": "char_xyy_luozhao"
+          }
+        ],
+        "failedEffects": [],
+        "incidentalEffects": [],
+        "committedFacts": [
+          {
+            "kind": "attention_oriented",
+            "actorId": "char_xyy_xiezenshi",
+            "targetId": "char_xyy_luozhao",
+            "modality": "visual"
+          }
+        ],
+        "deliveries": [
+          {
+            "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_xiezenshi:5:observation:char_xyy_xiezenshi",
+            "eventKind": "observation_result",
+            "modality": "visual",
+            "sourceCharacterId": "char_xyy_luozhao",
+            "sourceObjectId": "",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "身上可见一柄带鞘长剑",
+            "semanticFrame": {
+              "observationResult": {
+                "targetKind": "character",
+                "attentionTags": [
+                  "weapon",
+                  "movement",
+                  "body"
+                ],
+                "observableFeatures": [
+                  {
+                    "kind": "held_object",
+                    "text": "身上可见一柄带鞘长剑",
+                    "domainTags": [
+                      "carried-object",
+                      "sword",
+                      "weapon"
+                    ],
+                    "objectId": "luozhao_sword"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:5:char_xyy_xiezenshi:own-action-result",
+            "eventKind": "own_action_result",
+            "modality": "proprioception",
+            "sourceCharacterId": "char_xyy_xiezenshi",
+            "recipientCharacterId": "char_xyy_xiezenshi",
+            "content": "刚才的动作已经落定。",
+            "directed": true,
+            "occurredAtSeconds": 69,
+            "semanticFrame": {
+              "actionResult": {
+                "status": "success",
+                "primitive": "observe",
+                "failureCodes": [],
+                "resolvedEffectKinds": [
+                  "visual_attention_established"
+                ],
+                "incidentalEffectKinds": [],
+                "attemptSurfaceKinds": [
+                  "attention_oriented"
+                ]
+              }
+            }
+          }
+        ],
+        "durationSeconds": 1
+      },
+      "characterAgentCompleted": true,
+      "protocolRepairCount": 0,
+      "worldVersion": 10,
+      "providerRequests": 2,
+      "outputFiles": [
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/030.json",
+        "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-sol-medium-10-turns-ytBmm7/model-outputs/031.json"
+      ]
+    }
+  ],
+  "metrics": {
+    "speechTurns": 6,
+    "completedCommandProviderRequests": 26,
+    "twoCallTurns": 4,
+    "acceptedTurnProtocolRepairs": 6,
+    "modelAttemptElapsedMs": 2775202,
+    "maxPromptBytes": 527936
+  },
+  "review": {
+    "characterTurns": {
+      "洛照": 5,
+      "谢真石": 5
+    },
+    "spokenTurns": 6,
+    "nonSpokenTurns": 4,
+    "worldOutcomes": {
+      "success": 9,
+      "partial": 1
+    },
+    "rawStructuredOutputs": 32,
+    "conversationThreads": 1,
+    "rawSpeechAndBodyVerified": true,
+    "allSpeechDeliveredToIntendedCharacter": true,
+    "worldVersionsMonotonic": true,
+    "retainedKnowledgeRealModelVerification": {
+      "callIndex": 24,
+      "retainedPositions": 4,
+      "accepted": true
+    },
+    "validation": {
+      "currentContracts": 531,
+      "passed": 531,
+      "failed": 0,
+      "elapsedSeconds": 71.7,
+      "syntax": "passed",
+      "diffWhitespace": "passed"
+    },
+    "knownIssues": [
+      {
+        "kind": "pronoun-inconsistency",
+        "turns": [
+          4,
+          6
+        ],
+        "evidence": "谢真石的动作原文使用“她”，项目 publicIdentity 使用“他”。",
+        "fixed": false
+      },
+      {
+        "kind": "insufficient-action-observation",
+        "turns": [
+          6,
+          8
+        ],
+        "evidence": "身上可见一柄带鞘长剑",
+        "consequence": "模型第 8 回合表示未看清招式，再次要求演示。需检查动作过程的感知内容与观察时序。",
+        "fixed": false
+      }
+    ],
+    "nextOptimization": {
+      "proposal": "比较三次调用：评估与候选合并、单独选择、本地计算情绪后再表达；只向表达阶段发送已选动作所需的上下文。",
+      "measuredSpeedup": null
+    }
+  }
+}

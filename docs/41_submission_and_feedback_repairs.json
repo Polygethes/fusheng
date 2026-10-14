@@ -1,0 +1,181 @@
+{
+  "reviewedOn": "2026-09-09",
+  "realModelCalls": 0,
+  "validation": {
+    "checkedAt": "2026-09-09T09:20:34.098Z",
+    "modelCalls": 0,
+    "checks": [
+      {
+        "script": "scripts/characterStageSubmissionContracts.mjs",
+        "passed": true,
+        "durationMs": 197
+      },
+      {
+        "script": "scripts/characterActionFeedbackContracts.mjs",
+        "passed": true,
+        "durationMs": 270
+      },
+      {
+        "script": "scripts/characterActionResultMemoryContracts.mjs",
+        "passed": true,
+        "durationMs": 115
+      },
+      {
+        "script": "scripts/characterStageProtocolRepairContracts.mjs",
+        "passed": true,
+        "durationMs": 306
+      },
+      {
+        "script": "scripts/characterEpistemicActionContracts.mjs",
+        "passed": true,
+        "durationMs": 90
+      },
+      {
+        "script": "scripts/tavernV27ThreeCallContracts.mjs",
+        "passed": true,
+        "durationMs": 270
+      },
+      {
+        "script": "scripts/tavernV27TwoCallFastPathContracts.mjs",
+        "passed": true,
+        "durationMs": 281
+      },
+      {
+        "script": "scripts/tavernCharacterActionPrimitiveContracts.mjs",
+        "passed": true,
+        "durationMs": 124
+      },
+      {
+        "script": "scripts/characterAgentAtomicCommitContracts.mjs",
+        "passed": true,
+        "durationMs": 105
+      },
+      {
+        "script": "scripts/characterAgentTurnProtocolContracts.mjs",
+        "passed": true,
+        "durationMs": 79
+      },
+      {
+        "script": "scripts/characterReflectionTurnContracts.mjs",
+        "passed": true,
+        "durationMs": 91
+      },
+      {
+        "script": "scripts/reviewWorldPhysicsContracts.mjs",
+        "passed": true,
+        "durationMs": 485
+      },
+      {
+        "script": "scripts/reviewSessionIsolationContracts.mjs",
+        "passed": true,
+        "durationMs": 322
+      },
+      {
+        "script": "scripts/reviewSaveRestoreContracts.mjs",
+        "passed": true,
+        "durationMs": 2079
+      },
+      {
+        "script": "scripts/characterPsychologyLearningLoopContracts.mjs",
+        "passed": true,
+        "durationMs": 106
+      },
+      {
+        "script": "scripts/tavernV27ActionFeasibilityContracts.mjs",
+        "passed": true,
+        "durationMs": 122
+      },
+      {
+        "script": "scripts/tavernV27CrossSpaceTwoActorChainContracts.mjs",
+        "passed": true,
+        "durationMs": 606
+      },
+      {
+        "script": "scripts/characterAgentQualityWorldAuditContracts.mjs",
+        "passed": true,
+        "durationMs": 60
+      }
+    ]
+  },
+  "httpContractTest": {
+    "script": "scripts/tavernV27ModelRelayContracts.mjs",
+    "passed": true,
+    "coverage": [
+      "preflight_422_same_stage",
+      "validate_without_submission",
+      "fixed_metadata_only",
+      "nonblocking_202_receipt",
+      "identity_and_duplicates",
+      "configured_two_repairs",
+      "halt_persistence",
+      "settled_report"
+    ]
+  },
+  "fixtureReplay": {
+    "measurement": "Synthetic three-character 20-turn fixture. Local runtime measured separately from loopback HTTP with a 25 ms responder delay. Not the user's original model outputs or an inference speed benchmark.",
+    "turnCount": 20,
+    "actionTurnCount": 16,
+    "worldOutcomeCount": 13,
+    "maintenanceTurnCount": 4,
+    "publicTurnEquivalence": true,
+    "preflightRejections": 0,
+    "domainRejections": 0,
+    "schemaMs": {
+      "count": 36,
+      "total": 10.313378999998918,
+      "p50": 0.2906249999998636,
+      "p95": 0.52800000000002,
+      "max": 0.683084000000008
+    },
+    "receiptMs": {
+      "count": 36,
+      "total": 56.972957000000406,
+      "p50": 1.402416999999332,
+      "p95": 3.311750000000302,
+      "max": 5.3091669999998885
+    },
+    "localTurnMs": {
+      "count": 20,
+      "total": 847.7130439999995,
+      "p50": 43.135125000000244,
+      "p95": 65.20158399999997,
+      "max": 68.46283299999993
+    },
+    "localEquivalence": [
+      {
+        "candidateCount": 1,
+        "publicAndPrivateTurnEquivalence": true
+      },
+      {
+        "candidateCount": 7,
+        "publicAndPrivateTurnEquivalence": true
+      }
+    ]
+  },
+  "serviceReload": {
+    "oldPid": 39697,
+    "newPid": 41883,
+    "savePath": "<run-artifacts>/relay-repair-20260908-OBXOZ7/world-save.json",
+    "backupPath": "<run-artifacts>/submission-fix-20260909T092526Z",
+    "submissionProtocol": "character-stage-submission-v1",
+    "settledTurns": 60,
+    "pending": null,
+    "newModelInvocations": 0,
+    "settledTurnsUnchanged": true,
+    "coordinatorUnchanged": true,
+    "wholeCheckpointUnchanged": true,
+    "sourceSha256": "27b08a3d1fabc797bd7ba01b27c8149054c47fa9818be96260d004242d8979b0",
+    "reportPath": "<run-artifacts>/relay-repair-20260908-OBXOZ7/world-save.json.report.md"
+  },
+  "sourceHashes": {
+    "src/server/simulation/characterStageSubmission.mjs": "667f4b110d493d5041aeadc7ea2b05e6e437e9d0195dd6e52037f0cf9d88dece",
+    "src/server/simulation/settledSimulationReport.mjs": "5a67d1f17ae4d71caab5bc674573b29aba78198484cc41b88210e72e736de912",
+    "scripts/runV27ModelRelay.mjs": "94a66dc19811fbea46be51f210b971afc3daabb67e4c223f12e78db6a4967a26",
+    "src/server/pipeline/tavernCharacterAgentV2.mjs": "6d5c1d3863925328dd25002585b937957a38c51014ee52b1fac9164934931bb6",
+    "src/server/simulation/characterAgentTurnProtocol.mjs": "8fbd16811574514a0b8aeda998a33fa07158a8f9e7e5368d63053b57a0be8b11",
+    "src/server/simulation/worldCommitCoordinator.mjs": "cfe5f2fe65ca5c690110b7211cd4926ffc7e184eed7892123359c29444cb713d",
+    "src/server/simulation/objectLedger.mjs": "efb26ff08fa5336e06f36402fb8f81ccc80836e50b47d68e97bd9fba21770e31",
+    "src/server/pipeline/tavernWorldRuntimeV27.mjs": "8a08148b0156f396a202ce9d7f9a99a4a35b95e67db179fc11947fd0096a02c1",
+    "src/server/simulation/characterReflectionTurn.mjs": "16cb03c81e077a55d742a92e7e871eb73df5d75c84cf59269ff7590b88e14172"
+  }
+}

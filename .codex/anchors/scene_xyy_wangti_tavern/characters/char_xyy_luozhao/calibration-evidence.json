@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "recordType": "character-calibration-suite",
+  "characterId": "char_xyy_luozhao",
+  "status": "validated",
+  "source": {
+    "artifact": "anchor-payload.json",
+    "sha256": "9cfad1de38582b74c9672edd4de148dffde462fd638142f978bc4b46ecfcb77c",
+    "role": "authoring-and-audit-only"
+  },
+  "controlledContrasts": [
+    {
+      "id": "luo-identification",
+      "changedVariable": "identity-certainty",
+      "domain": "epistemic-identity",
+      "answer": "只知道传闻时先观察",
+      "inferredEvidenceIds": [
+        "luo-observes-before-identifying"
+      ]
+    },
+    {
+      "id": "luo-refusal-suitable-place",
+      "changedVariable": "venue-suitability",
+      "domain": "martial-social-inhibition",
+      "answer": "以剑意、态度和眼神继续试探，被忽视后开口",
+      "inferredEvidenceIds": [
+        "luo-nonverbal-pressure",
+        "luo-controlled-probing"
+      ]
+    },
+    {
+      "id": "luo-forbidden-breakthrough",
+      "changedVariable": "sect-prohibition",
+      "domain": "identity-institution-conflict",
+      "answer": "压住欲望离开，受挫后可能再来",
+      "inferredEvidenceIds": [
+        "luo-suppresses-and-returns"
+      ]
+    },
+    {
+      "id": "luo-excellent-counter",
+      "changedVariable": "observed-opponent-quality",
+      "domain": "martial-appraisal",
+      "answer": "兴奋并评价好剑",
+      "inferredEvidenceIds": [
+        "luo-domain-excitement"
+      ]
+    },
+    {
+      "id": "luo-opponent-injured",
+      "changedVariable": "opponent-capacity",
+      "domain": "body-and-evidence-validity",
+      "answer": "等待恢复",
+      "inferredEvidenceIds": [
+        "luo-waits-for-recovery"
+      ]
+    },
+    {
+      "id": "luo-information-listening-without-sword-cue",
+      "changedVariable": "direct-martial-cue-present",
+      "domain": "information-gathering",
+      "answer": "没有剑术线索且无人主动招呼时，坐下听酒馆中的消息",
+      "inferredEvidenceIds": [
+        "luo-listens-for-information-without-martial-cue"
+      ]
+    },
+    {
+      "id": "luo-identity-requires-multiple-cues",
+      "changedVariable": "independent-identity-cue-count",
+      "domain": "epistemic-identity",
+      "answer": "年龄、性别等多项条件吻合后才直接接近核实；单一剑术线索只促使继续观察",
+      "inferredEvidenceIds": [
+        "luo-multiple-cues-before-identification"
+      ]
+    },
+    {
+      "id": "luo-shows-letter-to-host-without-transfer",
+      "changedVariable": "host-asks-visit-purpose",
+      "domain": "object-ownership-and-social-disclosure",
+      "answer": "向谢母直接出示拜帖；酒馆不是收件方，展示不产生交付或保管权",
+      "inferredEvidenceIds": [
+        "luo-shows-letter-without-delivering-to-tavern"
+      ]
+    },
+    {
+      "id": "luo-worn-sword-continuity",
+      "changedVariable": "body-position-changes-without-detachment-action",
+      "domain": "embodied-object-continuity",
+      "answer": "普通移动、观察和落座不会让佩剑离身；解除佩带、放置和转交是不同的明确动作",
+      "inferredEvidenceIds": [
+        "luo-sword-remains-worn"
+      ]
+    },
+    {
+      "id": "luo-position-choice-uses-character-and-profession",
+      "changedVariable": "objective-spatial-tradeoffs",
+      "domain": "spatial-choice-and-professional-competence",
+      "answer": "位置不是场景预设；当前目的决定需要什么信息，性格改变暴露与接触代价，剑修素养影响人流、活动空间和佩剑控制的感知与执行",
+      "inferredEvidenceIds": [
+        "luo-position-reflects-character-and-professionalism"
+      ]
+    }
+  ],
+  "speechSamples": [
+    {
+      "function": "pressure",
+      "line": "你打算一直装作没看见？",
+      "evidenceId": "luo-nonverbal-pressure"
+    },
+    {
+      "function": "genuine-domain-evaluation",
+      "line": "好剑。",
+      "evidenceId": "luo-domain-excitement"
+    },
+    {
+      "function": "future-commitment",
+      "line": "我会再来。",
+      "evidenceId": "luo-suppresses-and-returns"
+    }
+  ],
+  "relationshipCases": [
+    {
+      "id": "luo-observes-excellent-sword",
+      "observedPattern": "谢真石以高妙剑招迫使她后退",
+      "appraisal": "发现能推动自己触及新极限的真实可能",
+      "deltas": {
+        "competenceRespect": [
+          0.14,
+          0.28
+        ],
+        "rivalry": [
+          0.1,
+          0.22
+        ],
+        "familiarity": [
+          0.02,
+          0.08
+        ],
+        "trust": [
+          0,
+          0
+        ],
+        "care": [
+          0,
+          0
+        ],
+        "affection": [
+          0,
+          0
+        ]
+      },
+      "evidenceIds": [
+        "luo-domain-excitement"
+      ]
+    }
+  ],
+  "legacyHoldoutEvidence": [
+    {
+      "id": "luo-holdout-flattery",
+      "unseenSituation": "陌生人借玉衡宗名头奉承并攀谈",
+      "prediction": "不应酬；挡路时只说让开",
+      "accepted": true,
+      "status": "legacy-migration-evidence-not-current-holdout"
+    },
+    {
+      "id": "luo-holdout-rumor",
+      "unseenSituation": "周珉断言谢真石接不住三招",
+      "prediction": "不改变能力判断；最多询问他在哪里",
+      "accepted": true,
+      "status": "legacy-migration-evidence-not-current-holdout"
+    },
+    {
+      "id": "luo-holdout-return",
+      "unseenSituation": "离开禁地后修炼连续受挫",
+      "prediction": "未完成欲望再激活，回到附近先观察风险和进入方法",
+      "accepted": true,
+      "status": "legacy-migration-evidence-not-current-holdout"
+    }
+  ],
+  "invalidatedHoldoutEvidence": [
+    {
+      "id": "luo-holdout1-ordinary-aisle-request-rejected",
+      "unseenSituation": "洛照被预先放在佩剑占住传菜过道的位置，谢母要求她把剑收进桌边。",
+      "prediction": "模型两次选择无言把剑收进桌边并继续听消息。",
+      "accepted": false,
+      "status": "rejected-invalid-world-premise-and-character-position",
+      "authorCorrection": "佩剑不应在普通入店与落座中离身；这个阻碍人流的位置本身也不符合洛照由性格、目的和剑修职业素养作出的现实选择。",
+      "diagnosis": [
+        "世界输入把贴身佩带错误降格为普通持有",
+        "场景在人物 Agent 选择之前预设了具体座位",
+        "旧底座没有独立的职业感知与程序性能力层"
+      ]
+    },
+    {
+      "id": "luo-holdout1-threshold-position-selection",
+      "unseenSituation": "洛照刚站在望梯酒馆门槛内，无人招呼且没有剑术线索；世界同时提供数个视听、人流、暴露、活动空间和佩剑净空不同的可用位置，由她本人决定下一步。",
+      "prediction": "洛照没有出声，选择从门槛走向堂前侧墙空桌并落座；入鞘长剑继续贴身佩带并随身体移动。她把该位置视为兼顾听取消息、观察门槛与柜台、降低无关暴露和人流干扰、保持佩剑活动空间的当前选择。她继续等待以后真实出现的身份线索或直接剑术证据；求战欲望没有满足，关系、行动记忆和自我叙事均不改变。",
+      "accepted": false,
+      "status": "superseded-incomplete-tavern-service-choice-scope",
+      "runtimeIsolation": "情境、模型投射和作者结果只属于 calibration，不进入 Character Agent 运行输入。",
+      "scopeCorrection": "该投射只证明人物自主选位，输入没有茶饭、热水、价格、身体需要、钱财、客人点单或占桌惯例，因此不能用于判断完整入店行为，也不能把沉默解释成等待店家或拒绝消费。",
+      "projectionProvenance": {
+        "probeId": "probe:luozhao:threshold-position-selection",
+        "provider": "openai",
+        "channel": "openai-codex-chatgpt",
+        "model": "gpt-5.6-sol",
+        "authentication": "saved-chatgpt-login",
+        "isolation": "ephemeral-no-tools-no-project-config",
+        "elapsedMs": 77883,
+        "inputAuditPassed": true,
+        "decisionBoundaryPassed": true,
+        "authorAcceptance": "not_applicable_incomplete_scope"
+      },
+      "projectionAudit": {
+        "chosenAffordanceId": "affordance:position:char_xyy_luozhao:position:tavern-hall-side-wall-table",
+        "speechAct": "none",
+        "swordAttachmentPreserved": true,
+        "relationshipChange": "none",
+        "desireResolution": "remains_unresolved",
+        "futureKnowledgeDependsOnEvidence": true,
+        "explicitlyComparedMovePositionIds": [
+          "position:tavern-hall-side-wall-table",
+          "position:tavern-hall-center-table",
+          "position:tavern-hall-near-counter"
+        ],
+        "availableButNotExplicitlyComparedPositionIds": [
+          "position:tavern-hall-near-threshold-bench"
+        ]
+      }
+    }
+  ],
+  "holdouts": [
+    {
+      "id": "luo-holdout1-integrated-tavern-entry-choice",
+      "unseenSituation": "洛照刚站在望梯酒馆门槛内，无人招呼且没有剑术线索。她当前轻微口渴、并不明显饥饿，持有八文铜钱；能看见热水、粗茶、常饭及价格，也能感知占用客桌通常会消费或说明来意。世界同时提供多个位置、向谢母提出具体服务请求以及离开等可行行动，由洛照本人决定当下先做什么。",
+      "prediction": "洛照先比较侧墙、堂中、粗茶与继续站在门槛观察，最终无言走向堂前侧墙空桌；入鞘佩剑继续贴身随行。她没有把暂不点茶解释为拒绝消费，而是认为轻微口渴、茶水提供的停留由头暂时不足以压过立即打开服务互动和等待的代价；先取得视听、低暴露与佩剑净空兼顾的位置，之后仍可按真实需要提出服务请求。",
+      "accepted": true,
+      "status": "accepted-by-author",
+      "runtimeIsolation": "身体需要、钱财、菜单、位置与社会惯例是本次未见情境的当前输入；不编译为洛照永久状态、固定消费习惯或情境答案。",
+      "choiceAuthority": "character-agent",
+      "projectionProvenance": {
+        "probeId": "probe:luozhao:integrated-tavern-entry-choice",
+        "provider": "openai",
+        "channel": "openai-codex-chatgpt",
+        "model": "gpt-5.6-sol",
+        "isolation": "ephemeral-no-tools-no-project-config",
+        "inputAuditPassed": true,
+        "remoteRequestCount": 1,
+        "decisionBoundaryPassedAtRun": false,
+        "authorAcceptance": "accepted"
+      },
+      "projectionAudit": {
+        "chosenCandidateId": "candidate:move-side-wall-table",
+        "chosenAffordanceId": "affordance:position:char_xyy_luozhao:position:tavern-hall-side-wall-table",
+        "speechAct": "none",
+        "swordAttachmentPreserved": true,
+        "serviceAlternativeExplicitlyCompared": "rough_mountain_tea",
+        "serviceRequestedThisStep": false,
+        "futureServiceRequestStillAvailable": true,
+        "relationshipChange": "none",
+        "desireResolution": "remains_unresolved"
+      },
+      "validatorCorrection": {
+        "onlyRejectedIssue": "FACTOR_BASIS_UNKNOWN: resource:luozhao:current-copper-coins",
+        "diagnosis": "人物用本人实际拥有的八文铜钱评价价格成本是合法推理；旧 probeBasisIds 遗漏 world.ownedResources 与 serviceChoice.ownedTender，属于通用验证器假阴性。",
+        "localFix": "本人资源、服务钱币与可见服务现进入合法依据集合；正例允许本人财物，反例继续拒绝不存在的财物。",
+        "remoteReplayPerformed": false
+      },
+      "authorDecision": {
+        "value": "accepted",
+        "source": "用户在看到完整人物选择、心理因由与验证器更正说明后直接回复‘接受’。",
+        "date": "2026-07-20",
+        "scope": "只接受本次整合入店 Holdout 的人物真实性，不把侧墙选位或暂不点茶编译为固定运行规则。"
+      }
+    },
+    {
+      "id": "luo-holdout2-tavern-entry-thirst-shift",
+      "unseenSituation": "作为与 Holdout 1 隔离的反事实入店状态，人物 foundation、记忆、关系、钱财、菜单、位置、氛围与可供性全部不变，只把洛照当下口渴从轻度提高为明显程度；由洛照本人重新决定先移动、请求热水或粗茶、请求饭食、观察、说话或离开。",
+      "changedAxis": {
+        "id": "dynamicState.thirst",
+        "baseline": 0.42,
+        "holdoutValue": 0.82,
+        "unchangedAxes": [
+          "character-foundation",
+          "owned-memory",
+          "relationship-context",
+          "hunger",
+          "fatigue",
+          "owned-coins",
+          "service-offers-and-prices",
+          "positions-and-affordances",
+          "atmosphere",
+          "no-current-martial-cue"
+        ]
+      },
+      "prediction": "洛照显式比较粗焙山茶、免费热水与侧墙空桌，选择先在门槛内转向柜台，向谢母简短点一碗粗焙山茶：‘粗焙山茶。’她认为明显口渴已足以干扰当前事务，一文代价很低，而点茶同时能处理身体需要并让之后停留听消息更自然。请求只打开待谢母回应的服务事务；茶尚未交付，口渴不下降，也没有付款、关系变化、消息进展或求战欲望满足。",
+      "accepted": true,
+      "status": "accepted-by-author",
+      "runtimeIsolation": "这是测试身体状态敏感性的反事实当前输入，不发生在 Holdout 1 之后，不进入洛照的 autobiographical memory，也不编译为口渴时固定点单或固定选位规则。",
+      "choiceAuthority": "character-agent",
+      "projectionProvenance": {
+        "probeId": "probe:luozhao:tavern-entry-thirst-shift",
+        "provider": "openai",
+        "channel": "openai-codex-chatgpt",
+        "model": "gpt-5.6-sol",
+        "authentication": "saved-chatgpt-login",
+        "isolation": "ephemeral-no-tools-no-project-config",
+        "elapsedMs": 100138,
+        "inputAuditPassed": true,
+        "decisionBoundaryPassed": true,
+        "remoteRequestCount": 1,
+        "authorAcceptance": "accepted"
+      },
+      "projectionAudit": {
+        "chosenCandidateId": "candidate:request-rough-mountain-tea",
+        "chosenAffordanceId": "affordance:service-request:char_xyy_luozhao:rough_mountain_tea",
+        "speechAct": "request",
+        "speech": "粗焙山茶。",
+        "swordAttachmentPreserved": true,
+        "explicitlyComparedAlternatives": [
+          "request_hot_water",
+          "move_side_wall_table"
+        ],
+        "serviceRequestOpened": true,
+        "serviceDelivered": false,
+        "paymentSettled": false,
+        "thirstChanged": false,
+        "relationshipChange": "none",
+        "desireResolution": "remains_unresolved",
+        "selfNarrativeChange": "none"
+      },
+      "authorDecision": {
+        "value": "accepted",
+        "source": "用户在看到完整单变量 A/B 结果、台词、心理因由与因果边界后直接回复‘认同’。",
+        "date": "2026-07-20",
+        "scope": "只接受明显口渴这一反事实 Holdout 中的真实选择，不把粗茶、短句或口渴阈值编译为固定人物规则。"
+      }
+    },
+    {
+      "id": "luo-holdout3-blocked-courtyard-martial-cue",
+      "unseenSituation": "作为与前两项隔离的未见情境，洛照刚从门槛跨到堂前入口内侧，亲耳听见后院三次剑锋破空与夹在其间的换步声，但门框和转角遮住持剑者，身份与完整招式均未知。通往后院的路线物理可走，后院却是酒馆经营者的家用工作区，洛照尚未得到邀请或许可。她可以留在堂前观察、走到通道口外、询问谢母、向声音来源开口、直接跨入后院、请求茶饭或离开，由本人决定下一步。",
+      "changedAxis": {
+        "id": "direct-partial-martial-cue-plus-socially-bounded-household-access",
+        "unchangedAxes": [
+          "character-foundation",
+          "owned-memory",
+          "core-desire",
+          "relationship-history",
+          "body-needs",
+          "owned-coins",
+          "service-offers-and-prices",
+          "public-atmosphere"
+        ],
+        "newWorldEvidence": [
+          "firsthand-partial-sword-sound",
+          "identity-remains-unresolved",
+          "physically-open-courtyard-route",
+          "permission-expected-but-not-granted"
+        ]
+      },
+      "prediction": "洛照不说话，循声走到堂前一侧的后院通道口外，在家用工作区边界前停住；入鞘佩剑继续贴身随行。她把直接剑声视为值得继续核实的线索，但不凭声音补全出手者身份，也不在身份未知时先闯入别人后院。她保留求战欲望，在公共边界外等待下一次剑声、脚步变化或持剑者进入视野。",
+      "accepted": true,
+      "status": "accepted-by-author",
+      "runtimeIsolation": "该情境不是 Holdout 1 或 2 的续集，不产生既往消费、选位或自传记忆；未来投射只进入 calibration evidence，不能编译为洛照听见剑声后的固定行动。",
+      "choiceAuthority": "character-agent",
+      "localInputAudit": {
+        "passed": true,
+        "remoteModelCalled": true,
+        "identityStillUnknown": true,
+        "publicApproachAvailable": true,
+        "unpermittedEntryPhysicallyAttemptable": true,
+        "operatorResponsePrewritten": false,
+        "authorAnswerPresent": false
+      },
+      "projectionProvenance": {
+        "probeId": "probe:luozhao:blocked-courtyard-martial-cue",
+        "channel": "openai-codex-chatgpt",
+        "model": "gpt-5.6-sol",
+        "inputAuditPassed": true,
+        "remoteRequestCount": 1,
+        "decisionBoundaryPassedAtRun": false,
+        "authorAcceptance": "accepted"
+      },
+      "projectionAudit": {
+        "chosenCandidateId": "candidate:move-to-courtyard-approach",
+        "chosenAffordanceId": "affordance:position:char_xyy_luozhao:position:tavern-hall-courtyard-approach",
+        "speechAct": "none",
+        "visibleAction": "洛照循声走到堂前一侧的后院通道口外，在边界前停住；鞘中佩剑仍贴身随她移动。",
+        "explicitlyComparedAlternatives": [
+          "ask_xie_mother_about_courtyard",
+          "cross_into_courtyard_without_permission",
+          "move_to_side_wall_table"
+        ],
+        "unpermittedEntryRecognizedAsAttemptable": true,
+        "identityRecognized": false,
+        "relationshipChange": "none",
+        "desireResolution": "remains_unresolved",
+        "futureEvidenceStillRequired": true,
+        "actionMemoryOnlyIfWorldCommits": true,
+        "otherAgentResponsePrewritten": false
+      },
+      "validatorCorrection": {
+        "onlyRejectedIssue": "CONTINUITY_ACTION_MEMORY_CHOICE_BASIS_MISSING",
+        "rawBasisActuallyProvided": "affordance:position:char_xyy_luozhao:position:tavern-hall-courtyard-approach",
+        "diagnosis": "投射已引用所选移动唯一对应的世界 affordance，且 action 与 chosen candidate 已由另一合同严格绑定；旧连续性闸却只承认内部 candidate id，错误拒绝了同一行动的客观依据。",
+        "localFix": "行动记忆现在接受所选 candidate id 或该候选唯一对应的 chosen affordance id；引用无关 affordance 的反例继续被拒绝。",
+        "localRegressionPassed": true,
+        "remoteReplayPerformed": false
+      },
+      "authorDecision": {
+        "value": "accepted",
+        "source": "用户在看到完整行动、候选比较、私有心理、欲望连续性与验证器更正后直接回复‘接受’。",
+        "date": "2026-07-20",
+        "scope": "接受本次受阻欲望 Holdout 中洛照在公共边界外靠近取证的真实性；不把沉默、通道口位置或该行动编译为固定规则。"
+      }
+    }
+  ]
+}

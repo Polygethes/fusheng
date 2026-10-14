@@ -1,0 +1,1662 @@
+{
+  "schemaVersion": "gtown-simulation-audit-v1",
+  "reviewedOn": "2026-09-09",
+  "scope": {
+    "fromSettledTurn": 51,
+    "throughSettledTurn": 60,
+    "precedingTurnsUnchanged": true,
+    "archiveEqualsLiveSnapshot": true
+  },
+  "sources": {
+    "baseline50": {
+      "path": "/sim-runs/2026-09-07-pi-model-resume-20turns/world-save.json",
+      "sha256": "76843f26c2113cf7f1586727ad566879ff87e9022ec50e0c7746eeefd4252e0b"
+    },
+    "archive60": {
+      "path": "/sim-runs/2026-09-07-pi-model-resume-20turns/world-save-60.json",
+      "sha256": "27b08a3d1fabc797bd7ba01b27c8149054c47fa9818be96260d004242d8979b0"
+    },
+    "live60": {
+      "path": "<run-artifacts>/relay-repair-20260908-OBXOZ7/world-save.json",
+      "sha256": "27b08a3d1fabc797bd7ba01b27c8149054c47fa9818be96260d004242d8979b0"
+    },
+    "authoredReport": {
+      "path": "/sim-runs/2026-09-07-pi-model-resume-20turns/sim-genuine-60-result.md",
+      "sha256": "10ba60f51514052524b94e57d35b1f5a19802497984b3c369e2ea323bdf1deba"
+    }
+  },
+  "provenance": {
+    "kind": "external-unverified",
+    "modelVerified": false,
+    "note": "External replies; the relay cannot verify which model or controller authored them."
+  },
+  "counts": {
+    "settledTurns": 10,
+    "turnKinds": {
+      "reflection": 3,
+      "action": 7
+    },
+    "actionStatuses": {
+      "success": 4,
+      "partial": 3
+    },
+    "speechTurns": 5,
+    "stageInvocations": 38,
+    "stageValidations": {
+      "rejected": 18,
+      "accepted": 20
+    },
+    "runNextAttempts": 18,
+    "runNextStates": {
+      "error": 8,
+      "settled": 10
+    },
+    "newTerminalErrors": 8,
+    "distinctRunIdsInNewStages": 9,
+    "worldSecondsAdvanced": 38,
+    "firstStageReadyAt": "2026-09-09T07:35:15.446Z",
+    "lastStageResponseAt": "2026-09-09T08:14:20.711Z",
+    "observedWallSeconds": 2345.265,
+    "wallTimeMeaning": "External-response experiment including manual work, rejected submissions and restarts; not verified model inference latency."
+  },
+  "turns": [
+    {
+      "index": 51,
+      "characterName": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:16",
+      "turnKind": "reflection",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [],
+      "physicalAttempt": [],
+      "failedEffects": [],
+      "durationSeconds": 0
+    },
+    {
+      "index": 52,
+      "characterName": "周珉",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:18",
+      "turnKind": "action",
+      "intention": "朝后院扬声：真石哥，柴水还要多久？伯母的药我先交割给你，我好回去交差。",
+      "speech": "真石哥——柴水还要多久？伯母的药我先交割给你，清单也在这儿，我好回去交差。",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 42
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "physicalAttempt": [],
+      "failedEffects": [],
+      "durationSeconds": 1
+    },
+    {
+      "index": 53,
+      "characterName": "谢真石",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:19",
+      "turnKind": "action",
+      "intention": "拎斧回堂前：先把药包交割收下，再拿洛照的帖来看，两件承诺当面清。",
+      "speech": "",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "move",
+        "status": "success",
+        "worldVersion": 43
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [
+        "actor_movement"
+      ],
+      "physicalAttempt": [
+        {
+          "kind": "movement_attempted",
+          "actorId": "char_xyy_xiezenshi",
+          "fromZoneId": "courtyard",
+          "toZoneId": "hall"
+        }
+      ],
+      "failedEffects": [],
+      "durationSeconds": 3
+    },
+    {
+      "index": 54,
+      "characterName": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:17",
+      "turnKind": "action",
+      "intention": "站直捧帖，看着他们交割——轮到我时上前一步，当面把帖递到真石手里。",
+      "speech": "",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "rest",
+        "status": "success",
+        "worldVersion": 44
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [
+        "actor_resting"
+      ],
+      "physicalAttempt": [
+        {
+          "kind": "actor_resting",
+          "actorId": "char_xyy_luozhao",
+          "visibleAction": ""
+        }
+      ],
+      "failedEffects": [],
+      "durationSeconds": 30
+    },
+    {
+      "index": 55,
+      "characterName": "周珉",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:19",
+      "turnKind": "action",
+      "intention": "迎上两步，双手把药包和清单递给真石：当面交割。",
+      "speech": "真石哥，药包清单都在这儿——您收好，我回去好交差。",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "handle",
+        "status": "partial",
+        "worldVersion": 45
+      },
+      "failureCodes": [
+        "OBJECT_NOT_IN_HAND"
+      ],
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "physicalAttempt": [
+        {
+          "kind": "object_handling_attempted",
+          "actorId": "char_xyy_zhoumin",
+          "objectId": "tavern_delivery_medicine_parcel",
+          "operation": "transfer"
+        }
+      ],
+      "failedEffects": [
+        {
+          "code": "OBJECT_NOT_IN_HAND",
+          "objectId": "tavern_delivery_medicine_parcel",
+          "storageMode": "carried",
+          "containerId": ""
+        }
+      ],
+      "durationSeconds": 1
+    },
+    {
+      "index": 56,
+      "characterName": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:18",
+      "turnKind": "action",
+      "intention": "上前一步，双手把拜帖递到真石手里，请他过目。",
+      "speech": "谢兄，交割完了就不耽误你——这是在下的拜帖，请过目。",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "handle",
+        "status": "partial",
+        "worldVersion": 46
+      },
+      "failureCodes": [
+        "OBJECT_NOT_IN_HAND"
+      ],
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "physicalAttempt": [
+        {
+          "kind": "object_handling_attempted",
+          "actorId": "char_xyy_luozhao",
+          "objectId": "luozhao_yuheng_visit_letter",
+          "operation": "show"
+        }
+      ],
+      "failedEffects": [
+        {
+          "code": "OBJECT_NOT_IN_HAND",
+          "objectId": "luozhao_yuheng_visit_letter"
+        }
+      ],
+      "durationSeconds": 1
+    },
+    {
+      "index": 57,
+      "characterName": "周珉",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:20",
+      "turnKind": "action",
+      "intention": "告辞：差事办完，回去交差，改日再来。",
+      "speech": "那我回去交差了。柴水慢用，改日再来。",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 47
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "physicalAttempt": [],
+      "failedEffects": [],
+      "durationSeconds": 1
+    },
+    {
+      "index": 58,
+      "characterName": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:19",
+      "turnKind": "action",
+      "intention": "上前一步，双手把拜帖递到真石手里：帖在此，请过目。",
+      "speech": "帖在此，请谢兄过目。",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "handle",
+        "status": "partial",
+        "worldVersion": 48
+      },
+      "failureCodes": [
+        "OBJECT_NOT_IN_HAND"
+      ],
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "physicalAttempt": [
+        {
+          "kind": "object_handling_attempted",
+          "actorId": "char_xyy_luozhao",
+          "objectId": "luozhao_yuheng_visit_letter",
+          "operation": "show"
+        }
+      ],
+      "failedEffects": [
+        {
+          "code": "OBJECT_NOT_IN_HAND",
+          "objectId": "luozhao_yuheng_visit_letter"
+        }
+      ],
+      "durationSeconds": 1
+    },
+    {
+      "index": 59,
+      "characterName": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:20",
+      "turnKind": "reflection",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [],
+      "physicalAttempt": [],
+      "failedEffects": [],
+      "durationSeconds": 0
+    },
+    {
+      "index": 60,
+      "characterName": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:21",
+      "turnKind": "reflection",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "failureCodes": [],
+      "resolvedEffectKinds": [],
+      "physicalAttempt": [],
+      "failedEffects": [],
+      "durationSeconds": 0
+    }
+  ],
+  "worldDelta": {
+    "worldVersion": {
+      "before": 41,
+      "after": 48
+    },
+    "nowSeconds": {
+      "before": 739,
+      "after": 777
+    },
+    "changedEntities": {
+      "char_xyy_xiezenshi": {
+        "before": {
+          "id": "char_xyy_xiezenshi",
+          "kind": "character",
+          "name": "谢真石",
+          "present": true,
+          "placeId": "loc_xyy_tavern",
+          "zoneId": "courtyard",
+          "role": "返家探亲、即将回宗门参加剑阁考核的内门弟子；在家中分担酒馆柴水杂务",
+          "standing": "household_worker",
+          "publicSignalFeatures": [],
+          "publicDescription": "谢真石",
+          "serviceAuthority": {
+            "serveTea": true,
+            "serveMeal": true,
+            "settleCash": false
+          },
+          "orientationTargetId": "char_xyy_luozhao"
+        },
+        "after": {
+          "id": "char_xyy_xiezenshi",
+          "kind": "character",
+          "name": "谢真石",
+          "present": true,
+          "placeId": "loc_xyy_tavern",
+          "zoneId": "hall",
+          "role": "返家探亲、即将回宗门参加剑阁考核的内门弟子；在家中分担酒馆柴水杂务",
+          "standing": "household_worker",
+          "publicSignalFeatures": [],
+          "publicDescription": "谢真石",
+          "serviceAuthority": {
+            "serveTea": true,
+            "serveMeal": true,
+            "settleCash": false
+          },
+          "orientationTargetId": "char_xyy_luozhao"
+        }
+      }
+    },
+    "changedObjects": {
+      "tavern_tool_wood_axe": {
+        "before": {
+          "id": "tavern_tool_wood_axe",
+          "label": "劈柴斧",
+          "aliases": [
+            "斧头",
+            "木斧"
+          ],
+          "zoneId": "courtyard",
+          "portable": true,
+          "state": {
+            "returned": true
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_xiezenshi",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          },
+          "custody": {
+            "storageMode": "in_hand",
+            "containerId": "",
+            "inHand": true
+          }
+        },
+        "after": {
+          "id": "tavern_tool_wood_axe",
+          "label": "劈柴斧",
+          "aliases": [
+            "斧头",
+            "木斧"
+          ],
+          "zoneId": "hall",
+          "portable": true,
+          "state": {
+            "returned": true
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_xiezenshi",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          },
+          "custody": {
+            "storageMode": "in_hand",
+            "containerId": "",
+            "inHand": true
+          }
+        }
+      },
+      "xiezenshi_short_sword": {
+        "before": {
+          "id": "xiezenshi_short_sword",
+          "label": "谢真石的短剑",
+          "aliases": [
+            "短剑"
+          ],
+          "zoneId": "courtyard",
+          "initialHolderActorId": "char_xyy_xiezenshi",
+          "portable": true,
+          "state": {
+            "sheathed": true
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_xiezenshi",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        },
+        "after": {
+          "id": "xiezenshi_short_sword",
+          "label": "谢真石的短剑",
+          "aliases": [
+            "短剑"
+          ],
+          "zoneId": "hall",
+          "initialHolderActorId": "char_xyy_xiezenshi",
+          "portable": true,
+          "state": {
+            "sheathed": true
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_xiezenshi",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        }
+      }
+    },
+    "unchangedCollections": [
+      "processes",
+      "sharedActivities",
+      "socialFacts",
+      "places"
+    ],
+    "criticalObjects": {
+      "tavern_delivery_medicine_parcel": {
+        "unchanged": true,
+        "final": {
+          "id": "tavern_delivery_medicine_parcel",
+          "label": "药包",
+          "aliases": [
+            "药包",
+            "药材包"
+          ],
+          "zoneId": "hall",
+          "initialHolderActorId": "char_xyy_zhoumin",
+          "portable": true,
+          "state": {
+            "accepted": false,
+            "intendedRecipientActorId": "char_xyy_xiemu",
+            "treatmentTargetActorId": "char_xyy_xiemu",
+            "treatmentCategory": "chronic_lung_ailment",
+            "treatmentDetailsStatus": "unknown"
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_zhoumin",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        }
+      },
+      "tavern_delivery_manifest": {
+        "unchanged": true,
+        "final": {
+          "id": "tavern_delivery_manifest",
+          "label": "送药清单",
+          "aliases": [
+            "清单",
+            "送药清单"
+          ],
+          "zoneId": "hall",
+          "initialHolderActorId": "char_xyy_zhoumin",
+          "portable": true,
+          "state": {
+            "accepted": false
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_zhoumin",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          },
+          "custody": {
+            "storageMode": "in_hand",
+            "containerId": "",
+            "inHand": true
+          }
+        }
+      },
+      "luozhao_yuheng_visit_letter": {
+        "unchanged": true,
+        "final": {
+          "id": "luozhao_yuheng_visit_letter",
+          "label": "洛照随身携带的玉衡宗拜帖",
+          "aliases": [
+            "玉衡宗拜帖",
+            "拜帖"
+          ],
+          "zoneId": "hall",
+          "initialHolderActorId": "char_xyy_luozhao",
+          "portable": true,
+          "state": {
+            "intendedRecipientInstitutionId": "institution_xyy_tiyunzong",
+            "tavernCustody": false,
+            "displayedToActorIds": []
+          },
+          "custody": {
+            "storageMode": "packed",
+            "containerId": "luozhao_travel_pack",
+            "inHand": false
+          },
+          "presentation": {
+            "exposure": "hidden",
+            "displayedToActorIds": [],
+            "publiclyVisible": false
+          },
+          "perception": {
+            "publicLabel": "一封帖子"
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "char_xyy_luozhao"
+        }
+      },
+      "tavern_resource_unprocessed_firewood": {
+        "unchanged": true,
+        "final": {
+          "id": "tavern_resource_unprocessed_firewood",
+          "label": "后院湿柴堆",
+          "aliases": [
+            "湿柴",
+            "柴堆"
+          ],
+          "zoneId": "courtyard",
+          "portable": false,
+          "state": {
+            "unprocessedBundles": 2
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        }
+      },
+      "tavern_resource_sheltered_firewood": {
+        "unchanged": true,
+        "final": {
+          "id": "tavern_resource_sheltered_firewood",
+          "label": "檐下成柴堆",
+          "aliases": [
+            "成柴",
+            "干柴堆"
+          ],
+          "zoneId": "courtyard",
+          "portable": false,
+          "state": {
+            "processedBundles": 0
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        }
+      },
+      "tavern_tool_water_bucket": {
+        "unchanged": true,
+        "final": {
+          "id": "tavern_tool_water_bucket",
+          "label": "木水桶",
+          "aliases": [
+            "水桶"
+          ],
+          "zoneId": "stove",
+          "portable": true,
+          "state": {
+            "fill": 0
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        }
+      },
+      "tavern_resource_water_vat": {
+        "unchanged": true,
+        "final": {
+          "id": "tavern_resource_water_vat",
+          "label": "灶边水缸",
+          "aliases": [
+            "水缸"
+          ],
+          "zoneId": "stove",
+          "portable": false,
+          "state": {
+            "fill": 0.55,
+            "capacityBuckets": 2
+          },
+          "kind": "object",
+          "placeId": "loc_xyy_tavern",
+          "holderCharacterId": "",
+          "presentation": {
+            "exposure": "visible",
+            "displayedToActorIds": [],
+            "publiclyVisible": true
+          }
+        }
+      }
+    },
+    "finalEntityLocations": {
+      "char_xyy_xiezenshi": {
+        "present": true,
+        "placeId": "loc_xyy_tavern",
+        "zoneId": "hall"
+      },
+      "char_xyy_luozhao": {
+        "present": true,
+        "placeId": "loc_xyy_tavern",
+        "zoneId": "hall"
+      },
+      "char_xyy_zhoumin": {
+        "present": true,
+        "placeId": "loc_xyy_tavern",
+        "zoneId": "hall"
+      }
+    }
+  },
+  "retainedFailureMemories": [
+    {
+      "characterId": "char_xyy_luozhao",
+      "episodeId": "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:18",
+      "perceivedContent": "刚才的动作只完成了一部分。",
+      "actionResult": {
+        "status": "partial",
+        "primitive": "handle",
+        "failureCodes": [
+          "OBJECT_NOT_IN_HAND"
+        ],
+        "resolvedEffectKinds": [
+          "speech_emitted",
+          "speech_delivered"
+        ],
+        "incidentalEffectKinds": [],
+        "attemptSurfaceKinds": [
+          "object_handling_attempted",
+          "utterance_emitted"
+        ]
+      },
+      "interpretations": [
+        {
+          "id": "interpretation:episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:18:0",
+          "atSeconds": 776,
+          "summary": "刚才的动作只完成了一部分。",
+          "confidence": 0.97,
+          "source": "encoding"
+        }
+      ]
+    },
+    {
+      "characterId": "char_xyy_zhoumin",
+      "episodeId": "episode:char_xyy_zhoumin:world-event:action-attempt:agent-turn:char_xyy_zhoumin:19",
+      "perceivedContent": "刚才的动作只完成了一部分。",
+      "actionResult": {
+        "status": "partial",
+        "primitive": "handle",
+        "failureCodes": [
+          "OBJECT_NOT_IN_HAND"
+        ],
+        "resolvedEffectKinds": [
+          "speech_emitted",
+          "speech_delivered"
+        ],
+        "incidentalEffectKinds": [],
+        "attemptSurfaceKinds": [
+          "object_handling_attempted",
+          "utterance_emitted"
+        ]
+      },
+      "interpretations": [
+        {
+          "id": "interpretation:episode:char_xyy_zhoumin:world-event:action-attempt:agent-turn:char_xyy_zhoumin:19:0",
+          "atSeconds": 775,
+          "summary": "刚才的动作只完成了一部分。",
+          "confidence": 0.97,
+          "source": "encoding"
+        },
+        {
+          "id": "interpretation:episode:char_xyy_zhoumin:world-event:action-attempt:agent-turn:char_xyy_zhoumin:19:1",
+          "atSeconds": 775,
+          "summary": "药包清单交到真石手上——我的差事办完了，该回去交差。",
+          "confidence": 0.84,
+          "source": "character-agent-appraisal"
+        }
+      ]
+    }
+  ],
+  "unsupportedReflectionBeliefs": [
+    {
+      "id": "belief:reflection:char_xyy_luozhao:reflection-opportunity:char_xyy_luozhao:4:1",
+      "proposition": "递帖递了三回才到人手里——不是他不收，是每个人手里都有先来后到的事。等出时机，比抢出时机值钱。",
+      "confidence": 0.85,
+      "status": "supported",
+      "reasoningMode": "inference",
+      "sourceMemoryIds": [
+        "episode:char_xyy_luozhao:self-action-impact:action-attempt:agent-turn:char_xyy_luozhao:10",
+        "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:10"
+      ],
+      "citedMemories": [
+        {
+          "id": "episode:char_xyy_luozhao:self-action-impact:action-attempt:agent-turn:char_xyy_luozhao:10",
+          "content": "actor_resting",
+          "actionResult": null
+        },
+        {
+          "id": "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:10",
+          "content": "刚才的动作已经落定。",
+          "actionResult": null
+        }
+      ]
+    },
+    {
+      "id": "belief:reflection:char_xyy_luozhao:reflection-opportunity:char_xyy_luozhao:4:2",
+      "proposition": "真石那句「你的帖拿来我看吧」是当着人说的——他应我的事，也是当众应的。这样的人物，值得把较量交给他。",
+      "confidence": 0.8,
+      "status": "supported",
+      "reasoningMode": "inference",
+      "sourceMemoryIds": [
+        "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_zhoumin:13"
+      ],
+      "citedMemories": [
+        {
+          "id": "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_zhoumin:13",
+          "content": "那人在原处歇了下来",
+          "actionResult": null
+        }
+      ]
+    },
+    {
+      "id": "belief:reflection:char_xyy_luozhao:reflection-opportunity:char_xyy_luozhao:5:1",
+      "proposition": "帖子递出去了，接下去看的不是帖子，是人——他怎么读这份心意，怎么给这句话。",
+      "confidence": 0.8,
+      "status": "supported",
+      "reasoningMode": "inference",
+      "sourceMemoryIds": [
+        "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:15",
+        "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_zhoumin:18"
+      ],
+      "citedMemories": [
+        {
+          "id": "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:15",
+          "content": "刚才的动作已经落定。",
+          "actionResult": {
+            "status": "success",
+            "primitive": "rest",
+            "failureCodes": [],
+            "resolvedEffectKinds": [
+              "actor_resting"
+            ],
+            "incidentalEffectKinds": [],
+            "attemptSurfaceKinds": [
+              "actor_resting"
+            ]
+          }
+        },
+        {
+          "id": "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_zhoumin:18",
+          "content": "真石哥——柴水还要多久？伯母的药我先交割给你，清单也在这儿，我好回去交差。",
+          "actionResult": null
+        }
+      ]
+    }
+  ],
+  "uncommittedQuoteCheck": {
+    "quote": "你的帖拿来我看吧",
+    "searchedSettledWorldOutcomes": 48,
+    "committedMatches": []
+  },
+  "selectedRawReplies": {
+    "zm20_s1.json": {
+      "path": "<run-artifacts>/zm20_s1.json",
+      "sha256": "44c8b58e832fb0f111b0c02eff7cf7f001ff2776171495c48b92520de3572dba",
+      "appraisal": {
+        "agentTurnId": "agent-turn:char_xyy_zhoumin:20",
+        "noticedEvidenceIds": [
+          "evidence:delivery:world-event:action-attempt:agent-turn:char_xyy_zhoumin:19:char_xyy_zhoumin:own-action-result",
+          "evidence:delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:18:speech:char_xyy_zhoumin"
+        ],
+        "interpretations": [
+          {
+            "evidenceIds": [
+              "evidence:delivery:world-event:action-attempt:agent-turn:char_xyy_zhoumin:19:char_xyy_zhoumin:own-action-result"
+            ],
+            "meaning": "药包清单交到真石手上——我的差事办完了，该回去交差。",
+            "confidence": 0.95
+          },
+          {
+            "evidenceIds": [
+              "evidence:delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:18:speech:char_xyy_zhoumin"
+            ],
+            "meaning": "佩剑客上前递帖了——真石下一件是他的事，我不该再占着话头。",
+            "confidence": 0.9
+          }
+        ],
+        "priorActionOutcomeAppraisal": {
+          "ownerAuthority": "character-agent",
+          "sourceAgentTurnId": "agent-turn:char_xyy_zhoumin:19",
+          "status": "perceived",
+          "noticedOutcomeEvidenceIds": [
+            "evidence:delivery:world-event:action-attempt:agent-turn:char_xyy_zhoumin:19:char_xyy_zhoumin:own-action-result"
+          ],
+          "perceivedInformationGain": 0.2,
+          "perceivedGoalProgress": 0.6,
+          "perceivedCost": 0.03,
+          "unexpectedness": 0.03,
+          "stillUnresolved": false,
+          "summary": "交割落定，差事可交。"
+        }
+      }
+    },
+    "lz19_s1.json": {
+      "path": "<run-artifacts>/lz19_s1.json",
+      "sha256": "fa5c50d17342d609e3db1526c05948f5af8a827e536e43e8efe58f96da3cdd55",
+      "appraisal": {
+        "agentTurnId": "agent-turn:char_xyy_luozhao:19",
+        "noticedEvidenceIds": [
+          "evidence:delivery:signal:action-attempt:agent-turn:char_xyy_zhoumin:20:speech:char_xyy_luozhao",
+          "evidence:delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:18:char_xyy_luozhao:own-action-result"
+        ],
+        "interpretations": [
+          {
+            "evidenceIds": [
+              "evidence:delivery:signal:action-attempt:agent-turn:char_xyy_zhoumin:20:speech:char_xyy_luozhao"
+            ],
+            "meaning": "真石当众开口：「你的帖拿来我看吧」——等了这半晌的字面回音。双手递帖，就现在。",
+            "confidence": 0.97
+          }
+        ],
+        "priorActionOutcomeAppraisal": {
+          "ownerAuthority": "character-agent",
+          "sourceAgentTurnId": "agent-turn:char_xyy_luozhao:18",
+          "status": "perceived",
+          "noticedOutcomeEvidenceIds": [
+            "evidence:delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:18:char_xyy_luozhao:own-action-result"
+          ],
+          "perceivedInformationGain": 0.3,
+          "perceivedGoalProgress": 0.5,
+          "perceivedCost": 0.02,
+          "unexpectedness": 0.05,
+          "stillUnresolved": false,
+          "summary": "递帖被接了，回音正来。"
+        }
+      }
+    },
+    "lz20_reflect.json": {
+      "path": "<run-artifacts>/lz20_reflect.json",
+      "sha256": "d87adfca565225b7d6ffccbcbc0a4e75055f3463a8a31b853500627808efb9c1",
+      "insights": [
+        {
+          "proposition": "递帖递了三回才到人手里——不是他不收，是每个人手里都有先来后到的事。等出时机，比抢出时机值钱。",
+          "sourceMemoryIds": [
+            "episode:char_xyy_luozhao:self-action-impact:action-attempt:agent-turn:char_xyy_luozhao:10",
+            "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:10"
+          ],
+          "confidence": 0.85,
+          "importance": 0.65,
+          "semanticFrame": {
+            "kind": "reflection_insight",
+            "predicate": "timing_over_urgency",
+            "topicId": "duel_request",
+            "lexicalAnchors": [
+              "先来后到",
+              "时机"
+            ]
+          }
+        },
+        {
+          "proposition": "真石那句「你的帖拿来我看吧」是当着人说的——他应我的事，也是当众应的。这样的人物，值得把较量交给他。",
+          "sourceMemoryIds": [
+            "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_zhoumin:13"
+          ],
+          "confidence": 0.8,
+          "importance": 0.7,
+          "semanticFrame": {
+            "kind": "reflection_insight",
+            "predicate": "public_promise_trust",
+            "topicId": "xiezenshi_observation",
+            "lexicalAnchors": [
+              "当众应",
+              "值得"
+            ]
+          }
+        }
+      ]
+    },
+    "lz21_reflect.json": {
+      "path": "<run-artifacts>/lz21_reflect.json",
+      "sha256": "3b7fbb3f77bfdfe33d75e3036320e6eed1bc24ee2a3463e25b67a055011edc30",
+      "insights": [
+        {
+          "proposition": "帖子递出去了，接下去看的不是帖子，是人——他怎么读这份心意，怎么给这句话。",
+          "sourceMemoryIds": [
+            "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_luozhao:15",
+            "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_zhoumin:18"
+          ],
+          "confidence": 0.8,
+          "importance": 0.6,
+          "semanticFrame": {
+            "kind": "reflection_insight",
+            "predicate": "watching_the_reader",
+            "topicId": "duel_request",
+            "lexicalAnchors": [
+              "递帖",
+              "读人"
+            ]
+          }
+        }
+      ]
+    },
+    "xz20d_s2be.json": {
+      "path": "<run-artifacts>/xz20d_s2be.json",
+      "sha256": "c2614af38f022b79782730f45f632d92d11d571bbcbf197dc888386714f5a95d",
+      "stageId": "9194f175-b0ed-4cf4-81e3-256755fc373e:57",
+      "outputTopLevelKeys": [
+        "choice",
+        "turnCommit"
+      ],
+      "rejectedSpeech": "好，慢走。——这位朋友，你的帖拿来我看吧。"
+    }
+  },
+  "newStageTimings": [
+    {
+      "stageId": "d21842a7-b549-4879-83f1-2b8eddd6443e:21",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:18",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 39.04524999996647,
+      "schemaMs": 0.5373329999856651,
+      "inputBytes": 173065,
+      "schemaBytes": 48733,
+      "readyAt": "2026-09-09T07:35:15.446Z",
+      "respondedAt": "2026-09-09T07:36:12.588Z",
+      "responseWaitMs": 57141.143958,
+      "validation": "rejected",
+      "payloadBuildMs": 1.141499999910593,
+      "issueCodes": [
+        "AGENT_CANDIDATE_PRIMITIVE_UNSUPPORTED"
+      ]
+    },
+    {
+      "stageId": "d21842a7-b549-4879-83f1-2b8eddd6443e:22",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:18",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 10.971917000133544,
+      "schemaMs": 1.0797500000335276,
+      "inputBytes": 173732,
+      "schemaBytes": 48733,
+      "readyAt": "2026-09-09T07:36:12.600Z",
+      "respondedAt": "2026-09-09T07:36:19.995Z",
+      "responseWaitMs": 7394.485333999619,
+      "validation": "rejected",
+      "payloadBuildMs": 1.7287500002421439,
+      "issueCodes": [
+        "AGENT_CANDIDATE_PRIMITIVE_UNSUPPORTED"
+      ]
+    },
+    {
+      "stageId": "86ce470b-0985-4625-a5bf-9e324d880840:23",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:19",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 30.48429200000001,
+      "schemaMs": 1.1731659999999806,
+      "inputBytes": 198785,
+      "schemaBytes": 49433,
+      "readyAt": "2026-09-09T07:40:13.857Z",
+      "respondedAt": "2026-09-09T07:42:45.512Z",
+      "responseWaitMs": 151654.323125,
+      "validation": "rejected",
+      "payloadBuildMs": 1.73683299999999,
+      "issueCodes": [
+        "SUBJECTIVE_EPISTEMIC_SUBJECT_UNKNOWN"
+      ]
+    },
+    {
+      "stageId": "86ce470b-0985-4625-a5bf-9e324d880840:24",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:19",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 6.169166000006953,
+      "schemaMs": 0.423291999992216,
+      "inputBytes": 199447,
+      "schemaBytes": 49433,
+      "readyAt": "2026-09-09T07:42:45.520Z",
+      "respondedAt": "2026-09-09T07:42:55.307Z",
+      "responseWaitMs": 9787.812791999982,
+      "validation": "rejected",
+      "payloadBuildMs": 1.102500000008149,
+      "issueCodes": [
+        "AGENT_CANDIDATE_DESIRE_RELATION_INVALID"
+      ]
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:25",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:16",
+      "phase": "awaiting_character_reflection",
+      "localPreparationMs": 12.472750000000019,
+      "schemaMs": 0.5607499999999845,
+      "inputBytes": 24556,
+      "schemaBytes": 1513,
+      "readyAt": "2026-09-09T07:44:03.771Z",
+      "respondedAt": "2026-09-09T07:44:27.227Z",
+      "responseWaitMs": 23456.016542,
+      "validation": "accepted",
+      "payloadBuildMs": 0.6612920000000031
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:26",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:18",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 23.767665999999736,
+      "schemaMs": 0.5588339999994787,
+      "inputBytes": 173065,
+      "schemaBytes": 48733,
+      "readyAt": "2026-09-09T07:44:27.284Z",
+      "respondedAt": "2026-09-09T07:44:59.849Z",
+      "responseWaitMs": 32564.763541999997,
+      "validation": "accepted",
+      "payloadBuildMs": 1.0158749999973224
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:27",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:18",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 14.803249999997206,
+      "schemaMs": 0.22229199999856064,
+      "inputBytes": 244539,
+      "schemaBytes": 20335,
+      "readyAt": "2026-09-09T07:44:59.865Z",
+      "respondedAt": "2026-09-09T07:45:25.300Z",
+      "responseWaitMs": 25434.395041000003,
+      "validation": "accepted",
+      "payloadBuildMs": 1.4262500000040745
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:28",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:19",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 19.350500000000466,
+      "schemaMs": 0.3445839999913005,
+      "inputBytes": 201450,
+      "schemaBytes": 50720,
+      "readyAt": "2026-09-09T07:45:25.408Z",
+      "respondedAt": "2026-09-09T07:46:10.190Z",
+      "responseWaitMs": 44781.18116600001,
+      "validation": "accepted",
+      "payloadBuildMs": 0.893792000002577
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:29",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:19",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 13.124874999994063,
+      "schemaMs": 0.16570800000044983,
+      "inputBytes": 307715,
+      "schemaBytes": 21572,
+      "readyAt": "2026-09-09T07:46:10.204Z",
+      "respondedAt": "2026-09-09T07:46:42.249Z",
+      "responseWaitMs": 32044.593040999986,
+      "validation": "rejected",
+      "payloadBuildMs": 1.28970800001116,
+      "issueCodes": [
+        "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_LIVE_SOURCE_IGNORED"
+      ]
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:30",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:19",
+      "phase": "awaiting_agent_turn_commit",
+      "localPreparationMs": 6.120207999978447,
+      "schemaMs": 0.1341670000110753,
+      "inputBytes": 27075,
+      "schemaBytes": 5265,
+      "readyAt": "2026-09-09T07:46:42.255Z",
+      "respondedAt": "2026-09-09T07:47:10.534Z",
+      "responseWaitMs": 28278.035499999998,
+      "validation": "accepted",
+      "payloadBuildMs": 0.21087500001885928
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:31",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:17",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 19.539666999975452,
+      "schemaMs": 0.4523750000225846,
+      "inputBytes": 170798,
+      "schemaBytes": 48714,
+      "readyAt": "2026-09-09T07:47:10.632Z",
+      "respondedAt": "2026-09-09T07:47:53.310Z",
+      "responseWaitMs": 42677.19745800001,
+      "validation": "accepted",
+      "payloadBuildMs": 0.9979160000220872
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:32",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:17",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 10.683374999993248,
+      "schemaMs": 0.1785000000090804,
+      "inputBytes": 268241,
+      "schemaBytes": 20392,
+      "readyAt": "2026-09-09T07:47:53.321Z",
+      "respondedAt": "2026-09-09T07:48:32.781Z",
+      "responseWaitMs": 39460.05754099999,
+      "validation": "accepted",
+      "payloadBuildMs": 0.7324169999919832
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:33",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:19",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 19.22025000001304,
+      "schemaMs": 0.36679200001526624,
+      "inputBytes": 175547,
+      "schemaBytes": 48833,
+      "readyAt": "2026-09-09T07:48:32.885Z",
+      "respondedAt": "2026-09-09T07:49:45.318Z",
+      "responseWaitMs": 72432.68041599996,
+      "validation": "accepted",
+      "payloadBuildMs": 0.849166999978479
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:34",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:19",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 11.89166700001806,
+      "schemaMs": 0.1860410000081174,
+      "inputBytes": 252857,
+      "schemaBytes": 20495,
+      "readyAt": "2026-09-09T07:49:45.332Z",
+      "respondedAt": "2026-09-09T07:51:06.722Z",
+      "responseWaitMs": 81389.76554200001,
+      "validation": "accepted",
+      "payloadBuildMs": 1.4199999999837019
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:35",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 19.310708000033628,
+      "schemaMs": 0.37708299997029826,
+      "inputBytes": 202699,
+      "schemaBytes": 51040,
+      "readyAt": "2026-09-09T07:51:06.831Z",
+      "respondedAt": "2026-09-09T07:51:59.248Z",
+      "responseWaitMs": 52417.11270900001,
+      "validation": "rejected",
+      "payloadBuildMs": 0.9069999999483116,
+      "issueCodes": [
+        "AGENT_CANDIDATE_TARGET_UNKNOWN",
+        "AGENT_CANDIDATE_BINDING_TARGET_UNKNOWN",
+        "AGENT_CANDIDATE_FEASIBILITY_UNKNOWN"
+      ]
+    },
+    {
+      "stageId": "ff372db6-d2a5-46b5-9186-71a5bfc25e0f:36",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 7.740625000034925,
+      "schemaMs": 0.43983300001127645,
+      "inputBytes": 203805,
+      "schemaBytes": 51040,
+      "readyAt": "2026-09-09T07:51:59.257Z",
+      "respondedAt": "2026-09-09T07:53:02.513Z",
+      "responseWaitMs": 63256.25958299998,
+      "validation": "rejected",
+      "payloadBuildMs": 1.0085419999668375,
+      "issueCodes": [
+        "SUBJECTIVE_PRIOR_OUTCOME_TURN_MISMATCH",
+        "SUBJECTIVE_PRIOR_OUTCOME_EVIDENCE_UNKNOWN",
+        "SUBJECTIVE_PRIOR_OUTCOME_EVIDENCE_NOT_NOTICED",
+        "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN"
+      ]
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:37",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:18",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 30.490625000000023,
+      "schemaMs": 1.03366699999998,
+      "inputBytes": 172293,
+      "schemaBytes": 47492,
+      "readyAt": "2026-09-09T07:55:02.553Z",
+      "respondedAt": "2026-09-09T07:56:07.486Z",
+      "responseWaitMs": 64933.065625,
+      "validation": "accepted",
+      "payloadBuildMs": 1.576958999999988
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:38",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:18",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 18.745249999999942,
+      "schemaMs": 0.43112500000279397,
+      "inputBytes": 268342,
+      "schemaBytes": 20418,
+      "readyAt": "2026-09-09T07:56:07.506Z",
+      "respondedAt": "2026-09-09T07:57:46.536Z",
+      "responseWaitMs": 99029.82499999998,
+      "validation": "rejected",
+      "payloadBuildMs": 1.2716250000012224,
+      "issueCodes": [
+        "CHARACTER_AGENT_CONVERSATION_TARGET_INCOMPATIBLE"
+      ]
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:39",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:18",
+      "phase": "awaiting_agent_turn_commit",
+      "localPreparationMs": 6.036625000007916,
+      "schemaMs": 0.09541599999647588,
+      "inputBytes": 23740,
+      "schemaBytes": 5353,
+      "readyAt": "2026-09-09T07:57:46.543Z",
+      "respondedAt": "2026-09-09T07:59:03.447Z",
+      "responseWaitMs": 76903.822541,
+      "validation": "accepted",
+      "payloadBuildMs": 0.17129100000602193
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:40",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:20",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 23.492708000005223,
+      "schemaMs": 0.41962500000954606,
+      "inputBytes": 180924,
+      "schemaBytes": 47661,
+      "readyAt": "2026-09-09T07:59:03.584Z",
+      "respondedAt": "2026-09-09T08:01:09.389Z",
+      "responseWaitMs": 125804.648708,
+      "validation": "accepted",
+      "payloadBuildMs": 0.9079579999961425
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:41",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:20",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 12.1286249999539,
+      "schemaMs": 0.1884169999975711,
+      "inputBytes": 260615,
+      "schemaBytes": 20610,
+      "readyAt": "2026-09-09T08:01:09.403Z",
+      "respondedAt": "2026-09-09T08:03:12.858Z",
+      "responseWaitMs": 123455.351417,
+      "validation": "accepted",
+      "payloadBuildMs": 1.6684170000371523
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:42",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 21.479791999969166,
+      "schemaMs": 1.1848330000066198,
+      "inputBytes": 204470,
+      "schemaBytes": 51040,
+      "readyAt": "2026-09-09T08:03:12.980Z",
+      "respondedAt": "2026-09-09T08:04:32.227Z",
+      "responseWaitMs": 79247.22674999997,
+      "validation": "accepted",
+      "payloadBuildMs": 1.7271250000339933
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:43",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 13.325499999918975,
+      "schemaMs": 0.24958300008438528,
+      "inputBytes": 317124,
+      "schemaBytes": 21753,
+      "readyAt": "2026-09-09T08:04:32.242Z",
+      "respondedAt": "2026-09-09T08:05:35.057Z",
+      "responseWaitMs": 62814.04079100001,
+      "validation": "rejected",
+      "payloadBuildMs": 1.4018330000108108,
+      "issueCodes": [
+        "CHARACTER_AGENT_PRESERVED_DESIRE_UNLINKED"
+      ]
+    },
+    {
+      "stageId": "a27230ca-4d2a-4c91-b54a-e05b833b1261:44",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 9.498874999932013,
+      "schemaMs": 0.25120800000149757,
+      "inputBytes": 317777,
+      "schemaBytes": 21753,
+      "readyAt": "2026-09-09T08:05:35.067Z",
+      "respondedAt": "2026-09-09T08:05:52.787Z",
+      "responseWaitMs": 17719.601415999932,
+      "validation": "rejected",
+      "payloadBuildMs": 0.8983330000191927,
+      "issueCodes": [
+        "CHARACTER_AGENT_CHOICE_MISSING"
+      ]
+    },
+    {
+      "stageId": "46f06fa6-f38e-4b26-a2b4-481c2dc35c18:45",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:19",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 29.986625000000004,
+      "schemaMs": 0.9895830000000103,
+      "inputBytes": 178007,
+      "schemaBytes": 47222,
+      "readyAt": "2026-09-09T08:06:12.607Z",
+      "respondedAt": "2026-09-09T08:07:03.696Z",
+      "responseWaitMs": 51088.913792,
+      "validation": "accepted",
+      "payloadBuildMs": 1.477958000000001
+    },
+    {
+      "stageId": "46f06fa6-f38e-4b26-a2b4-481c2dc35c18:46",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:19",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 20.40837499999907,
+      "schemaMs": 0.37358400000084657,
+      "inputBytes": 278582,
+      "schemaBytes": 20409,
+      "readyAt": "2026-09-09T08:07:03.718Z",
+      "respondedAt": "2026-09-09T08:07:39.305Z",
+      "responseWaitMs": 35587.529042,
+      "validation": "accepted",
+      "payloadBuildMs": 1.121791999998095
+    },
+    {
+      "stageId": "46f06fa6-f38e-4b26-a2b4-481c2dc35c18:47",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:21",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 23.721707999997307,
+      "schemaMs": 0.38033299999369774,
+      "inputBytes": 184164,
+      "schemaBytes": 47826,
+      "readyAt": "2026-09-09T08:07:39.432Z",
+      "respondedAt": "2026-09-09T08:08:03.035Z",
+      "responseWaitMs": 23602.96862500001,
+      "validation": "rejected",
+      "payloadBuildMs": 0.8749580000003334,
+      "issueCodes": [
+        "SUBJECTIVE_EPISTEMIC_POSITION_SILENTLY_DROPPED"
+      ]
+    },
+    {
+      "stageId": "46f06fa6-f38e-4b26-a2b4-481c2dc35c18:48",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:21",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 4.131374999997206,
+      "schemaMs": 0.49579200000152923,
+      "inputBytes": 184819,
+      "schemaBytes": 47826,
+      "readyAt": "2026-09-09T08:08:03.040Z",
+      "respondedAt": "2026-09-09T08:08:13.547Z",
+      "responseWaitMs": 10506.712207999997,
+      "validation": "rejected",
+      "payloadBuildMs": 0.9875000000029104,
+      "issueCodes": [
+        "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+        "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+        "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN"
+      ]
+    },
+    {
+      "stageId": "a1292070-f0b9-4367-aebd-f85f58322f2c:49",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 33.43145899999999,
+      "schemaMs": 1.2545000000000073,
+      "inputBytes": 204476,
+      "schemaBytes": 51040,
+      "readyAt": "2026-09-09T08:08:34.464Z",
+      "respondedAt": "2026-09-09T08:08:57.472Z",
+      "responseWaitMs": 23007.594084,
+      "validation": "accepted",
+      "payloadBuildMs": 1.8798749999999984
+    },
+    {
+      "stageId": "a1292070-f0b9-4367-aebd-f85f58322f2c:50",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 20.953083000000333,
+      "schemaMs": 0.4870840000003227,
+      "inputBytes": 317136,
+      "schemaBytes": 21753,
+      "readyAt": "2026-09-09T08:08:57.495Z",
+      "respondedAt": "2026-09-09T08:09:15.132Z",
+      "responseWaitMs": 17637.620417,
+      "validation": "rejected",
+      "payloadBuildMs": 2.02033400000073,
+      "issueCodes": [
+        "CHARACTER_AGENT_PRESERVED_DESIRE_UNLINKED"
+      ]
+    },
+    {
+      "stageId": "a1292070-f0b9-4367-aebd-f85f58322f2c:51",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 6.924833999997645,
+      "schemaMs": 0.16583299999911105,
+      "inputBytes": 317789,
+      "schemaBytes": 21753,
+      "readyAt": "2026-09-09T08:09:15.141Z",
+      "respondedAt": "2026-09-09T08:09:34.256Z",
+      "responseWaitMs": 19115.238333,
+      "validation": "rejected",
+      "payloadBuildMs": 1.3882080000039423,
+      "issueCodes": [
+        "CHARACTER_AGENT_CHOICE_MISSING"
+      ]
+    },
+    {
+      "stageId": "fed7cd58-7609-4a38-b97b-368af5657a6f:52",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:20",
+      "phase": "awaiting_character_reflection",
+      "localPreparationMs": 14.735749999999996,
+      "schemaMs": 0.479582999999991,
+      "inputBytes": 71504,
+      "schemaBytes": 2747,
+      "readyAt": "2026-09-09T08:10:17.748Z",
+      "respondedAt": "2026-09-09T08:10:37.343Z",
+      "responseWaitMs": 19593.769208,
+      "validation": "accepted",
+      "payloadBuildMs": 0.6517080000000135
+    },
+    {
+      "stageId": "fed7cd58-7609-4a38-b97b-368af5657a6f:53",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:21",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 27.33258299999943,
+      "schemaMs": 0.5964590000003227,
+      "inputBytes": 184164,
+      "schemaBytes": 47826,
+      "readyAt": "2026-09-09T08:10:37.416Z",
+      "respondedAt": "2026-09-09T08:11:11.942Z",
+      "responseWaitMs": 34525.672458999994,
+      "validation": "rejected",
+      "payloadBuildMs": 1.1103750000002037,
+      "issueCodes": [
+        "SUBJECTIVE_EPISTEMIC_EVIDENCE_UNKNOWN",
+        "SUBJECTIVE_EPISTEMIC_EVIDENCE_NOT_NOTICED",
+        "CHARACTER_AGENT_APPRAISAL_EVIDENCE_UNKNOWN"
+      ]
+    },
+    {
+      "stageId": "fed7cd58-7609-4a38-b97b-368af5657a6f:54",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:21",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 4.81633399999555,
+      "schemaMs": 0.40104100000462495,
+      "inputBytes": 185289,
+      "schemaBytes": 47826,
+      "readyAt": "2026-09-09T08:11:11.948Z",
+      "respondedAt": "2026-09-09T08:11:39.491Z",
+      "responseWaitMs": 27543.532292000004,
+      "validation": "rejected",
+      "payloadBuildMs": 0.892375000003085,
+      "issueCodes": [
+        "AGENT_CANDIDATE_DESIRE_RELATION_INVALID"
+      ]
+    },
+    {
+      "stageId": "9194f175-b0ed-4cf4-81e3-256755fc373e:55",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "localPreparationMs": 32.375166999999976,
+      "schemaMs": 1.2182920000000195,
+      "inputBytes": 204476,
+      "schemaBytes": 51040,
+      "readyAt": "2026-09-09T08:12:39.124Z",
+      "respondedAt": "2026-09-09T08:12:55.136Z",
+      "responseWaitMs": 16011.683709,
+      "validation": "accepted",
+      "payloadBuildMs": 1.863375000000019
+    },
+    {
+      "stageId": "9194f175-b0ed-4cf4-81e3-256755fc373e:56",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_agent_choice_and_turn_commit",
+      "localPreparationMs": 19.796916999999667,
+      "schemaMs": 0.382792000000336,
+      "inputBytes": 317136,
+      "schemaBytes": 21753,
+      "readyAt": "2026-09-09T08:12:55.158Z",
+      "respondedAt": "2026-09-09T08:13:04.045Z",
+      "responseWaitMs": 8887.274707999999,
+      "validation": "rejected",
+      "payloadBuildMs": 1.7135419999995065,
+      "issueCodes": [
+        "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_LIVE_SOURCE_IGNORED"
+      ]
+    },
+    {
+      "stageId": "9194f175-b0ed-4cf4-81e3-256755fc373e:57",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:20",
+      "phase": "awaiting_agent_turn_commit",
+      "localPreparationMs": 8.984208999998373,
+      "schemaMs": 0.12270799999896553,
+      "inputBytes": 28631,
+      "schemaBytes": 5404,
+      "readyAt": "2026-09-09T08:13:04.054Z",
+      "respondedAt": "2026-09-09T08:13:20.572Z",
+      "responseWaitMs": 16517.210832999997,
+      "validation": "rejected",
+      "payloadBuildMs": 0.27212499999950523,
+      "issueCodes": [
+        "CHARACTER_AGENT_TURN_COMMIT_AUTHORITY_INVALID",
+        "CHARACTER_AGENT_TURN_COMMIT_ID_MISMATCH",
+        "CHARACTER_AGENT_PRIVATE_EXPRESSION_TRACE_MISSING",
+        "CHARACTER_AGENT_CONVERSATION_SELECTION_MISSING",
+        "CHARACTER_AGENT_PUBLIC_EXPRESSION_MISSING",
+        "CHARACTER_AGENT_ATOMIC_ACTION_ATTEMPT_MISSING"
+      ]
+    },
+    {
+      "stageId": "f7f01a61-7f0e-4bbf-aa57-aa48d6b3d6f0:58",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:21",
+      "phase": "awaiting_character_reflection",
+      "localPreparationMs": 13.234541999999976,
+      "schemaMs": 0.4536250000000166,
+      "inputBytes": 37731,
+      "schemaBytes": 1783,
+      "readyAt": "2026-09-09T08:14:04.501Z",
+      "respondedAt": "2026-09-09T08:14:20.711Z",
+      "responseWaitMs": 16209.374917,
+      "validation": "accepted",
+      "payloadBuildMs": 0.5717920000000163
+    }
+  ],
+  "newErrors": [
+    "RUNNEXT_ERROR:CHARACTER_AGENT_CANDIDATES_REJECTED:Character Agent candidates failed authority or source validation.",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_CANDIDATES_REJECTED:Character Agent candidates failed authority or source validation.",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_APPRAISAL_REJECTED:Character Agent subjective appraisal failed authority or evidence validation.",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_CHOICE_REJECTED:Character Agent choice failed authority validation.",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_APPRAISAL_REJECTED:Character Agent subjective appraisal failed authority or evidence validation.",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_CHOICE_REJECTED:Character Agent choice failed authority validation.",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_CANDIDATES_REJECTED:Character Agent candidates failed authority or source validation. ISSUES=[{\"code\":\"AGENT_CANDIDATE_DESIRE_RELATION_INVALID\",\"path\":\"generatedCandidates[1].desireRelations[0].relation\",\"message\":\"Unknown desire relation conflict.\"}]",
+    "RUNNEXT_ERROR:CHARACTER_AGENT_TURN_COMMIT_REJECTED:Character Agent atomic commit failed authority, reference, or privacy validation. ISSUES=[{\"code\":\"CHARACTER_AGENT_TURN_COMMIT_AUTHORITY_INVALID\",\"path\":\"ownerAuthority\",\"message\":\"Only the Character Agent may own an atomic turn commit.\"},{\"code\":\"CHARACTER_AGENT_TURN_COMMIT_ID_MISMATCH\",\"path\":\"agentTurnId\",\"message\":\"Atomic turn commit belongs to another Agent turn.\"},{\"code\":\"CHARACTER_AGENT_PRIVATE_EXPRESSION_TRACE_MISSING\",\"path\":\"privateExpressionTrace\",\"message\":\"An atomic commit needs a Character-owned private expression trace.\"},{\"code\":\"CHARACTER_AGENT_CONVERSATION_SELECTION_MISSING\",\"path\":\"conversationAnchorSelection\",\"message\":\"An atomic commit must explicitly choose an opaque conversation anchor or none.\"},{\"code\":\"CHARACTER_AGENT_PUBLIC_EXPRESSION_MISSING\",\"path\":\"publicExpression\",\"message\":\"An atomic Character Agent commit needs one observable PublicExpression"
+  ],
+  "verificationLimits": [
+    "External reply provenance does not verify model identity, reasoning effort, or independent per-character model context.",
+    "The authored narrative and rejected raw replies are not settled world events.",
+    "A subjective belief stored as supported is not objective world truth.",
+    "No runtime changes or new model calls were performed for this review."
+  ]
+}

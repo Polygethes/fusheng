@@ -1,0 +1,1929 @@
+{
+  "environment": {
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "node": "v25.6.0",
+    "platform": "macOS arm64",
+    "viewport": {
+      "height": 577,
+      "width": 1280
+    }
+  },
+  "measuredAt": "2026-09-07T03:28:37.815Z",
+  "measurement": "Real browser main UI, same durable checkpoint restored separately for each mode, 100 sequential local fixture turns per mode. Includes HTTP, persistence, browser rendering and UI wait; excludes real model inference. One paired run, fast then normal, not a repeated performance study.",
+  "runs": [
+    {
+      "completedTurns": 100,
+      "completionIntervalMs": {
+        "count": 99,
+        "max": 2737.2,
+        "min": 2236.3,
+        "p50": 2493.4,
+        "p95": 2718
+      },
+      "elapsedMs": 246348.7,
+      "finalWorldVersion": 89,
+      "httpElapsedMs": {
+        "count": 100,
+        "max": 604.8,
+        "min": 102.2,
+        "p50": 352.4,
+        "p95": 577.8
+      },
+      "initialWorldVersion": 1,
+      "intervalMs": 2100,
+      "mode": "normal",
+      "startedAt": "2026-09-07T03:23:10.106Z",
+      "turnKinds": {
+        "action": 93,
+        "day_planning": 2,
+        "reflection": 5
+      },
+      "turns": [
+        {
+          "completionOffsetMs": 124.9,
+          "eventCount": 2,
+          "httpElapsedMs": 102.2,
+          "index": 1,
+          "simulationSeconds": 2,
+          "status": 200,
+          "worldVersion": 2
+        },
+        {
+          "completionOffsetMs": 2381,
+          "eventCount": 3,
+          "httpElapsedMs": 132.3,
+          "index": 2,
+          "simulationSeconds": 3,
+          "status": 200,
+          "worldVersion": 3
+        },
+        {
+          "completionOffsetMs": 4631.6,
+          "eventCount": 4,
+          "httpElapsedMs": 131,
+          "index": 3,
+          "simulationSeconds": 4,
+          "status": 200,
+          "worldVersion": 4
+        },
+        {
+          "completionOffsetMs": 6867.9,
+          "eventCount": 4,
+          "httpElapsedMs": 115.4,
+          "index": 4,
+          "simulationSeconds": 4,
+          "status": 200,
+          "worldVersion": 4
+        },
+        {
+          "completionOffsetMs": 9123.6,
+          "eventCount": 4,
+          "httpElapsedMs": 134.2,
+          "index": 5,
+          "simulationSeconds": 4,
+          "status": 200,
+          "worldVersion": 4
+        },
+        {
+          "completionOffsetMs": 11396.8,
+          "eventCount": 5,
+          "httpElapsedMs": 147.2,
+          "index": 6,
+          "simulationSeconds": 7,
+          "status": 200,
+          "worldVersion": 5
+        },
+        {
+          "completionOffsetMs": 13667.3,
+          "eventCount": 5,
+          "httpElapsedMs": 144.8,
+          "index": 7,
+          "simulationSeconds": 7,
+          "status": 200,
+          "worldVersion": 5
+        },
+        {
+          "completionOffsetMs": 15947.5,
+          "eventCount": 6,
+          "httpElapsedMs": 157.3,
+          "index": 8,
+          "simulationSeconds": 10,
+          "status": 200,
+          "worldVersion": 6
+        },
+        {
+          "completionOffsetMs": 18219.8,
+          "eventCount": 6,
+          "httpElapsedMs": 145.5,
+          "index": 9,
+          "simulationSeconds": 10,
+          "status": 200,
+          "worldVersion": 6
+        },
+        {
+          "completionOffsetMs": 20486.3,
+          "eventCount": 6,
+          "httpElapsedMs": 141.3,
+          "index": 10,
+          "simulationSeconds": 10,
+          "status": 200,
+          "worldVersion": 6
+        },
+        {
+          "completionOffsetMs": 22765.1,
+          "eventCount": 7,
+          "httpElapsedMs": 158.6,
+          "index": 11,
+          "simulationSeconds": 11,
+          "status": 200,
+          "worldVersion": 7
+        },
+        {
+          "completionOffsetMs": 25058.3,
+          "eventCount": 8,
+          "httpElapsedMs": 167.3,
+          "index": 12,
+          "simulationSeconds": 13,
+          "status": 200,
+          "worldVersion": 8
+        },
+        {
+          "completionOffsetMs": 27348.3,
+          "eventCount": 8,
+          "httpElapsedMs": 162.7,
+          "index": 13,
+          "simulationSeconds": 13,
+          "status": 200,
+          "worldVersion": 8
+        },
+        {
+          "completionOffsetMs": 29617.2,
+          "eventCount": 8,
+          "httpElapsedMs": 143.7,
+          "index": 14,
+          "simulationSeconds": 13,
+          "status": 200,
+          "worldVersion": 8
+        },
+        {
+          "completionOffsetMs": 31922.2,
+          "eventCount": 10,
+          "httpElapsedMs": 179.4,
+          "index": 15,
+          "simulationSeconds": 52,
+          "status": 200,
+          "worldVersion": 10
+        },
+        {
+          "completionOffsetMs": 34222.9,
+          "eventCount": 10,
+          "httpElapsedMs": 173.7,
+          "index": 16,
+          "simulationSeconds": 52,
+          "status": 200,
+          "worldVersion": 10
+        },
+        {
+          "completionOffsetMs": 36538.2,
+          "eventCount": 11,
+          "httpElapsedMs": 187.3,
+          "index": 17,
+          "simulationSeconds": 55,
+          "status": 200,
+          "worldVersion": 11
+        },
+        {
+          "completionOffsetMs": 38838.5,
+          "eventCount": 11,
+          "httpElapsedMs": 172.5,
+          "index": 18,
+          "simulationSeconds": 55,
+          "status": 200,
+          "worldVersion": 11
+        },
+        {
+          "completionOffsetMs": 41121.9,
+          "eventCount": 11,
+          "httpElapsedMs": 156,
+          "index": 19,
+          "simulationSeconds": 55,
+          "status": 200,
+          "worldVersion": 11
+        },
+        {
+          "completionOffsetMs": 43435.1,
+          "eventCount": 12,
+          "httpElapsedMs": 185.8,
+          "index": 20,
+          "simulationSeconds": 58,
+          "status": 200,
+          "worldVersion": 12
+        },
+        {
+          "completionOffsetMs": 45748.7,
+          "eventCount": 12,
+          "httpElapsedMs": 185.4,
+          "index": 21,
+          "simulationSeconds": 58,
+          "status": 200,
+          "worldVersion": 12
+        },
+        {
+          "completionOffsetMs": 48074.6,
+          "eventCount": 13,
+          "httpElapsedMs": 198.9,
+          "index": 22,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 50396.2,
+          "eventCount": 13,
+          "httpElapsedMs": 192.8,
+          "index": 23,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 52705.3,
+          "eventCount": 13,
+          "httpElapsedMs": 180.9,
+          "index": 24,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 54994,
+          "eventCount": 13,
+          "httpElapsedMs": 167.6,
+          "index": 25,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 57331,
+          "eventCount": 15,
+          "httpElapsedMs": 207.4,
+          "index": 26,
+          "simulationSeconds": 14405,
+          "status": 200,
+          "worldVersion": 15
+        },
+        {
+          "completionOffsetMs": 59667.7,
+          "eventCount": 16,
+          "httpElapsedMs": 209.4,
+          "index": 27,
+          "simulationSeconds": 14406,
+          "status": 200,
+          "worldVersion": 16
+        },
+        {
+          "completionOffsetMs": 62010.2,
+          "eventCount": 17,
+          "httpElapsedMs": 220.1,
+          "index": 28,
+          "simulationSeconds": 14407,
+          "status": 200,
+          "worldVersion": 17
+        },
+        {
+          "completionOffsetMs": 64361.7,
+          "eventCount": 18,
+          "httpElapsedMs": 225.5,
+          "index": 29,
+          "simulationSeconds": 14408,
+          "status": 200,
+          "worldVersion": 18
+        },
+        {
+          "completionOffsetMs": 66732.1,
+          "eventCount": 19,
+          "httpElapsedMs": 241.7,
+          "index": 30,
+          "simulationSeconds": 14409,
+          "status": 200,
+          "worldVersion": 19
+        },
+        {
+          "completionOffsetMs": 69099.2,
+          "eventCount": 20,
+          "httpElapsedMs": 238.3,
+          "index": 31,
+          "simulationSeconds": 14410,
+          "status": 200,
+          "worldVersion": 20
+        },
+        {
+          "completionOffsetMs": 71482,
+          "eventCount": 21,
+          "httpElapsedMs": 258,
+          "index": 32,
+          "simulationSeconds": 14411,
+          "status": 200,
+          "worldVersion": 21
+        },
+        {
+          "completionOffsetMs": 73865.7,
+          "eventCount": 22,
+          "httpElapsedMs": 253.2,
+          "index": 33,
+          "simulationSeconds": 14412,
+          "status": 200,
+          "worldVersion": 22
+        },
+        {
+          "completionOffsetMs": 76252.9,
+          "eventCount": 23,
+          "httpElapsedMs": 262.1,
+          "index": 34,
+          "simulationSeconds": 14413,
+          "status": 200,
+          "worldVersion": 23
+        },
+        {
+          "completionOffsetMs": 78646.7,
+          "eventCount": 24,
+          "httpElapsedMs": 261.7,
+          "index": 35,
+          "simulationSeconds": 14414,
+          "status": 200,
+          "worldVersion": 24
+        },
+        {
+          "completionOffsetMs": 81057.5,
+          "eventCount": 25,
+          "httpElapsedMs": 282.4,
+          "index": 36,
+          "simulationSeconds": 14415,
+          "status": 200,
+          "worldVersion": 25
+        },
+        {
+          "completionOffsetMs": 83458.5,
+          "eventCount": 26,
+          "httpElapsedMs": 275.2,
+          "index": 37,
+          "simulationSeconds": 14416,
+          "status": 200,
+          "worldVersion": 26
+        },
+        {
+          "completionOffsetMs": 85871.8,
+          "eventCount": 27,
+          "httpElapsedMs": 283.6,
+          "index": 38,
+          "simulationSeconds": 14417,
+          "status": 200,
+          "worldVersion": 27
+        },
+        {
+          "completionOffsetMs": 88283.3,
+          "eventCount": 28,
+          "httpElapsedMs": 287,
+          "index": 39,
+          "simulationSeconds": 14418,
+          "status": 200,
+          "worldVersion": 28
+        },
+        {
+          "completionOffsetMs": 90709.5,
+          "eventCount": 29,
+          "httpElapsedMs": 300.3,
+          "index": 40,
+          "simulationSeconds": 14419,
+          "status": 200,
+          "worldVersion": 29
+        },
+        {
+          "completionOffsetMs": 93128.4,
+          "eventCount": 30,
+          "httpElapsedMs": 292.7,
+          "index": 41,
+          "simulationSeconds": 14420,
+          "status": 200,
+          "worldVersion": 30
+        },
+        {
+          "completionOffsetMs": 95562.9,
+          "eventCount": 31,
+          "httpElapsedMs": 307.5,
+          "index": 42,
+          "simulationSeconds": 14421,
+          "status": 200,
+          "worldVersion": 31
+        },
+        {
+          "completionOffsetMs": 98005.4,
+          "eventCount": 32,
+          "httpElapsedMs": 317,
+          "index": 43,
+          "simulationSeconds": 14422,
+          "status": 200,
+          "worldVersion": 32
+        },
+        {
+          "completionOffsetMs": 100466.6,
+          "eventCount": 33,
+          "httpElapsedMs": 331.8,
+          "index": 44,
+          "simulationSeconds": 14423,
+          "status": 200,
+          "worldVersion": 33
+        },
+        {
+          "completionOffsetMs": 102928.1,
+          "eventCount": 34,
+          "httpElapsedMs": 328.8,
+          "index": 45,
+          "simulationSeconds": 14424,
+          "status": 200,
+          "worldVersion": 34
+        },
+        {
+          "completionOffsetMs": 105392.7,
+          "eventCount": 35,
+          "httpElapsedMs": 337.4,
+          "index": 46,
+          "simulationSeconds": 14425,
+          "status": 200,
+          "worldVersion": 35
+        },
+        {
+          "completionOffsetMs": 107859.9,
+          "eventCount": 36,
+          "httpElapsedMs": 334.7,
+          "index": 47,
+          "simulationSeconds": 14426,
+          "status": 200,
+          "worldVersion": 36
+        },
+        {
+          "completionOffsetMs": 110338.1,
+          "eventCount": 37,
+          "httpElapsedMs": 346.7,
+          "index": 48,
+          "simulationSeconds": 14427,
+          "status": 200,
+          "worldVersion": 37
+        },
+        {
+          "completionOffsetMs": 112813.8,
+          "eventCount": 38,
+          "httpElapsedMs": 345.1,
+          "index": 49,
+          "simulationSeconds": 14428,
+          "status": 200,
+          "worldVersion": 38
+        },
+        {
+          "completionOffsetMs": 115308.6,
+          "eventCount": 39,
+          "httpElapsedMs": 365.7,
+          "index": 50,
+          "simulationSeconds": 14429,
+          "status": 200,
+          "worldVersion": 39
+        },
+        {
+          "completionOffsetMs": 117792.5,
+          "eventCount": 40,
+          "httpElapsedMs": 352.4,
+          "index": 51,
+          "simulationSeconds": 14430,
+          "status": 200,
+          "worldVersion": 40
+        },
+        {
+          "completionOffsetMs": 120285.9,
+          "eventCount": 41,
+          "httpElapsedMs": 364.9,
+          "index": 52,
+          "simulationSeconds": 14431,
+          "status": 200,
+          "worldVersion": 41
+        },
+        {
+          "completionOffsetMs": 122779.5,
+          "eventCount": 42,
+          "httpElapsedMs": 360.1,
+          "index": 53,
+          "simulationSeconds": 14432,
+          "status": 200,
+          "worldVersion": 42
+        },
+        {
+          "completionOffsetMs": 125295.1,
+          "eventCount": 43,
+          "httpElapsedMs": 381.1,
+          "index": 54,
+          "simulationSeconds": 14433,
+          "status": 200,
+          "worldVersion": 43
+        },
+        {
+          "completionOffsetMs": 127809.6,
+          "eventCount": 44,
+          "httpElapsedMs": 376.7,
+          "index": 55,
+          "simulationSeconds": 14434,
+          "status": 200,
+          "worldVersion": 44
+        },
+        {
+          "completionOffsetMs": 130343,
+          "eventCount": 45,
+          "httpElapsedMs": 397.4,
+          "index": 56,
+          "simulationSeconds": 14435,
+          "status": 200,
+          "worldVersion": 45
+        },
+        {
+          "completionOffsetMs": 132861.5,
+          "eventCount": 46,
+          "httpElapsedMs": 389.3,
+          "index": 57,
+          "simulationSeconds": 14436,
+          "status": 200,
+          "worldVersion": 46
+        },
+        {
+          "completionOffsetMs": 135403.4,
+          "eventCount": 47,
+          "httpElapsedMs": 409.3,
+          "index": 58,
+          "simulationSeconds": 14437,
+          "status": 200,
+          "worldVersion": 47
+        },
+        {
+          "completionOffsetMs": 137930.9,
+          "eventCount": 48,
+          "httpElapsedMs": 398.3,
+          "index": 59,
+          "simulationSeconds": 14438,
+          "status": 200,
+          "worldVersion": 48
+        },
+        {
+          "completionOffsetMs": 140471.2,
+          "eventCount": 49,
+          "httpElapsedMs": 409.9,
+          "index": 60,
+          "simulationSeconds": 14439,
+          "status": 200,
+          "worldVersion": 49
+        },
+        {
+          "completionOffsetMs": 143008.3,
+          "eventCount": 50,
+          "httpElapsedMs": 408.8,
+          "index": 61,
+          "simulationSeconds": 14440,
+          "status": 200,
+          "worldVersion": 50
+        },
+        {
+          "completionOffsetMs": 145556.8,
+          "eventCount": 51,
+          "httpElapsedMs": 421.1,
+          "index": 62,
+          "simulationSeconds": 14441,
+          "status": 200,
+          "worldVersion": 51
+        },
+        {
+          "completionOffsetMs": 148118.8,
+          "eventCount": 52,
+          "httpElapsedMs": 426.3,
+          "index": 63,
+          "simulationSeconds": 14442,
+          "status": 200,
+          "worldVersion": 52
+        },
+        {
+          "completionOffsetMs": 150683,
+          "eventCount": 53,
+          "httpElapsedMs": 435.3,
+          "index": 64,
+          "simulationSeconds": 14443,
+          "status": 200,
+          "worldVersion": 53
+        },
+        {
+          "completionOffsetMs": 153242.5,
+          "eventCount": 54,
+          "httpElapsedMs": 431.3,
+          "index": 65,
+          "simulationSeconds": 14444,
+          "status": 200,
+          "worldVersion": 54
+        },
+        {
+          "completionOffsetMs": 155825.1,
+          "eventCount": 55,
+          "httpElapsedMs": 447.5,
+          "index": 66,
+          "simulationSeconds": 14445,
+          "status": 200,
+          "worldVersion": 55
+        },
+        {
+          "completionOffsetMs": 158408.1,
+          "eventCount": 56,
+          "httpElapsedMs": 449.5,
+          "index": 67,
+          "simulationSeconds": 14446,
+          "status": 200,
+          "worldVersion": 56
+        },
+        {
+          "completionOffsetMs": 160996.1,
+          "eventCount": 57,
+          "httpElapsedMs": 454.5,
+          "index": 68,
+          "simulationSeconds": 14447,
+          "status": 200,
+          "worldVersion": 57
+        },
+        {
+          "completionOffsetMs": 163579.2,
+          "eventCount": 58,
+          "httpElapsedMs": 450.7,
+          "index": 69,
+          "simulationSeconds": 14448,
+          "status": 200,
+          "worldVersion": 58
+        },
+        {
+          "completionOffsetMs": 166191,
+          "eventCount": 59,
+          "httpElapsedMs": 477.7,
+          "index": 70,
+          "simulationSeconds": 14449,
+          "status": 200,
+          "worldVersion": 59
+        },
+        {
+          "completionOffsetMs": 168792.2,
+          "eventCount": 60,
+          "httpElapsedMs": 465.3,
+          "index": 71,
+          "simulationSeconds": 14450,
+          "status": 200,
+          "worldVersion": 60
+        },
+        {
+          "completionOffsetMs": 171404.9,
+          "eventCount": 61,
+          "httpElapsedMs": 480.9,
+          "index": 72,
+          "simulationSeconds": 14451,
+          "status": 200,
+          "worldVersion": 61
+        },
+        {
+          "completionOffsetMs": 174018.8,
+          "eventCount": 62,
+          "httpElapsedMs": 476.7,
+          "index": 73,
+          "simulationSeconds": 14452,
+          "status": 200,
+          "worldVersion": 62
+        },
+        {
+          "completionOffsetMs": 176638.1,
+          "eventCount": 63,
+          "httpElapsedMs": 484.5,
+          "index": 74,
+          "simulationSeconds": 14453,
+          "status": 200,
+          "worldVersion": 63
+        },
+        {
+          "completionOffsetMs": 179271,
+          "eventCount": 64,
+          "httpElapsedMs": 497.7,
+          "index": 75,
+          "simulationSeconds": 14454,
+          "status": 200,
+          "worldVersion": 64
+        },
+        {
+          "completionOffsetMs": 181907.4,
+          "eventCount": 65,
+          "httpElapsedMs": 502.1,
+          "index": 76,
+          "simulationSeconds": 14455,
+          "status": 200,
+          "worldVersion": 65
+        },
+        {
+          "completionOffsetMs": 184538,
+          "eventCount": 66,
+          "httpElapsedMs": 498.3,
+          "index": 77,
+          "simulationSeconds": 14456,
+          "status": 200,
+          "worldVersion": 66
+        },
+        {
+          "completionOffsetMs": 187196.4,
+          "eventCount": 67,
+          "httpElapsedMs": 523.7,
+          "index": 78,
+          "simulationSeconds": 14457,
+          "status": 200,
+          "worldVersion": 67
+        },
+        {
+          "completionOffsetMs": 189839,
+          "eventCount": 68,
+          "httpElapsedMs": 510.3,
+          "index": 79,
+          "simulationSeconds": 14458,
+          "status": 200,
+          "worldVersion": 68
+        },
+        {
+          "completionOffsetMs": 192502.8,
+          "eventCount": 69,
+          "httpElapsedMs": 528.5,
+          "index": 80,
+          "simulationSeconds": 14459,
+          "status": 200,
+          "worldVersion": 69
+        },
+        {
+          "completionOffsetMs": 195167,
+          "eventCount": 70,
+          "httpElapsedMs": 528.6,
+          "index": 81,
+          "simulationSeconds": 14460,
+          "status": 200,
+          "worldVersion": 70
+        },
+        {
+          "completionOffsetMs": 197826.9,
+          "eventCount": 71,
+          "httpElapsedMs": 526.3,
+          "index": 82,
+          "simulationSeconds": 14461,
+          "status": 200,
+          "worldVersion": 71
+        },
+        {
+          "completionOffsetMs": 200483.2,
+          "eventCount": 72,
+          "httpElapsedMs": 521.8,
+          "index": 83,
+          "simulationSeconds": 14462,
+          "status": 200,
+          "worldVersion": 72
+        },
+        {
+          "completionOffsetMs": 203151.2,
+          "eventCount": 73,
+          "httpElapsedMs": 530.2,
+          "index": 84,
+          "simulationSeconds": 14463,
+          "status": 200,
+          "worldVersion": 73
+        },
+        {
+          "completionOffsetMs": 205820.5,
+          "eventCount": 74,
+          "httpElapsedMs": 533.8,
+          "index": 85,
+          "simulationSeconds": 14464,
+          "status": 200,
+          "worldVersion": 74
+        },
+        {
+          "completionOffsetMs": 208492,
+          "eventCount": 75,
+          "httpElapsedMs": 540.4,
+          "index": 86,
+          "simulationSeconds": 14465,
+          "status": 200,
+          "worldVersion": 75
+        },
+        {
+          "completionOffsetMs": 211174.2,
+          "eventCount": 76,
+          "httpElapsedMs": 549.4,
+          "index": 87,
+          "simulationSeconds": 14466,
+          "status": 200,
+          "worldVersion": 76
+        },
+        {
+          "completionOffsetMs": 213850.4,
+          "eventCount": 77,
+          "httpElapsedMs": 541.5,
+          "index": 88,
+          "simulationSeconds": 14467,
+          "status": 200,
+          "worldVersion": 77
+        },
+        {
+          "completionOffsetMs": 216525.3,
+          "eventCount": 78,
+          "httpElapsedMs": 544.4,
+          "index": 89,
+          "simulationSeconds": 14468,
+          "status": 200,
+          "worldVersion": 78
+        },
+        {
+          "completionOffsetMs": 219234.3,
+          "eventCount": 79,
+          "httpElapsedMs": 570.8,
+          "index": 90,
+          "simulationSeconds": 14469,
+          "status": 200,
+          "worldVersion": 79
+        },
+        {
+          "completionOffsetMs": 221919.8,
+          "eventCount": 80,
+          "httpElapsedMs": 551.2,
+          "index": 91,
+          "simulationSeconds": 14470,
+          "status": 200,
+          "worldVersion": 80
+        },
+        {
+          "completionOffsetMs": 224612.3,
+          "eventCount": 81,
+          "httpElapsedMs": 560.2,
+          "index": 92,
+          "simulationSeconds": 14471,
+          "status": 200,
+          "worldVersion": 81
+        },
+        {
+          "completionOffsetMs": 227305.3,
+          "eventCount": 82,
+          "httpElapsedMs": 558.3,
+          "index": 93,
+          "simulationSeconds": 14472,
+          "status": 200,
+          "worldVersion": 82
+        },
+        {
+          "completionOffsetMs": 230007,
+          "eventCount": 83,
+          "httpElapsedMs": 569.4,
+          "index": 94,
+          "simulationSeconds": 14473,
+          "status": 200,
+          "worldVersion": 83
+        },
+        {
+          "completionOffsetMs": 232725.1,
+          "eventCount": 84,
+          "httpElapsedMs": 583.4,
+          "index": 95,
+          "simulationSeconds": 14474,
+          "status": 200,
+          "worldVersion": 84
+        },
+        {
+          "completionOffsetMs": 235437.5,
+          "eventCount": 85,
+          "httpElapsedMs": 577.8,
+          "index": 96,
+          "simulationSeconds": 14475,
+          "status": 200,
+          "worldVersion": 85
+        },
+        {
+          "completionOffsetMs": 238162.9,
+          "eventCount": 86,
+          "httpElapsedMs": 589.7,
+          "index": 97,
+          "simulationSeconds": 14476,
+          "status": 200,
+          "worldVersion": 86
+        },
+        {
+          "completionOffsetMs": 240893.4,
+          "eventCount": 87,
+          "httpElapsedMs": 593,
+          "index": 98,
+          "simulationSeconds": 14477,
+          "status": 200,
+          "worldVersion": 87
+        },
+        {
+          "completionOffsetMs": 243611.4,
+          "eventCount": 88,
+          "httpElapsedMs": 581.3,
+          "index": 99,
+          "simulationSeconds": 14478,
+          "status": 200,
+          "worldVersion": 88
+        },
+        {
+          "completionOffsetMs": 246348.6,
+          "eventCount": 89,
+          "httpElapsedMs": 604.8,
+          "index": 100,
+          "simulationSeconds": 14479,
+          "status": 200,
+          "worldVersion": 89
+        }
+      ]
+    },
+    {
+      "completedTurns": 100,
+      "completionIntervalMs": {
+        "count": 99,
+        "max": 813.4,
+        "min": 328.6,
+        "p50": 577.8,
+        "p95": 797.2
+      },
+      "elapsedMs": 57317.4,
+      "finalWorldVersion": 89,
+      "httpElapsedMs": {
+        "count": 100,
+        "max": 582.6,
+        "min": 107.1,
+        "p50": 344.9,
+        "p95": 566.7
+      },
+      "initialWorldVersion": 1,
+      "intervalMs": 200,
+      "mode": "fast",
+      "startedAt": "2026-09-07T03:21:29.687Z",
+      "turnKinds": {
+        "action": 93,
+        "day_planning": 2,
+        "reflection": 5
+      },
+      "turns": [
+        {
+          "completionOffsetMs": 140.4,
+          "eventCount": 2,
+          "httpElapsedMs": 120.7,
+          "index": 1,
+          "simulationSeconds": 2,
+          "status": 200,
+          "worldVersion": 2
+        },
+        {
+          "completionOffsetMs": 493.1,
+          "eventCount": 3,
+          "httpElapsedMs": 131.5,
+          "index": 2,
+          "simulationSeconds": 3,
+          "status": 200,
+          "worldVersion": 3
+        },
+        {
+          "completionOffsetMs": 856.5,
+          "eventCount": 4,
+          "httpElapsedMs": 138.6,
+          "index": 3,
+          "simulationSeconds": 4,
+          "status": 200,
+          "worldVersion": 4
+        },
+        {
+          "completionOffsetMs": 1187.2,
+          "eventCount": 4,
+          "httpElapsedMs": 109,
+          "index": 4,
+          "simulationSeconds": 4,
+          "status": 200,
+          "worldVersion": 4
+        },
+        {
+          "completionOffsetMs": 1515.8,
+          "eventCount": 4,
+          "httpElapsedMs": 107.1,
+          "index": 5,
+          "simulationSeconds": 4,
+          "status": 200,
+          "worldVersion": 4
+        },
+        {
+          "completionOffsetMs": 1884.5,
+          "eventCount": 5,
+          "httpElapsedMs": 142.9,
+          "index": 6,
+          "simulationSeconds": 7,
+          "status": 200,
+          "worldVersion": 5
+        },
+        {
+          "completionOffsetMs": 2253.1,
+          "eventCount": 5,
+          "httpElapsedMs": 147.4,
+          "index": 7,
+          "simulationSeconds": 7,
+          "status": 200,
+          "worldVersion": 5
+        },
+        {
+          "completionOffsetMs": 2639,
+          "eventCount": 6,
+          "httpElapsedMs": 162.4,
+          "index": 8,
+          "simulationSeconds": 10,
+          "status": 200,
+          "worldVersion": 6
+        },
+        {
+          "completionOffsetMs": 3015.3,
+          "eventCount": 6,
+          "httpElapsedMs": 154.2,
+          "index": 9,
+          "simulationSeconds": 10,
+          "status": 200,
+          "worldVersion": 6
+        },
+        {
+          "completionOffsetMs": 3368.1,
+          "eventCount": 6,
+          "httpElapsedMs": 131.3,
+          "index": 10,
+          "simulationSeconds": 10,
+          "status": 200,
+          "worldVersion": 6
+        },
+        {
+          "completionOffsetMs": 3748.2,
+          "eventCount": 7,
+          "httpElapsedMs": 156.4,
+          "index": 11,
+          "simulationSeconds": 11,
+          "status": 200,
+          "worldVersion": 7
+        },
+        {
+          "completionOffsetMs": 4134.7,
+          "eventCount": 8,
+          "httpElapsedMs": 164.9,
+          "index": 12,
+          "simulationSeconds": 13,
+          "status": 200,
+          "worldVersion": 8
+        },
+        {
+          "completionOffsetMs": 4517.1,
+          "eventCount": 8,
+          "httpElapsedMs": 161.9,
+          "index": 13,
+          "simulationSeconds": 13,
+          "status": 200,
+          "worldVersion": 8
+        },
+        {
+          "completionOffsetMs": 4874.9,
+          "eventCount": 8,
+          "httpElapsedMs": 135.8,
+          "index": 14,
+          "simulationSeconds": 13,
+          "status": 200,
+          "worldVersion": 8
+        },
+        {
+          "completionOffsetMs": 5271.8,
+          "eventCount": 10,
+          "httpElapsedMs": 176.4,
+          "index": 15,
+          "simulationSeconds": 52,
+          "status": 200,
+          "worldVersion": 10
+        },
+        {
+          "completionOffsetMs": 5658.1,
+          "eventCount": 10,
+          "httpElapsedMs": 164.6,
+          "index": 16,
+          "simulationSeconds": 52,
+          "status": 200,
+          "worldVersion": 10
+        },
+        {
+          "completionOffsetMs": 6057.2,
+          "eventCount": 11,
+          "httpElapsedMs": 177.3,
+          "index": 17,
+          "simulationSeconds": 55,
+          "status": 200,
+          "worldVersion": 11
+        },
+        {
+          "completionOffsetMs": 6443.2,
+          "eventCount": 11,
+          "httpElapsedMs": 162.3,
+          "index": 18,
+          "simulationSeconds": 55,
+          "status": 200,
+          "worldVersion": 11
+        },
+        {
+          "completionOffsetMs": 6810.6,
+          "eventCount": 11,
+          "httpElapsedMs": 145.7,
+          "index": 19,
+          "simulationSeconds": 55,
+          "status": 200,
+          "worldVersion": 11
+        },
+        {
+          "completionOffsetMs": 7213.1,
+          "eventCount": 12,
+          "httpElapsedMs": 180.6,
+          "index": 20,
+          "simulationSeconds": 58,
+          "status": 200,
+          "worldVersion": 12
+        },
+        {
+          "completionOffsetMs": 7602.9,
+          "eventCount": 12,
+          "httpElapsedMs": 168.5,
+          "index": 21,
+          "simulationSeconds": 58,
+          "status": 200,
+          "worldVersion": 12
+        },
+        {
+          "completionOffsetMs": 8018.1,
+          "eventCount": 13,
+          "httpElapsedMs": 194.1,
+          "index": 22,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 8428.1,
+          "eventCount": 13,
+          "httpElapsedMs": 188,
+          "index": 23,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 8826.2,
+          "eventCount": 13,
+          "httpElapsedMs": 176,
+          "index": 24,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 9215,
+          "eventCount": 13,
+          "httpElapsedMs": 166.3,
+          "index": 25,
+          "simulationSeconds": 60,
+          "status": 200,
+          "worldVersion": 13
+        },
+        {
+          "completionOffsetMs": 9648.2,
+          "eventCount": 15,
+          "httpElapsedMs": 204.1,
+          "index": 26,
+          "simulationSeconds": 14405,
+          "status": 200,
+          "worldVersion": 15
+        },
+        {
+          "completionOffsetMs": 10067.8,
+          "eventCount": 16,
+          "httpElapsedMs": 196.5,
+          "index": 27,
+          "simulationSeconds": 14406,
+          "status": 200,
+          "worldVersion": 16
+        },
+        {
+          "completionOffsetMs": 10508.7,
+          "eventCount": 17,
+          "httpElapsedMs": 217.3,
+          "index": 28,
+          "simulationSeconds": 14407,
+          "status": 200,
+          "worldVersion": 17
+        },
+        {
+          "completionOffsetMs": 10941.8,
+          "eventCount": 18,
+          "httpElapsedMs": 209.4,
+          "index": 29,
+          "simulationSeconds": 14408,
+          "status": 200,
+          "worldVersion": 18
+        },
+        {
+          "completionOffsetMs": 11398.9,
+          "eventCount": 19,
+          "httpElapsedMs": 232.7,
+          "index": 30,
+          "simulationSeconds": 14409,
+          "status": 200,
+          "worldVersion": 19
+        },
+        {
+          "completionOffsetMs": 11853.5,
+          "eventCount": 20,
+          "httpElapsedMs": 230.2,
+          "index": 31,
+          "simulationSeconds": 14410,
+          "status": 200,
+          "worldVersion": 20
+        },
+        {
+          "completionOffsetMs": 12325.4,
+          "eventCount": 21,
+          "httpElapsedMs": 244.5,
+          "index": 32,
+          "simulationSeconds": 14411,
+          "status": 200,
+          "worldVersion": 21
+        },
+        {
+          "completionOffsetMs": 12792.4,
+          "eventCount": 22,
+          "httpElapsedMs": 240.9,
+          "index": 33,
+          "simulationSeconds": 14412,
+          "status": 200,
+          "worldVersion": 22
+        },
+        {
+          "completionOffsetMs": 13272,
+          "eventCount": 23,
+          "httpElapsedMs": 253.5,
+          "index": 34,
+          "simulationSeconds": 14413,
+          "status": 200,
+          "worldVersion": 23
+        },
+        {
+          "completionOffsetMs": 13750.6,
+          "eventCount": 24,
+          "httpElapsedMs": 253.6,
+          "index": 35,
+          "simulationSeconds": 14414,
+          "status": 200,
+          "worldVersion": 24
+        },
+        {
+          "completionOffsetMs": 14244.8,
+          "eventCount": 25,
+          "httpElapsedMs": 270.4,
+          "index": 36,
+          "simulationSeconds": 14415,
+          "status": 200,
+          "worldVersion": 25
+        },
+        {
+          "completionOffsetMs": 14739.5,
+          "eventCount": 26,
+          "httpElapsedMs": 270,
+          "index": 37,
+          "simulationSeconds": 14416,
+          "status": 200,
+          "worldVersion": 26
+        },
+        {
+          "completionOffsetMs": 15249.3,
+          "eventCount": 27,
+          "httpElapsedMs": 282.6,
+          "index": 38,
+          "simulationSeconds": 14417,
+          "status": 200,
+          "worldVersion": 27
+        },
+        {
+          "completionOffsetMs": 15753.9,
+          "eventCount": 28,
+          "httpElapsedMs": 280.8,
+          "index": 39,
+          "simulationSeconds": 14418,
+          "status": 200,
+          "worldVersion": 28
+        },
+        {
+          "completionOffsetMs": 16278.8,
+          "eventCount": 29,
+          "httpElapsedMs": 300.1,
+          "index": 40,
+          "simulationSeconds": 14419,
+          "status": 200,
+          "worldVersion": 29
+        },
+        {
+          "completionOffsetMs": 16794.8,
+          "eventCount": 30,
+          "httpElapsedMs": 291.2,
+          "index": 41,
+          "simulationSeconds": 14420,
+          "status": 200,
+          "worldVersion": 30
+        },
+        {
+          "completionOffsetMs": 17321.9,
+          "eventCount": 31,
+          "httpElapsedMs": 300.7,
+          "index": 42,
+          "simulationSeconds": 14421,
+          "status": 200,
+          "worldVersion": 31
+        },
+        {
+          "completionOffsetMs": 17851.7,
+          "eventCount": 32,
+          "httpElapsedMs": 302.1,
+          "index": 43,
+          "simulationSeconds": 14422,
+          "status": 200,
+          "worldVersion": 32
+        },
+        {
+          "completionOffsetMs": 18395.2,
+          "eventCount": 33,
+          "httpElapsedMs": 317.7,
+          "index": 44,
+          "simulationSeconds": 14423,
+          "status": 200,
+          "worldVersion": 33
+        },
+        {
+          "completionOffsetMs": 18937.7,
+          "eventCount": 34,
+          "httpElapsedMs": 317.2,
+          "index": 45,
+          "simulationSeconds": 14424,
+          "status": 200,
+          "worldVersion": 34
+        },
+        {
+          "completionOffsetMs": 19492,
+          "eventCount": 35,
+          "httpElapsedMs": 327.6,
+          "index": 46,
+          "simulationSeconds": 14425,
+          "status": 200,
+          "worldVersion": 35
+        },
+        {
+          "completionOffsetMs": 20050.5,
+          "eventCount": 36,
+          "httpElapsedMs": 333.6,
+          "index": 47,
+          "simulationSeconds": 14426,
+          "status": 200,
+          "worldVersion": 36
+        },
+        {
+          "completionOffsetMs": 20620.1,
+          "eventCount": 37,
+          "httpElapsedMs": 344.3,
+          "index": 48,
+          "simulationSeconds": 14427,
+          "status": 200,
+          "worldVersion": 37
+        },
+        {
+          "completionOffsetMs": 21184.4,
+          "eventCount": 38,
+          "httpElapsedMs": 338.4,
+          "index": 49,
+          "simulationSeconds": 14428,
+          "status": 200,
+          "worldVersion": 38
+        },
+        {
+          "completionOffsetMs": 21762.2,
+          "eventCount": 39,
+          "httpElapsedMs": 350.5,
+          "index": 50,
+          "simulationSeconds": 14429,
+          "status": 200,
+          "worldVersion": 39
+        },
+        {
+          "completionOffsetMs": 22335.2,
+          "eventCount": 40,
+          "httpElapsedMs": 344.9,
+          "index": 51,
+          "simulationSeconds": 14430,
+          "status": 200,
+          "worldVersion": 40
+        },
+        {
+          "completionOffsetMs": 22917.2,
+          "eventCount": 41,
+          "httpElapsedMs": 354.1,
+          "index": 52,
+          "simulationSeconds": 14431,
+          "status": 200,
+          "worldVersion": 41
+        },
+        {
+          "completionOffsetMs": 23495.4,
+          "eventCount": 42,
+          "httpElapsedMs": 351.6,
+          "index": 53,
+          "simulationSeconds": 14432,
+          "status": 200,
+          "worldVersion": 42
+        },
+        {
+          "completionOffsetMs": 24092.5,
+          "eventCount": 43,
+          "httpElapsedMs": 370.5,
+          "index": 54,
+          "simulationSeconds": 14433,
+          "status": 200,
+          "worldVersion": 43
+        },
+        {
+          "completionOffsetMs": 24686,
+          "eventCount": 44,
+          "httpElapsedMs": 367.4,
+          "index": 55,
+          "simulationSeconds": 14434,
+          "status": 200,
+          "worldVersion": 44
+        },
+        {
+          "completionOffsetMs": 25295.2,
+          "eventCount": 45,
+          "httpElapsedMs": 380.5,
+          "index": 56,
+          "simulationSeconds": 14435,
+          "status": 200,
+          "worldVersion": 45
+        },
+        {
+          "completionOffsetMs": 25895.5,
+          "eventCount": 46,
+          "httpElapsedMs": 374,
+          "index": 57,
+          "simulationSeconds": 14436,
+          "status": 200,
+          "worldVersion": 46
+        },
+        {
+          "completionOffsetMs": 26516.3,
+          "eventCount": 47,
+          "httpElapsedMs": 394.5,
+          "index": 58,
+          "simulationSeconds": 14437,
+          "status": 200,
+          "worldVersion": 47
+        },
+        {
+          "completionOffsetMs": 27137.1,
+          "eventCount": 48,
+          "httpElapsedMs": 392.9,
+          "index": 59,
+          "simulationSeconds": 14438,
+          "status": 200,
+          "worldVersion": 48
+        },
+        {
+          "completionOffsetMs": 27763.2,
+          "eventCount": 49,
+          "httpElapsedMs": 397.6,
+          "index": 60,
+          "simulationSeconds": 14439,
+          "status": 200,
+          "worldVersion": 49
+        },
+        {
+          "completionOffsetMs": 28400,
+          "eventCount": 50,
+          "httpElapsedMs": 408.6,
+          "index": 61,
+          "simulationSeconds": 14440,
+          "status": 200,
+          "worldVersion": 50
+        },
+        {
+          "completionOffsetMs": 29044.8,
+          "eventCount": 51,
+          "httpElapsedMs": 416.8,
+          "index": 62,
+          "simulationSeconds": 14441,
+          "status": 200,
+          "worldVersion": 51
+        },
+        {
+          "completionOffsetMs": 29696.6,
+          "eventCount": 52,
+          "httpElapsedMs": 424.1,
+          "index": 63,
+          "simulationSeconds": 14442,
+          "status": 200,
+          "worldVersion": 52
+        },
+        {
+          "completionOffsetMs": 30363.7,
+          "eventCount": 53,
+          "httpElapsedMs": 438.5,
+          "index": 64,
+          "simulationSeconds": 14443,
+          "status": 200,
+          "worldVersion": 53
+        },
+        {
+          "completionOffsetMs": 31017.3,
+          "eventCount": 54,
+          "httpElapsedMs": 425.4,
+          "index": 65,
+          "simulationSeconds": 14444,
+          "status": 200,
+          "worldVersion": 54
+        },
+        {
+          "completionOffsetMs": 31683.5,
+          "eventCount": 55,
+          "httpElapsedMs": 437.5,
+          "index": 66,
+          "simulationSeconds": 14445,
+          "status": 200,
+          "worldVersion": 55
+        },
+        {
+          "completionOffsetMs": 32340.1,
+          "eventCount": 56,
+          "httpElapsedMs": 429.6,
+          "index": 67,
+          "simulationSeconds": 14446,
+          "status": 200,
+          "worldVersion": 56
+        },
+        {
+          "completionOffsetMs": 33017.8,
+          "eventCount": 57,
+          "httpElapsedMs": 450.9,
+          "index": 68,
+          "simulationSeconds": 14447,
+          "status": 200,
+          "worldVersion": 57
+        },
+        {
+          "completionOffsetMs": 33701.4,
+          "eventCount": 58,
+          "httpElapsedMs": 455.4,
+          "index": 69,
+          "simulationSeconds": 14448,
+          "status": 200,
+          "worldVersion": 58
+        },
+        {
+          "completionOffsetMs": 34395.7,
+          "eventCount": 59,
+          "httpElapsedMs": 466.2,
+          "index": 70,
+          "simulationSeconds": 14449,
+          "status": 200,
+          "worldVersion": 59
+        },
+        {
+          "completionOffsetMs": 35089.5,
+          "eventCount": 60,
+          "httpElapsedMs": 462.5,
+          "index": 71,
+          "simulationSeconds": 14450,
+          "status": 200,
+          "worldVersion": 60
+        },
+        {
+          "completionOffsetMs": 35794.5,
+          "eventCount": 61,
+          "httpElapsedMs": 476,
+          "index": 72,
+          "simulationSeconds": 14451,
+          "status": 200,
+          "worldVersion": 61
+        },
+        {
+          "completionOffsetMs": 36497.8,
+          "eventCount": 62,
+          "httpElapsedMs": 473.3,
+          "index": 73,
+          "simulationSeconds": 14452,
+          "status": 200,
+          "worldVersion": 62
+        },
+        {
+          "completionOffsetMs": 37211.1,
+          "eventCount": 63,
+          "httpElapsedMs": 481.7,
+          "index": 74,
+          "simulationSeconds": 14453,
+          "status": 200,
+          "worldVersion": 63
+        },
+        {
+          "completionOffsetMs": 37925.4,
+          "eventCount": 64,
+          "httpElapsedMs": 485.1,
+          "index": 75,
+          "simulationSeconds": 14454,
+          "status": 200,
+          "worldVersion": 64
+        },
+        {
+          "completionOffsetMs": 38663.4,
+          "eventCount": 65,
+          "httpElapsedMs": 509.3,
+          "index": 76,
+          "simulationSeconds": 14455,
+          "status": 200,
+          "worldVersion": 65
+        },
+        {
+          "completionOffsetMs": 39395.6,
+          "eventCount": 66,
+          "httpElapsedMs": 499.3,
+          "index": 77,
+          "simulationSeconds": 14456,
+          "status": 200,
+          "worldVersion": 66
+        },
+        {
+          "completionOffsetMs": 40162.8,
+          "eventCount": 67,
+          "httpElapsedMs": 537.7,
+          "index": 78,
+          "simulationSeconds": 14457,
+          "status": 200,
+          "worldVersion": 67
+        },
+        {
+          "completionOffsetMs": 40898.4,
+          "eventCount": 68,
+          "httpElapsedMs": 504.5,
+          "index": 79,
+          "simulationSeconds": 14458,
+          "status": 200,
+          "worldVersion": 68
+        },
+        {
+          "completionOffsetMs": 41641.6,
+          "eventCount": 69,
+          "httpElapsedMs": 510.8,
+          "index": 80,
+          "simulationSeconds": 14459,
+          "status": 200,
+          "worldVersion": 69
+        },
+        {
+          "completionOffsetMs": 42395.5,
+          "eventCount": 70,
+          "httpElapsedMs": 524.2,
+          "index": 81,
+          "simulationSeconds": 14460,
+          "status": 200,
+          "worldVersion": 70
+        },
+        {
+          "completionOffsetMs": 43153.8,
+          "eventCount": 71,
+          "httpElapsedMs": 528.6,
+          "index": 82,
+          "simulationSeconds": 14461,
+          "status": 200,
+          "worldVersion": 71
+        },
+        {
+          "completionOffsetMs": 43927.8,
+          "eventCount": 72,
+          "httpElapsedMs": 541.4,
+          "index": 83,
+          "simulationSeconds": 14462,
+          "status": 200,
+          "worldVersion": 72
+        },
+        {
+          "completionOffsetMs": 44697.1,
+          "eventCount": 73,
+          "httpElapsedMs": 539.5,
+          "index": 84,
+          "simulationSeconds": 14463,
+          "status": 200,
+          "worldVersion": 73
+        },
+        {
+          "completionOffsetMs": 45452.5,
+          "eventCount": 74,
+          "httpElapsedMs": 525.5,
+          "index": 85,
+          "simulationSeconds": 14464,
+          "status": 200,
+          "worldVersion": 74
+        },
+        {
+          "completionOffsetMs": 46216.3,
+          "eventCount": 75,
+          "httpElapsedMs": 534.3,
+          "index": 86,
+          "simulationSeconds": 14465,
+          "status": 200,
+          "worldVersion": 75
+        },
+        {
+          "completionOffsetMs": 46987,
+          "eventCount": 76,
+          "httpElapsedMs": 538.4,
+          "index": 87,
+          "simulationSeconds": 14466,
+          "status": 200,
+          "worldVersion": 76
+        },
+        {
+          "completionOffsetMs": 47772.1,
+          "eventCount": 77,
+          "httpElapsedMs": 553.8,
+          "index": 88,
+          "simulationSeconds": 14467,
+          "status": 200,
+          "worldVersion": 77
+        },
+        {
+          "completionOffsetMs": 48561,
+          "eventCount": 78,
+          "httpElapsedMs": 559,
+          "index": 89,
+          "simulationSeconds": 14468,
+          "status": 200,
+          "worldVersion": 78
+        },
+        {
+          "completionOffsetMs": 49340.9,
+          "eventCount": 79,
+          "httpElapsedMs": 549.7,
+          "index": 90,
+          "simulationSeconds": 14469,
+          "status": 200,
+          "worldVersion": 79
+        },
+        {
+          "completionOffsetMs": 50120.2,
+          "eventCount": 80,
+          "httpElapsedMs": 550.2,
+          "index": 91,
+          "simulationSeconds": 14470,
+          "status": 200,
+          "worldVersion": 80
+        },
+        {
+          "completionOffsetMs": 50907.4,
+          "eventCount": 81,
+          "httpElapsedMs": 558.1,
+          "index": 92,
+          "simulationSeconds": 14471,
+          "status": 200,
+          "worldVersion": 81
+        },
+        {
+          "completionOffsetMs": 51692.9,
+          "eventCount": 82,
+          "httpElapsedMs": 557,
+          "index": 93,
+          "simulationSeconds": 14472,
+          "status": 200,
+          "worldVersion": 82
+        },
+        {
+          "completionOffsetMs": 52490.4,
+          "eventCount": 83,
+          "httpElapsedMs": 566.7,
+          "index": 94,
+          "simulationSeconds": 14473,
+          "status": 200,
+          "worldVersion": 83
+        },
+        {
+          "completionOffsetMs": 53286.9,
+          "eventCount": 84,
+          "httpElapsedMs": 566.1,
+          "index": 95,
+          "simulationSeconds": 14474,
+          "status": 200,
+          "worldVersion": 84
+        },
+        {
+          "completionOffsetMs": 54084.1,
+          "eventCount": 85,
+          "httpElapsedMs": 566.7,
+          "index": 96,
+          "simulationSeconds": 14475,
+          "status": 200,
+          "worldVersion": 85
+        },
+        {
+          "completionOffsetMs": 54879.8,
+          "eventCount": 86,
+          "httpElapsedMs": 567.8,
+          "index": 97,
+          "simulationSeconds": 14476,
+          "status": 200,
+          "worldVersion": 86
+        },
+        {
+          "completionOffsetMs": 55690.6,
+          "eventCount": 87,
+          "httpElapsedMs": 579.5,
+          "index": 98,
+          "simulationSeconds": 14477,
+          "status": 200,
+          "worldVersion": 87
+        },
+        {
+          "completionOffsetMs": 56504,
+          "eventCount": 88,
+          "httpElapsedMs": 581.1,
+          "index": 99,
+          "simulationSeconds": 14478,
+          "status": 200,
+          "worldVersion": 88
+        },
+        {
+          "completionOffsetMs": 57317.4,
+          "eventCount": 89,
+          "httpElapsedMs": 582.6,
+          "index": 100,
+          "simulationSeconds": 14479,
+          "status": 200,
+          "worldVersion": 89
+        }
+      ]
+    }
+  ],
+  "speedup": 4.3,
+  "verification": {
+    "allResponsesOk": true,
+    "comparedCommands": 100,
+    "finalWorldVersions": [
+      89,
+      89
+    ],
+    "maxConcurrentRequests": 1,
+    "observationsEqual": true,
+    "stopped": true,
+    "durableCheckpointsEqualExceptAuditTimes": true,
+    "checkpointComparisonExcludedFields": [
+      "coordinator.journal.events[*].committedAt",
+      "coordinator.journal.events[*].integrity.digest"
+    ],
+    "browserSaveReload": {
+      "continueAfterRefresh": {
+        "previousHistoryRetained": true,
+        "revisionAdvanced": true,
+        "speed": "fast",
+        "worldVersion": 91
+      },
+      "mobile": {
+        "pageWidth": 390,
+        "width": 390
+      },
+      "readBack": {
+        "historyEqual": true,
+        "independentRuntime": true,
+        "paused": true,
+        "speed": "fast",
+        "worldVersion": 90
+      },
+      "refresh": {
+        "historyEqual": true,
+        "paused": true,
+        "runtimePreserved": true,
+        "speed": "fast",
+        "worldVersion": 90
+      },
+      "savedSnapshots": 1,
+      "savedSpeed": "fast",
+      "savedWorldVersion": 90,
+      "stopped": true
+    },
+    "delayedResponseStop": {
+      "rapidSpeedSwitches": 4,
+      "newRequests": 1,
+      "inFlightAfterSettlement": false,
+      "pendingCommand": false,
+      "running": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "sceneId": "scene_xyy_wangti_tavern",
+  "characterId": "char_xyy_yanzhizhong",
+  "characterName": "严执中",
+  "createdAt": "2026-07-17T04:16:22.672Z",
+  "gates": {
+    "sceneContract": "confirmed",
+    "factConfirmation": "pending",
+    "calibration": "pending",
+    "holdouts": "pending",
+    "runtimeMapping": "pending",
+    "behaviorAcceptance": "pending"
+  },
+  "artifacts": {
+    "factCard": "fact-card.md",
+    "interviewLog": "interview-log.md",
+    "anchorPayload": "anchor-payload.json",
+    "memorySeed": "memory-seed.json",
+    "holdouts": "holdouts.md",
+    "runtimeMap": "runtime-map.json",
+    "characterFoundation": "character-foundation.json",
+    "calibrationEvidence": "calibration-evidence.json"
+  }
+}

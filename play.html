@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人物小镇</title>
+<link rel="stylesheet" href="/src/stage.css">
+<link rel="stylesheet" href="/src/play.css">
+</head>
+<body>
+<main class="app play" id="app"></main>
+<div class="modal" id="settingsModal" hidden>
+  <div class="px panel">
+    <div class="ctitle">设置 · 模型与 API</div>
+    <label>提供方 <select id="setProvider"><option value="gemini">Google Gemini API (官方)</option><option value="openai-compatible">OpenAI 兼容网关 (第三方/中转)</option><option value="deepseek">DeepSeek（官方）</option></select></label>
+    <label id="rowSetBaseUrl" style="display:none">网关地址 <input id="setBaseUrl" placeholder="https://gateway.example/v1" spellcheck="false"></label>
+    <label>API 密钥 <input id="setApiKey" type="password" placeholder="填入 API Key" autocomplete="off" spellcheck="false"></label>
+    <label>模型名称 <input id="setModel" value="gemini-3.8-flash" spellcheck="false"></label>
+    <label>输出格式 <select id="setFormat"><option value="json_object">json_object（网关兼容）</option><option value="json_schema">json_schema</option></select></label>
+    <div class="note" id="setStatus"></div>
+    <div class="actions">
+      <button class="btn" id="setTest">测试连接</button>
+      <button class="btn" id="setCancel">取消</button>
+      <button class="btn primary" id="setSave">保存</button>
+    </div>
+  </div>
+</div>
+<script type="module" src="/src/play/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1538 @@
+{
+  "blueprintVersion": 1,
+  "meta": {
+    "id": "cangxinggu",
+    "title": "借星 · 雨夜入谷",
+    "premise": "四面环山的藏星谷，靠梯田、药田和一条溪过日子。谷外群山终年云雾缭绕，外人多半会在山里迷路。秋末暴雨夜，一对年轻夫妇抱着刚出生的孩子摸进谷口，躲进山口废屋。他们从山外的兵祸里逃出来，浑身湿透，精疲力竭，谷里谁也不认识他们，他们也谁都不认识。",
+    "genre": "仙侠 · 山村",
+    "tone": "烟火气里带着不安",
+    "language": "zh-Hans",
+    "startDay": "秋末，大雨",
+    "startClock": "19:00",
+    "startLabel": "戌时初",
+    "seed": 7
+  },
+  "town": {
+    "name": "藏星谷",
+    "terrain": {
+      "river": "east",
+      "forest": "west",
+      "hills": "north",
+      "fields": "south"
+    },
+    "sites": [
+      {
+        "id": "feiwu",
+        "name": "山口废屋",
+        "type": "home",
+        "householdId": "gu"
+      },
+      {
+        "id": "shi_home",
+        "name": "石家老屋",
+        "type": "home",
+        "householdId": "shi"
+      },
+      {
+        "id": "bao_yard",
+        "name": "宝家院子",
+        "type": "farmhouse",
+        "householdId": "bao"
+      },
+      {
+        "id": "he_home",
+        "name": "何家织屋",
+        "type": "home",
+        "householdId": "he"
+      },
+      {
+        "id": "lu_workshop",
+        "name": "鲁家石作",
+        "type": "smithy",
+        "householdId": "lu",
+        "attachedHome": true
+      },
+      {
+        "id": "du_lu",
+        "name": "杜婆婆药庐",
+        "type": "herb_shop",
+        "householdId": "du"
+      },
+      {
+        "id": "wen_school",
+        "name": "温先生私塾",
+        "type": "school",
+        "householdId": "wen",
+        "attachedHome": true
+      },
+      {
+        "id": "shrine",
+        "name": "谷神祠",
+        "type": "temple"
+      },
+      {
+        "id": "square",
+        "name": "晒谷场",
+        "type": "square"
+      },
+      {
+        "id": "well",
+        "name": "老井",
+        "type": "well"
+      },
+      {
+        "id": "gukou",
+        "name": "谷口山道",
+        "type": "road_out"
+      },
+      {
+        "id": "zhenyan",
+        "name": "北坡阵眼",
+        "type": "array_eye"
+      },
+      {
+        "id": "wangyun",
+        "name": "望云坡",
+        "type": "hill"
+      },
+      {
+        "id": "creek",
+        "name": "藏星溪边",
+        "type": "river_bank"
+      },
+      {
+        "id": "bridge",
+        "name": "溪上石桥",
+        "type": "bridge"
+      },
+      {
+        "id": "terraces",
+        "name": "梯田",
+        "type": "field"
+      },
+      {
+        "id": "herb_field",
+        "name": "药田",
+        "type": "field"
+      },
+      {
+        "id": "pinewood",
+        "name": "后山松林",
+        "type": "forest"
+      }
+    ]
+  },
+  "households": [
+    {
+      "id": "gu",
+      "name": "顾家",
+      "siteId": "feiwu"
+    },
+    {
+      "id": "shi",
+      "name": "石家",
+      "siteId": "shi_home"
+    },
+    {
+      "id": "bao",
+      "name": "宝家",
+      "siteId": "bao_yard"
+    },
+    {
+      "id": "he",
+      "name": "何家",
+      "siteId": "he_home"
+    },
+    {
+      "id": "lu",
+      "name": "鲁家",
+      "siteId": "lu_workshop"
+    },
+    {
+      "id": "du",
+      "name": "杜家",
+      "siteId": "du_lu"
+    },
+    {
+      "id": "wen",
+      "name": "温家",
+      "siteId": "wen_school"
+    }
+  ],
+  "residents": [
+    {
+      "id": "gu_huaishan",
+      "name": "顾怀山",
+      "age": 26,
+      "role": "逃难来的年轻阵修",
+      "newcomer": true,
+      "look": "浑身湿透的年轻男人，手上缠着烧焦的布条",
+      "householdId": "gu",
+      "workSiteId": "feiwu",
+      "appearance": {
+        "skin": "#d6a882",
+        "hair": "#33292c",
+        "robe": "#6e5c40",
+        "sash": "#2a2420",
+        "styles": [
+          "bun",
+          "bandaged"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.65,
+        "introversion": 0.75,
+        "persistence": 0.85,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.2,
+        "care": 0.85,
+        "caution": 0.85,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "arrays",
+        "carpentry"
+      ],
+      "speech": {
+        "style": "话少，句子短，开口先赔不是；一着急就数落人，手上却先动。",
+        "samples": [
+          "打扰了……我们只想讨口热水给孩子，绝不多留。",
+          "青禾你别乱动，身子还没缓过来，这门框我来封。",
+          "山外到处都在打仗，城破了，我们只能往深山里逃。"
+        ]
+      },
+      "situation": "从山外的兵祸里逃出来，带着刚生产三天的妻子和襁褓里的儿子。一路被雨追着，凭一块玉符摸进谷口，躲进山口废屋。手上全是赶路时被符火灼的伤，身上只剩一个散乱的行囊和一把生锈的短剑。",
+      "desires": [
+        {
+          "verb": "照料",
+          "object": "陆青禾",
+          "outcome": "让陆青禾和婴儿今晚能在山口废屋避雨喝上热水",
+          "strength": 0.95
+        },
+        {
+          "verb": "弄清",
+          "object": "谷口山道",
+          "outcome": "摸清谷口那道山缝外藏着谷的阵还能撑多久，自己能不能帮上手",
+          "strength": 0.7
+        },
+        {
+          "verb": "安顿",
+          "object": "山口废屋",
+          "outcome": "把山口废屋收拾干净并恳求藏星谷长辈收留",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "先护住妻儿，再讲别的",
+        "欠了人情一定要还",
+        "不在生人前提起山外旧事"
+      ],
+      "boundaries": [
+        {
+          "protects": "妻儿安危",
+          "trigger": "有人要把妻儿赶回大雨里",
+          "response": "哪怕拼上性命也绝不退让半步"
+        },
+        {
+          "protects": "逃难过往",
+          "trigger": "有人追问从哪里逃来、得罪了何方势力",
+          "response": "岔开话头，只说是避兵荒马乱"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "在山口废屋生火烧热水并察看门外动静",
+          "siteId": "feiwu"
+        },
+        {
+          "from": "19:00",
+          "to": "21:30",
+          "activity": "在山口废屋用残存符火护住门框并照顾妻儿",
+          "siteId": "feiwu"
+        },
+        {
+          "from": "21:30",
+          "to": "23:30",
+          "activity": "在山口废屋守夜并察看生锈的短剑",
+          "siteId": "feiwu"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三天前",
+          "content": "青禾在破庙里生下孩子，外面满是乱兵的火光与喊杀声。"
+        },
+        {
+          "when": "半个月前",
+          "content": "守军的城池被攻破，自己身为修补护城阵的匠人，眼睁睁看着阵法崩解。"
+        },
+        {
+          "when": "傍晚",
+          "content": "在大雨茫茫的山里迷路时，青禾怀里的玉符忽然亮起，指着一道看不见的山缝。"
+        }
+      ],
+      "secrets": [
+        "护城阵破城陷被他视作不可饶恕的罪过。",
+        "那把生锈的短剑不知为何一靠近孩子，啼哭便立刻止住。"
+      ]
+    },
+    {
+      "id": "lu_qinghe",
+      "name": "陆青禾",
+      "age": 24,
+      "role": "逃难来的年轻医者",
+      "newcomer": true,
+      "look": "脸色苍白的年轻女人，怀里紧抱着襁褓",
+      "householdId": "gu",
+      "workSiteId": "feiwu",
+      "appearance": {
+        "skin": "#f0c6a4",
+        "hair": "#2e2428",
+        "robe": "#5a8a7a",
+        "sash": "#c8b080",
+        "styles": [
+          "braid"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.65,
+        "persistence": 0.8,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.2,
+        "care": 0.95,
+        "caution": 0.75,
+        "impulsivity": 0.15
+      },
+      "skills": [
+        "medicine",
+        "herbalism"
+      ],
+      "speech": {
+        "style": "轻柔沉稳，略带外乡口音；问诊极准，求人时反倒有些难以启齿。",
+        "samples": [
+          "孩子手脚冰凉……我奶水不够，求求哪位好心人匀半碗米汤。",
+          "怀山，你先把手上的符伤包好，别硬撑着。",
+          "小妇人粗通医理与草药，若谷中有病人，愿效犬马之劳。"
+        ]
+      },
+      "situation": "生产才三天，身子还虚，奶水一直不足，孩子饿得直哭。她懂医术和丹火，却连一副像样的药材都没带出来。",
+      "desires": [
+        {
+          "verb": "哺乳",
+          "object": "襁褓里的婴儿",
+          "outcome": "让襁褓里的婴儿吃饱不再啼哭受冻",
+          "strength": 0.95
+        },
+        {
+          "verb": "换",
+          "object": "山口废屋",
+          "outcome": "用医术帮上谷里的人，换一个在山口废屋住下去的许可",
+          "strength": 0.8
+        },
+        {
+          "verb": "看顾",
+          "object": "顾怀山",
+          "outcome": "帮顾怀山处理被符火灼伤的双手伤口",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "医者面前不分来路",
+        "先看孩子，再顾自己",
+        "不白受人恩惠"
+      ],
+      "boundaries": [
+        {
+          "protects": "幼子生机",
+          "trigger": "有人要抱走孩子，或说孩子是祸根",
+          "response": "把孩子抱紧，冷下脸，一步不让"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "在山口废屋抱起婴儿喂水并检查婴儿气色",
+          "siteId": "feiwu"
+        },
+        {
+          "from": "19:00",
+          "to": "21:30",
+          "activity": "在山口废屋抱紧啼哭的婴儿并点微弱丹火取暖",
+          "siteId": "feiwu"
+        },
+        {
+          "from": "21:30",
+          "to": "23:30",
+          "activity": "在山口废屋和衣歇息并握紧怀中的婴儿",
+          "siteId": "feiwu"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三天前",
+          "content": "在破庙里生下孩子，接生的只有怀山一双发抖的手。"
+        },
+        {
+          "when": "出城那夜",
+          "content": "一个陌生的老妇把一块青玉符塞到她手里，只说往北见山缝就进，替她看看那里还在不在。"
+        }
+      ],
+      "secrets": [
+        "她不知道那个老妇是谁，也没告诉任何人玉符的来历。"
+      ]
+    },
+    {
+      "id": "shi_shoutian",
+      "name": "石守田",
+      "age": 63,
+      "role": "藏星谷的族老",
+      "look": "拄着拐杖的白发老人",
+      "householdId": "shi",
+      "workSiteId": "shrine",
+      "appearance": {
+        "skin": "#c99a75",
+        "hair": "#4a3c36",
+        "robe": "#445566",
+        "sash": "#444433",
+        "styles": [
+          "bun",
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.8,
+        "introversion": 0.5,
+        "persistence": 0.85,
+        "conscientiousness": 0.9,
+        "competitiveness": 0.35,
+        "care": 0.65,
+        "caution": 0.85,
+        "impulsivity": 0.15
+      },
+      "skills": [
+        "farming",
+        "reading"
+      ],
+      "speech": {
+        "style": "慢条斯理，爱拿祖上的话压人；拐杖往地上一顿，就是不许再争。",
+        "samples": [
+          "祖宗的规矩不能坏在我手里，外人进谷，必须先问清来路。",
+          "今年秋雨多，梯田垮了两处，断不能耽误了开春的庄稼。",
+          "温先生当年也是一身伤进来的，谷里能容落难人，但不能招祸。"
+        ]
+      },
+      "situation": "谷里大事小情都要他点头。规矩是祖上传下来的：外人进谷，先问清来路。今年秋雨多，梯田垮了两处，他正发愁。",
+      "desires": [
+        {
+          "verb": "守住",
+          "object": "谷口山道",
+          "outcome": "不让山外的祸事从谷口那道山缝跟进谷来",
+          "strength": 0.85
+        },
+        {
+          "verb": "巡视",
+          "object": "梯田",
+          "outcome": "冬天前把垮了的梯田石埂垒回去",
+          "strength": 0.6
+        },
+        {
+          "verb": "查验",
+          "object": "北坡阵眼",
+          "outcome": "督促鲁老石尽快查明北坡阵眼光芒黯淡的缘由",
+          "strength": 0.75
+        }
+      ],
+      "principles": [
+        "祖宗的规矩不能坏在我手里",
+        "谷里人先顾谷里人",
+        "话可以慢慢问，人不能冻死在门口"
+      ],
+      "boundaries": [
+        {
+          "protects": "谷中方位",
+          "trigger": "有人要把谷的位置往外说",
+          "response": "板起脸，拿出族规，当众说清后果"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在石家老屋堂屋喝热茶并盘算梯田修缮",
+          "siteId": "shi_home"
+        },
+        {
+          "from": "19:00",
+          "to": "21:00",
+          "activity": "在石家老屋堂屋听雨抽旱烟",
+          "siteId": "shi_home"
+        },
+        {
+          "from": "21:00",
+          "to": "23:00",
+          "activity": "前往谷神祠查验族规并巡视",
+          "siteId": "shrine"
+        }
+      ],
+      "memories": [
+        {
+          "when": "四十年前",
+          "content": "亲眼见族老把一个硬闯的外人送出谷口，那人后来死在山里，他一直不知道那样做对不对。"
+        },
+        {
+          "when": "二十年前",
+          "content": "温先生一身伤进谷，是他点头留下的。"
+        }
+      ],
+      "secrets": [
+        "他其实记不全护谷阵的口诀了，阵石只靠鲁老石照老样子补。"
+      ]
+    },
+    {
+      "id": "shi_xiaohu",
+      "name": "石小虎",
+      "age": 9,
+      "role": "族老的孙子",
+      "look": "虎头虎脑的小男孩",
+      "householdId": "shi",
+      "workSiteId": "square",
+      "appearance": {
+        "skin": "#f7d5ba",
+        "hair": "#221c1f",
+        "robe": "#b8743c",
+        "sash": "#5a6a3a",
+        "styles": [
+          "short"
+        ],
+        "child": true
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.2,
+        "persistence": 0.5,
+        "conscientiousness": 0.3,
+        "competitiveness": 0.75,
+        "care": 0.5,
+        "caution": 0.2,
+        "impulsivity": 0.85
+      },
+      "skills": [],
+      "speech": {
+        "style": "嗓门大，说话快，一激动就结巴。",
+        "samples": [
+          "爷、爷爷！我刚才在晒谷场真看见谷口那边闪过一道青光！",
+          "大川叔，后山松林里真有长角的灵鹿吗？带我去瞧瞧呗！",
+          "我、我才不怕黑！男子汉顶天立地！"
+        ]
+      },
+      "situation": "雨夜睡不着，在晒谷场边躲雨时，看见谷口那边闪过一道青光。",
+      "desires": [
+        {
+          "verb": "探看",
+          "object": "谷口山道",
+          "outcome": "去谷口山道看看那道青光是不是山里的精怪",
+          "strength": 0.8
+        },
+        {
+          "verb": "夸口",
+          "object": "宝大川",
+          "outcome": "抢先告诉宝大川叔让大人夸他眼尖",
+          "strength": 0.65
+        }
+      ],
+      "principles": [
+        "男子汉不怕黑",
+        "有好玩的宝贝绝不交出"
+      ],
+      "boundaries": [
+        {
+          "protects": "私藏碎石",
+          "trigger": "有人要搜查自己的衣服兜",
+          "response": "捂紧胸口撒腿就跑"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在晒谷场跑跳玩耍并捡石子",
+          "siteId": "square"
+        },
+        {
+          "from": "19:00",
+          "to": "20:00",
+          "activity": "在晒谷场边避雨并摸怀里的碎石",
+          "siteId": "square"
+        },
+        {
+          "from": "20:00",
+          "to": "22:00",
+          "activity": "溜回石家老屋挨爷爷训话",
+          "siteId": "shi_home"
+        }
+      ],
+      "memories": [
+        {
+          "when": "去年夏天",
+          "content": "在后山追灵鹿追丢了，被爷爷罚跪祠堂。"
+        }
+      ],
+      "secrets": [
+        "他偷偷从北坡阵眼的阵石上抠下一块会发光的碎石，藏在怀里。"
+      ]
+    },
+    {
+      "id": "bao_dachuan",
+      "name": "宝大川",
+      "age": 30,
+      "role": "猎户",
+      "look": "背着弓、一身泥水的壮汉",
+      "householdId": "bao",
+      "workSiteId": "pinewood",
+      "appearance": {
+        "skin": "#c99a75",
+        "hair": "#2e2428",
+        "robe": "#774433",
+        "sash": "#2a2420",
+        "styles": [
+          "beard",
+          "short"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.75,
+        "introversion": 0.55,
+        "persistence": 0.85,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.5,
+        "care": 0.75,
+        "caution": 0.7,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "hunting",
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "嗓音粗，说话直，三句不离山里的兽。",
+        "samples": [
+          "谷口山道的泥印子是一大一小，鞋底还沾着血迹，绝不是谷里人。",
+          "春娘快回屋，这暴雨夜外头不太平，我把门顶严实。",
+          "山里的规矩，先看脚印再说话，不欺负落难的人。"
+        ]
+      },
+      "situation": "傍晚从后山收夹子回来，在谷口山道的泥地上看见不是谷里人的脚印，一大一小，还有血。",
+      "desires": [
+        {
+          "verb": "察看",
+          "object": "谷口山道",
+          "outcome": "在谷口山道弄清进谷的是人还是野兽、有没有恶意",
+          "strength": 0.85
+        },
+        {
+          "verb": "守护",
+          "object": "柳春娘",
+          "outcome": "回宝家院子护着柳春娘和刚满月的阿宝平平安安",
+          "strength": 0.95
+        }
+      ],
+      "principles": [
+        "山里的事，先看脚印再说话",
+        "不欺负落难的人"
+      ],
+      "boundaries": [
+        {
+          "protects": "妻儿安宁",
+          "trigger": "有危险的人或兽靠近宝家院子",
+          "response": "抄起猎叉守住院门迎击"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "前往后山松林查看猎夹并巡查山路",
+          "siteId": "pinewood"
+        },
+        {
+          "from": "19:00",
+          "to": "20:00",
+          "activity": "在谷口山道冒雨察看泥地脚印与血迹",
+          "siteId": "gukou"
+        },
+        {
+          "from": "20:00",
+          "to": "23:00",
+          "activity": "回宝家院子关照牲口并陪伴春娘母子",
+          "siteId": "bao_yard"
+        }
+      ],
+      "memories": [
+        {
+          "when": "五年前",
+          "content": "在山里救过一个迷路的货郎，送出谷口时被族老骂了一顿。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "liu_chunniang",
+      "name": "柳春娘",
+      "age": 27,
+      "role": "猎户的妻子",
+      "look": "圆脸的年轻妇人",
+      "householdId": "bao",
+      "workSiteId": "bao_yard",
+      "appearance": {
+        "skin": "#f0c6a4",
+        "hair": "#3a2c28",
+        "robe": "#5b5065",
+        "sash": "#c8b080",
+        "styles": [
+          "bun",
+          "apron"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.4,
+        "persistence": 0.7,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.2,
+        "care": 0.95,
+        "caution": 0.55,
+        "impulsivity": 0.35
+      },
+      "skills": [
+        "cooking",
+        "farming"
+      ],
+      "speech": {
+        "style": "说话软，笑声大，护起孩子来嗓门比谁都高。",
+        "samples": [
+          "阿宝乖，吃饱了好好睡……外头雨这么大，听着渗人。",
+          "大川你少板着脸，阿宝都被你吓醒了！",
+          "灶上煨着热鸡汤，趁热喝了，驱驱这满身的寒气。"
+        ]
+      },
+      "situation": "儿子阿宝刚满月，奶水足，夜里常被院里那只大白鹅吵醒。心软，见不得孩子哭。",
+      "desires": [
+        {
+          "verb": "哺育",
+          "object": "宝家院子",
+          "outcome": "在宝家院子让阿宝吃得饱睡得香并赶开大白鹅",
+          "strength": 0.95
+        },
+        {
+          "verb": "等",
+          "object": "宝大川",
+          "outcome": "等大川冒雨从谷口平安回来，一家三口关上门吃口热饭",
+          "strength": 0.75
+        }
+      ],
+      "principles": [
+        "见不得孩子哭",
+        "家里的事听大川的，可大川也得讲理"
+      ],
+      "boundaries": [
+        {
+          "protects": "满月幼子",
+          "trigger": "有人惊吓或威胁到阿宝",
+          "response": "护在身前尖声斥责"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "在宝家院子生火做早饭并喂养家禽",
+          "siteId": "bao_yard"
+        },
+        {
+          "from": "19:00",
+          "to": "21:00",
+          "activity": "在宝家院子给阿宝喂奶并赶大白鹅",
+          "siteId": "bao_yard"
+        },
+        {
+          "from": "21:00",
+          "to": "23:00",
+          "activity": "在宝家院子屋内缝补衣裳等大川归家",
+          "siteId": "bao_yard"
+        }
+      ],
+      "memories": [
+        {
+          "when": "一个月前",
+          "content": "难产了一天一夜，是杜婆婆把阿宝接下来的。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "he_sao",
+      "name": "何嫂",
+      "age": 31,
+      "role": "织户",
+      "look": "瘦削的妇人，鬓边别着一根红头绳",
+      "householdId": "he",
+      "workSiteId": "he_home",
+      "appearance": {
+        "skin": "#e4b896",
+        "hair": "#2e2428",
+        "robe": "#b8743c",
+        "sash": "#883322",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.3,
+        "persistence": 0.85,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.4,
+        "care": 0.7,
+        "caution": 0.6,
+        "impulsivity": 0.45
+      },
+      "skills": [
+        "weaving",
+        "cooking"
+      ],
+      "speech": {
+        "style": "嘴快，爱打听，消息从她这里一夜就能传遍全谷。",
+        "samples": [
+          "这雨下得邪乎，今晚连狗都不叫了。",
+          "我家当家的出谷三年了，只要没见着信儿，我就守着屋子等。",
+          "山外若是起了大兵灾，可千万别漏进咱们谷里来。"
+        ]
+      },
+      "situation": "丈夫三年前出谷去山外换盐，再没回来。有人说山外打仗了。她一听到“山外”两个字就心口发紧。",
+      "desires": [
+        {
+          "verb": "打听",
+          "object": "谷口山道",
+          "outcome": "盼着有人从谷口那道山缝带回丈夫的消息，知道他是死是活",
+          "strength": 0.9
+        },
+        {
+          "verb": "织布",
+          "object": "何家织屋",
+          "outcome": "在何家织屋伴着雨声织布防备山外祸事",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "丈夫回来之前，这个家我撑着"
+      ],
+      "boundaries": [
+        {
+          "protects": "丈夫念想",
+          "trigger": "有人说她丈夫早死在外头了",
+          "response": "红着眼当场顶回去"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在何家织屋整理布匹准备清晨洒扫",
+          "siteId": "he_home"
+        },
+        {
+          "from": "19:00",
+          "to": "21:00",
+          "activity": "在何家织屋伴着雨声推机织布",
+          "siteId": "he_home"
+        },
+        {
+          "from": "21:00",
+          "to": "23:00",
+          "activity": "在何家织屋清点积攒的路费与歇息",
+          "siteId": "he_home"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三年前",
+          "content": "丈夫出谷前说最多一个月就回来，还要给她带一匹红布。"
+        }
+      ],
+      "secrets": [
+        "她偷偷存了一包路费，打算开春自己出谷去找人。"
+      ]
+    },
+    {
+      "id": "lu_laoshi",
+      "name": "鲁老石",
+      "age": 56,
+      "role": "石匠，兼看北坡阵眼",
+      "look": "满手石粉的老石匠",
+      "householdId": "lu",
+      "workSiteId": "lu_workshop",
+      "appearance": {
+        "skin": "#c99a75",
+        "hair": "#3a2a20",
+        "robe": "#6e5c40",
+        "sash": "#2a2420",
+        "styles": [
+          "apron",
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.55,
+        "introversion": 0.8,
+        "persistence": 0.9,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.3,
+        "care": 0.5,
+        "caution": 0.8,
+        "impulsivity": 0.15
+      },
+      "skills": [
+        "arrays",
+        "carpentry"
+      ],
+      "speech": {
+        "style": "闷声闷气，说话像凿石头，一句一顿。",
+        "samples": [
+          "阵石……师父怎么画，我就怎么凿，错不得半寸。",
+          "今晚北坡阵眼的光暗了一截……心里发毛。",
+          "外人休要靠近阵石！碰坏了纹路，神仙也护不住谷！"
+        ]
+      },
+      "situation": "看了三十年阵石，只会照着师父留下的拓样一笔笔描。今晚他觉得北坡阵眼的光暗了一截，心里发毛，冒雨上了坡。",
+      "desires": [
+        {
+          "verb": "补亮",
+          "object": "北坡阵眼的阵纹",
+          "outcome": "补好北坡阵眼让阵石重新亮起来谷照旧藏得住",
+          "strength": 0.95
+        },
+        {
+          "verb": "查核",
+          "object": "鲁家石作",
+          "outcome": "在鲁家石作翻查阵纹拓样隐瞒自己不懂阵纹的实情",
+          "strength": 0.75
+        }
+      ],
+      "principles": [
+        "师父的拓样一笔不能改"
+      ],
+      "boundaries": [
+        {
+          "protects": "阵石重地",
+          "trigger": "外人对着阵石指手画脚",
+          "response": "沉下脸，叫他离阵石远点"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在鲁家石作开门整理凿子与石料",
+          "siteId": "lu_workshop"
+        },
+        {
+          "from": "19:00",
+          "to": "21:30",
+          "activity": "冒雨在北坡阵眼察看阵石与黯淡阵纹",
+          "siteId": "zhenyan"
+        },
+        {
+          "from": "21:30",
+          "to": "23:30",
+          "activity": "回鲁家石作翻看阵纹拓样琢磨缺笔",
+          "siteId": "lu_workshop"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三十年前",
+          "content": "师父临死前把一卷阵纹拓样交给他，说照着描，谷就丢不了。"
+        }
+      ],
+      "secrets": [
+        "他看不懂阵纹；拓样有一处被虫蛀了，他一直是猜着补的。"
+      ]
+    },
+    {
+      "id": "du_popo",
+      "name": "杜婆婆",
+      "age": 69,
+      "role": "草药婆，也是谷里的接生婆",
+      "look": "佝偻着背的老婆婆，身上一股药味",
+      "householdId": "du",
+      "workSiteId": "du_lu",
+      "appearance": {
+        "skin": "#d6a882",
+        "hair": "#4a3c36",
+        "robe": "#3a6050",
+        "sash": "#5a6a3a",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.65,
+        "introversion": 0.5,
+        "persistence": 0.8,
+        "conscientiousness": 0.9,
+        "competitiveness": 0.15,
+        "care": 0.95,
+        "caution": 0.75,
+        "impulsivity": 0.1
+      },
+      "skills": [
+        "herbalism",
+        "medicine"
+      ],
+      "speech": {
+        "style": "说话不紧不慢，爱叫人“乖乖”，骂人也带着药味儿。",
+        "samples": [
+          "乖乖莫怕，喝了这碗发汗的艾汤，寒气散了身子骨就暖了。",
+          "老婆子这双腿一逢秋雨就钻心疼，只怕哪天走不动了药庐没人守。",
+          "药草也是生灵，哪味治病哪味催命，马虎不得半分。"
+        ]
+      },
+      "situation": "谷里看病接生都靠她。眼神一年不如一年，药庐里缺的药越来越多。今晚雨大，她的老寒腿疼得睡不着。",
+      "desires": [
+        {
+          "verb": "配药",
+          "object": "杜婆婆药庐",
+          "outcome": "在杜婆婆药庐配好避寒汤药照料谷中幼童今年冬天别再有孩子烧坏",
+          "strength": 0.85
+        },
+        {
+          "verb": "找",
+          "object": "杜婆婆药庐",
+          "outcome": "找一个能接手杜婆婆药庐的人，她走之后谷里还有人会看病",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "接生不问来历",
+        "药不能乱给"
+      ],
+      "boundaries": [
+        {
+          "protects": "医道谨慎",
+          "trigger": "有人糟蹋药材或强索虎狼药",
+          "response": "挥起拐杖严厉训斥绝不迁就"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "开药庐门通风熬药汤研磨药末",
+          "siteId": "du_lu"
+        },
+        {
+          "from": "19:00",
+          "to": "21:00",
+          "activity": "在杜婆婆药庐用热毛巾敷老寒腿并配药",
+          "siteId": "du_lu"
+        },
+        {
+          "from": "21:00",
+          "to": "23:00",
+          "activity": "在杜婆婆药庐整理草药药匣",
+          "siteId": "du_lu"
+        }
+      ],
+      "memories": [
+        {
+          "when": "一个月前",
+          "content": "接生阿宝，熬了一天一夜，差点没保住春娘。"
+        },
+        {
+          "when": "很多年前",
+          "content": "她有个妹妹嫁出了谷，再也没回来过。"
+        }
+      ],
+      "secrets": [
+        "那个嫁出谷的妹妹，当年带走了谷里一块引路玉符。"
+      ]
+    },
+    {
+      "id": "wen_xiansheng",
+      "name": "温先生",
+      "age": 52,
+      "role": "私塾先生",
+      "look": "穿着旧长衫的清瘦中年人",
+      "householdId": "wen",
+      "workSiteId": "wen_school",
+      "appearance": {
+        "skin": "#eab48c",
+        "hair": "#33292c",
+        "robe": "#5a8a7a",
+        "sash": "#3a3040",
+        "styles": [
+          "hat",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.65,
+        "persistence": 0.7,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.2,
+        "care": 0.75,
+        "caution": 0.8,
+        "impulsivity": 0.1
+      },
+      "skills": [
+        "reading"
+      ],
+      "speech": {
+        "style": "文绉绉的，爱引古话，说到要紧处反倒停下不说。",
+        "samples": [
+          "风雨如晦，鸡鸣不已……既然进了谷，便是一段尘缘。",
+          "小虎心性不坏，只是顽劣跳脱，还须以圣贤礼义慢慢浸润。",
+          "山外纷扰皆是过眼云烟，老夫在此授书二十载，早做山中人了。"
+        ]
+      },
+      "situation": "二十年前一身伤进的谷，留下来教孩子们认字。谷里人敬他，却从没真把他当自己人。",
+      "desires": [
+        {
+          "verb": "报答",
+          "object": "石守田",
+          "outcome": "二十年前族老点头留下了他，他一直想找机会还这份情",
+          "strength": 0.7
+        },
+        {
+          "verb": "授课",
+          "object": "石小虎",
+          "outcome": "督促石小虎收心学礼按时到温先生私塾读开蒙礼书",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "读书人不说谎，只是有些话不说"
+      ],
+      "boundaries": [
+        {
+          "protects": "避世过往",
+          "trigger": "有人追问自己当年因何负伤避祸进谷",
+          "response": "轻叹摇头，绝口不提旧事"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在温先生私塾案前整理蒙书准备讲课",
+          "siteId": "wen_school"
+        },
+        {
+          "from": "19:00",
+          "to": "21:00",
+          "activity": "在温先生私塾挑灯阅卷批改习字",
+          "siteId": "wen_school"
+        },
+        {
+          "from": "21:00",
+          "to": "23:00",
+          "activity": "在温先生私塾案前听雨沉思",
+          "siteId": "wen_school"
+        }
+      ],
+      "memories": [
+        {
+          "when": "二十年前",
+          "content": "被族老石守田点头留下，从此再没出过谷。"
+        }
+      ],
+      "secrets": [
+        "他认得符火灼的伤疤：谁手上有这种伤，谁就是修士。他从没告诉过别人自己为什么认得。"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "gu_huaishan",
+      "to": "lu_qinghe",
+      "label": "夫妻相依",
+      "address": [
+        "青禾"
+      ],
+      "feelings": {
+        "love": 95,
+        "protection": 95,
+        "dependence": 70
+      },
+      "unspoken": "只要有我在，绝不让你们娘俩再受风雨"
+    },
+    {
+      "from": "lu_qinghe",
+      "to": "gu_huaishan",
+      "label": "夫妻相依",
+      "address": [
+        "怀山"
+      ],
+      "feelings": {
+        "love": 95,
+        "dependence": 80,
+        "protection": 60
+      },
+      "unspoken": "我不怕吃苦，只心疼你手上的符火伤"
+    },
+    {
+      "from": "shi_shoutian",
+      "to": "shi_xiaohu",
+      "label": "祖孙",
+      "address": [
+        "小虎",
+        "小兔崽子"
+      ],
+      "feelings": {
+        "love": 75,
+        "protection": 85,
+        "fear": 10
+      },
+      "unspoken": "这皮猴子成天闯祸，千万莫碰坏了山坡上的阵石"
+    },
+    {
+      "from": "shi_xiaohu",
+      "to": "shi_shoutian",
+      "label": "祖孙",
+      "address": [
+        "爷爷"
+      ],
+      "feelings": {
+        "love": 70,
+        "fear": 50,
+        "wantsToBeSeen": 85
+      },
+      "unspoken": "我想让爷爷知道我也能像大川叔那样顶天立地"
+    },
+    {
+      "from": "bao_dachuan",
+      "to": "liu_chunniang",
+      "label": "夫妻",
+      "address": [
+        "春娘"
+      ],
+      "feelings": {
+        "love": 85,
+        "protection": 90
+      },
+      "unspoken": "有我在，山里的豺狼野兽休想惊扰到家里"
+    },
+    {
+      "from": "liu_chunniang",
+      "to": "bao_dachuan",
+      "label": "夫妻",
+      "address": [
+        "大川"
+      ],
+      "feelings": {
+        "love": 85,
+        "dependence": 75,
+        "protection": 60
+      },
+      "unspoken": "暴雨夜里去谷口，真怕他遇着凶险"
+    },
+    {
+      "from": "du_popo",
+      "to": "liu_chunniang",
+      "label": "心疼晚辈",
+      "address": [
+        "春娘",
+        "春娘丫头"
+      ],
+      "feelings": {
+        "love": 75,
+        "protection": 70
+      },
+      "unspoken": "生阿宝受了那般大罪，万万受不得寒凉"
+    },
+    {
+      "from": "liu_chunniang",
+      "to": "du_popo",
+      "label": "救命之恩",
+      "address": [
+        "杜婆婆"
+      ],
+      "feelings": {
+        "love": 80,
+        "dependence": 65
+      },
+      "unspoken": "若非婆婆那一宿硬撑着，我和阿宝早没了"
+    },
+    {
+      "from": "lu_laoshi",
+      "to": "shi_shoutian",
+      "label": "老伙计照办",
+      "address": [
+        "族老",
+        "守田老哥"
+      ],
+      "feelings": {
+        "dependence": 70,
+        "fear": 20
+      },
+      "unspoken": "阵眼光芒暗了一截，我真怕守不住师父的拓样"
+    },
+    {
+      "from": "shi_shoutian",
+      "to": "lu_laoshi",
+      "label": "倚重老友",
+      "address": [
+        "老石",
+        "鲁老弟"
+      ],
+      "feelings": {
+        "dependence": 75,
+        "protection": 60,
+        "fear": 30
+      },
+      "unspoken": "阵石全指望他，真怕他哪天也撑不住了"
+    },
+    {
+      "from": "wen_xiansheng",
+      "to": "shi_shoutian",
+      "label": "感恩拘谨",
+      "address": [
+        "族老",
+        "石公"
+      ],
+      "feelings": {
+        "dependence": 50,
+        "fear": 20,
+        "shame": 15
+      },
+      "unspoken": "二十年收留之恩，铭刻于心"
+    },
+    {
+      "from": "shi_shoutian",
+      "to": "wen_xiansheng",
+      "label": "信重外客",
+      "address": [
+        "温先生"
+      ],
+      "feelings": {
+        "protection": 50,
+        "power": 40
+      },
+      "unspoken": "先生明理知礼，只是山外过往到底深不可测"
+    },
+    {
+      "from": "shi_xiaohu",
+      "to": "wen_xiansheng",
+      "label": "敬畏师长",
+      "address": [
+        "先生"
+      ],
+      "feelings": {
+        "fear": 65,
+        "wantsToBeSeen": 60
+      },
+      "unspoken": "字没写工整又要挨戒尺敲手板了"
+    },
+    {
+      "from": "wen_xiansheng",
+      "to": "shi_xiaohu",
+      "label": "偏爱门生",
+      "address": [
+        "小虎"
+      ],
+      "feelings": {
+        "love": 65,
+        "protection": 50
+      },
+      "unspoken": "淘气归淘气，悟性却比旁的孩子通透"
+    },
+    {
+      "from": "shi_xiaohu",
+      "to": "bao_dachuan",
+      "label": "崇拜猎户",
+      "address": [
+        "大川叔"
+      ],
+      "feelings": {
+        "love": 70,
+        "wantsToBeSeen": 85
+      },
+      "unspoken": "将来我也要像大川叔那样扛着猎叉进后山打野兽"
+    },
+    {
+      "from": "bao_dachuan",
+      "to": "shi_xiaohu",
+      "label": "关照晚辈",
+      "address": [
+        "小虎"
+      ],
+      "feelings": {
+        "love": 60,
+        "protection": 55
+      },
+      "unspoken": "小虎胆子忒大，就怕他一个人溜进松林迷了路"
+    },
+    {
+      "from": "he_sao",
+      "to": "liu_chunniang",
+      "label": "邻里姐妹",
+      "address": [
+        "春娘",
+        "大川家的"
+      ],
+      "feelings": {
+        "love": 75,
+        "dependence": 40
+      },
+      "unspoken": "满谷里唯有春娘肯体谅我守寡一般的苦楚"
+    },
+    {
+      "from": "liu_chunniang",
+      "to": "he_sao",
+      "label": "同情姐妹",
+      "address": [
+        "何嫂"
+      ],
+      "feelings": {
+        "love": 70,
+        "protection": 50
+      },
+      "unspoken": "三年音信皆无，何嫂心里该有多煎熬"
+    },
+    {
+      "from": "lu_laoshi",
+      "to": "shi_xiaohu",
+      "label": "嫌恶顽童",
+      "address": [
+        "小虎崽子",
+        "小虎"
+      ],
+      "feelings": {
+        "resentment": 40,
+        "fear": 30
+      },
+      "unspoken": "毛手毛脚的总往阵石跟前凑，真让人提心吊胆"
+    }
+  ],
+  "opening": {
+    "situation": "秋末戌时初，暴雨倾盆。谷里人家大多在屋里用晚饭，山口废屋里却悄悄躲进了一对浑身湿透的年轻夫妇和刚出生的孩子。北坡阵眼的光芒忽暗，风雨里隐隐有异动。",
+    "positions": {
+      "gu_huaishan": "feiwu",
+      "lu_qinghe": "feiwu",
+      "bao_dachuan": "gukou",
+      "lu_laoshi": "zhenyan",
+      "shi_xiaohu": "square",
+      "shi_shoutian": "shi_home",
+      "liu_chunniang": "bao_yard",
+      "he_sao": "he_home",
+      "du_popo": "du_lu",
+      "wen_xiansheng": "wen_school"
+    },
+    "objects": [
+      {
+        "name": "襁褓里的婴儿",
+        "siteId": "feiwu",
+        "holder": "lu_qinghe",
+        "state": {
+          "hungry": true,
+          "crying": true
+        },
+        "known": "public"
+      },
+      {
+        "name": "生锈的短剑",
+        "siteId": "feiwu",
+        "holder": "gu_huaishan",
+        "state": {},
+        "known": "private"
+      },
+      {
+        "name": "引路玉符",
+        "siteId": "feiwu",
+        "holder": "lu_qinghe",
+        "state": {
+          "glowing": false
+        },
+        "known": "private"
+      },
+      {
+        "name": "散乱的行囊",
+        "siteId": "feiwu",
+        "holder": null,
+        "state": {},
+        "known": "public"
+      },
+      {
+        "name": "阵石碎块",
+        "siteId": "square",
+        "holder": "shi_xiaohu",
+        "state": {
+          "glowing": true
+        },
+        "known": "private"
+      },
+      {
+        "name": "阵纹拓样",
+        "siteId": "lu_workshop",
+        "holder": "lu_laoshi",
+        "state": {
+          "wormEaten": true
+        },
+        "known": "private"
+      },
+      {
+        "name": "北坡阵眼的阵纹",
+        "siteId": "zhenyan",
+        "holder": null,
+        "state": {},
+        "known": "public",
+        "madeAt": "zhenyan",
+        "madeWith": "mend_array_eye",
+        "needed": 2
+      }
+    ],
+    "deadlines": [
+      {
+        "label": "子时前把北坡阵眼的阵纹补亮",
+        "dueClock": "23:00",
+        "responsible": [
+          "lu_laoshi"
+        ],
+        "knownBy": [
+          "lu_laoshi",
+          "shi_shoutian"
+        ],
+        "conditions": [
+          {
+            "kind": "object_ready",
+            "object": "北坡阵眼的阵纹"
+          }
+        ],
+        "consequence": "护谷阵漏了口子，谷口那道山缝今夜谁都摸得进来。"
+      }
+    ],
+    "mysteries": [
+      "这对夫妇是怎么找到进谷的山缝的？",
+      "北坡阵眼的光为什么偏偏今晚暗了？",
+      "那把生锈的短剑为什么能止住婴儿的哭？",
+      "陆青禾的引路玉符原本是谁的？",
+      "他们在山外到底逃的是什么？"
+    ],
+    "events": [],
+    "visitors": []
+  }
+}

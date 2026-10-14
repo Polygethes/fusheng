@@ -1,0 +1,1908 @@
+{
+  "status": "turn_limit_reached",
+  "requestedModel": "gemini-3.8-flash-high",
+  "requestedTurns": 20,
+  "maxRequests": 1200,
+  "maxStageProtocolRepairs": 4,
+  "turnCounting": "character-turns-including-planning-and-reflection",
+  "source": "fresh-world:jiexing",
+  "worldPackId": "jiexing",
+  "worldPackDigest": "e7da64af3436947af61118af244f1e9b8e8345a914a6957eb774ca1b247233db",
+  "worldPackDigestChanged": false,
+  "callMode": "three-call",
+  "sourceSha256": "7848c82a0101f846b088976647068e52919d68501b7fa5b32c3a9c4216a1a888",
+  "startedAt": "2026-10-10T07:49:45.395Z",
+  "provenance": {
+    "kind": "user-specified-gemini-api",
+    "endpoint": "https://gateway.example/v1beta",
+    "requestedModel": "gemini-3.8-flash-high",
+    "runPurpose": "real-model",
+    "fixtureFallback": false,
+    "inheritedModelVerified": false
+  },
+  "calls": [
+    {
+      "index": 1,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:1",
+      "phase": "awaiting_character_day_planning",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:49:45.422Z",
+      "elapsedMs": 8385.677791,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 901,
+        "completion_tokens_details": {
+          "reasoning_tokens": 629
+        },
+        "prompt_tokens": 5025,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5926
+      }
+    },
+    {
+      "index": 2,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:1",
+      "phase": "awaiting_character_day_planning",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:49:53.877Z",
+      "elapsedMs": 12014.315625000001,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 784,
+        "completion_tokens_details": {
+          "reasoning_tokens": 532
+        },
+        "prompt_tokens": 4851,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5635
+      }
+    },
+    {
+      "index": 3,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:1",
+      "phase": "awaiting_character_day_planning",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:50:05.979Z",
+      "elapsedMs": 10616.546958000003,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1201,
+        "completion_tokens_details": {
+          "reasoning_tokens": 976
+        },
+        "prompt_tokens": 4334,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 5535
+      }
+    },
+    {
+      "index": 4,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:1",
+      "phase": "awaiting_character_day_planning",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:50:16.664Z",
+      "elapsedMs": 8237.708374999998,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 735,
+        "completion_tokens_details": {
+          "reasoning_tokens": 534
+        },
+        "prompt_tokens": 2956,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 3691
+      }
+    },
+    {
+      "index": 5,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:1",
+      "phase": "awaiting_character_day_planning",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:50:24.964Z",
+      "elapsedMs": 7726.107541000005,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 543,
+        "completion_tokens_details": {
+          "reasoning_tokens": 330
+        },
+        "prompt_tokens": 3043,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 3586
+      }
+    },
+    {
+      "index": 6,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:2",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:50:32.785Z",
+      "elapsedMs": 42022.783958,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5673,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2108
+        },
+        "prompt_tokens": 32170,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 37843
+      }
+    },
+    {
+      "index": 7,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:2",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:51:14.909Z",
+      "elapsedMs": 13100.263749999998,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1479,
+        "completion_tokens_details": {
+          "reasoning_tokens": 647
+        },
+        "prompt_tokens": 26391,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 27870
+      }
+    },
+    {
+      "index": 8,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:2",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:51:28.136Z",
+      "elapsedMs": 8205.173832999993,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 796,
+        "completion_tokens_details": {
+          "reasoning_tokens": 547
+        },
+        "prompt_tokens": 6572,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7368
+      }
+    },
+    {
+      "index": 9,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:2",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": false,
+      "startedAt": "2026-10-10T07:51:36.536Z",
+      "elapsedMs": 36300.00683300001,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5250,
+        "completion_tokens_details": {
+          "reasoning_tokens": 485
+        },
+        "prompt_tokens": 36194,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 41444
+      }
+    },
+    {
+      "index": 10,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:2",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:52:12.925Z",
+      "elapsedMs": 35908.30212499999,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5890,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1135
+        },
+        "prompt_tokens": 41176,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 47066
+      }
+    },
+    {
+      "index": 11,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:2",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:52:48.953Z",
+      "elapsedMs": 14538.541375,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1931,
+        "completion_tokens_details": {
+          "reasoning_tokens": 904
+        },
+        "prompt_tokens": 27728,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 29659
+      }
+    },
+    {
+      "index": 12,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:2",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:53:03.621Z",
+      "elapsedMs": 6075.3515829999815,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 615,
+        "completion_tokens_details": {
+          "reasoning_tokens": 384
+        },
+        "prompt_tokens": 7857,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8472
+      }
+    },
+    {
+      "index": 13,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:2",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:53:09.892Z",
+      "elapsedMs": 26347.051166999998,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4040,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1256
+        },
+        "prompt_tokens": 31287,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 35327
+      }
+    },
+    {
+      "index": 14,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:2",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:53:36.349Z",
+      "elapsedMs": 14582.129750000022,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1404,
+        "completion_tokens_details": {
+          "reasoning_tokens": 773
+        },
+        "prompt_tokens": 24548,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 25952
+      }
+    },
+    {
+      "index": 15,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:2",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:53:51.059Z",
+      "elapsedMs": 8596.869791999983,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 985,
+        "completion_tokens_details": {
+          "reasoning_tokens": 748
+        },
+        "prompt_tokens": 6879,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7864
+      }
+    },
+    {
+      "index": 16,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:2",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:53:59.833Z",
+      "elapsedMs": 32587.749249999993,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4518,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1542
+        },
+        "prompt_tokens": 28631,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33149
+      }
+    },
+    {
+      "index": 17,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:2",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:54:32.508Z",
+      "elapsedMs": 15878.606750000035,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1894,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1169
+        },
+        "prompt_tokens": 22626,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 24520
+      }
+    },
+    {
+      "index": 18,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:2",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:54:48.514Z",
+      "elapsedMs": 8937.083500000008,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 995,
+        "completion_tokens_details": {
+          "reasoning_tokens": 732
+        },
+        "prompt_tokens": 6494,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7489
+      }
+    },
+    {
+      "index": 19,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:2",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:54:57.653Z",
+      "elapsedMs": 31247.006083000044,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4771,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1928
+        },
+        "prompt_tokens": 29078,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33849
+      }
+    },
+    {
+      "index": 20,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:2",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:55:29.005Z",
+      "elapsedMs": 10497.252416000003,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 807,
+        "prompt_tokens": 22603,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 23410
+      }
+    },
+    {
+      "index": 21,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:2",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:55:39.611Z",
+      "elapsedMs": 7549.366791000008,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 931,
+        "completion_tokens_details": {
+          "reasoning_tokens": 686
+        },
+        "prompt_tokens": 6478,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7409
+      }
+    },
+    {
+      "index": 22,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": false,
+      "startedAt": "2026-10-10T07:55:47.345Z",
+      "elapsedMs": 42442.52554199996,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 6974,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1059
+        },
+        "prompt_tokens": 40167,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 47141
+      }
+    },
+    {
+      "index": 23,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:56:29.865Z",
+      "elapsedMs": 30553.91283299995,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5777,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1789
+        },
+        "prompt_tokens": 46524,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 52301
+      }
+    },
+    {
+      "index": 24,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:3",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:57:00.546Z",
+      "elapsedMs": 14556.907750000013,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1431,
+        "completion_tokens_details": {
+          "reasoning_tokens": 550
+        },
+        "prompt_tokens": 30909,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 32340
+      }
+    },
+    {
+      "index": 25,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:3",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:57:15.259Z",
+      "elapsedMs": 10836.145541000005,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1232,
+        "completion_tokens_details": {
+          "reasoning_tokens": 956
+        },
+        "prompt_tokens": 7644,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8876
+      }
+    },
+    {
+      "index": 26,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:57:26.341Z",
+      "elapsedMs": 37921.904500000004,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5568,
+        "completion_tokens_details": {
+          "reasoning_tokens": 921
+        },
+        "prompt_tokens": 44087,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 49655
+      }
+    },
+    {
+      "index": 27,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:3",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:58:04.400Z",
+      "elapsedMs": 23179.717249999987,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1894,
+        "completion_tokens_details": {
+          "reasoning_tokens": 960
+        },
+        "prompt_tokens": 32845,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 34739
+      }
+    },
+    {
+      "index": 28,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:3",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:58:27.736Z",
+      "elapsedMs": 28791.93295800005,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1459,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1186
+        },
+        "prompt_tokens": 9191,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 10650
+      }
+    },
+    {
+      "index": 29,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": false,
+      "startedAt": "2026-10-10T07:58:56.773Z",
+      "elapsedMs": 37735.793083,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4107,
+        "completion_tokens_details": {
+          "reasoning_tokens": 744
+        },
+        "prompt_tokens": 37539,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 41646
+      }
+    },
+    {
+      "index": 30,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T07:59:34.609Z",
+      "elapsedMs": 44424.33816599997,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5956,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2075
+        },
+        "prompt_tokens": 41125,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 47081
+      }
+    },
+    {
+      "index": 31,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:3",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:00:19.170Z",
+      "elapsedMs": 16447.159084000043,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 738,
+        "prompt_tokens": 30256,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 30994
+      }
+    },
+    {
+      "index": 32,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:3",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:00:35.764Z",
+      "elapsedMs": 18052.437208999996,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 711,
+        "completion_tokens_details": {
+          "reasoning_tokens": 478
+        },
+        "prompt_tokens": 8046,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8757
+      }
+    },
+    {
+      "index": 33,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": false,
+      "startedAt": "2026-10-10T08:00:54.050Z",
+      "elapsedMs": 31454.53341699997,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4122,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1167
+        },
+        "prompt_tokens": 34441,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 38563
+      }
+    },
+    {
+      "index": 34,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:01:25.604Z",
+      "elapsedMs": 38136.58600000001,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5677,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2327
+        },
+        "prompt_tokens": 37619,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 43296
+      }
+    },
+    {
+      "index": 35,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:3",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:02:03.861Z",
+      "elapsedMs": 14727.79458300001,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 780,
+        "prompt_tokens": 26182,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 26962
+      }
+    },
+    {
+      "index": 36,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:3",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:02:18.721Z",
+      "elapsedMs": 15227.750541000045,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 576,
+        "completion_tokens_details": {
+          "reasoning_tokens": 379
+        },
+        "prompt_tokens": 7455,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 8031
+      }
+    },
+    {
+      "index": 37,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:3",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:02:34.162Z",
+      "elapsedMs": 30215.814665999962,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 3561,
+        "prompt_tokens": 35896,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 39457
+      }
+    },
+    {
+      "index": 38,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:3",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:03:04.498Z",
+      "elapsedMs": 12887.071041999967,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 744,
+        "prompt_tokens": 26913,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 27657
+      }
+    },
+    {
+      "index": 39,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:3",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:03:17.507Z",
+      "elapsedMs": 12594.455416000099,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 910,
+        "completion_tokens_details": {
+          "reasoning_tokens": 633
+        },
+        "prompt_tokens": 8354,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9264
+      }
+    },
+    {
+      "index": 40,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:4",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:03:30.340Z",
+      "elapsedMs": 36034.93004200002,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4660,
+        "completion_tokens_details": {
+          "reasoning_tokens": 578
+        },
+        "prompt_tokens": 45657,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 50317
+      }
+    },
+    {
+      "index": 41,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:4",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:04:06.529Z",
+      "elapsedMs": 14432.240959000075,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1377,
+        "completion_tokens_details": {
+          "reasoning_tokens": 584
+        },
+        "prompt_tokens": 32503,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33880
+      }
+    },
+    {
+      "index": 42,
+      "characterId": "char_jx_guxiaoman",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:4",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:04:21.154Z",
+      "elapsedMs": 10357.296458999976,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 879,
+        "completion_tokens_details": {
+          "reasoning_tokens": 609
+        },
+        "prompt_tokens": 8841,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9720
+      }
+    },
+    {
+      "index": 43,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:4",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:04:31.816Z",
+      "elapsedMs": 42373.87037500006,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 5581,
+        "completion_tokens_details": {
+          "reasoning_tokens": 720
+        },
+        "prompt_tokens": 44098,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 49679
+      }
+    },
+    {
+      "index": 44,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:4",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:05:14.327Z",
+      "elapsedMs": 13607.425999999978,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 902,
+        "prompt_tokens": 32148,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33050
+      }
+    },
+    {
+      "index": 45,
+      "characterId": "char_jx_guhuaishan",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:4",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:05:28.089Z",
+      "elapsedMs": 9446.178333999938,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 862,
+        "completion_tokens_details": {
+          "reasoning_tokens": 671
+        },
+        "prompt_tokens": 8527,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9389
+      }
+    },
+    {
+      "index": 46,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:4",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:05:37.797Z",
+      "elapsedMs": 55074.490416999906,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 7502,
+        "completion_tokens_details": {
+          "reasoning_tokens": 3494
+        },
+        "prompt_tokens": 42146,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 49648
+      }
+    },
+    {
+      "index": 47,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:4",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:06:33.011Z",
+      "elapsedMs": 12993.24237500003,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 983,
+        "prompt_tokens": 32082,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33065
+      }
+    },
+    {
+      "index": 48,
+      "characterId": "char_jx_luqinghe",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:4",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:06:46.154Z",
+      "elapsedMs": 14761.619874999975,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1107,
+        "completion_tokens_details": {
+          "reasoning_tokens": 895
+        },
+        "prompt_tokens": 9041,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 10148
+      }
+    },
+    {
+      "index": 49,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:4",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:07:01.175Z",
+      "elapsedMs": 28111.86379199999,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 3699,
+        "prompt_tokens": 40706,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 44405
+      }
+    },
+    {
+      "index": 50,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:4",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:07:29.423Z",
+      "elapsedMs": 8422.481457999907,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 709,
+        "prompt_tokens": 29861,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 30570
+      }
+    },
+    {
+      "index": 51,
+      "characterId": "char_jx_abao",
+      "agentTurnId": "agent-turn:char_jx_abao:4",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:07:37.990Z",
+      "elapsedMs": 12982.153582999948,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1120,
+        "completion_tokens_details": {
+          "reasoning_tokens": 813
+        },
+        "prompt_tokens": 8297,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9417
+      }
+    },
+    {
+      "index": 52,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:4",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": false,
+      "startedAt": "2026-10-10T08:07:51.225Z",
+      "elapsedMs": 38068.287916999776,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4818,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1191
+        },
+        "prompt_tokens": 41447,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 46265
+      }
+    },
+    {
+      "index": 53,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:4",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:08:29.378Z",
+      "elapsedMs": 30531.266084000003,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 4622,
+        "completion_tokens_details": {
+          "reasoning_tokens": 997
+        },
+        "prompt_tokens": 45505,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 50127
+      }
+    },
+    {
+      "index": 54,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:4",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:09:00.055Z",
+      "elapsedMs": 11697.11641700007,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1137,
+        "completion_tokens_details": {
+          "reasoning_tokens": 302
+        },
+        "prompt_tokens": 31157,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 32294
+      }
+    },
+    {
+      "index": 55,
+      "characterId": "char_jx_heshao",
+      "agentTurnId": "agent-turn:char_jx_heshao:4",
+      "phase": "awaiting_agent_turn_commit",
+      "accepted": true,
+      "startedAt": "2026-10-10T08:09:11.906Z",
+      "elapsedMs": 10433.321291999891,
+      "httpStatus": 200,
+      "returnedModel": "gemini-3.8-flash-n",
+      "usage": {
+        "completion_tokens": 1078,
+        "completion_tokens_details": {
+          "reasoning_tokens": 834
+        },
+        "prompt_tokens": 8332,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9410
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "stage": "subjective_appraisal_and_candidates",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:2",
+      "characterId": "char_jx_guhuaishan",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "STAGE_OUTPUT_UNKNOWN_FIELD",
+          "path": "submission",
+          "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+        }
+      ]
+    },
+    {
+      "stage": "subjective_appraisal_and_candidates",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:3",
+      "characterId": "char_jx_guxiaoman",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "STAGE_OUTPUT_INVALID_JSON",
+          "path": "output",
+          "message": "Your previous response was not valid JSON. Return exactly one complete JSON object with no prose outside or inside its syntax. Keep your authored decisions, correct JSON syntax, and include all fields required by this stage's schema."
+        }
+      ]
+    },
+    {
+      "stage": "subjective_appraisal_and_candidates",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "agentTurnId": "agent-turn:char_jx_luqinghe:3",
+      "characterId": "char_jx_luqinghe",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "STAGE_OUTPUT_REQUIRED",
+          "path": "output.appraisal.desireGroundings",
+          "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+        }
+      ]
+    },
+    {
+      "stage": "subjective_appraisal_and_candidates",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "agentTurnId": "agent-turn:char_jx_abao:3",
+      "characterId": "char_jx_abao",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "STAGE_OUTPUT_REQUIRED",
+          "path": "output.appraisal.desireGroundings",
+          "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+        }
+      ]
+    },
+    {
+      "stage": "subjective_appraisal_and_candidates",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "agentTurnId": "agent-turn:char_jx_heshao:4",
+      "characterId": "char_jx_heshao",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "STAGE_OUTPUT_INVALID_JSON",
+          "path": "output",
+          "message": "Your previous response was not valid JSON. Return exactly one complete JSON object with no prose outside or inside its syntax. Keep your authored decisions, correct JSON syntax, and include all fields required by this stage's schema."
+        }
+      ]
+    }
+  ],
+  "recoveredActors": [],
+  "newTurns": [
+    {
+      "index": 1,
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:1",
+      "characterId": "char_jx_guxiaoman",
+      "characterName": "顾小满",
+      "turnKind": "day_planning",
+      "wakeKind": "day_planning_due",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": false,
+      "hasWorldOutcome": false,
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 2,
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:1",
+      "characterId": "char_jx_guhuaishan",
+      "characterName": "顾怀山",
+      "turnKind": "day_planning",
+      "wakeKind": "day_planning_due",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": false,
+      "hasWorldOutcome": false,
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 3,
+      "agentTurnId": "agent-turn:char_jx_luqinghe:1",
+      "characterId": "char_jx_luqinghe",
+      "characterName": "陆青禾",
+      "turnKind": "day_planning",
+      "wakeKind": "day_planning_due",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": false,
+      "hasWorldOutcome": false,
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 4,
+      "agentTurnId": "agent-turn:char_jx_abao:1",
+      "characterId": "char_jx_abao",
+      "characterName": "阿宝",
+      "turnKind": "day_planning",
+      "wakeKind": "day_planning_due",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": false,
+      "hasWorldOutcome": false,
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 5,
+      "agentTurnId": "agent-turn:char_jx_heshao:1",
+      "characterId": "char_jx_heshao",
+      "characterName": "何嫂",
+      "turnKind": "day_planning",
+      "wakeKind": "day_planning_due",
+      "intention": "",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": false,
+      "hasWorldOutcome": false,
+      "outcome": {
+        "primitive": "",
+        "status": "",
+        "worldVersion": null
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 6,
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:2",
+      "characterId": "char_jx_guxiaoman",
+      "characterName": "顾小满",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "收起心思起身走向堂屋，去看看爹手背上的烫伤，并当面向他说明昨夜原委",
+      "speech": "爹……",
+      "visibleAction": "轻微地向下转动视线。目光垂下。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "move",
+        "status": "partial",
+        "worldVersion": 1
+      },
+      "movementDestination": "main_room",
+      "resolvedEffectKinds": [
+        "actor_movement",
+        "gesture_performed",
+        "speech_emitted"
+      ],
+      "failureCodes": [
+        "SPEECH_TARGET_NOT_REACHED"
+      ],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 7,
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:2",
+      "characterId": "char_jx_guhuaishan",
+      "characterName": "顾怀山",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "停下刻刀，抬眼静静注视走到堂屋的小满，看他准备做什么。",
+      "speech": "",
+      "visibleAction": "轻微地向前转动视线。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 2
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "visual_attention_established",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 8,
+      "agentTurnId": "agent-turn:char_jx_luqinghe:2",
+      "characterId": "char_jx_luqinghe",
+      "characterName": "陆青禾",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "近前仔细查看丫丫手臂上的黑纹与药布情况",
+      "speech": "",
+      "visibleAction": "轻微地向下转动视线。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 3
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "visual_attention_established",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 9,
+      "agentTurnId": "agent-turn:char_jx_abao:2",
+      "characterId": "char_jx_abao",
+      "characterName": "阿宝",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "在篱笆外探着脑袋，仔细观察堂屋里小满的动静",
+      "speech": "",
+      "visibleAction": "向前转动视线。视线停住。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 4
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "visual_attention_established",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 10,
+      "agentTurnId": "agent-turn:char_jx_heshao:2",
+      "characterId": "char_jx_heshao",
+      "characterName": "何嫂",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "坐在矮凳上继续握着丫丫的手，轻抚感知她的体温与黑纹动静",
+      "speech": "",
+      "visibleAction": "缓缓向下转动视线。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "handle",
+        "status": "success",
+        "worldVersion": 5
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "object_handled",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 11,
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:3",
+      "characterId": "char_jx_guxiaoman",
+      "characterName": "顾小满",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "抬眼悄悄观察爹的神色与他手背上的烫伤",
+      "speech": "……手上的伤，还疼不疼？",
+      "visibleAction": "轻微地缓缓向上转动视线。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 6
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "visual_attention_established",
+        "gesture_performed",
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 12,
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:3",
+      "characterId": "char_jx_guhuaishan",
+      "characterName": "顾怀山",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "回应小满伤不碍事，语气平稳，顺势探问他腰间短剑与辰时去留的打算。",
+      "speech": "死不了。……短剑带上了？",
+      "visibleAction": "",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 7
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 13,
+      "agentTurnId": "agent-turn:char_jx_luqinghe:3",
+      "characterId": "char_jx_luqinghe",
+      "characterName": "陆青禾",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "伸手打开身边的药箱，取药准备调配换药的敷料",
+      "speech": "何嫂，先别碰她手臂，我这就给她换药。",
+      "visibleAction": "",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "handle",
+        "status": "success",
+        "worldVersion": 8
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "object_handled",
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 14,
+      "agentTurnId": "agent-turn:char_jx_abao:3",
+      "characterId": "char_jx_abao",
+      "characterName": "阿宝",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "既然看清小满在堂屋，按先前的打算推门走进院子去找他",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "move",
+        "status": "success",
+        "worldVersion": 9
+      },
+      "movementDestination": "yard",
+      "resolvedEffectKinds": [
+        "actor_movement"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 15,
+      "agentTurnId": "agent-turn:char_jx_heshao:3",
+      "characterId": "char_jx_heshao",
+      "characterName": "何嫂",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "轻声回应陆大夫，答应不碰孩子手臂并表明听她吩咐",
+      "speech": "哎，好，陆大夫，我不碰，全凭您费心。",
+      "visibleAction": "轻微地向前点头。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 10
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 16,
+      "agentTurnId": "agent-turn:char_jx_guxiaoman:4",
+      "characterId": "char_jx_guxiaoman",
+      "characterName": "顾小满",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "老老实实回答爹，告诉他短剑带上了。",
+      "speech": "带上了，就在身上收着。",
+      "visibleAction": "轻微地向前点头。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 11
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 17,
+      "agentTurnId": "agent-turn:char_jx_guhuaishan:4",
+      "characterId": "char_jx_guhuaishan",
+      "characterName": "顾怀山",
+      "turnKind": "action",
+      "wakeKind": "continuation_due",
+      "intention": "止住话头，专心听小满开口如何回答关于短剑与去留",
+      "speech": "",
+      "visibleAction": "",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "listen",
+        "status": "partial",
+        "worldVersion": 12
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "auditory_attention_established"
+      ],
+      "failureCodes": [
+        "LISTEN_NO_AUDIBLE_SIGNAL"
+      ],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 18,
+      "agentTurnId": "agent-turn:char_jx_luqinghe:4",
+      "characterId": "char_jx_luqinghe",
+      "characterName": "陆青禾",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "触碰丫丫药榻手臂处的药布，准备揭布检视黑纹深浅与施药",
+      "speech": "",
+      "visibleAction": "轻微地向下转头。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "handle",
+        "status": "success",
+        "worldVersion": 13
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "object_handled",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 19,
+      "agentTurnId": "agent-turn:char_jx_abao:4",
+      "characterId": "char_jx_abao",
+      "characterName": "阿宝",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "顺着小满的回话，当面开口问他带上家伙到底要干啥、昨夜谷口是怎么回事",
+      "speech": "真带了？那你拿这些到底要去哪啊？昨晚谷口那动静……是不是真出事了？",
+      "visibleAction": "",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "speak",
+        "status": "success",
+        "worldVersion": 14
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "speech_emitted",
+        "speech_delivered"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    },
+    {
+      "index": 20,
+      "agentTurnId": "agent-turn:char_jx_heshao:4",
+      "characterId": "char_jx_heshao",
+      "characterName": "何嫂",
+      "turnKind": "action",
+      "wakeKind": "world_evidence",
+      "intention": "屏住呼吸静静注视陆大夫的动作，时刻留意换药情形并听候差遣",
+      "speech": "",
+      "visibleAction": "视线停住。",
+      "hasWorldAttempt": true,
+      "hasWorldOutcome": true,
+      "outcome": {
+        "primitive": "observe",
+        "status": "success",
+        "worldVersion": 15
+      },
+      "movementDestination": "",
+      "resolvedEffectKinds": [
+        "visual_attention_established",
+        "gesture_performed"
+      ],
+      "failureCodes": [],
+      "recoveredFromCheckpoint": true
+    }
+  ],
+  "summary": {
+    "stopReason": "turn_limit_reached",
+    "integrity": null,
+    "qualityVerdict": "not_evaluated",
+    "modelCallCountMeaning": "stage_invocations_not_provider_attestation",
+    "scenarioComplete": null,
+    "scenarioCompletionEvaluated": false,
+    "worldElapsedSeconds": 262,
+    "pacingMode": "scene",
+    "timeConstraints": [
+      {
+        "id": "jx-yaya-dressing",
+        "label": "丫丫的药一刻钟内要换",
+        "dueAtSeconds": 900,
+        "status": "pending",
+        "delayedSeconds": 0
+      },
+      {
+        "id": "jx-departure-to-guiyun",
+        "label": "辰时前从石桥动身去归云岭",
+        "dueAtSeconds": 1800,
+        "status": "pending",
+        "delayedSeconds": 0
+      }
+    ],
+    "completedWorkStepsScope": "checkpoint_world_history",
+    "completionMeaning": "A turn budget ends a run; it does not establish the characters' goals or the scenario's completion.",
+    "counts": {
+      "characterDecisions": 20,
+      "actionDecisions": 15,
+      "privateMaintenance": 5,
+      "modelCalls": 55,
+      "rejectedCalls": 5,
+      "worldAttempts": 15,
+      "success": 13,
+      "partial": 2,
+      "failed": 0,
+      "completedWorkSteps": 0
+    },
+    "objectiveState": {
+      "firewood": {
+        "unprocessedBundles": null,
+        "processedBundles": null
+      },
+      "water": {
+        "vatFill": null,
+        "bucketFill": null,
+        "sourceBuckets": null
+      },
+      "parcel": null,
+      "manifest": null,
+      "vessels": [],
+      "sharedActivities": [],
+      "metrics": [
+        {
+          "label": "北侧阵纹",
+          "value": 0,
+          "unit": "段",
+          "target": 3
+        },
+        {
+          "label": "丫丫黑纹",
+          "value": 3,
+          "unit": "道",
+          "target": 0
+        },
+        {
+          "label": "行囊",
+          "value": 0,
+          "unit": "样",
+          "target": 4
+        },
+        {
+          "label": "早粥",
+          "value": 0,
+          "unit": "碗",
+          "target": null
+        },
+        {
+          "label": "接引符",
+          "value": "顾怀山",
+          "unit": "",
+          "target": null
+        },
+        {
+          "label": "红纸鸢",
+          "value": "无人持有",
+          "unit": "",
+          "target": null
+        }
+      ]
+    },
+    "reportRenderer": "pack-metrics",
+    "actors": [
+      {
+        "characterId": "char_jx_guxiaoman",
+        "status": "active",
+        "waiting": null,
+        "reason": null,
+        "urgentBlocks": 0
+      },
+      {
+        "characterId": "char_jx_guhuaishan",
+        "status": "active",
+        "waiting": null,
+        "reason": null,
+        "urgentBlocks": 0
+      },
+      {
+        "characterId": "char_jx_luqinghe",
+        "status": "active",
+        "waiting": null,
+        "reason": null,
+        "urgentBlocks": 0
+      },
+      {
+        "characterId": "char_jx_abao",
+        "status": "active",
+        "waiting": null,
+        "reason": null,
+        "urgentBlocks": 0
+      },
+      {
+        "characterId": "char_jx_heshao",
+        "status": "active",
+        "waiting": null,
+        "reason": null,
+        "urgentBlocks": 0
+      }
+    ]
+  },
+  "finishedAt": "2026-10-10T08:09:22.556Z"
+}

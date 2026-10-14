@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "sceneId": "scene_xyy_wangti_tavern",
+  "characterId": "char_xyy_yanzhizhong",
+  "status": "draft",
+  "authoritySurfaces": {
+    "sceneFacts": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "psychology": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "voice": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "relationships": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "memory": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "presence": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "candidateCompilation": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    },
+    "validation": {
+      "path": "",
+      "symbol": "",
+      "derivedProjectionPaths": []
+    }
+  },
+  "acceptanceTests": [],
+  "remainingGaps": [],
+  "runtimeBoundary": {
+    "agentInputArtifactIds": [
+      "characterFoundation",
+      "memorySeed"
+    ],
+    "forbiddenAgentInputArtifactIds": [
+      "anchorPayload",
+      "calibrationEvidence",
+      "holdouts"
+    ],
+    "compilerMayReadAuthoringArtifacts": true,
+    "agentReceivesCompiledProjectionOnly": true
+  }
+}

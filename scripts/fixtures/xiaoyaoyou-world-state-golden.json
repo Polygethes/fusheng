@@ -1,0 +1,4665 @@
+{
+ "day": {
+  "entities": {
+   "char_xyy_luozhao": {
+    "id": "char_xyy_luozhao",
+    "kind": "character",
+    "name": "洛照",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "洛照",
+    "publicSignalFeatures": [],
+    "role": "主动接受玉衡宗来访安排、佩剑且把拜帖收在随身行囊中，刚到望梯酒馆打探消息的来访弟子",
+    "serviceAuthority": {
+     "serveMeal": false,
+     "serveTea": false,
+     "settleCash": false
+    },
+    "standing": "visitor",
+    "zoneId": "hall"
+   },
+   "char_xyy_xiezenshi": {
+    "id": "char_xyy_xiezenshi",
+    "kind": "character",
+    "name": "谢真石",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "谢真石",
+    "publicSignalFeatures": [],
+    "role": "返家探亲、即将回宗门参加剑阁考核的内门弟子；在家中分担酒馆柴水杂务",
+    "serviceAuthority": {
+     "serveMeal": true,
+     "serveTea": true,
+     "settleCash": false
+    },
+    "standing": "household_worker",
+    "zoneId": "hall"
+   }
+  },
+  "nowSeconds": 0,
+  "objects": {
+   "luozhao_sword": {
+    "aliases": [
+     "长剑",
+     "佩剑"
+    ],
+    "attachment": {
+     "active": true,
+     "actorId": "char_xyy_luozhao",
+     "mode": "worn_on_body_unspecified",
+     "transitionRequiresExplicitOperation": true
+    },
+    "custody": {
+     "containerId": "",
+     "inHand": false,
+     "storageMode": "worn"
+    },
+    "holderCharacterId": "char_xyy_luozhao",
+    "id": "luozhao_sword",
+    "initialHolderActorId": "char_xyy_luozhao",
+    "kind": "object",
+    "label": "洛照的佩剑",
+    "perception": {
+     "publicLabel": "一柄带鞘长剑"
+    },
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "sheathed": true
+    },
+    "zoneId": "hall"
+   },
+   "luozhao_yuheng_visit_letter": {
+    "aliases": [
+     "玉衡宗拜帖",
+     "拜帖"
+    ],
+    "custody": {
+     "containerId": "luozhao_travel_pack",
+     "inHand": false,
+     "storageMode": "packed"
+    },
+    "holderCharacterId": "char_xyy_luozhao",
+    "id": "luozhao_yuheng_visit_letter",
+    "initialHolderActorId": "char_xyy_luozhao",
+    "kind": "object",
+    "label": "洛照随身携带的玉衡宗拜帖",
+    "perception": {
+     "publicLabel": "一封帖子"
+    },
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "hidden",
+     "publiclyVisible": false
+    },
+    "state": {
+     "displayedToActorIds": [],
+     "intendedRecipientInstitutionId": "institution_xyy_tiyunzong",
+     "tavernCustody": false
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-center-table": {
+    "capacity": 4,
+    "id": "position:tavern-hall-center-table",
+    "kind": "position",
+    "label": "堂中空桌",
+    "observableFeatures": [
+     "堂中多处谈话都较清楚",
+     "四面都可能有人经过或落座",
+     "在座客人容易注意这里"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-near-counter": {
+    "capacity": 2,
+    "id": "position:tavern-hall-near-counter",
+    "kind": "position",
+    "label": "近柜台空位",
+    "observableFeatures": [
+     "柜台交谈最容易听清",
+     "经营者容易注意并主动询问",
+     "取送物品和结账的人会经过"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-near-threshold-bench": {
+    "capacity": 2,
+    "id": "position:tavern-hall-near-threshold-bench",
+    "kind": "position",
+    "label": "近门侧凳",
+    "observableFeatures": [
+     "门外和新来的人最容易看见",
+     "堂中较远处的低声交谈不容易听清",
+     "进出酒馆的人会从附近经过"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-side-wall-table": {
+    "capacity": 2,
+    "id": "position:tavern-hall-side-wall-table",
+    "kind": "position",
+    "label": "堂前侧墙空桌",
+    "observableFeatures": [
+     "一侧临墙，背后没有客人通行",
+     "斜向能看见门槛和柜台",
+     "离主要取送饭食路线有一段距离"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "tavern_delivery_manifest": {
+    "aliases": [
+     "清单",
+     "送药清单"
+    ],
+    "holderCharacterId": "char_xyy_zhoumin",
+    "id": "tavern_delivery_manifest",
+    "initialHolderActorId": "char_xyy_zhoumin",
+    "kind": "object",
+    "label": "送药清单",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "accepted": false,
+     "intendedRecipientActorId": "char_xyy_xiemu"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_delivery_medicine_parcel": {
+    "aliases": [
+     "药包",
+     "药材包"
+    ],
+    "holderCharacterId": "char_xyy_zhoumin",
+    "id": "tavern_delivery_medicine_parcel",
+    "initialHolderActorId": "char_xyy_zhoumin",
+    "kind": "object",
+    "label": "药包",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "accepted": false,
+     "intendedRecipientActorId": "char_xyy_xiemu",
+     "treatmentCategory": "chronic_lung_ailment",
+     "treatmentDetailsStatus": "unknown",
+     "treatmentTargetActorId": "char_xyy_xiemu"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_registry_pages": {
+    "aliases": [
+     "掌籍名录",
+     "名录",
+     "纸页"
+    ],
+    "holderCharacterId": "char_xyy_yanzhizhong",
+    "id": "tavern_registry_pages",
+    "initialHolderActorId": "char_xyy_yanzhizhong",
+    "kind": "object",
+    "label": "掌籍名录和待核纸页",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "reviewed": false
+    },
+    "zoneId": "hall"
+   },
+   "tavern_resource_courtyard_water": {
+    "aliases": [
+     "取水处"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_courtyard_water",
+    "kind": "object",
+    "label": "后院取水处",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "availableBuckets": 20
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_resource_sheltered_firewood": {
+    "aliases": [
+     "成柴",
+     "干柴堆"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_sheltered_firewood",
+    "kind": "object",
+    "label": "檐下成柴堆",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "processedBundles": 0
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_resource_unprocessed_firewood": {
+    "aliases": [
+     "湿柴",
+     "柴堆"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_unprocessed_firewood",
+    "kind": "object",
+    "label": "后院湿柴堆",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "unprocessedBundles": 2
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_resource_water_vat": {
+    "aliases": [
+     "水缸"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_water_vat",
+    "kind": "object",
+    "label": "灶边水缸",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "capacityBuckets": 2,
+     "fill": 0.55
+    },
+    "zoneId": "stove"
+   },
+   "tavern_room_key_guest_1": {
+    "aliases": [
+     "客房钥匙",
+     "房门钥匙"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_room_key_guest_1",
+    "kind": "object",
+    "label": "一号客房钥匙",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "objectType": "lodging_key",
+     "roomId": "guest_room_1"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_room_key_guest_2": {
+    "aliases": [
+     "客房钥匙",
+     "房门钥匙"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_room_key_guest_2",
+    "kind": "object",
+    "label": "二号客房钥匙",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "objectType": "lodging_key",
+     "roomId": "guest_room_2"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_room_key_guest_3": {
+    "aliases": [
+     "客房钥匙",
+     "房门钥匙"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_room_key_guest_3",
+    "kind": "object",
+    "label": "三号客房钥匙",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "objectType": "lodging_key",
+     "roomId": "guest_room_3"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_tool_water_bucket": {
+    "aliases": [
+     "水桶"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_tool_water_bucket",
+    "kind": "object",
+    "label": "木水桶",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "fill": 0
+    },
+    "zoneId": "stove"
+   },
+   "tavern_tool_wiping_cloth": {
+    "aliases": [
+     "抹布"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_tool_wiping_cloth",
+    "kind": "object",
+    "label": "擦桌抹布",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "cleanEnough": true
+    },
+    "zoneId": "hall"
+   },
+   "tavern_tool_wood_axe": {
+    "aliases": [
+     "斧头",
+     "木斧"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_tool_wood_axe",
+    "kind": "object",
+    "label": "劈柴斧",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "returned": true
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_vessel_meal_1": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_1",
+    "kind": "object",
+    "label": "一号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_meal_2": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_2",
+    "kind": "object",
+    "label": "二号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_meal_3": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_3",
+    "kind": "object",
+    "label": "三号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_meal_4": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_4",
+    "kind": "object",
+    "label": "四号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_tea_1": {
+    "aliases": [
+     "茶碗",
+     "茶盏"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_tea_1",
+    "kind": "object",
+    "label": "一号茶碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_tea_2": {
+    "aliases": [
+     "茶碗",
+     "茶盏"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_tea_2",
+    "kind": "object",
+    "label": "二号茶碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_teapot_1": {
+    "aliases": [
+     "茶壶",
+     "壶"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_teapot_1",
+    "kind": "object",
+    "label": "一号茶壶",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_pot"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_teapot_2": {
+    "aliases": [
+     "茶壶",
+     "壶"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_teapot_2",
+    "kind": "object",
+    "label": "二号茶壶",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_pot"
+    },
+    "zoneId": "hall"
+   },
+   "xiezenshi_short_sword": {
+    "aliases": [
+     "短剑"
+    ],
+    "holderCharacterId": "char_xyy_xiezenshi",
+    "id": "xiezenshi_short_sword",
+    "initialHolderActorId": "char_xyy_xiezenshi",
+    "kind": "object",
+    "label": "谢真石的短剑",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "sheathed": true
+    },
+    "zoneId": "hall"
+   }
+  },
+  "places": {
+   "loc_xyy_tavern": {
+    "accessGrants": [],
+    "id": "loc_xyy_tavern",
+    "institution": {
+     "description": "望梯酒馆是谢家的生计：谢恒是东家，负责进货、外账与缺口；谢母是掌柜兼掌灶，决定怎样接客、出餐、赊账和收店；谢真石住在后院，以柴水和堂前杂务分担家业。",
+     "guestPositions": [
+      {
+       "capacity": 2,
+       "id": "position:tavern-hall-side-wall-table",
+       "label": "堂前侧墙空桌",
+       "metrics": {
+        "approachability": [
+         0.24,
+         0.4
+        ],
+        "comfort": [
+         0.42,
+         0.58
+        ],
+        "exitAccess": [
+         0.48,
+         0.64
+        ],
+        "informationAccess": [
+         0.68,
+         0.84
+        ],
+        "movementClearance": [
+         0.68,
+         0.84
+        ],
+        "socialExposure": [
+         0.28,
+         0.44
+        ],
+        "trafficInterference": [
+         0.12,
+         0.28
+        ],
+        "visualCoverage": [
+         0.72,
+         0.86
+        ]
+       },
+       "observableFeatures": [
+        "一侧临墙，背后没有客人通行",
+        "斜向能看见门槛和柜台",
+        "离主要取送饭食路线有一段距离"
+       ],
+       "zoneId": "hall"
+      },
+      {
+       "capacity": 4,
+       "id": "position:tavern-hall-center-table",
+       "label": "堂中空桌",
+       "metrics": {
+        "approachability": [
+         0.76,
+         0.9
+        ],
+        "comfort": [
+         0.55,
+         0.72
+        ],
+        "exitAccess": [
+         0.45,
+         0.6
+        ],
+        "informationAccess": [
+         0.82,
+         0.94
+        ],
+        "movementClearance": [
+         0.5,
+         0.68
+        ],
+        "socialExposure": [
+         0.78,
+         0.92
+        ],
+        "trafficInterference": [
+         0.62,
+         0.8
+        ],
+        "visualCoverage": [
+         0.82,
+         0.94
+        ]
+       },
+       "observableFeatures": [
+        "堂中多处谈话都较清楚",
+        "四面都可能有人经过或落座",
+        "在座客人容易注意这里"
+       ],
+       "zoneId": "hall"
+      },
+      {
+       "capacity": 2,
+       "id": "position:tavern-hall-near-counter",
+       "label": "近柜台空位",
+       "metrics": {
+        "approachability": [
+         0.8,
+         0.94
+        ],
+        "comfort": [
+         0.35,
+         0.52
+        ],
+        "exitAccess": [
+         0.32,
+         0.48
+        ],
+        "informationAccess": [
+         0.84,
+         0.96
+        ],
+        "movementClearance": [
+         0.42,
+         0.58
+        ],
+        "socialExposure": [
+         0.62,
+         0.78
+        ],
+        "trafficInterference": [
+         0.7,
+         0.88
+        ],
+        "visualCoverage": [
+         0.58,
+         0.74
+        ]
+       },
+       "observableFeatures": [
+        "柜台交谈最容易听清",
+        "经营者容易注意并主动询问",
+        "取送物品和结账的人会经过"
+       ],
+       "zoneId": "hall"
+      },
+      {
+       "capacity": 2,
+       "id": "position:tavern-hall-near-threshold-bench",
+       "label": "近门侧凳",
+       "metrics": {
+        "approachability": [
+         0.4,
+         0.58
+        ],
+        "comfort": [
+         0.32,
+         0.48
+        ],
+        "exitAccess": [
+         0.88,
+         0.96
+        ],
+        "informationAccess": [
+         0.45,
+         0.62
+        ],
+        "movementClearance": [
+         0.6,
+         0.76
+        ],
+        "socialExposure": [
+         0.48,
+         0.65
+        ],
+        "trafficInterference": [
+         0.66,
+         0.84
+        ],
+        "visualCoverage": [
+         0.78,
+         0.9
+        ]
+       },
+       "observableFeatures": [
+        "门外和新来的人最容易看见",
+        "堂中较远处的低声交谈不容易听清",
+        "进出酒馆的人会从附近经过"
+       ],
+       "zoneId": "hall"
+      }
+     ],
+     "householdName": "谢家",
+     "householdWorkerIds": [
+      "char_xyy_xiezenshi"
+     ],
+     "name": "望梯酒馆",
+     "objectTemplates": [
+      {
+       "aliases": [
+        "抹布"
+       ],
+       "id": "tavern_tool_wiping_cloth",
+       "label": "擦桌抹布",
+       "portable": true,
+       "state": {
+        "cleanEnough": true
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "水桶"
+       ],
+       "id": "tavern_tool_water_bucket",
+       "label": "木水桶",
+       "portable": true,
+       "state": {
+        "fill": 0
+       },
+       "zoneId": "stove"
+      },
+      {
+       "aliases": [
+        "水缸"
+       ],
+       "id": "tavern_resource_water_vat",
+       "label": "灶边水缸",
+       "portable": false,
+       "state": {
+        "capacityBuckets": 2,
+        "fill": 0.55
+       },
+       "zoneId": "stove"
+      },
+      {
+       "aliases": [
+        "取水处"
+       ],
+       "id": "tavern_resource_courtyard_water",
+       "label": "后院取水处",
+       "portable": false,
+       "state": {
+        "availableBuckets": 20
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "斧头",
+        "木斧"
+       ],
+       "id": "tavern_tool_wood_axe",
+       "label": "劈柴斧",
+       "portable": true,
+       "state": {
+        "returned": true
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "湿柴",
+        "柴堆"
+       ],
+       "id": "tavern_resource_unprocessed_firewood",
+       "label": "后院湿柴堆",
+       "portable": false,
+       "state": {
+        "unprocessedBundles": 2
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "成柴",
+        "干柴堆"
+       ],
+       "id": "tavern_resource_sheltered_firewood",
+       "label": "檐下成柴堆",
+       "portable": false,
+       "state": {
+        "processedBundles": 0
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "客房钥匙",
+        "房门钥匙"
+       ],
+       "id": "tavern_room_key_guest_1",
+       "label": "一号客房钥匙",
+       "portable": true,
+       "state": {
+        "objectType": "lodging_key",
+        "roomId": "guest_room_1"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "客房钥匙",
+        "房门钥匙"
+       ],
+       "id": "tavern_room_key_guest_2",
+       "label": "二号客房钥匙",
+       "portable": true,
+       "state": {
+        "objectType": "lodging_key",
+        "roomId": "guest_room_2"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "客房钥匙",
+        "房门钥匙"
+       ],
+       "id": "tavern_room_key_guest_3",
+       "label": "三号客房钥匙",
+       "portable": true,
+       "state": {
+        "objectType": "lodging_key",
+        "roomId": "guest_room_3"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_1",
+       "label": "一号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_2",
+       "label": "二号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_3",
+       "label": "三号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_4",
+       "label": "四号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶碗",
+        "茶盏"
+       ],
+       "id": "tavern_vessel_tea_1",
+       "label": "一号茶碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶碗",
+        "茶盏"
+       ],
+       "id": "tavern_vessel_tea_2",
+       "label": "二号茶碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶壶",
+        "壶"
+       ],
+       "id": "tavern_vessel_teapot_1",
+       "label": "一号茶壶",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_pot"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶壶",
+        "壶"
+       ],
+       "id": "tavern_vessel_teapot_2",
+       "label": "二号茶壶",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_pot"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "药包",
+        "药材包"
+       ],
+       "id": "tavern_delivery_medicine_parcel",
+       "initialHolderActorId": "char_xyy_zhoumin",
+       "label": "药包",
+       "portable": true,
+       "state": {
+        "accepted": false,
+        "intendedRecipientActorId": "char_xyy_xiemu",
+        "treatmentCategory": "chronic_lung_ailment",
+        "treatmentDetailsStatus": "unknown",
+        "treatmentTargetActorId": "char_xyy_xiemu"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "清单",
+        "送药清单"
+       ],
+       "id": "tavern_delivery_manifest",
+       "initialHolderActorId": "char_xyy_zhoumin",
+       "label": "送药清单",
+       "portable": true,
+       "state": {
+        "accepted": false,
+        "intendedRecipientActorId": "char_xyy_xiemu"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "掌籍名录",
+        "名录",
+        "纸页"
+       ],
+       "id": "tavern_registry_pages",
+       "initialHolderActorId": "char_xyy_yanzhizhong",
+       "label": "掌籍名录和待核纸页",
+       "portable": true,
+       "state": {
+        "reviewed": false
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "短剑"
+       ],
+       "id": "xiezenshi_short_sword",
+       "initialHolderActorId": "char_xyy_xiezenshi",
+       "label": "谢真石的短剑",
+       "portable": true,
+       "state": {
+        "sheathed": true
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "长剑",
+        "佩剑"
+       ],
+       "attachment": {
+        "active": true,
+        "actorId": "char_xyy_luozhao",
+        "mode": "worn_on_body_unspecified",
+        "transitionRequiresExplicitOperation": true
+       },
+       "custody": {
+        "containerId": "",
+        "inHand": false,
+        "storageMode": "worn"
+       },
+       "id": "luozhao_sword",
+       "initialHolderActorId": "char_xyy_luozhao",
+       "label": "洛照的佩剑",
+       "perception": {
+        "publicLabel": "一柄带鞘长剑"
+       },
+       "portable": true,
+       "presentation": {
+        "displayedToActorIds": [],
+        "exposure": "visible",
+        "publiclyVisible": true
+       },
+       "state": {
+        "sheathed": true
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "玉衡宗拜帖",
+        "拜帖"
+       ],
+       "custody": {
+        "containerId": "luozhao_travel_pack",
+        "inHand": false,
+        "storageMode": "packed"
+       },
+       "id": "luozhao_yuheng_visit_letter",
+       "initialHolderActorId": "char_xyy_luozhao",
+       "label": "洛照随身携带的玉衡宗拜帖",
+       "perception": {
+        "publicLabel": "一封帖子"
+       },
+       "portable": true,
+       "presentation": {
+        "displayedToActorIds": [],
+        "exposure": "hidden",
+        "publiclyVisible": false
+       },
+       "state": {
+        "displayedToActorIds": [],
+        "intendedRecipientInstitutionId": "institution_xyy_tiyunzong",
+        "tavernCustody": false
+       },
+       "zoneId": "threshold"
+      }
+     ],
+     "offerings": {
+      "fine_cloud_tea_pot": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 58
+       },
+       "category": "tea",
+       "label": "一壶云岫春芽",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy",
+        "information_cover",
+        "quality"
+       ],
+       "observableQualities": [
+        "当季嫩芽",
+        "香气清而不焦",
+        "柜台价牌上最贵的茶"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 132,
+        "durationSecondsWhenHeatReady": 38,
+        "processKind": "fine-tea-infusion",
+        "stationZoneId": "stove"
+       },
+       "price": 6,
+       "qualityTier": "fine",
+       "serving": {
+        "portions": 3,
+        "refillCount": 1,
+        "unit": "pot"
+       },
+       "stockCost": {
+        "fineTea": 1,
+        "firewood": 0.08,
+        "water": 2
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.92,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.86,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_pot",
+       "walkInOrderable": true
+      },
+      "hot_water": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 36
+       },
+       "category": "tea",
+       "label": "一碗热水",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy"
+       ],
+       "observableQualities": [
+        "烧开的山泉水",
+        "不收茶钱"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 90,
+        "durationSecondsWhenHeatReady": 10,
+        "processKind": "heat-and-pour",
+        "stationZoneId": "stove"
+       },
+       "price": 0,
+       "qualityTier": "plain",
+       "serving": {
+        "portions": 1,
+        "unit": "bowl"
+       },
+       "stockCost": {
+        "firewood": 0.05,
+        "water": 1
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.72,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.12,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_bowl",
+       "walkInOrderable": true
+      },
+      "house_tea_pot": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 56
+       },
+       "category": "tea",
+       "label": "一壶店藏山茶",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy",
+        "information_cover",
+        "quality"
+       ],
+       "observableQualities": [
+        "香气比粗焙山茶清楚",
+        "够一人慢饮数盏"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 125,
+        "durationSecondsWhenHeatReady": 32,
+        "processKind": "tea-pot-infusion",
+        "stationZoneId": "stove"
+       },
+       "price": 3,
+       "qualityTier": "house",
+       "serving": {
+        "portions": 3,
+        "refillCount": 1,
+        "unit": "pot"
+       },
+       "stockCost": {
+        "firewood": 0.08,
+        "houseTea": 1,
+        "water": 2
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.9,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.62,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_pot",
+       "walkInOrderable": true
+      },
+      "lodging_meal": {
+       "category": "lodging",
+       "label": "普通客房一晚和一份望梯常饭",
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 54,
+        "durationSecondsWhenHeatReady": 16,
+        "processKind": "portion-ready-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 16,
+       "qualityTier": "plain",
+       "stockCost": {
+        "meals": 1,
+        "rooms": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "walkInOrderable": false
+      },
+      "lodging_only": {
+       "category": "lodging",
+       "label": "普通客房一晚",
+       "price": 12,
+       "qualityTier": "plain",
+       "stockCost": {
+        "rooms": 1
+       },
+       "walkInOrderable": false
+      },
+      "lodging_two_meals": {
+       "category": "lodging",
+       "label": "普通客房一晚和两份望梯常饭",
+       "price": 20,
+       "qualityTier": "plain",
+       "stockCost": {
+        "meals": 2,
+        "rooms": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "walkInOrderable": false
+      },
+      "meal": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "hungerRelief": 45,
+        "recovery": 8
+       },
+       "category": "meal",
+       "label": "一份望梯常饭",
+       "needChannels": [
+        "hunger",
+        "fatigue",
+        "stay_legitimacy"
+       ],
+       "observableQualities": [
+        "杂粮饭",
+        "时蔬豆腐",
+        "腌笋",
+        "热汤"
+       ],
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 54,
+        "durationSecondsWhenHeatReady": 16,
+        "processKind": "portion-ready-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 5,
+       "qualityTier": "plain",
+       "serving": {
+        "portions": 1,
+        "unit": "set"
+       },
+       "stockCost": {
+        "meals": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "meal_bowl",
+       "walkInOrderable": true
+      },
+      "meat_meal": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "hungerRelief": 62,
+        "recovery": 13
+       },
+       "category": "meal",
+       "label": "一份添肉饭",
+       "needChannels": [
+        "hunger",
+        "fatigue",
+        "stay_legitimacy",
+        "quality"
+       ],
+       "observableQualities": [
+        "望梯常饭",
+        "一份卤肉或河鱼"
+       ],
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 68,
+        "durationSecondsWhenHeatReady": 24,
+        "processKind": "portion-hearty-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 8,
+       "qualityTier": "hearty",
+       "serving": {
+        "portions": 1,
+        "unit": "set"
+       },
+       "stockCost": {
+        "meals": 1,
+        "meatPortions": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.12,
+        "mundaneNutrition": 0.92,
+        "sensoryValue": 0.64,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "meal_bowl",
+       "walkInOrderable": true
+      },
+      "tea": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 44
+       },
+       "category": "tea",
+       "label": "一碗粗焙山茶",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy",
+        "information_cover"
+       ],
+       "observableQualities": [
+        "普通山茶焙得较重",
+        "可续一次热水"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 110,
+        "durationSecondsWhenHeatReady": 24,
+        "processKind": "tea-infusion",
+        "stationZoneId": "stove"
+       },
+       "price": 1,
+       "qualityTier": "rough",
+       "serving": {
+        "portions": 1,
+        "refillCount": 1,
+        "unit": "bowl"
+       },
+       "stockCost": {
+        "firewood": 0.05,
+        "tea": 1,
+        "water": 1
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.84,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.34,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_bowl",
+       "walkInOrderable": true
+      },
+      "work_meal": {
+       "category": "work_meal",
+       "compensationValue": 5,
+       "label": "以一组约六分之一日的明确杂务换一份望梯常饭",
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 54,
+        "durationSecondsWhenHeatReady": 16,
+        "processKind": "portion-ready-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 0,
+       "qualityTier": "plain",
+       "stockCost": {
+        "meals": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "meal_bowl",
+       "walkInOrderable": false
+      }
+     },
+     "operatorId": "char_xyy_xiemu",
+     "ownerIds": [
+      "char_xyy_xieheng"
+     ],
+     "publicHours": [
+      "清晨",
+      "正午",
+      "午后",
+      "黄昏"
+     ],
+     "schemaVersion": 5,
+     "servicePreparationPolicy": {
+      "heatSourceId": "tavern_stove_fire",
+      "rule": "点单只建立请求；取器皿、走到操作区、准备、等待成熟、收尾、送到客人面前分别由世界过程和人物行动完成。",
+      "stationZoneId": "stove"
+     },
+     "serviceZones": [
+      "hall",
+      "counter",
+      "stove",
+      "courtyard",
+      "guest_room"
+     ],
+     "tableUseNorm": {
+      "id": "norm_public_table_use_during_business",
+      "operatorResponseRequiresOwnAction": true,
+      "pressureOnset": "来客实际占用客桌且经营者亲眼注意到尚无消费或来意后，随停留时间产生",
+      "sitWithoutOrderingPhysicallyPossible": true
+     },
+     "workOrderTemplates": [
+      {
+       "compensation": {
+        "kind": "meal",
+        "quantity": 1
+       },
+       "completionCriteria": [
+        "两张空桌都没有遗留碗筷",
+        "桌面擦净且不影响在座客人"
+       ],
+       "description": "把堂前两张已经空下来的桌子收去碗筷并擦净桌面。",
+       "objectIds": [],
+       "requiredUnits": 2,
+       "taskKind": "cleaning",
+       "taskLabel": "收净堂前两张空桌",
+       "templateId": "clear_hall_tables",
+       "toolIds": [
+        "tavern_tool_wiping_cloth"
+       ],
+       "unitAction": "收去一张空桌上的碗筷，把桌面擦净",
+       "unitLabel": "张桌",
+       "zoneId": "hall"
+      },
+      {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.025,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "completionEffects": {
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_resource_courtyard_water",
+           "path": [
+            "availableBuckets"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "取水处传来水流注入木桶的声音。",
+        "maxDistance": 1
+       },
+       "description": "本人持桶到后院，将取水处的水装入桶中；装水后仍需本人携桶回灶边。",
+       "durationSecondsPerUnit": 15,
+       "objectIds": [
+        "tavern_resource_courtyard_water"
+       ],
+       "requiredUnits": 20,
+       "taskKind": "refill",
+       "taskLabel": "从后院取水处装水",
+       "templateId": "fill_water_bucket",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "从后院取水处把水装进手中的桶",
+       "unitLabel": "桶水",
+       "zoneId": "courtyard"
+      },
+      {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.02,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "compensation": {
+        "kind": "meal",
+        "quantity": 1
+       },
+       "completionCondition": {
+        "minimum": 1,
+        "objectId": "tavern_resource_water_vat",
+        "path": [
+         "fill"
+        ]
+       },
+       "completionCriteria": [
+        "水缸达到满线",
+        "水桶归回原处且地面无大片积水"
+       ],
+       "completionEffects": {
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_resource_water_vat",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 2
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "灶边响起桶中水注入水缸的声音。",
+        "maxDistance": 1
+       },
+       "description": "本人把已取到的水带回灶边，将桶中的水倒入水缸的剩余空间。",
+       "durationSecondsPerUnit": 8,
+       "objectIds": [
+        "tavern_resource_water_vat"
+       ],
+       "requiredUnits": 2,
+       "taskKind": "refill",
+       "taskLabel": "把灶边水缸添满",
+       "templateId": "refill_stove_water",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "将手中桶里的水倒入灶边水缸的剩余空间",
+       "unitLabel": "桶水",
+       "zoneId": "stove"
+      },
+      {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.025,
+        "exertionDelta": 0.08,
+        "fatigueDelta": 0.045,
+        "staminaDelta": -0.035
+       },
+       "compensation": {
+        "kind": "meal",
+        "quantity": 1
+       },
+       "completionCriteria": [
+        "两束柴已经劈开",
+        "成柴码入遮雨处且斧头归位"
+       ],
+       "completionEffects": {
+        "objectNumericDeltas": [
+         {
+          "delta": -1,
+          "minimum": 0,
+          "objectId": "tavern_resource_unprocessed_firewood",
+          "path": [
+           "unprocessedBundles"
+          ]
+         },
+         {
+          "delta": 1,
+          "minimum": 0,
+          "objectId": "tavern_resource_sheltered_firewood",
+          "path": [
+           "processedBundles"
+          ]
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "后院传来斧刃劈入木料的脆响。",
+        "maxDistance": 3
+       },
+       "description": "从后院待处理柴堆取两束湿柴，劈开并码到有遮雨处。",
+       "durationSecondsPerUnit": 42,
+       "objectIds": [
+        "tavern_resource_unprocessed_firewood"
+       ],
+       "requiredUnits": 2,
+       "taskKind": "firewood",
+       "taskLabel": "劈好后院两束湿柴",
+       "templateId": "split_firewood_bundles",
+       "toolIds": [
+        "tavern_tool_wood_axe"
+       ],
+       "unitAction": "劈开一束湿柴，码进有遮雨的柴堆",
+       "unitLabel": "束柴",
+       "zoneId": "courtyard"
+      }
+     ]
+    },
+    "name": "望梯酒馆",
+    "perceptionEnvironment": {
+     "ambientNoise": 0.18,
+     "authority": "world-state",
+     "light": 0.82,
+     "modalityTransmission": {
+      "proprioception": 1,
+      "smell": 1,
+      "sound": 1,
+      "touch": 1,
+      "vibration": 1,
+      "visual": 1
+     },
+     "schemaVersion": 1
+    },
+    "serviceCapability": {
+     "stations": {
+      "stove": {
+       "heatReady": true,
+       "heatSourceId": "tavern_stove_fire",
+       "heatState": "simmering",
+       "lastChangedByActionId": "world-initial-open-stove",
+       "zoneId": "stove"
+      }
+     },
+     "stock": {
+      "fineTea": 3,
+      "firewood": 20,
+      "grain": 16,
+      "houseTea": 8,
+      "meals": 18,
+      "meatPortions": 6,
+      "rooms": 3,
+      "tea": 24,
+      "water": 30
+     }
+    },
+    "socialBoundaries": [
+     {
+      "claimantIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "evidenceIds": [
+       "social-fact:tavern:household-ownership"
+      ],
+      "exemptActorIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "id": "social-boundary:tavern:work-areas",
+      "permissionRequiredByNorm": true,
+      "possibleResponseTags": [
+       "owner_may_notice",
+       "owner_may_object"
+      ],
+      "zoneIds": [
+       "counter",
+       "stove",
+       "courtyard"
+      ]
+     },
+     {
+      "claimantIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "evidenceIds": [
+       "social-fact:tavern:household-ownership"
+      ],
+      "exemptActorIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "id": "social-boundary:tavern:guest-room",
+      "permissionRequiredByNorm": true,
+      "possibleResponseTags": [
+       "lodging_access_may_be_checked"
+      ],
+      "zoneIds": [
+       "guest_room"
+      ]
+     }
+    ],
+    "topology": {
+     "defaultZoneId": "hall",
+     "edges": [
+      {
+       "conversation": true,
+       "from": "threshold",
+       "move": 1,
+       "sound": 1,
+       "to": "hall",
+       "visual": 1
+      },
+      {
+       "conversation": true,
+       "from": "hall",
+       "move": 1,
+       "sound": 1,
+       "to": "counter",
+       "visual": 1
+      },
+      {
+       "from": "counter",
+       "move": 1,
+       "sound": 1,
+       "to": "stove",
+       "visual": 1
+      },
+      {
+       "from": "hall",
+       "move": 1,
+       "sound": 1,
+       "to": "courtyard",
+       "visual": 1.25
+      },
+      {
+       "from": "hall",
+       "move": 1,
+       "sound": 1,
+       "to": "stairs",
+       "visual": 1
+      },
+      {
+       "barrier": "closed-door",
+       "from": "stairs",
+       "move": 1,
+       "sound": null,
+       "to": "guest_room",
+       "visual": null
+      }
+     ],
+     "locationId": "loc_xyy_tavern",
+     "responsibilityRules": [],
+     "schemaVersion": 1,
+     "standingDefaultZoneIds": {
+      "household_worker": "courtyard",
+      "lodging_guest": "guest_room",
+      "manager": "counter",
+      "proprietor": "hall"
+     },
+     "zones": {
+      "counter": {
+       "closed": false,
+       "id": "counter",
+       "label": "柜台"
+      },
+      "courtyard": {
+       "closed": false,
+       "id": "courtyard",
+       "label": "后院"
+      },
+      "guest_room": {
+       "closed": true,
+       "id": "guest_room",
+       "label": "楼上客房"
+      },
+      "hall": {
+       "closed": false,
+       "id": "hall",
+       "label": "堂前"
+      },
+      "stairs": {
+       "closed": false,
+       "id": "stairs",
+       "label": "楼梯口"
+      },
+      "stove": {
+       "closed": false,
+       "id": "stove",
+       "label": "灶边"
+      },
+      "threshold": {
+       "closed": false,
+       "id": "threshold",
+       "label": "门槛"
+      }
+     }
+    },
+    "workCapability": {
+     "definitions": {
+      "clear_hall_tables": {
+       "bodyLoadPerUnit": {
+        "energyDelta": 0,
+        "exertionDelta": 0,
+        "fatigueDelta": 0,
+        "staminaDelta": 0
+       },
+       "completionCondition": null,
+       "completionEffects": {
+        "objectNumericDeltas": [],
+        "objectNumericTransfers": []
+       },
+       "completionSound": null,
+       "durationSecondsPerUnit": 30,
+       "objectIds": [],
+       "requiredUnits": 2,
+       "taskLabel": "收净堂前两张空桌",
+       "templateId": "clear_hall_tables",
+       "toolIds": [
+        "tavern_tool_wiping_cloth"
+       ],
+       "unitAction": "收去一张空桌上的碗筷，把桌面擦净",
+       "unitLabel": "张桌",
+       "workKind": "cleaning",
+       "zoneId": "hall"
+      },
+      "fill_water_bucket": {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.025,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "completionCondition": null,
+       "completionEffects": {
+        "objectNumericDeltas": [],
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_resource_courtyard_water",
+           "path": [
+            "availableBuckets"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "取水处传来水流注入木桶的声音。",
+        "maxDistance": 1
+       },
+       "durationSecondsPerUnit": 15,
+       "objectIds": [
+        "tavern_resource_courtyard_water"
+       ],
+       "requiredUnits": 20,
+       "taskLabel": "从后院取水处装水",
+       "templateId": "fill_water_bucket",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "从后院取水处把水装进手中的桶",
+       "unitLabel": "桶水",
+       "workKind": "refill",
+       "zoneId": "courtyard"
+      },
+      "refill_stove_water": {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.02,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "completionCondition": {
+        "minimum": 1,
+        "objectId": "tavern_resource_water_vat",
+        "path": [
+         "fill"
+        ]
+       },
+       "completionEffects": {
+        "objectNumericDeltas": [],
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_resource_water_vat",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 2
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "灶边响起桶中水注入水缸的声音。",
+        "maxDistance": 1
+       },
+       "durationSecondsPerUnit": 8,
+       "objectIds": [
+        "tavern_resource_water_vat"
+       ],
+       "requiredUnits": 2,
+       "taskLabel": "把灶边水缸添满",
+       "templateId": "refill_stove_water",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "将手中桶里的水倒入灶边水缸的剩余空间",
+       "unitLabel": "桶水",
+       "workKind": "refill",
+       "zoneId": "stove"
+      },
+      "split_firewood_bundles": {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.025,
+        "exertionDelta": 0.08,
+        "fatigueDelta": 0.045,
+        "staminaDelta": -0.035
+       },
+       "completionCondition": null,
+       "completionEffects": {
+        "objectNumericDeltas": [
+         {
+          "delta": -1,
+          "minimum": 0,
+          "objectId": "tavern_resource_unprocessed_firewood",
+          "path": [
+           "unprocessedBundles"
+          ]
+         },
+         {
+          "delta": 1,
+          "minimum": 0,
+          "objectId": "tavern_resource_sheltered_firewood",
+          "path": [
+           "processedBundles"
+          ]
+         }
+        ],
+        "objectNumericTransfers": []
+       },
+       "completionSound": {
+        "content": "后院传来斧刃劈入木料的脆响。",
+        "maxDistance": 3
+       },
+       "durationSecondsPerUnit": 42,
+       "objectIds": [
+        "tavern_resource_unprocessed_firewood"
+       ],
+       "requiredUnits": 2,
+       "taskLabel": "劈好后院两束湿柴",
+       "templateId": "split_firewood_bundles",
+       "toolIds": [
+        "tavern_tool_wood_axe"
+       ],
+       "unitAction": "劈开一束湿柴，码进有遮雨的柴堆",
+       "unitLabel": "束柴",
+       "workKind": "firewood",
+       "zoneId": "courtyard"
+      }
+     },
+     "progress": {
+      "clear_hall_tables": {
+       "completedUnits": 0
+      },
+      "fill_water_bucket": {
+       "completedUnits": 0
+      },
+      "refill_stove_water": {
+       "completedUnits": 0
+      },
+      "split_firewood_bundles": {
+       "completedUnits": 0
+      }
+     },
+     "schemaVersion": 1
+    }
+   }
+  },
+  "processes": [],
+  "schemaVersion": "tavern-world-runtime-v2.7-testable-vertical",
+  "sharedActivities": [],
+  "signals": [],
+  "socialFacts": [
+   {
+    "claimantId": "household:谢家",
+    "entityId": "loc_xyy_tavern",
+    "factId": "social-fact:tavern:household-ownership",
+    "kind": "ownership_claim",
+    "sourceEvidenceIds": [],
+    "topic": "望梯酒馆由谢家经营"
+   },
+   {
+    "affectedActorIds": [],
+    "entityId": "loc_xyy_tavern",
+    "factId": "social-fact:tavern:public-business",
+    "kind": "public_access_declaration",
+    "sourceEvidenceIds": [],
+    "topic": "堂前营业时向来客开放"
+   }
+  ],
+  "temporalAgenda": [],
+  "timePolicy": {
+   "maxBlockSeconds": 86400,
+   "maxPlanBlocks": 8,
+   "minPlanBlocks": 5,
+   "mode": "day",
+   "planningHorizonSeconds": 86400,
+   "repeatedWaitReviewLimit": 0
+  },
+  "worldId": "world:golden:day",
+  "worldVersion": 0
+ },
+ "scene": {
+  "entities": {
+   "char_xyy_luozhao": {
+    "id": "char_xyy_luozhao",
+    "kind": "character",
+    "name": "洛照",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "洛照",
+    "publicSignalFeatures": [],
+    "role": "主动接受玉衡宗来访安排、佩剑且把拜帖收在随身行囊中，刚到望梯酒馆打探消息的来访弟子",
+    "serviceAuthority": {
+     "serveMeal": false,
+     "serveTea": false,
+     "settleCash": false
+    },
+    "standing": "visitor",
+    "zoneId": "hall"
+   },
+   "char_xyy_xieheng": {
+    "id": "char_xyy_xieheng",
+    "kind": "character",
+    "name": "谢恒",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "谢恒",
+    "publicSignalFeatures": [],
+    "role": "谢家父亲；替酒馆验收米酒与柴薪，用零工钱补贴药费",
+    "serviceAuthority": {
+     "serveMeal": true,
+     "serveTea": true,
+     "settleCash": true
+    },
+    "standing": "proprietor",
+    "zoneId": "counter"
+   },
+   "char_xyy_xiemu": {
+    "id": "char_xyy_xiemu",
+    "kind": "character",
+    "name": "谢母",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "谢母",
+    "publicSignalFeatures": [],
+    "role": "望梯酒馆掌灶与当日照看者；管饭、账板、钥匙和赊账",
+    "serviceAuthority": {
+     "serveMeal": true,
+     "serveTea": true,
+     "settleCash": true
+    },
+    "standing": "manager",
+    "zoneId": "stove"
+   },
+   "char_xyy_xiezenshi": {
+    "id": "char_xyy_xiezenshi",
+    "kind": "character",
+    "name": "谢真石",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "谢真石",
+    "publicSignalFeatures": [],
+    "role": "返家探亲、即将回宗门参加剑阁考核的内门弟子；在家中分担酒馆柴水杂务",
+    "serviceAuthority": {
+     "serveMeal": true,
+     "serveTea": true,
+     "settleCash": false
+    },
+    "standing": "household_worker",
+    "zoneId": "hall"
+   },
+   "char_xyy_zhoumin": {
+    "id": "char_xyy_zhoumin",
+    "kind": "character",
+    "name": "周珉",
+    "placeId": "loc_xyy_tavern",
+    "present": true,
+    "publicDescription": "周珉",
+    "publicSignalFeatures": [],
+    "role": "梯云宗外门弟子；到望梯酒馆给谢母送药，也会找一起长大的谢真石求教并推进举荐",
+    "serviceAuthority": {
+     "serveMeal": false,
+     "serveTea": false,
+     "settleCash": false
+    },
+    "standing": "delivery_guest",
+    "zoneId": "hall"
+   }
+  },
+  "nowSeconds": 0,
+  "objects": {
+   "luozhao_sword": {
+    "aliases": [
+     "长剑",
+     "佩剑"
+    ],
+    "attachment": {
+     "active": true,
+     "actorId": "char_xyy_luozhao",
+     "mode": "worn_on_body_unspecified",
+     "transitionRequiresExplicitOperation": true
+    },
+    "custody": {
+     "containerId": "",
+     "inHand": false,
+     "storageMode": "worn"
+    },
+    "holderCharacterId": "char_xyy_luozhao",
+    "id": "luozhao_sword",
+    "initialHolderActorId": "char_xyy_luozhao",
+    "kind": "object",
+    "label": "洛照的佩剑",
+    "perception": {
+     "publicLabel": "一柄带鞘长剑"
+    },
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "sheathed": true
+    },
+    "zoneId": "hall"
+   },
+   "luozhao_yuheng_visit_letter": {
+    "aliases": [
+     "玉衡宗拜帖",
+     "拜帖"
+    ],
+    "custody": {
+     "containerId": "luozhao_travel_pack",
+     "inHand": false,
+     "storageMode": "packed"
+    },
+    "holderCharacterId": "char_xyy_luozhao",
+    "id": "luozhao_yuheng_visit_letter",
+    "initialHolderActorId": "char_xyy_luozhao",
+    "kind": "object",
+    "label": "洛照随身携带的玉衡宗拜帖",
+    "perception": {
+     "publicLabel": "一封帖子"
+    },
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "hidden",
+     "publiclyVisible": false
+    },
+    "state": {
+     "displayedToActorIds": [],
+     "intendedRecipientInstitutionId": "institution_xyy_tiyunzong",
+     "tavernCustody": false
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-center-table": {
+    "capacity": 4,
+    "id": "position:tavern-hall-center-table",
+    "kind": "position",
+    "label": "堂中空桌",
+    "observableFeatures": [
+     "堂中多处谈话都较清楚",
+     "四面都可能有人经过或落座",
+     "在座客人容易注意这里"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-near-counter": {
+    "capacity": 2,
+    "id": "position:tavern-hall-near-counter",
+    "kind": "position",
+    "label": "近柜台空位",
+    "observableFeatures": [
+     "柜台交谈最容易听清",
+     "经营者容易注意并主动询问",
+     "取送物品和结账的人会经过"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-near-threshold-bench": {
+    "capacity": 2,
+    "id": "position:tavern-hall-near-threshold-bench",
+    "kind": "position",
+    "label": "近门侧凳",
+    "observableFeatures": [
+     "门外和新来的人最容易看见",
+     "堂中较远处的低声交谈不容易听清",
+     "进出酒馆的人会从附近经过"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "position:tavern-hall-side-wall-table": {
+    "capacity": 2,
+    "id": "position:tavern-hall-side-wall-table",
+    "kind": "position",
+    "label": "堂前侧墙空桌",
+    "observableFeatures": [
+     "一侧临墙，背后没有客人通行",
+     "斜向能看见门槛和柜台",
+     "离主要取送饭食路线有一段距离"
+    ],
+    "occupantCharacterIds": [],
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "zoneId": "hall"
+   },
+   "tavern_delivery_manifest": {
+    "aliases": [
+     "清单",
+     "送药清单"
+    ],
+    "holderCharacterId": "char_xyy_zhoumin",
+    "id": "tavern_delivery_manifest",
+    "initialHolderActorId": "char_xyy_zhoumin",
+    "kind": "object",
+    "label": "送药清单",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "accepted": false,
+     "intendedRecipientActorId": "char_xyy_xiemu"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_delivery_medicine_parcel": {
+    "aliases": [
+     "药包",
+     "药材包"
+    ],
+    "holderCharacterId": "char_xyy_zhoumin",
+    "id": "tavern_delivery_medicine_parcel",
+    "initialHolderActorId": "char_xyy_zhoumin",
+    "kind": "object",
+    "label": "药包",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "accepted": false,
+     "intendedRecipientActorId": "char_xyy_xiemu",
+     "treatmentCategory": "chronic_lung_ailment",
+     "treatmentDetailsStatus": "unknown",
+     "treatmentTargetActorId": "char_xyy_xiemu"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_registry_pages": {
+    "aliases": [
+     "掌籍名录",
+     "名录",
+     "纸页"
+    ],
+    "holderCharacterId": "char_xyy_yanzhizhong",
+    "id": "tavern_registry_pages",
+    "initialHolderActorId": "char_xyy_yanzhizhong",
+    "kind": "object",
+    "label": "掌籍名录和待核纸页",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "reviewed": false
+    },
+    "zoneId": "hall"
+   },
+   "tavern_resource_courtyard_water": {
+    "aliases": [
+     "取水处"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_courtyard_water",
+    "kind": "object",
+    "label": "后院取水处",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "availableBuckets": 20
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_resource_sheltered_firewood": {
+    "aliases": [
+     "成柴",
+     "干柴堆"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_sheltered_firewood",
+    "kind": "object",
+    "label": "檐下成柴堆",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "processedBundles": 0
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_resource_unprocessed_firewood": {
+    "aliases": [
+     "湿柴",
+     "柴堆"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_unprocessed_firewood",
+    "kind": "object",
+    "label": "后院湿柴堆",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "unprocessedBundles": 2
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_resource_water_vat": {
+    "aliases": [
+     "水缸"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_resource_water_vat",
+    "kind": "object",
+    "label": "灶边水缸",
+    "placeId": "loc_xyy_tavern",
+    "portable": false,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "capacityBuckets": 2,
+     "fill": 0.55
+    },
+    "zoneId": "stove"
+   },
+   "tavern_room_key_guest_1": {
+    "aliases": [
+     "客房钥匙",
+     "房门钥匙"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_room_key_guest_1",
+    "kind": "object",
+    "label": "一号客房钥匙",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "objectType": "lodging_key",
+     "roomId": "guest_room_1"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_room_key_guest_2": {
+    "aliases": [
+     "客房钥匙",
+     "房门钥匙"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_room_key_guest_2",
+    "kind": "object",
+    "label": "二号客房钥匙",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "objectType": "lodging_key",
+     "roomId": "guest_room_2"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_room_key_guest_3": {
+    "aliases": [
+     "客房钥匙",
+     "房门钥匙"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_room_key_guest_3",
+    "kind": "object",
+    "label": "三号客房钥匙",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "objectType": "lodging_key",
+     "roomId": "guest_room_3"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_tool_water_bucket": {
+    "aliases": [
+     "水桶"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_tool_water_bucket",
+    "kind": "object",
+    "label": "木水桶",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "fill": 0
+    },
+    "zoneId": "stove"
+   },
+   "tavern_tool_wiping_cloth": {
+    "aliases": [
+     "抹布"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_tool_wiping_cloth",
+    "kind": "object",
+    "label": "擦桌抹布",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "cleanEnough": true
+    },
+    "zoneId": "hall"
+   },
+   "tavern_tool_wood_axe": {
+    "aliases": [
+     "斧头",
+     "木斧"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_tool_wood_axe",
+    "kind": "object",
+    "label": "劈柴斧",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "returned": true
+    },
+    "zoneId": "courtyard"
+   },
+   "tavern_vessel_meal_1": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_1",
+    "kind": "object",
+    "label": "一号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_meal_2": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_2",
+    "kind": "object",
+    "label": "二号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_meal_3": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_3",
+    "kind": "object",
+    "label": "三号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_meal_4": {
+    "aliases": [
+     "饭碗",
+     "碗"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_meal_4",
+    "kind": "object",
+    "label": "四号饭碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "meal",
+      "lodging",
+      "work_meal"
+     ],
+     "vesselType": "meal_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_tea_1": {
+    "aliases": [
+     "茶碗",
+     "茶盏"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_tea_1",
+    "kind": "object",
+    "label": "一号茶碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_tea_2": {
+    "aliases": [
+     "茶碗",
+     "茶盏"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_tea_2",
+    "kind": "object",
+    "label": "二号茶碗",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_bowl"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_teapot_1": {
+    "aliases": [
+     "茶壶",
+     "壶"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_teapot_1",
+    "kind": "object",
+    "label": "一号茶壶",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_pot"
+    },
+    "zoneId": "hall"
+   },
+   "tavern_vessel_teapot_2": {
+    "aliases": [
+     "茶壶",
+     "壶"
+    ],
+    "holderCharacterId": "",
+    "id": "tavern_vessel_teapot_2",
+    "kind": "object",
+    "label": "二号茶壶",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "contents": "empty",
+     "serviceTypes": [
+      "tea"
+     ],
+     "vesselType": "tea_pot"
+    },
+    "zoneId": "hall"
+   },
+   "xiezenshi_short_sword": {
+    "aliases": [
+     "短剑"
+    ],
+    "holderCharacterId": "char_xyy_xiezenshi",
+    "id": "xiezenshi_short_sword",
+    "initialHolderActorId": "char_xyy_xiezenshi",
+    "kind": "object",
+    "label": "谢真石的短剑",
+    "placeId": "loc_xyy_tavern",
+    "portable": true,
+    "presentation": {
+     "displayedToActorIds": [],
+     "exposure": "visible",
+     "publiclyVisible": true
+    },
+    "state": {
+     "sheathed": true
+    },
+    "zoneId": "hall"
+   }
+  },
+  "places": {
+   "loc_xyy_tavern": {
+    "accessGrants": [],
+    "id": "loc_xyy_tavern",
+    "institution": {
+     "description": "望梯酒馆是谢家的生计：谢恒是东家，负责进货、外账与缺口；谢母是掌柜兼掌灶，决定怎样接客、出餐、赊账和收店；谢真石住在后院，以柴水和堂前杂务分担家业。",
+     "guestPositions": [
+      {
+       "capacity": 2,
+       "id": "position:tavern-hall-side-wall-table",
+       "label": "堂前侧墙空桌",
+       "metrics": {
+        "approachability": [
+         0.24,
+         0.4
+        ],
+        "comfort": [
+         0.42,
+         0.58
+        ],
+        "exitAccess": [
+         0.48,
+         0.64
+        ],
+        "informationAccess": [
+         0.68,
+         0.84
+        ],
+        "movementClearance": [
+         0.68,
+         0.84
+        ],
+        "socialExposure": [
+         0.28,
+         0.44
+        ],
+        "trafficInterference": [
+         0.12,
+         0.28
+        ],
+        "visualCoverage": [
+         0.72,
+         0.86
+        ]
+       },
+       "observableFeatures": [
+        "一侧临墙，背后没有客人通行",
+        "斜向能看见门槛和柜台",
+        "离主要取送饭食路线有一段距离"
+       ],
+       "zoneId": "hall"
+      },
+      {
+       "capacity": 4,
+       "id": "position:tavern-hall-center-table",
+       "label": "堂中空桌",
+       "metrics": {
+        "approachability": [
+         0.76,
+         0.9
+        ],
+        "comfort": [
+         0.55,
+         0.72
+        ],
+        "exitAccess": [
+         0.45,
+         0.6
+        ],
+        "informationAccess": [
+         0.82,
+         0.94
+        ],
+        "movementClearance": [
+         0.5,
+         0.68
+        ],
+        "socialExposure": [
+         0.78,
+         0.92
+        ],
+        "trafficInterference": [
+         0.62,
+         0.8
+        ],
+        "visualCoverage": [
+         0.82,
+         0.94
+        ]
+       },
+       "observableFeatures": [
+        "堂中多处谈话都较清楚",
+        "四面都可能有人经过或落座",
+        "在座客人容易注意这里"
+       ],
+       "zoneId": "hall"
+      },
+      {
+       "capacity": 2,
+       "id": "position:tavern-hall-near-counter",
+       "label": "近柜台空位",
+       "metrics": {
+        "approachability": [
+         0.8,
+         0.94
+        ],
+        "comfort": [
+         0.35,
+         0.52
+        ],
+        "exitAccess": [
+         0.32,
+         0.48
+        ],
+        "informationAccess": [
+         0.84,
+         0.96
+        ],
+        "movementClearance": [
+         0.42,
+         0.58
+        ],
+        "socialExposure": [
+         0.62,
+         0.78
+        ],
+        "trafficInterference": [
+         0.7,
+         0.88
+        ],
+        "visualCoverage": [
+         0.58,
+         0.74
+        ]
+       },
+       "observableFeatures": [
+        "柜台交谈最容易听清",
+        "经营者容易注意并主动询问",
+        "取送物品和结账的人会经过"
+       ],
+       "zoneId": "hall"
+      },
+      {
+       "capacity": 2,
+       "id": "position:tavern-hall-near-threshold-bench",
+       "label": "近门侧凳",
+       "metrics": {
+        "approachability": [
+         0.4,
+         0.58
+        ],
+        "comfort": [
+         0.32,
+         0.48
+        ],
+        "exitAccess": [
+         0.88,
+         0.96
+        ],
+        "informationAccess": [
+         0.45,
+         0.62
+        ],
+        "movementClearance": [
+         0.6,
+         0.76
+        ],
+        "socialExposure": [
+         0.48,
+         0.65
+        ],
+        "trafficInterference": [
+         0.66,
+         0.84
+        ],
+        "visualCoverage": [
+         0.78,
+         0.9
+        ]
+       },
+       "observableFeatures": [
+        "门外和新来的人最容易看见",
+        "堂中较远处的低声交谈不容易听清",
+        "进出酒馆的人会从附近经过"
+       ],
+       "zoneId": "hall"
+      }
+     ],
+     "householdName": "谢家",
+     "householdWorkerIds": [
+      "char_xyy_xiezenshi"
+     ],
+     "name": "望梯酒馆",
+     "objectTemplates": [
+      {
+       "aliases": [
+        "抹布"
+       ],
+       "id": "tavern_tool_wiping_cloth",
+       "label": "擦桌抹布",
+       "portable": true,
+       "state": {
+        "cleanEnough": true
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "水桶"
+       ],
+       "id": "tavern_tool_water_bucket",
+       "label": "木水桶",
+       "portable": true,
+       "state": {
+        "fill": 0
+       },
+       "zoneId": "stove"
+      },
+      {
+       "aliases": [
+        "水缸"
+       ],
+       "id": "tavern_resource_water_vat",
+       "label": "灶边水缸",
+       "portable": false,
+       "state": {
+        "capacityBuckets": 2,
+        "fill": 0.55
+       },
+       "zoneId": "stove"
+      },
+      {
+       "aliases": [
+        "取水处"
+       ],
+       "id": "tavern_resource_courtyard_water",
+       "label": "后院取水处",
+       "portable": false,
+       "state": {
+        "availableBuckets": 20
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "斧头",
+        "木斧"
+       ],
+       "id": "tavern_tool_wood_axe",
+       "label": "劈柴斧",
+       "portable": true,
+       "state": {
+        "returned": true
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "湿柴",
+        "柴堆"
+       ],
+       "id": "tavern_resource_unprocessed_firewood",
+       "label": "后院湿柴堆",
+       "portable": false,
+       "state": {
+        "unprocessedBundles": 2
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "成柴",
+        "干柴堆"
+       ],
+       "id": "tavern_resource_sheltered_firewood",
+       "label": "檐下成柴堆",
+       "portable": false,
+       "state": {
+        "processedBundles": 0
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "客房钥匙",
+        "房门钥匙"
+       ],
+       "id": "tavern_room_key_guest_1",
+       "label": "一号客房钥匙",
+       "portable": true,
+       "state": {
+        "objectType": "lodging_key",
+        "roomId": "guest_room_1"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "客房钥匙",
+        "房门钥匙"
+       ],
+       "id": "tavern_room_key_guest_2",
+       "label": "二号客房钥匙",
+       "portable": true,
+       "state": {
+        "objectType": "lodging_key",
+        "roomId": "guest_room_2"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "客房钥匙",
+        "房门钥匙"
+       ],
+       "id": "tavern_room_key_guest_3",
+       "label": "三号客房钥匙",
+       "portable": true,
+       "state": {
+        "objectType": "lodging_key",
+        "roomId": "guest_room_3"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_1",
+       "label": "一号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_2",
+       "label": "二号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_3",
+       "label": "三号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "饭碗",
+        "碗"
+       ],
+       "id": "tavern_vessel_meal_4",
+       "label": "四号饭碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "meal",
+         "lodging",
+         "work_meal"
+        ],
+        "vesselType": "meal_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶碗",
+        "茶盏"
+       ],
+       "id": "tavern_vessel_tea_1",
+       "label": "一号茶碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶碗",
+        "茶盏"
+       ],
+       "id": "tavern_vessel_tea_2",
+       "label": "二号茶碗",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_bowl"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶壶",
+        "壶"
+       ],
+       "id": "tavern_vessel_teapot_1",
+       "label": "一号茶壶",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_pot"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "茶壶",
+        "壶"
+       ],
+       "id": "tavern_vessel_teapot_2",
+       "label": "二号茶壶",
+       "portable": true,
+       "state": {
+        "contents": "empty",
+        "serviceTypes": [
+         "tea"
+        ],
+        "vesselType": "tea_pot"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "药包",
+        "药材包"
+       ],
+       "id": "tavern_delivery_medicine_parcel",
+       "initialHolderActorId": "char_xyy_zhoumin",
+       "label": "药包",
+       "portable": true,
+       "state": {
+        "accepted": false,
+        "intendedRecipientActorId": "char_xyy_xiemu",
+        "treatmentCategory": "chronic_lung_ailment",
+        "treatmentDetailsStatus": "unknown",
+        "treatmentTargetActorId": "char_xyy_xiemu"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "清单",
+        "送药清单"
+       ],
+       "id": "tavern_delivery_manifest",
+       "initialHolderActorId": "char_xyy_zhoumin",
+       "label": "送药清单",
+       "portable": true,
+       "state": {
+        "accepted": false,
+        "intendedRecipientActorId": "char_xyy_xiemu"
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "掌籍名录",
+        "名录",
+        "纸页"
+       ],
+       "id": "tavern_registry_pages",
+       "initialHolderActorId": "char_xyy_yanzhizhong",
+       "label": "掌籍名录和待核纸页",
+       "portable": true,
+       "state": {
+        "reviewed": false
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "短剑"
+       ],
+       "id": "xiezenshi_short_sword",
+       "initialHolderActorId": "char_xyy_xiezenshi",
+       "label": "谢真石的短剑",
+       "portable": true,
+       "state": {
+        "sheathed": true
+       },
+       "zoneId": "courtyard"
+      },
+      {
+       "aliases": [
+        "长剑",
+        "佩剑"
+       ],
+       "attachment": {
+        "active": true,
+        "actorId": "char_xyy_luozhao",
+        "mode": "worn_on_body_unspecified",
+        "transitionRequiresExplicitOperation": true
+       },
+       "custody": {
+        "containerId": "",
+        "inHand": false,
+        "storageMode": "worn"
+       },
+       "id": "luozhao_sword",
+       "initialHolderActorId": "char_xyy_luozhao",
+       "label": "洛照的佩剑",
+       "perception": {
+        "publicLabel": "一柄带鞘长剑"
+       },
+       "portable": true,
+       "presentation": {
+        "displayedToActorIds": [],
+        "exposure": "visible",
+        "publiclyVisible": true
+       },
+       "state": {
+        "sheathed": true
+       },
+       "zoneId": "hall"
+      },
+      {
+       "aliases": [
+        "玉衡宗拜帖",
+        "拜帖"
+       ],
+       "custody": {
+        "containerId": "luozhao_travel_pack",
+        "inHand": false,
+        "storageMode": "packed"
+       },
+       "id": "luozhao_yuheng_visit_letter",
+       "initialHolderActorId": "char_xyy_luozhao",
+       "label": "洛照随身携带的玉衡宗拜帖",
+       "perception": {
+        "publicLabel": "一封帖子"
+       },
+       "portable": true,
+       "presentation": {
+        "displayedToActorIds": [],
+        "exposure": "hidden",
+        "publiclyVisible": false
+       },
+       "state": {
+        "displayedToActorIds": [],
+        "intendedRecipientInstitutionId": "institution_xyy_tiyunzong",
+        "tavernCustody": false
+       },
+       "zoneId": "threshold"
+      }
+     ],
+     "offerings": {
+      "fine_cloud_tea_pot": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 58
+       },
+       "category": "tea",
+       "label": "一壶云岫春芽",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy",
+        "information_cover",
+        "quality"
+       ],
+       "observableQualities": [
+        "当季嫩芽",
+        "香气清而不焦",
+        "柜台价牌上最贵的茶"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 132,
+        "durationSecondsWhenHeatReady": 38,
+        "processKind": "fine-tea-infusion",
+        "stationZoneId": "stove"
+       },
+       "price": 6,
+       "qualityTier": "fine",
+       "serving": {
+        "portions": 3,
+        "refillCount": 1,
+        "unit": "pot"
+       },
+       "stockCost": {
+        "fineTea": 1,
+        "firewood": 0.08,
+        "water": 2
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.92,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.86,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_pot",
+       "walkInOrderable": true
+      },
+      "hot_water": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 36
+       },
+       "category": "tea",
+       "label": "一碗热水",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy"
+       ],
+       "observableQualities": [
+        "烧开的山泉水",
+        "不收茶钱"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 90,
+        "durationSecondsWhenHeatReady": 10,
+        "processKind": "heat-and-pour",
+        "stationZoneId": "stove"
+       },
+       "price": 0,
+       "qualityTier": "plain",
+       "serving": {
+        "portions": 1,
+        "unit": "bowl"
+       },
+       "stockCost": {
+        "firewood": 0.05,
+        "water": 1
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.72,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.12,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_bowl",
+       "walkInOrderable": true
+      },
+      "house_tea_pot": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 56
+       },
+       "category": "tea",
+       "label": "一壶店藏山茶",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy",
+        "information_cover",
+        "quality"
+       ],
+       "observableQualities": [
+        "香气比粗焙山茶清楚",
+        "够一人慢饮数盏"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 125,
+        "durationSecondsWhenHeatReady": 32,
+        "processKind": "tea-pot-infusion",
+        "stationZoneId": "stove"
+       },
+       "price": 3,
+       "qualityTier": "house",
+       "serving": {
+        "portions": 3,
+        "refillCount": 1,
+        "unit": "pot"
+       },
+       "stockCost": {
+        "firewood": 0.08,
+        "houseTea": 1,
+        "water": 2
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.9,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.62,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_pot",
+       "walkInOrderable": true
+      },
+      "lodging_meal": {
+       "category": "lodging",
+       "label": "普通客房一晚和一份望梯常饭",
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 54,
+        "durationSecondsWhenHeatReady": 16,
+        "processKind": "portion-ready-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 16,
+       "qualityTier": "plain",
+       "stockCost": {
+        "meals": 1,
+        "rooms": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "walkInOrderable": false
+      },
+      "lodging_only": {
+       "category": "lodging",
+       "label": "普通客房一晚",
+       "price": 12,
+       "qualityTier": "plain",
+       "stockCost": {
+        "rooms": 1
+       },
+       "walkInOrderable": false
+      },
+      "lodging_two_meals": {
+       "category": "lodging",
+       "label": "普通客房一晚和两份望梯常饭",
+       "price": 20,
+       "qualityTier": "plain",
+       "stockCost": {
+        "meals": 2,
+        "rooms": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "walkInOrderable": false
+      },
+      "meal": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "hungerRelief": 45,
+        "recovery": 8
+       },
+       "category": "meal",
+       "label": "一份望梯常饭",
+       "needChannels": [
+        "hunger",
+        "fatigue",
+        "stay_legitimacy"
+       ],
+       "observableQualities": [
+        "杂粮饭",
+        "时蔬豆腐",
+        "腌笋",
+        "热汤"
+       ],
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 54,
+        "durationSecondsWhenHeatReady": 16,
+        "processKind": "portion-ready-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 5,
+       "qualityTier": "plain",
+       "serving": {
+        "portions": 1,
+        "unit": "set"
+       },
+       "stockCost": {
+        "meals": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "meal_bowl",
+       "walkInOrderable": true
+      },
+      "meat_meal": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "hungerRelief": 62,
+        "recovery": 13
+       },
+       "category": "meal",
+       "label": "一份添肉饭",
+       "needChannels": [
+        "hunger",
+        "fatigue",
+        "stay_legitimacy",
+        "quality"
+       ],
+       "observableQualities": [
+        "望梯常饭",
+        "一份卤肉或河鱼"
+       ],
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 68,
+        "durationSecondsWhenHeatReady": 24,
+        "processKind": "portion-hearty-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 8,
+       "qualityTier": "hearty",
+       "serving": {
+        "portions": 1,
+        "unit": "set"
+       },
+       "stockCost": {
+        "meals": 1,
+        "meatPortions": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.12,
+        "mundaneNutrition": 0.92,
+        "sensoryValue": 0.64,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "meal_bowl",
+       "walkInOrderable": true
+      },
+      "tea": {
+       "bodyDemand": {
+        "energyDemand": 1,
+        "exertion": 4,
+        "thirstRelief": 44
+       },
+       "category": "tea",
+       "label": "一碗粗焙山茶",
+       "needChannels": [
+        "thirst",
+        "stay_legitimacy",
+        "information_cover"
+       ],
+       "observableQualities": [
+        "普通山茶焙得较重",
+        "可续一次热水"
+       ],
+       "preparation": {
+        "attentionMode": "passive_wait",
+        "durationSecondsColdStart": 110,
+        "durationSecondsWhenHeatReady": 24,
+        "processKind": "tea-infusion",
+        "stationZoneId": "stove"
+       },
+       "price": 1,
+       "qualityTier": "rough",
+       "serving": {
+        "portions": 1,
+        "refillCount": 1,
+        "unit": "bowl"
+       },
+       "stockCost": {
+        "firewood": 0.05,
+        "tea": 1,
+        "water": 1
+       },
+       "sustenance": {
+        "class": "mundane_drink",
+        "hydration": 0.84,
+        "mundaneNutrition": 0,
+        "sensoryValue": 0.34,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "tea_bowl",
+       "walkInOrderable": true
+      },
+      "work_meal": {
+       "category": "work_meal",
+       "compensationValue": 5,
+       "label": "以一组约六分之一日的明确杂务换一份望梯常饭",
+       "preparation": {
+        "attentionMode": "continuous_work",
+        "durationSecondsColdStart": 54,
+        "durationSecondsWhenHeatReady": 16,
+        "processKind": "portion-ready-meal",
+        "stationZoneId": "stove"
+       },
+       "price": 0,
+       "qualityTier": "plain",
+       "stockCost": {
+        "meals": 1
+       },
+       "sustenance": {
+        "class": "mundane_food",
+        "hydration": 0.16,
+        "mundaneNutrition": 0.78,
+        "sensoryValue": 0.42,
+        "spiritualNutrition": 0
+       },
+       "vesselType": "meal_bowl",
+       "walkInOrderable": false
+      }
+     },
+     "operatorId": "char_xyy_xiemu",
+     "ownerIds": [
+      "char_xyy_xieheng"
+     ],
+     "publicHours": [
+      "清晨",
+      "正午",
+      "午后",
+      "黄昏"
+     ],
+     "schemaVersion": 5,
+     "servicePreparationPolicy": {
+      "heatSourceId": "tavern_stove_fire",
+      "rule": "点单只建立请求；取器皿、走到操作区、准备、等待成熟、收尾、送到客人面前分别由世界过程和人物行动完成。",
+      "stationZoneId": "stove"
+     },
+     "serviceZones": [
+      "hall",
+      "counter",
+      "stove",
+      "courtyard",
+      "guest_room"
+     ],
+     "tableUseNorm": {
+      "id": "norm_public_table_use_during_business",
+      "operatorResponseRequiresOwnAction": true,
+      "pressureOnset": "来客实际占用客桌且经营者亲眼注意到尚无消费或来意后，随停留时间产生",
+      "sitWithoutOrderingPhysicallyPossible": true
+     },
+     "workOrderTemplates": [
+      {
+       "compensation": {
+        "kind": "meal",
+        "quantity": 1
+       },
+       "completionCriteria": [
+        "两张空桌都没有遗留碗筷",
+        "桌面擦净且不影响在座客人"
+       ],
+       "description": "把堂前两张已经空下来的桌子收去碗筷并擦净桌面。",
+       "objectIds": [],
+       "requiredUnits": 2,
+       "taskKind": "cleaning",
+       "taskLabel": "收净堂前两张空桌",
+       "templateId": "clear_hall_tables",
+       "toolIds": [
+        "tavern_tool_wiping_cloth"
+       ],
+       "unitAction": "收去一张空桌上的碗筷，把桌面擦净",
+       "unitLabel": "张桌",
+       "zoneId": "hall"
+      },
+      {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.025,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "completionEffects": {
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_resource_courtyard_water",
+           "path": [
+            "availableBuckets"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "取水处传来水流注入木桶的声音。",
+        "maxDistance": 1
+       },
+       "description": "本人持桶到后院，将取水处的水装入桶中；装水后仍需本人携桶回灶边。",
+       "durationSecondsPerUnit": 15,
+       "objectIds": [
+        "tavern_resource_courtyard_water"
+       ],
+       "requiredUnits": 20,
+       "taskKind": "refill",
+       "taskLabel": "从后院取水处装水",
+       "templateId": "fill_water_bucket",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "从后院取水处把水装进手中的桶",
+       "unitLabel": "桶水",
+       "zoneId": "courtyard"
+      },
+      {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.02,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "compensation": {
+        "kind": "meal",
+        "quantity": 1
+       },
+       "completionCondition": {
+        "minimum": 1,
+        "objectId": "tavern_resource_water_vat",
+        "path": [
+         "fill"
+        ]
+       },
+       "completionCriteria": [
+        "水缸达到满线",
+        "水桶归回原处且地面无大片积水"
+       ],
+       "completionEffects": {
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_resource_water_vat",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 2
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "灶边响起桶中水注入水缸的声音。",
+        "maxDistance": 1
+       },
+       "description": "本人把已取到的水带回灶边，将桶中的水倒入水缸的剩余空间。",
+       "durationSecondsPerUnit": 8,
+       "objectIds": [
+        "tavern_resource_water_vat"
+       ],
+       "requiredUnits": 2,
+       "taskKind": "refill",
+       "taskLabel": "把灶边水缸添满",
+       "templateId": "refill_stove_water",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "将手中桶里的水倒入灶边水缸的剩余空间",
+       "unitLabel": "桶水",
+       "zoneId": "stove"
+      },
+      {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.025,
+        "exertionDelta": 0.08,
+        "fatigueDelta": 0.045,
+        "staminaDelta": -0.035
+       },
+       "compensation": {
+        "kind": "meal",
+        "quantity": 1
+       },
+       "completionCriteria": [
+        "两束柴已经劈开",
+        "成柴码入遮雨处且斧头归位"
+       ],
+       "completionEffects": {
+        "objectNumericDeltas": [
+         {
+          "delta": -1,
+          "minimum": 0,
+          "objectId": "tavern_resource_unprocessed_firewood",
+          "path": [
+           "unprocessedBundles"
+          ]
+         },
+         {
+          "delta": 1,
+          "minimum": 0,
+          "objectId": "tavern_resource_sheltered_firewood",
+          "path": [
+           "processedBundles"
+          ]
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "后院传来斧刃劈入木料的脆响。",
+        "maxDistance": 3
+       },
+       "description": "从后院待处理柴堆取两束湿柴，劈开并码到有遮雨处。",
+       "durationSecondsPerUnit": 42,
+       "objectIds": [
+        "tavern_resource_unprocessed_firewood"
+       ],
+       "requiredUnits": 2,
+       "taskKind": "firewood",
+       "taskLabel": "劈好后院两束湿柴",
+       "templateId": "split_firewood_bundles",
+       "toolIds": [
+        "tavern_tool_wood_axe"
+       ],
+       "unitAction": "劈开一束湿柴，码进有遮雨的柴堆",
+       "unitLabel": "束柴",
+       "zoneId": "courtyard"
+      }
+     ]
+    },
+    "name": "望梯酒馆",
+    "perceptionEnvironment": {
+     "ambientNoise": 0.18,
+     "authority": "world-state",
+     "light": 0.82,
+     "modalityTransmission": {
+      "proprioception": 1,
+      "smell": 1,
+      "sound": 1,
+      "touch": 1,
+      "vibration": 1,
+      "visual": 1
+     },
+     "schemaVersion": 1
+    },
+    "serviceCapability": {
+     "stations": {
+      "stove": {
+       "heatReady": true,
+       "heatSourceId": "tavern_stove_fire",
+       "heatState": "simmering",
+       "lastChangedByActionId": "world-initial-open-stove",
+       "zoneId": "stove"
+      }
+     },
+     "stock": {
+      "fineTea": 3,
+      "firewood": 20,
+      "grain": 16,
+      "houseTea": 8,
+      "meals": 18,
+      "meatPortions": 6,
+      "rooms": 3,
+      "tea": 24,
+      "water": 30
+     }
+    },
+    "socialBoundaries": [
+     {
+      "claimantIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "evidenceIds": [
+       "social-fact:tavern:household-ownership"
+      ],
+      "exemptActorIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "id": "social-boundary:tavern:work-areas",
+      "permissionRequiredByNorm": true,
+      "possibleResponseTags": [
+       "owner_may_notice",
+       "owner_may_object"
+      ],
+      "zoneIds": [
+       "counter",
+       "stove",
+       "courtyard"
+      ]
+     },
+     {
+      "claimantIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "evidenceIds": [
+       "social-fact:tavern:household-ownership"
+      ],
+      "exemptActorIds": [
+       "char_xyy_xieheng",
+       "char_xyy_xiemu",
+       "char_xyy_xiezenshi"
+      ],
+      "id": "social-boundary:tavern:guest-room",
+      "permissionRequiredByNorm": true,
+      "possibleResponseTags": [
+       "lodging_access_may_be_checked"
+      ],
+      "zoneIds": [
+       "guest_room"
+      ]
+     }
+    ],
+    "topology": {
+     "defaultZoneId": "hall",
+     "edges": [
+      {
+       "conversation": true,
+       "from": "threshold",
+       "move": 1,
+       "sound": 1,
+       "to": "hall",
+       "visual": 1
+      },
+      {
+       "conversation": true,
+       "from": "hall",
+       "move": 1,
+       "sound": 1,
+       "to": "counter",
+       "visual": 1
+      },
+      {
+       "from": "counter",
+       "move": 1,
+       "sound": 1,
+       "to": "stove",
+       "visual": 1
+      },
+      {
+       "from": "hall",
+       "move": 1,
+       "sound": 1,
+       "to": "courtyard",
+       "visual": 1.25
+      },
+      {
+       "from": "hall",
+       "move": 1,
+       "sound": 1,
+       "to": "stairs",
+       "visual": 1
+      },
+      {
+       "barrier": "closed-door",
+       "from": "stairs",
+       "move": 1,
+       "sound": null,
+       "to": "guest_room",
+       "visual": null
+      }
+     ],
+     "locationId": "loc_xyy_tavern",
+     "responsibilityRules": [],
+     "schemaVersion": 1,
+     "standingDefaultZoneIds": {
+      "household_worker": "courtyard",
+      "lodging_guest": "guest_room",
+      "manager": "counter",
+      "proprietor": "hall"
+     },
+     "zones": {
+      "counter": {
+       "closed": false,
+       "id": "counter",
+       "label": "柜台"
+      },
+      "courtyard": {
+       "closed": false,
+       "id": "courtyard",
+       "label": "后院"
+      },
+      "guest_room": {
+       "closed": true,
+       "id": "guest_room",
+       "label": "楼上客房"
+      },
+      "hall": {
+       "closed": false,
+       "id": "hall",
+       "label": "堂前"
+      },
+      "stairs": {
+       "closed": false,
+       "id": "stairs",
+       "label": "楼梯口"
+      },
+      "stove": {
+       "closed": false,
+       "id": "stove",
+       "label": "灶边"
+      },
+      "threshold": {
+       "closed": false,
+       "id": "threshold",
+       "label": "门槛"
+      }
+     }
+    },
+    "workCapability": {
+     "definitions": {
+      "clear_hall_tables": {
+       "bodyLoadPerUnit": {
+        "energyDelta": 0,
+        "exertionDelta": 0,
+        "fatigueDelta": 0,
+        "staminaDelta": 0
+       },
+       "completionCondition": null,
+       "completionEffects": {
+        "objectNumericDeltas": [],
+        "objectNumericTransfers": []
+       },
+       "completionSound": null,
+       "durationSecondsPerUnit": 30,
+       "objectIds": [],
+       "requiredUnits": 2,
+       "taskLabel": "收净堂前两张空桌",
+       "templateId": "clear_hall_tables",
+       "toolIds": [
+        "tavern_tool_wiping_cloth"
+       ],
+       "unitAction": "收去一张空桌上的碗筷，把桌面擦净",
+       "unitLabel": "张桌",
+       "workKind": "cleaning",
+       "zoneId": "hall"
+      },
+      "fill_water_bucket": {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.025,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "completionCondition": null,
+       "completionEffects": {
+        "objectNumericDeltas": [],
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_resource_courtyard_water",
+           "path": [
+            "availableBuckets"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "取水处传来水流注入木桶的声音。",
+        "maxDistance": 1
+       },
+       "durationSecondsPerUnit": 15,
+       "objectIds": [
+        "tavern_resource_courtyard_water"
+       ],
+       "requiredUnits": 20,
+       "taskLabel": "从后院取水处装水",
+       "templateId": "fill_water_bucket",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "从后院取水处把水装进手中的桶",
+       "unitLabel": "桶水",
+       "workKind": "refill",
+       "zoneId": "courtyard"
+      },
+      "refill_stove_water": {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.01,
+        "exertionDelta": 0.02,
+        "fatigueDelta": 0.01,
+        "staminaDelta": -0.01
+       },
+       "completionCondition": {
+        "minimum": 1,
+        "objectId": "tavern_resource_water_vat",
+        "path": [
+         "fill"
+        ]
+       },
+       "completionEffects": {
+        "objectNumericDeltas": [],
+        "objectNumericTransfers": [
+         {
+          "from": {
+           "objectId": "tavern_tool_water_bucket",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 1
+          },
+          "maxUnits": 1,
+          "to": {
+           "maximum": 1,
+           "objectId": "tavern_resource_water_vat",
+           "path": [
+            "fill"
+           ],
+           "unitsPerValue": 2
+          }
+         }
+        ]
+       },
+       "completionSound": {
+        "content": "灶边响起桶中水注入水缸的声音。",
+        "maxDistance": 1
+       },
+       "durationSecondsPerUnit": 8,
+       "objectIds": [
+        "tavern_resource_water_vat"
+       ],
+       "requiredUnits": 2,
+       "taskLabel": "把灶边水缸添满",
+       "templateId": "refill_stove_water",
+       "toolIds": [
+        "tavern_tool_water_bucket"
+       ],
+       "unitAction": "将手中桶里的水倒入灶边水缸的剩余空间",
+       "unitLabel": "桶水",
+       "workKind": "refill",
+       "zoneId": "stove"
+      },
+      "split_firewood_bundles": {
+       "bodyLoadPerUnit": {
+        "energyDelta": -0.025,
+        "exertionDelta": 0.08,
+        "fatigueDelta": 0.045,
+        "staminaDelta": -0.035
+       },
+       "completionCondition": null,
+       "completionEffects": {
+        "objectNumericDeltas": [
+         {
+          "delta": -1,
+          "minimum": 0,
+          "objectId": "tavern_resource_unprocessed_firewood",
+          "path": [
+           "unprocessedBundles"
+          ]
+         },
+         {
+          "delta": 1,
+          "minimum": 0,
+          "objectId": "tavern_resource_sheltered_firewood",
+          "path": [
+           "processedBundles"
+          ]
+         }
+        ],
+        "objectNumericTransfers": []
+       },
+       "completionSound": {
+        "content": "后院传来斧刃劈入木料的脆响。",
+        "maxDistance": 3
+       },
+       "durationSecondsPerUnit": 42,
+       "objectIds": [
+        "tavern_resource_unprocessed_firewood"
+       ],
+       "requiredUnits": 2,
+       "taskLabel": "劈好后院两束湿柴",
+       "templateId": "split_firewood_bundles",
+       "toolIds": [
+        "tavern_tool_wood_axe"
+       ],
+       "unitAction": "劈开一束湿柴，码进有遮雨的柴堆",
+       "unitLabel": "束柴",
+       "workKind": "firewood",
+       "zoneId": "courtyard"
+      }
+     },
+     "progress": {
+      "clear_hall_tables": {
+       "completedUnits": 0
+      },
+      "fill_water_bucket": {
+       "completedUnits": 0
+      },
+      "refill_stove_water": {
+       "completedUnits": 0
+      },
+      "split_firewood_bundles": {
+       "completedUnits": 0
+      }
+     },
+     "schemaVersion": 1
+    }
+   }
+  },
+  "processes": [],
+  "schemaVersion": "tavern-world-runtime-v2.7-testable-vertical",
+  "sharedActivities": [],
+  "signals": [],
+  "socialFacts": [
+   {
+    "claimantId": "household:谢家",
+    "entityId": "loc_xyy_tavern",
+    "factId": "social-fact:tavern:household-ownership",
+    "kind": "ownership_claim",
+    "sourceEvidenceIds": [],
+    "topic": "望梯酒馆由谢家经营"
+   },
+   {
+    "affectedActorIds": [],
+    "entityId": "loc_xyy_tavern",
+    "factId": "social-fact:tavern:public-business",
+    "kind": "public_access_declaration",
+    "sourceEvidenceIds": [],
+    "topic": "堂前营业时向来客开放"
+   }
+  ],
+  "temporalAgenda": [
+   {
+    "conditions": [
+     {
+      "minimum": 2,
+      "objectId": "tavern_resource_sheltered_firewood",
+      "stateKey": "processedBundles"
+     },
+     {
+      "minimum": 1,
+      "objectId": "tavern_resource_water_vat",
+      "stateKey": "fill"
+     }
+    ],
+    "delayConsequence": "柴水未齐会记为营业准备延误；到时仍须实际完成，答应或描述做完不能抵账。",
+    "dueAtSeconds": 900,
+    "id": "tavern-opening-preparation",
+    "kind": "opening_preparation",
+    "label": "开门前的柴水准备",
+    "placeId": "loc_xyy_tavern",
+    "responsibleActorIds": [
+     "char_xyy_xiezenshi",
+     "char_xyy_xieheng",
+     "char_xyy_xiemu"
+    ],
+    "source": "configurable_scene_opening_schedule",
+    "status": "pending",
+    "warned": false,
+    "warningAtSeconds": 600
+   }
+  ],
+  "timePolicy": {
+   "defaultRestSeconds": 120,
+   "listeningSeconds": 10,
+   "maxBlockSeconds": 300,
+   "maxPlanBlocks": 4,
+   "minPlanBlocks": 1,
+   "mode": "scene",
+   "observationSeconds": 5,
+   "planningHorizonSeconds": 1800,
+   "repeatedWaitReviewLimit": 2,
+   "speechCharactersPerSecond": 4
+  },
+  "worldId": "world:golden:scene",
+  "worldVersion": 0
+ }
+}

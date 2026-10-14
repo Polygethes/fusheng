@@ -1,0 +1,504 @@
+{
+  "blueprintVersion": 1,
+  "meta": {
+    "id": "tiny_hamlet",
+    "title": "青石坳",
+    "premise": "山脚下只有两户人家和一间药铺的小村。入秋第一场寒潮前，李家的木匠老爹闪了腰，王婶的药铺缺了一味要去竹林里采的药。",
+    "genre": "古风山村",
+    "tone": "温情",
+    "language": "zh-Hans",
+    "startDay": "寒露前一日",
+    "startClock": "07:00",
+    "startLabel": "辰时初",
+    "seed": 7
+  },
+  "town": {
+    "name": "青石坳",
+    "terrain": {
+      "river": null,
+      "forest": "east",
+      "hills": "north",
+      "fields": "south"
+    },
+    "sites": [
+      {
+        "id": "li_home",
+        "name": "李家",
+        "type": "home",
+        "householdId": "li"
+      },
+      {
+        "id": "herb_shop",
+        "name": "王记药铺",
+        "type": "herb_shop",
+        "householdId": "wang",
+        "attachedHome": true
+      },
+      {
+        "id": "square",
+        "name": "晒谷场",
+        "type": "square"
+      },
+      {
+        "id": "well",
+        "name": "老井",
+        "type": "well"
+      },
+      {
+        "id": "east_wood",
+        "name": "东坡竹林",
+        "type": "forest"
+      }
+    ]
+  },
+  "households": [
+    {
+      "id": "li",
+      "name": "李家",
+      "siteId": "li_home"
+    },
+    {
+      "id": "wang",
+      "name": "王家",
+      "siteId": "herb_shop"
+    }
+  ],
+  "residents": [
+    {
+      "id": "li_dashan",
+      "name": "李大山",
+      "age": 46,
+      "role": "木匠，李家当家",
+      "householdId": "li",
+      "workSiteId": "li_home",
+      "appearance": {
+        "skin": "#d6a882",
+        "hair": "#33292c",
+        "robe": "#6e5c40",
+        "sash": "#2a2420",
+        "styles": [
+          "bun",
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.8,
+        "introversion": 0.7,
+        "persistence": 0.8,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.4,
+        "care": 0.6,
+        "caution": 0.4,
+        "impulsivity": 0.5
+      },
+      "skills": [
+        "carpentry",
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "话少，句子短，爱用活计打比方；疼也不喊，只说“没事”。",
+        "samples": [
+          "没事，扭了一下。",
+          "木头不等人。"
+        ]
+      },
+      "situation": "昨天扛梁闪了腰，今天还答应给王婶修药柜的抽屉。",
+      "desires": [
+        {
+          "verb": "修好",
+          "object": "王记药铺的药柜抽屉",
+          "outcome": "药柜抽屉能顺顺当当拉开",
+          "strength": 0.6
+        }
+      ],
+      "principles": [
+        "答应了的活不能拖"
+      ],
+      "boundaries": [
+        {
+          "protects": "当家人的脸面",
+          "trigger": "被人当着外人说他老了",
+          "response": "板着脸不接话"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "07:00",
+          "activity": "院里磨刨子",
+          "siteId": "li_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "做木活",
+          "siteId": "li_home"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天傍晚",
+          "content": "我扛梁时腰里咯噔一下，小禾看见了，我说没事。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "li_xiaohe",
+      "name": "李小禾",
+      "age": 15,
+      "role": "李家女儿",
+      "householdId": "li",
+      "workSiteId": "li_home",
+      "appearance": {
+        "skin": "#f0c6a4",
+        "hair": "#2e2428",
+        "robe": "#5a8a7a",
+        "sash": "#c8b080",
+        "styles": [
+          "long"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.3,
+        "persistence": 0.6,
+        "conscientiousness": 0.5,
+        "competitiveness": 0.5,
+        "care": 0.8,
+        "caution": 0.3,
+        "impulsivity": 0.6
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "嘴快，爱追问，着急时一句话里带好几个问号。",
+        "samples": [
+          "爹你又逞强！",
+          "王婶，那味药长什么样？"
+        ]
+      },
+      "situation": "看出爹的腰伤不轻，想替他把药求来。",
+      "desires": [
+        {
+          "verb": "求到",
+          "object": "给爹治腰的药",
+          "outcome": "爹把药贴上了",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "不让爹一个人硬扛"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "07:30",
+          "activity": "做早饭",
+          "siteId": "li_home"
+        },
+        {
+          "from": "08:00",
+          "to": "10:00",
+          "activity": "去井边打水",
+          "siteId": "well"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天傍晚",
+          "content": "爹扛梁时脸一下白了，他说没事，可晚饭只吃了半碗。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "wang_shen",
+      "name": "王婶",
+      "age": 52,
+      "role": "药铺掌柜，懂草药",
+      "householdId": "wang",
+      "workSiteId": "herb_shop",
+      "appearance": {
+        "skin": "#e4b896",
+        "hair": "#3a2c28",
+        "robe": "#7a6a8a",
+        "sash": "#3a3040",
+        "styles": [
+          "bun",
+          "apron"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.4,
+        "persistence": 0.7,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.3,
+        "care": 0.8,
+        "caution": 0.7,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "medicine",
+        "herbalism"
+      ],
+      "speech": {
+        "style": "慢条斯理，爱念叨，药名张口就来。",
+        "samples": [
+          "急什么，药得一样一样配。"
+        ]
+      },
+      "situation": "治腰伤的方子缺一味竹林里的伸筋草，儿子王二答应去采，还没动身。",
+      "desires": [
+        {
+          "verb": "配齐",
+          "object": "治腰伤的药包",
+          "outcome": "药包配好、交到李大山手里",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "药不对症不给人"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "07:00",
+          "to": "18:00",
+          "activity": "看铺子、配药",
+          "siteId": "herb_shop"
+        }
+      ],
+      "memories": [
+        {
+          "when": "去年冬天",
+          "content": "李大山给我修过一回门槛，没收钱。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "wang_er",
+      "name": "王二",
+      "age": 20,
+      "role": "王婶的儿子",
+      "householdId": "wang",
+      "workSiteId": "herb_shop",
+      "appearance": {
+        "skin": "#eab48c",
+        "hair": "#3a2a20",
+        "robe": "#b8743c",
+        "sash": "#5a6a3a",
+        "styles": [],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.4,
+        "persistence": 0.3,
+        "conscientiousness": 0.3,
+        "competitiveness": 0.6,
+        "care": 0.5,
+        "caution": 0.3,
+        "impulsivity": 0.7
+      },
+      "skills": [
+        "herbalism",
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "懒洋洋，爱打岔，被说中了就嘿嘿笑。",
+        "samples": [
+          "急啥，竹林又不会跑。"
+        ]
+      },
+      "situation": "答应娘去竹林采伸筋草，心里惦记着去晒谷场看人下棋。",
+      "desires": [
+        {
+          "verb": "赢",
+          "object": "晒谷场的那盘棋",
+          "outcome": "在晒谷场赢下一盘",
+          "strength": 0.5
+        }
+      ],
+      "principles": [],
+      "boundaries": [
+        {
+          "protects": "自己的闲工夫",
+          "trigger": "被一遍遍催",
+          "response": "嘴上应着，脚下不动"
+        }
+      ],
+      "routine": [
+        {
+          "from": "09:00",
+          "to": "11:00",
+          "activity": "去竹林采药",
+          "siteId": "east_wood"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前天",
+          "content": "在晒谷场输了孙伯一盘棋，他笑我手臭。"
+        }
+      ],
+      "secrets": []
+    }
+  ],
+  "relationships": [
+    {
+      "from": "li_xiaohe",
+      "to": "li_dashan",
+      "label": "父女 / 心疼又着急",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 85,
+        "protection": 60
+      },
+      "unspoken": "你别总说没事。",
+      "misreading": ""
+    },
+    {
+      "from": "li_dashan",
+      "to": "li_xiaohe",
+      "label": "父女 / 不想让她操心",
+      "address": [
+        "小禾"
+      ],
+      "feelings": {
+        "love": 85,
+        "protection": 70,
+        "power": 50
+      },
+      "unspoken": "腰是疼，可不能让孩子看出来。",
+      "misreading": ""
+    },
+    {
+      "from": "wang_shen",
+      "to": "wang_er",
+      "label": "母子 / 恨铁不成钢",
+      "address": [
+        "二子"
+      ],
+      "feelings": {
+        "love": 75,
+        "power": 55
+      },
+      "unspoken": "",
+      "misreading": "以为他又去偷懒。"
+    },
+    {
+      "from": "wang_er",
+      "to": "wang_shen",
+      "label": "母子 / 怕念叨",
+      "address": [
+        "娘"
+      ],
+      "feelings": {
+        "love": 65,
+        "wantsToEscape": 40
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "li_xiaohe",
+      "to": "wang_shen",
+      "label": "邻里 / 求药",
+      "address": [
+        "王婶"
+      ],
+      "feelings": {
+        "dependence": 50
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "wang_shen",
+      "to": "li_dashan",
+      "label": "邻里 / 欠着人情",
+      "address": [
+        "大山"
+      ],
+      "feelings": {
+        "love": 30,
+        "protection": 40
+      },
+      "unspoken": "",
+      "misreading": ""
+    }
+  ],
+  "opening": {
+    "situation": "天刚亮，寒潮要来了。李大山腰伤发作，王记药铺的药还差一味伸筋草。",
+    "positions": {
+      "li_dashan": "li_home",
+      "li_xiaohe": "li_home",
+      "wang_shen": "herb_shop",
+      "wang_er": "herb_shop"
+    },
+    "objects": [
+      {
+        "name": "伸筋草",
+        "siteId": "east_wood",
+        "holder": null,
+        "state": {
+          "bundles": 0,
+          "needed": 1
+        },
+        "known": "public",
+        "madeAt": "east_wood"
+      },
+      {
+        "name": "腰伤药包",
+        "siteId": "herb_shop",
+        "holder": null,
+        "state": {
+          "complete": false
+        },
+        "known": "public",
+        "madeAt": "herb_shop"
+      }
+    ],
+    "deadlines": [
+      {
+        "label": "午时前把腰伤药交到李大山手里",
+        "dueClock": "12:00",
+        "responsible": [
+          "wang_shen"
+        ],
+        "knownBy": [
+          "wang_shen",
+          "wang_er",
+          "li_xiaohe"
+        ],
+        "conditions": [
+          {
+            "kind": "object_ready",
+            "object": "腰伤药包"
+          },
+          {
+            "kind": "object_holder",
+            "object": "腰伤药包",
+            "holder": "li_dashan"
+          }
+        ],
+        "consequence": "寒潮一到腰伤更重，李大山就得卧床好几天。"
+      }
+    ],
+    "mysteries": [
+      "晒谷场边上那棵老槐树下埋着什么"
+    ],
+    "events": [],
+    "visitors": []
+  }
+}

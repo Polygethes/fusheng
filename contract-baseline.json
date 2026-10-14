@@ -1,0 +1,73 @@
+{
+  "note": "Current fixed-Wangti-Tavern product contracts are expected to be green. New active red entries are regressions. Historical general-sandbox and neutral-city contracts remain runnable under :retired names and are recorded below with their current replacements.",
+  "recordedAt": "2026-08-30",
+  "knownFailing": [],
+  "slowContracts": {
+    "tavern-v27-seven-day-life-loop:test": {
+      "timeoutMs": 420000,
+      "reason": "Seven simulated days of deterministic life stages (up to 2000 character turns); ~190s alone on an M-series laptop, dominated by execution-checkpoint cloning."
+    },
+    "town-day:test": {
+      "timeoutMs": 240000,
+      "reason": "A whole town day of schedules (~570 character turns); 70-85s alone, so it brushes the 90s default when the suite runs eight at a time."
+    }
+  },
+  "retiredCurrentProductScope": [
+    {
+      "contract": "accepted-relationship-dialogue-location:retired",
+      "script": "scripts/acceptedRelationshipDialogueLocation.mjs",
+      "reason": "Targets the former generic accepted-relationship/location pipeline rather than the fixed v2.7 Wangti Tavern runtime.",
+      "replacementTests": [
+        "tavern-visitor-position-provenance:test",
+        "tavern-v27-arrival-hospitality:test"
+      ]
+    },
+    {
+      "contract": "dialogue-question-branches:retired",
+      "script": "scripts/dialogueAnswersQuestionBranches.mjs",
+      "reason": "Asserts prewritten legacy question branches instead of participant-owned conversation continuity.",
+      "replacementTests": [
+        "character-agent-atomic-commit:test",
+        "tavern-v27-conversation-continuity:test"
+      ]
+    },
+    {
+      "contract": "local-theater-outcome-owner:retired",
+      "script": "scripts/localTheaterOutcomeBelongsToActor.mjs",
+      "reason": "Exercises the former local-theater mock path; current ownership is enforced at the Character private-world-outcome boundary.",
+      "replacementTests": [
+        "character-private-world-outcome-reducer:test"
+      ]
+    },
+    {
+      "contract": "observer-sandbox-agency:retired",
+      "script": "scripts/observerSandboxAgency.mjs",
+      "reason": "Targets the unshipped general sandbox observer rather than the fixed-stage long-horizon v2.7 observer.",
+      "replacementTests": [
+        "tavern-v27-full-day-autonomy:test",
+        "v27-main-ui-integration:test"
+      ]
+    },
+    {
+      "contract": "same-scene-exchanges-connect:retired",
+      "script": "scripts/sameSceneExchangesConnectAsOneScene.mjs",
+      "reason": "Uses legacy mock exchange stitching; current conversations bind owner-private opaque anchors to exact server-owned parent turns.",
+      "replacementTests": [
+        "tavern-v27-conversation-continuity:test"
+      ]
+    },
+    {
+      "contract": "world-setup:retired",
+      "script": "scripts/worldSetupFlow.mjs",
+      "reason": "Specifies a blank general-world setup that PRODUCT.md explicitly marks as an unshipped future goal.",
+      "replacementTests": []
+    },
+    {
+      "contract": "xianxia-neutral-city:retired",
+      "script": "scripts/xianxiaNeutralCityWorld.mjs",
+      "reason": "Specifies the retired neutral-city product; the shipping scope is the authored Wangti Tavern fixed stage in PRODUCT.md.",
+      "replacementTests": []
+    }
+  ],
+  "flaky": {}
+}

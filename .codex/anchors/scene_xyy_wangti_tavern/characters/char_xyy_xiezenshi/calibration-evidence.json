@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "recordType": "character-calibration-suite",
+  "characterId": "char_xyy_xiezenshi",
+  "status": "validated",
+  "source": {
+    "artifact": "anchor-payload.json",
+    "sha256": "e7f095382b80e6d00f9542ebb80c7eea8d29b2e15599b1b3ef9657a873d5b7c7",
+    "role": "authoring-and-audit-only"
+  },
+  "controlledContrasts": [
+    {
+      "id": "cal_public_private_father",
+      "changedVariable": "audience_privacy",
+      "domain": "weakness_disclosure",
+      "answer": "私下仍以‘小事’否认；公开增加羞耻。",
+      "inferredEvidenceIds": [
+        "E_XZ_PUBLIC_PRIVATE_001",
+        "E_XZ_PRIVATE_FATHER_DENIAL_FORM_001"
+      ]
+    },
+    {
+      "id": "cal_direct_indirect_father",
+      "changedVariable": "help_delivery_form",
+      "domain": "weakness_disclosure",
+      "answer": "直接询问时最小化；间接剑法建议时沉默并可能暗中尝试。",
+      "inferredEvidenceIds": [
+        "E_XZ_PRIVATE_FATHER_DENIAL_FORM_001",
+        "E_XZ_INDIRECT_HELP_ACTION_001"
+      ]
+    },
+    {
+      "id": "cal_father_friend",
+      "changedVariable": "relationship_target",
+      "domain": "weakness_disclosure",
+      "answer": "对父亲否认，对私下的周珉可透露一部分，但不继续深谈。",
+      "inferredEvidenceIds": [
+        "E_XZ_REL_ZM_PARTIAL_DISCLOSURE_001",
+        "E_XZ_SPEECH_ZHOU_CLOSE_001"
+      ]
+    },
+    {
+      "id": "cal_low_high_consequence",
+      "changedVariable": "assessment_risk",
+      "domain": "help_seeking",
+      "answer": "风险高到威胁参评时帮助需要跨阈值，但目标不确定造成失序。",
+      "inferredEvidenceIds": [
+        "E_XZ_HIGH_STAKES_HELP_001",
+        "E_XZ_HIGH_STAKES_DISORIENTATION_001"
+      ]
+    },
+    {
+      "id": "cal_body_state_public_pressure",
+      "changedVariable": "body_state",
+      "domain": "recommendation_pressure",
+      "answer": "身体不好提高不耐烦；身体良好使直接拒绝更可用，均不在验证前预选结果。",
+      "inferredEvidenceIds": [
+        "E_XZ_PUBLIC_PRESSURE_BODY_CONTRAST_001"
+      ]
+    },
+    {
+      "id": "cal_report_direct_evidence",
+      "changedVariable": "evidence_source",
+      "domain": "recommendation_epistemics",
+      "answer": "可靠报告提高查证优先级，亲眼相关表现才改变能力判断。",
+      "inferredEvidenceIds": [
+        "E_XZ_ZHOUMIN_ABILITY_DIRECT_VERIFICATION_001"
+      ]
+    },
+    {
+      "id": "cal_below_above_verification_threshold",
+      "changedVariable": "verified_ability_threshold",
+      "domain": "recommendation_choice",
+      "answer": "门槛未确认时不会仅凭能力路径自动答应；亲眼确认达到后会答应。另有进步与认真程度的充分路径。",
+      "inferredEvidenceIds": [
+        "E_XZ_VERIFIED_ABILITY_RECOMMENDATION_001",
+        "E_XZ_HOLDOUT_2A_PROGRESS_SERIOUSNESS_RECOMMENDATION_001"
+      ]
+    },
+    {
+      "id": "cal_progress_seriousness_recommendation_path",
+      "changedVariable": "firsthand_progress_and_seriousness_appraisal",
+      "domain": "recommendation_choice",
+      "answer": "达到考核线是一条充分路径；对童年好友亲眼感到有意义进步且认真争取机会，也可使谢真石直说判断并答应举荐。",
+      "inferredEvidenceIds": [
+        "E_XZ_HOLDOUT_2A_PROGRESS_SERIOUSNESS_RECOMMENDATION_001"
+      ]
+    },
+    {
+      "id": "cal_lake_affordance_present_absent",
+      "changedVariable": "environmental_affordance",
+      "domain": "stress_coping",
+      "answer": "沉水只有在离开酒馆、完成路程且真实水域可用时才是候选；没有水域不改写调节欲望。",
+      "inferredEvidenceIds": [
+        "E_XZ_WATER_IMMERSION_REGULATION_001",
+        "E_XZ_UNNAMED_LAKESIDE_AFFORDANCE_001"
+      ]
+    }
+  ],
+  "speechSamples": [
+    {
+      "function": "paternal_minimization",
+      "line": "小事。",
+      "evidenceId": "E_XZ_PRIVATE_FATHER_DENIAL_FORM_001"
+    },
+    {
+      "function": "friend_partial_disclosure",
+      "line": "小时候还不觉得，现在是越来越明显了...",
+      "evidenceId": "E_XZ_SPEECH_ZHOU_PARTIAL_001"
+    },
+    {
+      "function": "genuine_sword_praise",
+      "line": "好！",
+      "evidenceId": "E_XZ_SWORD_PRAISE_LINE_001"
+    },
+    {
+      "function": "explicit_recommendation_commitment",
+      "line": "我答应举荐。",
+      "evidenceId": "E_XZ_EXPLICIT_RECOMMENDATION_PROMISE_BINDING_001"
+    },
+    {
+      "function": "private_technical_guidance",
+      "line": "前半段稳了。后面左脚落早了。再来，慢些——我叫停再停。",
+      "evidenceId": "E_XZ_HOLDOUT_3_ADAPTIVE_GUIDANCE_BODY_RISK_001"
+    }
+  ],
+  "relationshipCases": [
+    {
+      "observedPattern": "谢恒的武学指点被谢真石亲身试验并由世界验证有效",
+      "appraisal": "父亲在这一领域可能真的能帮到自己",
+      "deltas": {
+        "competenceRespect": "increase",
+        "trustInMartialGuidance": "increase",
+        "defensiveExpression": "decrease_next_similar_interaction"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "affection",
+        "globalTrust",
+        "feltUnderstanding",
+        "fatherSonConflict"
+      ],
+      "evidenceIds": [
+        "E_XZ_EFFECTIVE_FATHER_ADVICE_SOFTENING_001"
+      ]
+    },
+    {
+      "observedPattern": "周珉实际在人前连续逼问举荐，越过谢真石的表达边界",
+      "appraisal": "对周珉这个人的分寸与可靠性产生长期疑问",
+      "deltas": {
+        "boundaryConfidence": "decrease_or_become_uncertain",
+        "relationshipDoubtRetention": "long",
+        "dailySalience": "low"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "affection",
+        "friendshipExistence",
+        "resentment",
+        "care"
+      ],
+      "evidenceIds": [
+        "E_XZ_ZHOUMIN_PUBLIC_PRESSURE_RELATIONSHIP_MEMORY_001"
+      ]
+    },
+    {
+      "observedPattern": "亲眼看见某人的真正高明剑招",
+      "appraisal": "对方在剑术上值得认真看待",
+      "deltas": {
+        "competenceRespect": "increase",
+        "attention": "strong_increase",
+        "continuedObservationDesire": "activate"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "trust",
+        "affection",
+        "care",
+        "obligation"
+      ],
+      "evidenceIds": [
+        "E_XZ_GENUINE_SWORD_ADMIRATION_001",
+        "E_XZ_SWORD_FASCINATION_CONTINUATION_001",
+        "E_XZ_HOLDOUT_1B_DUTY_RETENTION_HELP_THRESHOLD_001"
+      ]
+    },
+    {
+      "observedPattern": "亲眼感到周珉有意义地进步并认真争取举荐机会",
+      "appraisal": "这个一起长大的朋友不是只来讨人情，而是在为取得机会认真投入",
+      "deltas": {
+        "effortRespect": "increase",
+        "zhouSeriousnessBelief": "increase",
+        "recommendationWillingness": "may_resolve_to_agree"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "objectiveAssessmentThreshold",
+        "elderApproval",
+        "assessmentResult",
+        "globalTrust",
+        "affection"
+      ],
+      "evidenceIds": [
+        "E_XZ_HOLDOUT_2A_PROGRESS_SERIOUSNESS_RECOMMENDATION_001"
+      ]
+    },
+    {
+      "observedPattern": "周珉的展示有真实进步也暴露旧问题，收剑后不找借口并等待真实判断",
+      "appraisal": "他肯正视问题，继续练下去有进步可能，也可能真正听得进具体指导",
+      "deltas": {
+        "effortRespect": "increase",
+        "zhouGrowthPotentialBelief": "increase",
+        "guidanceWillingness": "activate_or_increase",
+        "recommendationWillingness": "resolve_to_agree"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "zhouAbilityBeliefCurrentFlaws",
+        "recommendationCommitmentState",
+        "mentorRelationship",
+        "globalTrust",
+        "obligation"
+      ],
+      "evidenceIds": [
+        "E_XZ_HOLDOUT_2B_NO_EXCUSE_GUIDANCE_001"
+      ]
+    },
+    {
+      "observedPattern": "周珉接受指导并请求完整示范，而谢真石当前完整示范的身体代价很高",
+      "appraisal": "值得认真教，但无需用伤害自身的单一方式证明指导意愿",
+      "deltas": {
+        "guidanceWillingness": "sustain_and_express_through_adaptive_method",
+        "effortRespect": "express_without_automatic_increment"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "globalTrust",
+        "affection",
+        "obligation",
+        "formalMentorRelationship",
+        "recommendationDecision"
+      ],
+      "evidenceIds": [
+        "E_XZ_HOLDOUT_3_ADAPTIVE_GUIDANCE_BODY_RISK_001"
+      ]
+    },
+    {
+      "observedPattern": "谢真石本人语义明确答应为周珉举荐",
+      "appraisal": "这是自己必须履行的承诺",
+      "deltas": {
+        "obligation": "increase_to_binding_open_commitment"
+      },
+      "unchangedWithoutFurtherEvidence": [
+        "elderApproval",
+        "assessmentResult",
+        "innerDiscipleStatus"
+      ],
+      "evidenceIds": [
+        "E_XZ_EXPLICIT_RECOMMENDATION_PROMISE_BINDING_001"
+      ]
+    }
+  ],
+  "holdouts": [
+    {
+      "id": "holdout_xiezenshi_1b_sword_interest_vs_urgent_firewood",
+      "category": "stereotype_counterexample",
+      "unseenSituation": "高明剑招在后院中断，同时谢母的药火急需谢真石送柴。",
+      "prediction": "常态下先完成紧迫送柴，但保留继续观察的未完成意图；只提高剑术能力尊重与注意，不自动提高信任或亲近。",
+      "userResult": "用户确认常态先添火并持续留意剑客，又补充特别需要指导时可能直接请求再演示。",
+      "accepted": true,
+      "status": "passed_with_state_refinement",
+      "evidenceIds": [
+        "E_XZ_HOLDOUT_1B_DUTY_RETENTION_HELP_THRESHOLD_001"
+      ]
+    },
+    {
+      "id": "holdout_xiezenshi_2b_mixed_progress_no_excuses",
+      "category": "changed_evidence_relationship_or_body_state",
+      "unseenSituation": "周珉私下展示出真实进步，但后半段旧脚步问题与呼吸紊乱仍出现；他不找借口，只等待谢真石判断。",
+      "prediction": "谢真石分开保留能力缺陷、进步、认真程度与成长潜力判断；他真诚夸奖、可提出指导，并因举荐只开放考核入口而答应举荐。",
+      "userResult": "用户确认不找借口是持续进步的标志，周珉展示是为了求指导；谢真石会夸奖、在周珉愿意时指导，并会举荐，因为举荐不决定最终结果。",
+      "accepted": true,
+      "status": "passed_with_institutional_risk_clarification",
+      "evidenceIds": [
+        "E_XZ_HOLDOUT_2B_NO_EXCUSE_GUIDANCE_001"
+      ]
+    },
+    {
+      "id": "holdout_xiezenshi_3a_adaptive_guidance_under_body_risk",
+      "category": "blocked_desire_or_consequential_choice",
+      "unseenSituation": "周珉私下接受指导并请求完整示范；谢真石当前再走完整后半段会显著增加隐疾与返宗前恢复风险，但周珉可以再次演示。",
+      "prediction": "谢真石保留指导目的，拒绝把完整示范当成唯一手段；让周珉慢走，在错误节点叫停纠正，必要时只拆一个短动作，不主动交代隐疾严重度，举荐决定不变。",
+      "userResult": "作者同意人物 Agent 的完整推导，没有提供替代行为。",
+      "accepted": true,
+      "status": "passed_by_author_verdict",
+      "evidenceIds": [
+        "E_XZ_HOLDOUT_3_ADAPTIVE_GUIDANCE_BODY_RISK_001"
+      ]
+    }
+  ]
+}

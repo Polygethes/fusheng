@@ -1,0 +1,21 @@
+import assert from "node:assert/strict";
+import { resetState, getState, saveDraft, acceptDraft } from "../src/state/store.js";
+import { playFromServer, modelStatus } from "../src/server/modelRouter.mjs";
+
+resetState();
+const state = getState();
+state.ui.engineMode = "mock";
+state.ui.activeCharacterIds = ["char_shen", "char_lin"];
+const status = modelStatus("mock");
+assert.equal(status.version, "1.2.0");
+assert.ok(String(status.pipeline || "").includes("PrivateSimulator") || String(status.pipeline || "").includes("IntentPlanner"), "pipeline should name realtime simulator or intent planner");
+const draft = await playFromServer(state, { mode: "mock" });
+assert.ok(draft.audit?.planAudit || "planUseScore" in draft.audit, "draft audit should include plan audit fields");
+assert.ok(draft.updateBundle?.characterPlans?.length, "updateBundle should advance character plans");
+assert.ok(draft.updateBundle?.stateChangeReasons?.some((reason) => reason.kind === "intent_plan" || reason.kind === "intent_plan_audit" || reason.kind === "character_plan" || reason.kind === "character_plan_audit"), "state reasons should include intent plan reasons");
+saveDraft(draft);
+const canon = acceptDraft(draft.id, draft.updateBundle);
+const next = getState();
+assert.ok(canon?.id, "accepted draft should create canon event");
+assert.ok(next.characterPlans.length, "plans should persist after accept");
+console.log("intentPlanner:smoke ok", { draftId: draft.id, planUseScore: draft.audit.planUseScore, plans: next.characterPlans.length });

@@ -1,0 +1,20 @@
+.env
+.env.local
+.DS_Store
+node_modules/
+
+# 本地过程记录与运行产物（不公开）
+findings.md
+progress.md
+task_plan.md
+.codex/*
+!.codex/anchors/
+.impeccable/
+.superpowers/
+.tmp/
+sim-runs/*
+!sim-runs/2026-09-07-pi-model-20turns/
+!sim-runs/2026-09-07-pi-model-resume-20turns/
+!sim-runs/jiexing-demo-20turns/
+docs/2026-10-11-deep-psychology-optimization.md
+docs/2026-10-12-1561-run-analysis.md

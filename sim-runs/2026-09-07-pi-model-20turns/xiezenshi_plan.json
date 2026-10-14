@@ -1,0 +1,12 @@
+{
+  "ownerAuthority": "character-agent",
+  "planBlocks": [
+    { "relativeStartSeconds": 0, "relativeEndSeconds": 5400, "activityType": "补足开门前的柴和水", "desiredZoneHandle": "courtyard", "privatePurpose": "开门前的柴水是答应下来的活，天不亮就把它做完，酒馆才能按时开门。", "sourceIds": ["duty_xiezenshi_opening_fuel_water", "household_worker", "belief:xiezenshi:recommendation-request-is-open"] },
+    { "relativeStartSeconds": 5400, "relativeEndSeconds": 21600, "activityType": "柜台后照应早间茶水与来往客人", "desiredZoneHandle": "counter", "privatePurpose": "早间人多，站在柜台后看得见整个大堂，谁要茶谁要饭都不会慢待。", "sourceIds": ["household_worker", "duty_xiezenshi_keep_passage_clear"] },
+    { "relativeStartSeconds": 21600, "relativeEndSeconds": 39600, "activityType": "在后院练一阵自己的功课", "desiredZoneHandle": "courtyard", "privatePurpose": "周珉托的引荐还悬着，考核的事没个准信；身子骨里有旧患，这份功课一天都不能断。", "sourceIds": ["belief:xiezenshi:upcoming-assessment-and-return", "belief:xiezenshi:body-endurance-and-hidden-ailment", "episode:xiezenshi:repeated-water-immersion-habit"] },
+    { "relativeStartSeconds": 39600, "relativeEndSeconds": 57600, "activityType": "午间照应堂内茶饭，顺手留意洛照的动静", "desiredZoneHandle": "hall", "privatePurpose": "晌午最忙，把过道让清楚；也看看洛照今天是什么神色，引荐的话好挑时机开口。", "sourceIds": ["duty_xiezenshi_keep_passage_clear", "belief:xiezenshi:zhou-ability-near-threshold"] },
+    { "relativeStartSeconds": 57600, "relativeEndSeconds": 72000, "activityType": "再补一遍柴堆，确认够晚饭的量", "desiredZoneHandle": "courtyard", "privatePurpose": "答应过自己晚饭前把灶边柴堆补足，趁下午人少先去后院劈柴搬柴。", "sourceIds": ["duty_xiezenshi_opening_fuel_water", "household_worker"] },
+    { "relativeStartSeconds": 72000, "relativeEndSeconds": 82800, "activityType": "晚间在柜台后守堂，照应灯油和门栓", "desiredZoneHandle": "counter", "privatePurpose": "晚间客人话多，柜台后听着就好；顺带把门栓灯油这些收尾的活记在心上。", "sourceIds": ["household_worker", "duty_xiezenshi_keep_passage_clear"] },
+    { "relativeStartSeconds": 82800, "relativeEndSeconds": 86400, "activityType": "收拾歇息，睡前把明早要用的水缸看一眼", "desiredZoneHandle": "stairs", "privatePurpose": "忙了一天，肩膀该歇了；睡前过一眼水缸，明早就不至于手忙脚乱。", "sourceIds": ["character-private-body-need:char_xyy_xiezenshi:fatigue", "duty_xiezenshi_opening_fuel_water"] }
+  ]
+}

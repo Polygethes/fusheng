@@ -1,0 +1,72 @@
+《人物小镇》v2.7 — 世界持久化 + 真续演 20 回合完整战报
+================================================================
+日期：2026-09-07（最终结算完成）
+运行时：character_town_app_v12 two-call 人物代理协议（真实运行时结算）
+驱动：sim-model-relay.mjs（端口 8791，非阻塞 /respond，checkpoint 持久化）
+模型：Omen Alpha（外部真实模型，即本 agent）
+
+一、本次测试解决的核心问题
+----------------------------------------------------------------
+用户要求「真正的续演，而不是重演」。实现路径：
+1. sim-model-relay.mjs 增加世界状态持久化：每回合结算后调用
+   instance.runtime.checkpoint() 落盘 world-save.json（turnLimit/settledTurns/checkpoint）。
+2. 中继重启时若存在存档，用 createTavernWorldRuntimeV27(state,{checkpoint}) 恢复——
+   世界从断点继续，不再从头重演。
+3. /respond 改为非阻塞（202 立即返回，pump 后台执行），提交瞬间完成（~2ms）。
+
+二、世界重启后的重演段（第 1-6 回合，与首次 20 回合世界高度一致）
+----------------------------------------------------------------
+T1  三角色日计划（谢真石/洛照/周珉）
+T2  谢真石招呼周珉：「周珉，来了。……这包是给娘的药？先坐。我去后院把柴水补上。」
+T3  洛照观察：辨认提短剑男子是否谢真石
+T4  周珉问交割时机：「你是这会儿就收，还是等你把柴水忙完？」
+T5  谢真石：「回头收。等我柴水忙完，你把清单理好，一并交割。」
+T6  周珉 handle：取出送药清单理好
+
+三、真续演段（第 7-20 回合，新故事推进）
+----------------------------------------------------------------
+T7  谢真石 move→后院（worldVersion 6）
+T8  谢真石 reflection_due 反思（结算为 T10 位）
+T11 洛照通名（speech）：「请教——可是谢真石谢兄当面？在下洛照，有拜帖求见。」
+T12 周珉 rest：坐稳等他回来，清单在膝上
+T13 周珉 observe：留意后院入口，他一回来就交割
+T14 谢真石应名（speech）：「不敢当，正是谢真石。帖先拿来看——堂前坐，我忙完手里的活就过来。」
+T15 洛照呈帖（handle/partial）+ 言明：「洛照，云水峰门下。帖上写的是求教——
+    若谢兄允准，想讨一场正大的指点。」
+T16 周珉 observe（继续守）
+T17 谢真石 handle：拿起劈柴斧开劈
+T18 周珉 observe：留意后院入口的动静
+T19 谢真石 reflection（反思：两种等待；应答的时限感）
+T20 洛照 rest：持帖立于原地，安心等答复 —— settled=20/20，世界按 turnLimit 收束
+
+故事线状态（20 回合收束时）：
+- 周珉：药包+清单就绪，只等交割
+- 洛照：通名→呈帖→言明求教完成，等谢真石答复（第二次正式较量诉求）
+- 谢真石：应名+允诺看帖，正在后院劈柴，忙完即答复
+
+四、统计
+----------------------------------------------------------------
+本段（中继自持久化重启后）模型调用：56 次，总生成 16,829s
+  avg 300.5s / median 22.5s / min 0.3s / max 13,290s（max 为长测试旧段残留）
+本次会话续跑段（zm5 起）：24 次调用
+协议修复（repair）：11 次（含证据窗漂移、EPISTEMIC_POSITION_CARRIED_UNKNOWN、
+  CONVERSATION_DISPOSITION_WITHOUT_SPEECH、REALIZATION_ACTION_SUBSTITUTED、
+  CHOICE_UNKNOWN 等）
+最终两个 RUNNEXT_ERROR：TURN_COMMIT_REJECTED（早期 'realize' 提交被原子校验拒），
+  但最终回合以正确路径结算，settled=20/20 达成。
+本地处理：每阶段 schema 生成 0-1ms，提交 2-3ms；等待全部为模型生成时间。
+
+五、极简干净模式（本次最重要方法论成果）
+----------------------------------------------------------------
+高频死亡根因：复用旧文件时证据窗/心理源/候选 ID 漂移。
+稳定解法——每回合评估阶段按当前 rcEvidence 现场构造最小干净评估：
+- noticedEvidenceIds ⊆ 本轮 rcEvidence
+- beliefOperations=[]、threadAppraisals=[]、entityModelUpdates 尽量空
+- epistemicPositions 全部全新完整内容（不携带 carriedUnchanged）
+- desireGroundings 只挂 activationPsychologicalSourceIds（ownedSources 内）
+→ 极简模式提交成功率接近 100%（zm5m/xz6m/xz7m/zm6b/zm8m/lz5r 全部一次过或一次修复）
+
+六、持久化验证
+----------------------------------------------------------------
+world-save.json（~757KB）每回合落盘，含完整 runLog（20 条结算记录）。
+中继重启即恢复；如需突破 turnLimit 继续演，重启时把 turnLimit 调大即可。

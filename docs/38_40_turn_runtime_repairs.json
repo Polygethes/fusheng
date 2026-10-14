@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-08",
+  "kind": "offline-regression-and-deterministic-fixture",
+  "realModelCalls": 0,
+  "contracts": {
+    "total": 538,
+    "passed": 538,
+    "failed": 0,
+    "elapsedSeconds": 78.0
+  },
+  "syntaxCheck": "passed",
+  "fixture": {
+    "sourceFile": "/private/tmp/gtown-20260908-fix-40-fixture.json",
+    "sourceSha256": "443d5a476ac0d63684a564171390906bc9df45061cd55bb8b18e02ddd1bdd206",
+    "turns": 40,
+    "actionTurns": 35,
+    "maintenanceTurns": 5,
+    "worldOutcomes": 32,
+    "stages": 75,
+    "httpPublicTurnEquivalence": true,
+    "candidateCounts": [
+      1,
+      7
+    ],
+    "localPublicAndPrivateTurnEquivalence": [
+      true,
+      true
+    ],
+    "receiptMs": {
+      "count": 75,
+      "total": 73.58737800000836,
+      "p50": 0.9395000000004075,
+      "p95": 1.2340000000003783,
+      "max": 2.67120900000009
+    },
+    "schemaMs": {
+      "count": 75,
+      "total": 18.370914999999215,
+      "p50": 0.21720799999997098,
+      "p95": 0.47850000000016735,
+      "max": 0.6900829999999587
+    },
+    "localTurnMs": {
+      "count": 40,
+      "total": 2117.0682929999957,
+      "p50": 55.00779199999988,
+      "p95": 79.82670699999835,
+      "max": 81.62395699999979
+    },
+    "externalWaitMs": {
+      "count": 75,
+      "total": 2295.7548760000027,
+      "p50": 30.435333999999784,
+      "p95": 31.822415999999976,
+      "max": 61.02624999999999
+    },
+    "injectedResponderDelayMs": 25,
+    "provenance": {
+      "kind": "fixture",
+      "modelVerified": false,
+      "note": "Deterministic rehearsal; no real model evidence."
+    }
+  },
+  "originalWorldSaveSha256": "7fd8fdc650533d052ac04ae575ea8642ef49d8a2c3a493490a690bf0314e95e6",
+  "liveUpgrade": {
+    "port": 8791,
+    "pidAtVerification": 36515,
+    "runDirectory": "<run-artifacts>/relay-repair-20260908-OBXOZ7",
+    "settledTurns": 40,
+    "worldOutcomes": 31,
+    "unclassifiedLegacyActionTurns": 1,
+    "newModelCalls": 0,
+    "pending": null,
+    "settledTurnsPreserved": true,
+    "worldCoordinatorPreserved": true,
+    "readyQueuePreserved": true
+  },
+  "limits": [
+    "No new real-model long run was performed.",
+    "Fixture success does not establish character quality.",
+    "Historical subjective memories were not rewritten."
+  ]
+}

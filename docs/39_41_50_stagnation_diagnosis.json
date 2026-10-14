@@ -1,0 +1,467 @@
+{
+  "kind": "isolated-fixed-driver-replay",
+  "networkCalls": 0,
+  "modelCalls": 0,
+  "stages": 20,
+  "turns": [
+    {
+      "index": 41,
+      "agentTurnId": "agent-turn:char_xyy_luozhao:12",
+      "characterId": "char_xyy_luozhao",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 42,
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:15",
+      "characterId": "char_xyy_zhoumin",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 43,
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:16",
+      "characterId": "char_xyy_xiezenshi",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 44,
+      "agentTurnId": "agent-turn:char_xyy_luozhao:13",
+      "characterId": "char_xyy_luozhao",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 45,
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:16",
+      "characterId": "char_xyy_zhoumin",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 46,
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:17",
+      "characterId": "char_xyy_xiezenshi",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 47,
+      "agentTurnId": "agent-turn:char_xyy_luozhao:14",
+      "characterId": "char_xyy_luozhao",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 48,
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:17",
+      "characterId": "char_xyy_zhoumin",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 49,
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:18",
+      "characterId": "char_xyy_xiezenshi",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    },
+    {
+      "index": 50,
+      "agentTurnId": "agent-turn:char_xyy_luozhao:15",
+      "characterId": "char_xyy_luozhao",
+      "primitive": "rest",
+      "status": "success",
+      "speech": "",
+      "visibleAction": "",
+      "intention": "稳住继续等。"
+    }
+  ],
+  "stageTrace": [
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:12",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_lz12a_watch",
+        "cand_lz12a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:12",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_lz12a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:15",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_zm15a_watch",
+        "cand_zm15a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:15",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_zm15a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:16",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_xz16a_watch",
+        "cand_xz16a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:16",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_xz16a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:13",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_lz13a_watch",
+        "cand_lz13a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:13",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_lz13a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:16",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_zm16a_watch",
+        "cand_zm16a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:16",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_zm16a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:17",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_xz17a_watch",
+        "cand_xz17a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:17",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_xz17a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:14",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_lz14a_watch",
+        "cand_lz14a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:14",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_lz14a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:17",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_zm17a_watch",
+        "cand_zm17a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:17",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_zm17a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:18",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_xz18a_watch",
+        "cand_xz18a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:18",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_xz18a_settle"
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:15",
+      "stage": "subjective_appraisal_and_candidates",
+      "candidateIds": [
+        "cand_lz15a_watch",
+        "cand_lz15a_settle"
+      ],
+      "primitives": [
+        "observe",
+        "rest"
+      ],
+      "declaredGoalProgress": 0.1
+    },
+    {
+      "agentTurnId": "agent-turn:char_xyy_luozhao:15",
+      "stage": "agent_choice_and_turn_commit",
+      "selectedCandidateId": "cand_lz15a_settle"
+    }
+  ],
+  "allTenOriginalTurnsReproduced": true,
+  "worldStateMatchesRecorded50": true,
+  "originalFilesModified": false,
+  "date": "2026-09-09",
+  "sources": [
+    {
+      "path": "<run-artifacts>/relay-repair-20260908-OBXOZ7/source-world-save.json",
+      "sha256": "7fd8fdc650533d052ac04ae575ea8642ef49d8a2c3a493490a690bf0314e95e6"
+    },
+    {
+      "path": "<run-artifacts>/relay-repair-20260908-OBXOZ7/world-save.json",
+      "sha256": "76843f26c2113cf7f1586727ad566879ff87e9022ec50e0c7746eeefd4252e0b"
+    },
+    {
+      "path": "/sim-runs/2026-09-07-pi-model-resume-20turns/autopilot-official-relay.mjs",
+      "sha256": "de2a765280b5bc4663ccfedeae9bebc499c45112c0a9f713431fc41a80cc80de"
+    }
+  ],
+  "sourceCommit": "6c1518a",
+  "beforeAfter": {
+    "beforeTurnCount": 40,
+    "afterTurnCount": 50,
+    "timeBefore": 439,
+    "timeAfter": 739,
+    "worldVersionBefore": 31,
+    "worldVersionAfter": 41,
+    "unchangedFields": [
+      "entities",
+      "objects",
+      "processes",
+      "sharedActivities",
+      "socialFacts",
+      "places"
+    ]
+  },
+  "newTurnLearningRecords": [
+    {
+      "characterId": "char_xyy_xiezenshi",
+      "sourceAgentTurnId": "agent-turn:char_xyy_xiezenshi:16",
+      "sourceCandidateId": "cand_xz16a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_xiezenshi_obtain_father_help_and_recover:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:1slcl3m"
+      ]
+    },
+    {
+      "characterId": "char_xyy_xiezenshi",
+      "sourceAgentTurnId": "agent-turn:char_xyy_xiezenshi:17",
+      "sourceCandidateId": "cand_xz17a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_xiezenshi_obtain_father_help_and_recover:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:1slcl3m"
+      ]
+    },
+    {
+      "characterId": "char_xyy_luozhao",
+      "sourceAgentTurnId": "agent-turn:char_xyy_luozhao:12",
+      "sourceCandidateId": "cand_lz12a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_luozhao_test_own_limit_against_xiezenshi:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:klxtks"
+      ]
+    },
+    {
+      "characterId": "char_xyy_luozhao",
+      "sourceAgentTurnId": "agent-turn:char_xyy_luozhao:13",
+      "sourceCandidateId": "cand_lz13a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_luozhao_test_own_limit_against_xiezenshi:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:klxtks"
+      ]
+    },
+    {
+      "characterId": "char_xyy_luozhao",
+      "sourceAgentTurnId": "agent-turn:char_xyy_luozhao:14",
+      "sourceCandidateId": "cand_lz14a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_luozhao_test_own_limit_against_xiezenshi:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:klxtks"
+      ]
+    },
+    {
+      "characterId": "char_xyy_zhoumin",
+      "sourceAgentTurnId": "agent-turn:char_xyy_zhoumin:15",
+      "sourceCandidateId": "cand_zm15a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_zhoumin_become_inner_court_disciple:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:gt863f"
+      ]
+    },
+    {
+      "characterId": "char_xyy_zhoumin",
+      "sourceAgentTurnId": "agent-turn:char_xyy_zhoumin:16",
+      "sourceCandidateId": "cand_zm16a_settle",
+      "semanticSignature": "rest|no-target|duty|desire_zhoumin_become_inner_court_disciple:probe|none",
+      "perceivedInformationGain": 0.012,
+      "predictedInformationGain": 0.35,
+      "informationPredictionError": -0.338,
+      "perceivedGoalProgress": 0.1,
+      "predictedGoalProgress": 0,
+      "goalPredictionError": 0.1,
+      "noGain": false,
+      "stillUnresolved": true,
+      "evidenceNoveltyRatio": 0,
+      "noticedOutcomeFeatureSignatures": [
+        "feature:gt863f"
+      ]
+    }
+  ],
+  "lastSelectedCandidates": {
+    "char_xyy_xiezenshi": "cand_xz18a_settle",
+    "char_xyy_luozhao": "cand_lz15a_settle",
+    "char_xyy_zhoumin": "cand_zm17a_settle"
+  },
+  "feedbackControlledProbe": {
+    "changedField": "perceivedGoalProgress",
+    "at01": {
+      "noGain": false
+    },
+    "at0": {
+      "noGain": true
+    }
+  }
+}

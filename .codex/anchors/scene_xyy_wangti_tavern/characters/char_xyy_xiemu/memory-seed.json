@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "ownerCharacterId": "char_xyy_xiemu",
+  "status": "draft",
+  "emptyReason": "",
+  "episodes": [],
+  "beliefs": [],
+  "commitments": [],
+  "impressions": [],
+  "selfNarrative": {
+    "currentClaims": [],
+    "versions": []
+  }
+}

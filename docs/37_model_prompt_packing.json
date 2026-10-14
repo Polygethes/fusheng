@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "timezone": "America/Los_Angeles",
+  "baselineCommit": "300921b",
+  "methodology": "Two real automatic Sol medium action turns per arm. Same initial checkpoint and first stage input/schema; sequential runs using the same functional code. Independent character decisions can change subsequent inputs and output volumes. Prompt byte counts are not token counts; raw CLI usage may be cumulative and is not summed. All transmitted representations were verified and all packed inputs restored exactly.",
+  "arms": [
+    {
+      "format": "expanded",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "callMode": "two-call",
+      "sourceReport": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/report.json",
+      "sourceReportSha256": "b84d43de4f8bc072fd3552f7cbd823880296f4e374791a3b8e34c1bbc2cddd3c",
+      "initialCheckpointSha256": "10d26788c7a802e2f055c83a9b4e4314a2e2611095f7cb53d152855856a1ae0c",
+      "startedAt": "2026-09-08T06:03:00.677Z",
+      "finishedAt": "2026-09-08T06:12:47.736Z",
+      "actionElapsedMs": 587034.0222090001,
+      "invocationMs": 586812.895666,
+      "otherMs": 221.12654300010763,
+      "totalPromptBytes": 1049962,
+      "requestCount": 5,
+      "repairCount": 1,
+      "rejectionCodes": [
+        "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE",
+        "CHARACTER_AGENT_AFFECTIVE_INFLUENCE_SOURCE_NOT_LIVE"
+      ],
+      "calls": [
+        {
+          "index": 1,
+          "actionIndex": 1,
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 182469.6335,
+          "stageMs": 182489.788791,
+          "promptBytes": 190032,
+          "schemaBytes": 93240,
+          "outputBytes": 13813,
+          "rawUsage": {
+            "input_tokens": 78659,
+            "cached_input_tokens": 0,
+            "output_tokens": 5241,
+            "reasoning_output_tokens": 1552
+          },
+          "firstEventMs": 3731.678625,
+          "firstAgentMessageMs": 181888.946458,
+          "inputSha256": "c61d807fbad9bce43ce149a2efbaa933297e638ae9a8e46e138f96aaf24db69d",
+          "promptSha256": "56ac51fbf9a912f99469283a9f5c0e0f840960464e4907c65729bdfe39b9375c",
+          "schemaSha256": "f0e1a9ded70a0e479a72e2976ca45ffa3286753b48315987c9210d8573f77aef",
+          "outputSha256": "997da07e79854e4497959ac2431b68ba829d1c739252f027d57a48da8699e9d5",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/001.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/001.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": 3,
+          "counterfactualPromptBytes": {
+            "expanded": 190032,
+            "compact": 136265,
+            "shared": 116871
+          }
+        },
+        {
+          "index": 2,
+          "actionIndex": 1,
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "accepted": false,
+          "repair": false,
+          "invocationMs": 92278.708958,
+          "stageMs": 92295.907042,
+          "promptBytes": 339160,
+          "schemaBytes": 28538,
+          "outputBytes": 3670,
+          "rawUsage": {
+            "input_tokens": 233401,
+            "cached_input_tokens": 0,
+            "output_tokens": 7679,
+            "reasoning_output_tokens": 3016
+          },
+          "firstEventMs": 2393.808208000002,
+          "firstAgentMessageMs": 88546.09058300001,
+          "inputSha256": "d82bceb2d65135b6703ad7b0350fca33589786a4ba1df775b88653b3b2946993",
+          "promptSha256": "da7460617eb76776198d1327c90f915869c4612a4e61cabeec62bd95812cc543",
+          "schemaSha256": "b5b2b3949afe8c39a329754de6d87b91e961725b5c4ec6b06e00de68ee55d793",
+          "outputSha256": "239301dd3a3661a896c258fe5615f6af253f5b342740db8471c991ce270d9c76",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/002.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/002.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": null,
+          "counterfactualPromptBytes": {
+            "expanded": 339160,
+            "compact": 221443,
+            "shared": 138403
+          }
+        },
+        {
+          "index": 3,
+          "actionIndex": 1,
+          "phase": "awaiting_agent_turn_commit",
+          "accepted": true,
+          "repair": true,
+          "invocationMs": 22178.475708000013,
+          "stageMs": 22183.204874999996,
+          "promptBytes": 32076,
+          "schemaBytes": 8285,
+          "outputBytes": 904,
+          "rawUsage": {
+            "input_tokens": 394764,
+            "cached_input_tokens": 0,
+            "output_tokens": 8009,
+            "reasoning_output_tokens": 3116
+          },
+          "firstEventMs": 190.58987500000512,
+          "firstAgentMessageMs": 18501.804416999978,
+          "inputSha256": "e8093809a3bac833836efa1f084cf00cb5b29ad680d70d1837a68e96192129bd",
+          "promptSha256": "2eb2104087c19a603417d14c5f11f6de7d0b5e5cb57778c5b8cec10e4bde0211",
+          "schemaSha256": "aa16e0d9afecffce93e3731cffb6b6eb3fd4426c0cc6bc6230ca8e5a04d16d12",
+          "outputSha256": "532e74a26ce7f6bd36055ac271396b56cdf8d9d445fa8cf1b2fb40d4cd790f50",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/003.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/003.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": null,
+          "counterfactualPromptBytes": {
+            "expanded": 32076,
+            "compact": 22700,
+            "shared": 22700
+          }
+        },
+        {
+          "index": 4,
+          "actionIndex": 2,
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 197448.22774999996,
+          "stageMs": 197460.52429200005,
+          "promptBytes": 156568,
+          "schemaBytes": 92237,
+          "outputBytes": 16302,
+          "rawUsage": {
+            "input_tokens": 68709,
+            "cached_input_tokens": 0,
+            "output_tokens": 5848,
+            "reasoning_output_tokens": 1243
+          },
+          "firstEventMs": 205.20575000002282,
+          "firstAgentMessageMs": 194353.04495900002,
+          "inputSha256": "915feeba57cc350ec8a9e1dc8f2343012dfdd7169af5e5f1258fd5949b38ae0f",
+          "promptSha256": "d6221c2370732342e33cdaaf8165ee143f9d0e7a140371e7dfcba1cd2ad6fd6e",
+          "schemaSha256": "5b4dbfb091a2ecc8982faf1034471440b1a8b5130828037f255c8bf6f1ff7d5f",
+          "outputSha256": "e6e5362a4555e2f82d49f58dc7914b6c5ad59c414fbec52107b29cf135b1cad9",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/004.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/004.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": 4,
+          "counterfactualPromptBytes": {
+            "expanded": 156568,
+            "compact": 111654,
+            "shared": 98689
+          }
+        },
+        {
+          "index": 5,
+          "actionIndex": 2,
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 92437.84974999994,
+          "stageMs": 92456.640625,
+          "promptBytes": 332126,
+          "schemaBytes": 27756,
+          "outputBytes": 3667,
+          "rawUsage": {
+            "input_tokens": 211907,
+            "cached_input_tokens": 0,
+            "output_tokens": 8303,
+            "reasoning_output_tokens": 2708
+          },
+          "firstEventMs": 348.74337500002,
+          "firstAgentMessageMs": 89625.54687500006,
+          "inputSha256": "7c26a21c7119773292cc95c1622c9c4b35abfe32a62a9595972c00ac6b4a0776",
+          "promptSha256": "e472f0b4732fb7dcbef33a939eddba8dbc3576abec92f056cd81f3b2b58aa66c",
+          "schemaSha256": "4940c4215c7b6e71f94118f4d6c43d424f15824c02911c70b4c8c607b64a9fe1",
+          "outputSha256": "432d39f2683532ec5cdb976a2ed3082ac0d82ba4e802f997baa6e5210677c09d",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/005.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-expanded-JfsviQ/calls/005.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": null,
+          "counterfactualPromptBytes": {
+            "expanded": 332126,
+            "compact": 212389,
+            "shared": 125241
+          }
+        }
+      ],
+      "turns": [
+        {
+          "index": 1,
+          "characterName": "谢真石",
+          "elapsedMs": 297054.678709,
+          "callIndexes": [
+            1,
+            2,
+            3
+          ],
+          "protocolRepairCount": 1,
+          "publicRealization": {
+            "actionType": "move",
+            "targetCharacterId": "",
+            "speech": "",
+            "visibleAction": "他转身朝后院迈步。",
+            "observableAffectiveTexture": []
+          },
+          "primitive": "move",
+          "worldOutcome": "success",
+          "resolvedEffects": [
+            {
+              "kind": "actor_movement",
+              "actorId": "char_xyy_xiezenshi",
+              "fromZoneId": "hall",
+              "toZoneId": "courtyard"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "characterName": "洛照",
+          "elapsedMs": 289979.3435,
+          "callIndexes": [
+            4,
+            5
+          ],
+          "protocolRepairCount": 0,
+          "publicRealization": {
+            "actionType": "act",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "speech": "",
+            "visibleAction": "她将目光转向那人离去的后院方向，沿着他的身影继续观察。",
+            "observableAffectiveTexture": []
+          },
+          "primitive": "observe",
+          "worldOutcome": "success",
+          "resolvedEffects": [
+            {
+              "kind": "visual_attention_established",
+              "targetId": "char_xyy_xiezenshi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "format": "shared",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "callMode": "two-call",
+      "sourceReport": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/report.json",
+      "sourceReportSha256": "296d172ad454022a19e6e27877401ff0ea3ed9a54c9cd2aa2cd32e9c2087e068",
+      "initialCheckpointSha256": "10d26788c7a802e2f055c83a9b4e4314a2e2611095f7cb53d152855856a1ae0c",
+      "startedAt": "2026-09-08T06:13:42.971Z",
+      "finishedAt": "2026-09-08T06:23:21.433Z",
+      "actionElapsedMs": 578437.319625,
+      "invocationMs": 578222.573542,
+      "otherMs": 214.74608299997635,
+      "totalPromptBytes": 479318,
+      "requestCount": 4,
+      "repairCount": 0,
+      "rejectionCodes": [],
+      "calls": [
+        {
+          "index": 1,
+          "actionIndex": 1,
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 181625.458333,
+          "stageMs": 181643.388292,
+          "promptBytes": 116871,
+          "schemaBytes": 93240,
+          "outputBytes": 13340,
+          "rawUsage": {
+            "input_tokens": 61050,
+            "cached_input_tokens": 0,
+            "output_tokens": 5238,
+            "reasoning_output_tokens": 1686
+          },
+          "firstEventMs": 2955.542458,
+          "firstAgentMessageMs": 178348.920875,
+          "inputSha256": "c61d807fbad9bce43ce149a2efbaa933297e638ae9a8e46e138f96aaf24db69d",
+          "promptSha256": "d0a7c5a5bf1ec4af124def1d0dceff59739680ff14b516d3c2e2b64bcb6bcc5b",
+          "schemaSha256": "f0e1a9ded70a0e479a72e2976ca45ffa3286753b48315987c9210d8573f77aef",
+          "outputSha256": "04ab9a017b6c40f625c743da9aa978d01e02684fd97ab7cbfa6877993ca79d21",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/001.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/001.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": 3,
+          "counterfactualPromptBytes": {
+            "expanded": 190032,
+            "compact": 136265,
+            "shared": 116871
+          }
+        },
+        {
+          "index": 2,
+          "actionIndex": 1,
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 96787.24387499999,
+          "stageMs": 96809.32708300001,
+          "promptBytes": 137697,
+          "schemaBytes": 28538,
+          "outputBytes": 3534,
+          "rawUsage": {
+            "input_tokens": 152169,
+            "cached_input_tokens": 0,
+            "output_tokens": 7811,
+            "reasoning_output_tokens": 3330
+          },
+          "firstEventMs": 2526.3228750000126,
+          "firstAgentMessageMs": 93468.41470900003,
+          "inputSha256": "85f03dd512ee4a09eb1b54ca361db8435e721277bb574049ac60d3cd8b56e3de",
+          "promptSha256": "60f375a0d790e2d64f1fcc4cd871f6e62849c91b82d3b63cdde17b9b6c99e0b1",
+          "schemaSha256": "b5b2b3949afe8c39a329754de6d87b91e961725b5c4ec6b06e00de68ee55d793",
+          "outputSha256": "f7c9e79f09c050ccae4bfb19eca30b958405a38e483b50e911bc7883591f6a12",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/002.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/002.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": null,
+          "counterfactualPromptBytes": {
+            "expanded": 338498,
+            "compact": 220899,
+            "shared": 137697
+          }
+        },
+        {
+          "index": 3,
+          "actionIndex": 2,
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 221044.253792,
+          "stageMs": 221058.504042,
+          "promptBytes": 98680,
+          "schemaBytes": 92237,
+          "outputBytes": 18159,
+          "rawUsage": {
+            "input_tokens": 56255,
+            "cached_input_tokens": 0,
+            "output_tokens": 6536,
+            "reasoning_output_tokens": 1422
+          },
+          "firstEventMs": 3356.6587910000235,
+          "firstAgentMessageMs": 217935.08716599998,
+          "inputSha256": "3d8c6550e974a27d2eaad7bd3d916fe26e3e3cd72e1cf1a90930a00c646ad6fd",
+          "promptSha256": "60455cf1f5d203e4ca40cc1420f64ce4f1d4966f1c93cf2816256d548a9eeeee",
+          "schemaSha256": "5b4dbfb091a2ecc8982faf1034471440b1a8b5130828037f255c8bf6f1ff7d5f",
+          "outputSha256": "7713730a4900f7bb5c7bba4fe711a710238e0447517b5a80f0fc6a5163bed697",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/003.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/003.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": 4,
+          "counterfactualPromptBytes": {
+            "expanded": 156559,
+            "compact": 111645,
+            "shared": 98680
+          }
+        },
+        {
+          "index": 4,
+          "actionIndex": 2,
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "accepted": true,
+          "repair": false,
+          "invocationMs": 78765.61754199996,
+          "stageMs": 78786.02462499996,
+          "promptBytes": 126070,
+          "schemaBytes": 27756,
+          "outputBytes": 4133,
+          "rawUsage": {
+            "input_tokens": 141087,
+            "cached_input_tokens": 0,
+            "output_tokens": 8662,
+            "reasoning_output_tokens": 2422
+          },
+          "firstEventMs": 222.6352500000503,
+          "firstAgentMessageMs": 76682.78562500002,
+          "inputSha256": "fdb05d4784a03e78fc28eeaf99c10153ee9e18459039db41316e676277acf6ff",
+          "promptSha256": "0a5e4f110fe46ef52bab9da28c95dfe06ce74fc2ba20def3836a35176dbd09ac",
+          "schemaSha256": "3ddeddab130cb15f5888d1533fafc080020611f8d00c8c28f0125b4aa0d1d99e",
+          "outputSha256": "cae205d897887282f0b0f1e971afb2939c49d345d1e87d23f78946b4636faf00",
+          "outputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/004.output.json",
+          "inputPath": "/var/folders/4s/s7b7dll16717kk2c2ljqx0280000gn/T/gtown-auto-two-call-shared-lOuqsl/calls/004.input.json",
+          "representationVerified": true,
+          "generatedCandidateCount": null,
+          "counterfactualPromptBytes": {
+            "expanded": 334856,
+            "compact": 214559,
+            "shared": 126070
+          }
+        }
+      ],
+      "turns": [
+        {
+          "index": 1,
+          "characterName": "谢真石",
+          "elapsedMs": 278536.09470799996,
+          "callIndexes": [
+            1,
+            2
+          ],
+          "protocolRepairCount": 0,
+          "publicRealization": {
+            "actionType": "move",
+            "targetCharacterId": "",
+            "speech": "",
+            "visibleAction": "转身朝后院迈步。",
+            "observableAffectiveTexture": []
+          },
+          "primitive": "move",
+          "worldOutcome": "success",
+          "resolvedEffects": [
+            {
+              "kind": "actor_movement",
+              "actorId": "char_xyy_xiezenshi",
+              "fromZoneId": "hall",
+              "toZoneId": "courtyard"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "characterName": "洛照",
+          "elapsedMs": 299901.224917,
+          "callIndexes": [
+            3,
+            4
+          ],
+          "protocolRepairCount": 0,
+          "publicRealization": {
+            "actionType": "act",
+            "targetCharacterId": "char_xyy_xiezenshi",
+            "speech": "",
+            "visibleAction": "目光转向后院方向，沿着那人迈出的几步持续追随。",
+            "observableAffectiveTexture": []
+          },
+          "primitive": "observe",
+          "worldOutcome": "success",
+          "resolvedEffects": [
+            {
+              "kind": "visual_attention_established",
+              "targetId": "char_xyy_xiezenshi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "elapsedChangePercent": -1.4644300430238788,
+    "promptBytesChangePercent": -54.34901453576415,
+    "firstCallInputTokensChangePercent": -22.386503769435162
+  }
+}

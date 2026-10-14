@@ -1,0 +1,1757 @@
+{
+  "measuredAt": "2026-09-08T01:35:46.935Z",
+  "node": "v25.6.0",
+  "platform": "darwin arm64",
+  "measurement": "Synthetic three-character 20-turn fixture. Local runtime measured separately from loopback HTTP with a 25 ms responder delay. Not the user's original model outputs or an inference speed benchmark.",
+  "local": [
+    {
+      "candidateCount": 1,
+      "totalMs": 567.074417,
+      "cloneCount": 39453,
+      "cloneMs": 468.81118899999933,
+      "schemaMs": {
+        "count": 36,
+        "total": 7.5462510000000975,
+        "p50": 0.1540829999999005,
+        "p95": 0.46158299999990504,
+        "max": 0.5204579999999623
+      },
+      "preparationMs": {
+        "count": 36,
+        "total": 253.04504100000065,
+        "p50": 6.156791999999996,
+        "p95": 11.596707999999921,
+        "max": 12.676000000000158
+      },
+      "payloadBytes": {
+        "count": 36,
+        "total": 5779189,
+        "p50": 172094,
+        "p95": 224617,
+        "max": 232510
+      },
+      "publicAndPrivateTurnEquivalence": true,
+      "stages": [
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 4.0431670000000395,
+          "schemaMs": 0.46158299999990504,
+          "payloadBytes": 18828,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 2.724375000000009,
+          "schemaMs": 0.023832999999967797,
+          "payloadBytes": 8389,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 2.4302089999999907,
+          "schemaMs": 0.01925000000005639,
+          "payloadBytes": 7577,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.398083000000042,
+          "schemaMs": 0.5204579999999623,
+          "payloadBytes": 153920,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.123209000000088,
+          "schemaMs": 0.14791599999989558,
+          "payloadBytes": 167749,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 6.536000000000058,
+          "schemaMs": 0.39516600000001745,
+          "payloadBytes": 132162,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 4.861832999999933,
+          "schemaMs": 0.19741700000008677,
+          "payloadBytes": 144541,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 5.728834000000006,
+          "schemaMs": 0.35208299999999326,
+          "payloadBytes": 136724,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.46670800000004,
+          "schemaMs": 0.11579199999994216,
+          "payloadBytes": 136915,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.837041999999997,
+          "schemaMs": 0.2930830000000242,
+          "payloadBytes": 169496,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.885707999999909,
+          "schemaMs": 0.12704200000007404,
+          "payloadBytes": 192056,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.932957999999985,
+          "schemaMs": 0.27854200000001583,
+          "payloadBytes": 153991,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.4214170000000195,
+          "schemaMs": 0.15200000000004366,
+          "payloadBytes": 172094,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.419709000000012,
+          "schemaMs": 0.26866599999993923,
+          "payloadBytes": 155207,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.668583000000012,
+          "schemaMs": 0.1540829999999005,
+          "payloadBytes": 157701,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 8.924125000000004,
+          "schemaMs": 0.29329200000006495,
+          "payloadBytes": 187306,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 6.138667000000055,
+          "schemaMs": 0.10045800000000327,
+          "payloadBytes": 210645,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.221083000000021,
+          "schemaMs": 0.2793749999999591,
+          "payloadBytes": 172059,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 6.156791999999996,
+          "schemaMs": 0.1043329999999969,
+          "payloadBytes": 189147,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 8.64695800000004,
+          "schemaMs": 0.3149589999999307,
+          "payloadBytes": 171949,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.194541999999956,
+          "schemaMs": 0.10341700000003584,
+          "payloadBytes": 174252,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.596707999999921,
+          "schemaMs": 0.2710420000000795,
+          "payloadBytes": 204661,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 6.574207999999999,
+          "schemaMs": 0.10566700000003948,
+          "payloadBytes": 224617,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.795334000000139,
+          "schemaMs": 0.2663749999999254,
+          "payloadBytes": 173024,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.80316700000003,
+          "schemaMs": 0.10379100000000108,
+          "payloadBytes": 188552,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.030332999999928,
+          "schemaMs": 0.32329200000003766,
+          "payloadBytes": 183007,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.662249999999858,
+          "schemaMs": 0.12254200000006676,
+          "payloadBytes": 189244,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:6",
+          "phase": "awaiting_character_reflection",
+          "localPreparationMs": 5.4505830000000515,
+          "schemaMs": 0.08066699999994853,
+          "payloadBytes": 24403,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.953750000000127,
+          "schemaMs": 0.2730420000000322,
+          "payloadBytes": 171817,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.526166000000103,
+          "schemaMs": 0.09512500000005275,
+          "payloadBytes": 186620,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.561500000000024,
+          "schemaMs": 0.2785839999999098,
+          "payloadBytes": 191556,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 5.746540999999979,
+          "schemaMs": 0.10625000000004547,
+          "payloadBytes": 201459,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.416832999999997,
+          "schemaMs": 0.27166699999997945,
+          "payloadBytes": 201370,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 6.697041000000127,
+          "schemaMs": 0.12283400000001166,
+          "payloadBytes": 232510,
+          "candidateCount": 1
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 12.676000000000158,
+          "schemaMs": 0.313083000000006,
+          "payloadBytes": 185910,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 6.794624999999996,
+          "schemaMs": 0.1095420000001468,
+          "payloadBytes": 207731,
+          "candidateCount": 1
+        }
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "kind": "day_planning",
+          "elapsedMs": 6.7020840000000135
+        },
+        {
+          "turn": 2,
+          "kind": "day_planning",
+          "elapsedMs": 3.890708000000018
+        },
+        {
+          "turn": 3,
+          "kind": "day_planning",
+          "elapsedMs": 3.555749999999989
+        },
+        {
+          "turn": 4,
+          "kind": "action",
+          "elapsedMs": 27.197125000000028
+        },
+        {
+          "turn": 5,
+          "kind": "action",
+          "elapsedMs": 23.34420799999998
+        },
+        {
+          "turn": 6,
+          "kind": "action",
+          "elapsedMs": 23.41979200000003
+        },
+        {
+          "turn": 7,
+          "kind": "action",
+          "elapsedMs": 30.14016700000002
+        },
+        {
+          "turn": 8,
+          "kind": "action",
+          "elapsedMs": 28.47720800000002
+        },
+        {
+          "turn": 9,
+          "kind": "action",
+          "elapsedMs": 29.18995899999993
+        },
+        {
+          "turn": 10,
+          "kind": "action",
+          "elapsedMs": 36.138250000000085
+        },
+        {
+          "turn": 11,
+          "kind": "action",
+          "elapsedMs": 28.680916000000025
+        },
+        {
+          "turn": 12,
+          "kind": "action",
+          "elapsedMs": 35.78620799999999
+        },
+        {
+          "turn": 13,
+          "kind": "action",
+          "elapsedMs": 46.210500000000025
+        },
+        {
+          "turn": 14,
+          "kind": "action",
+          "elapsedMs": 30.26975000000016
+        },
+        {
+          "turn": 15,
+          "kind": "action",
+          "elapsedMs": 39.469333000000006
+        },
+        {
+          "turn": 16,
+          "kind": "reflection",
+          "elapsedMs": 10.59054100000003
+        },
+        {
+          "turn": 17,
+          "kind": "action",
+          "elapsedMs": 39.33520900000008
+        },
+        {
+          "turn": 18,
+          "kind": "action",
+          "elapsedMs": 42.22283399999992
+        },
+        {
+          "turn": 19,
+          "kind": "action",
+          "elapsedMs": 44.665457999999944
+        },
+        {
+          "turn": 20,
+          "kind": "action",
+          "elapsedMs": 37.749458000000004
+        }
+      ]
+    },
+    {
+      "candidateCount": 7,
+      "totalMs": 627.2491669999997,
+      "cloneCount": 44727,
+      "cloneMs": 517.5031339999357,
+      "schemaMs": {
+        "count": 36,
+        "total": 6.739996999999221,
+        "p50": 0.15841599999998834,
+        "p95": 0.3135419999998703,
+        "max": 0.3168329999998605
+      },
+      "preparationMs": {
+        "count": 36,
+        "total": 302.8620010000004,
+        "p50": 8.958124999999654,
+        "p95": 11.109875000000102,
+        "max": 11.420916000000034
+      },
+      "payloadBytes": {
+        "count": 36,
+        "total": 8281913,
+        "p50": 191556,
+        "p95": 396554,
+        "max": 401453
+      },
+      "publicAndPrivateTurnEquivalence": true,
+      "stages": [
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 3.861208999999917,
+          "schemaMs": 0.03029100000003382,
+          "payloadBytes": 18828,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 2.359707999999955,
+          "schemaMs": 0.009958000000096945,
+          "payloadBytes": 8389,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 2.39387499999998,
+          "schemaMs": 0.010541999999986729,
+          "payloadBytes": 7577,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 6.756250000000136,
+          "schemaMs": 0.2874170000000049,
+          "payloadBytes": 153920,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 8.525707999999895,
+          "schemaMs": 0.11225000000013097,
+          "payloadBytes": 306050,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 6.3164580000000115,
+          "schemaMs": 0.2507499999999254,
+          "payloadBytes": 132162,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 8.52387500000009,
+          "schemaMs": 0.11704099999997197,
+          "payloadBytes": 280616,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 5.509500000000116,
+          "schemaMs": 0.2583749999998872,
+          "payloadBytes": 136724,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 7.7332920000001195,
+          "schemaMs": 0.16491599999994833,
+          "payloadBytes": 278258,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.878666000000067,
+          "schemaMs": 0.3135419999998703,
+          "payloadBytes": 169496,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.82962499999985,
+          "schemaMs": 0.14608300000008967,
+          "payloadBytes": 355371,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.545624999999973,
+          "schemaMs": 0.30595900000002985,
+          "payloadBytes": 153991,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.34004200000004,
+          "schemaMs": 0.16766699999993762,
+          "payloadBytes": 330663,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.0172090000000935,
+          "schemaMs": 0.28045799999995324,
+          "payloadBytes": 155207,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 8.634209000000055,
+          "schemaMs": 0.15841599999998834,
+          "payloadBytes": 306946,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.539999999999964,
+          "schemaMs": 0.2765420000000631,
+          "payloadBytes": 187306,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.420916000000034,
+          "schemaMs": 0.1262090000000171,
+          "payloadBytes": 378184,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 8.874000000000251,
+          "schemaMs": 0.3168329999998605,
+          "payloadBytes": 172059,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.955167000000074,
+          "schemaMs": 0.12570800000003146,
+          "payloadBytes": 351418,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 8.426292000000103,
+          "schemaMs": 0.297291999999743,
+          "payloadBytes": 171949,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.528957999999875,
+          "schemaMs": 0.12745799999993324,
+          "payloadBytes": 327535,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.109875000000102,
+          "schemaMs": 0.30924999999979264,
+          "payloadBytes": 204661,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 10.158332999999857,
+          "schemaMs": 0.11366700000007768,
+          "payloadBytes": 396554,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.720000000000255,
+          "schemaMs": 0.2587909999997464,
+          "payloadBytes": 173024,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.524583000000348,
+          "schemaMs": 0.11358299999983501,
+          "payloadBytes": 341907,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.746083999999883,
+          "schemaMs": 0.29854100000011385,
+          "payloadBytes": 183007,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 8.901584000000184,
+          "schemaMs": 0.12029100000017934,
+          "payloadBytes": 346883,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:6",
+          "phase": "awaiting_character_reflection",
+          "localPreparationMs": 5.493916000000354,
+          "schemaMs": 0.0281249999998181,
+          "payloadBytes": 24403,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.51483399999961,
+          "schemaMs": 0.2514160000000629,
+          "payloadBytes": 171817,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.274417000000085,
+          "schemaMs": 0.15162499999996726,
+          "payloadBytes": 335277,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.819500000000062,
+          "schemaMs": 0.30645899999990434,
+          "payloadBytes": 191556,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 8.958124999999654,
+          "schemaMs": 0.1158330000002934,
+          "payloadBytes": 363988,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.002207999999882,
+          "schemaMs": 0.2615000000000691,
+          "payloadBytes": 201370,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.743416999999681,
+          "schemaMs": 0.11787499999991269,
+          "payloadBytes": 401453,
+          "candidateCount": 7
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.016999999999825,
+          "schemaMs": 0.2908750000001419,
+          "payloadBytes": 185910,
+          "candidateCount": 0
+        },
+        {
+          "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 9.907541000000037,
+          "schemaMs": 0.11845899999980247,
+          "payloadBytes": 377454,
+          "candidateCount": 7
+        }
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "kind": "day_planning",
+          "elapsedMs": 5.17512499999998
+        },
+        {
+          "turn": 2,
+          "kind": "day_planning",
+          "elapsedMs": 3.4511250000000473
+        },
+        {
+          "turn": 3,
+          "kind": "day_planning",
+          "elapsedMs": 3.4484580000000733
+        },
+        {
+          "turn": 4,
+          "kind": "action",
+          "elapsedMs": 29.750334000000066
+        },
+        {
+          "turn": 5,
+          "kind": "action",
+          "elapsedMs": 28.085583000000042
+        },
+        {
+          "turn": 6,
+          "kind": "action",
+          "elapsedMs": 26.668458999999984
+        },
+        {
+          "turn": 7,
+          "kind": "action",
+          "elapsedMs": 36.93383300000005
+        },
+        {
+          "turn": 8,
+          "kind": "action",
+          "elapsedMs": 34.10537499999987
+        },
+        {
+          "turn": 9,
+          "kind": "action",
+          "elapsedMs": 33.12958400000002
+        },
+        {
+          "turn": 10,
+          "kind": "action",
+          "elapsedMs": 43.80916700000034
+        },
+        {
+          "turn": 11,
+          "kind": "action",
+          "elapsedMs": 33.09245800000008
+        },
+        {
+          "turn": 12,
+          "kind": "action",
+          "elapsedMs": 40.76062499999989
+        },
+        {
+          "turn": 13,
+          "kind": "action",
+          "elapsedMs": 47.644542
+        },
+        {
+          "turn": 14,
+          "kind": "action",
+          "elapsedMs": 34.99025000000029
+        },
+        {
+          "turn": 15,
+          "kind": "action",
+          "elapsedMs": 44.82600000000002
+        },
+        {
+          "turn": 16,
+          "kind": "reflection",
+          "elapsedMs": 10.37054100000023
+        },
+        {
+          "turn": 17,
+          "kind": "action",
+          "elapsedMs": 43.63820899999973
+        },
+        {
+          "turn": 18,
+          "kind": "action",
+          "elapsedMs": 45.04845900000009
+        },
+        {
+          "turn": 19,
+          "kind": "action",
+          "elapsedMs": 44.97133299999996
+        },
+        {
+          "turn": 20,
+          "kind": "action",
+          "elapsedMs": 37.330459000000246
+        }
+      ]
+    }
+  ],
+  "http": {
+    "totalIncludingStartupMs": 2034.2943750000004,
+    "injectedResponderDelayMs": 25,
+    "turnCount": 20,
+    "actionTurnCount": 16,
+    "worldVersion": 13,
+    "publicTurnEquivalence": true,
+    "receiptMs": {
+      "count": 36,
+      "total": 40.42100299999947,
+      "p50": 1.0330000000003565,
+      "p95": 1.4892500000000837,
+      "max": 2.813083000000006
+    },
+    "localTurnMs": {
+      "count": 20,
+      "total": 802.6636659999996,
+      "p50": 42.743791000000044,
+      "p95": 56.879708000000164,
+      "max": 60.10658200000003
+    },
+    "externalWaitMs": {
+      "count": 36,
+      "total": 1108.9701660000003,
+      "p50": 29.833958999999993,
+      "p95": 31.761708,
+      "max": 62.866833
+    },
+    "schemaMs": {
+      "count": 36,
+      "total": 8.697543999999766,
+      "p50": 0.19429199999996172,
+      "p95": 0.44874999999998977,
+      "max": 0.689625000000035
+    },
+    "receipts": [
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:1",
+        "elapsedMs": 2.813083000000006,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:2",
+        "elapsedMs": 1.2528339999998934,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:3",
+        "elapsedMs": 1.26949999999988,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:4",
+        "elapsedMs": 1.1312090000001263,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:5",
+        "elapsedMs": 1.1242090000000644,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:6",
+        "elapsedMs": 1.4878749999998035,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:7",
+        "elapsedMs": 1.281500000000051,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:8",
+        "elapsedMs": 1.4892500000000837,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:9",
+        "elapsedMs": 0.9918750000001637,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:10",
+        "elapsedMs": 1.1756669999999758,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:11",
+        "elapsedMs": 1.2827919999999722,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:12",
+        "elapsedMs": 0.9964169999998376,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:13",
+        "elapsedMs": 0.8972080000003189,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:14",
+        "elapsedMs": 1.3952079999999114,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:15",
+        "elapsedMs": 0.9854580000001079,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:16",
+        "elapsedMs": 1.0918750000000728,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:17",
+        "elapsedMs": 0.9563749999997526,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:18",
+        "elapsedMs": 1.1486249999998108,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:19",
+        "elapsedMs": 1.0330000000003565,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:20",
+        "elapsedMs": 1.3384579999997186,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:21",
+        "elapsedMs": 0.9012499999998909,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:22",
+        "elapsedMs": 1.1477090000003045,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:23",
+        "elapsedMs": 1.0914999999999964,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:24",
+        "elapsedMs": 0.9023749999996653,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:25",
+        "elapsedMs": 0.9592090000001008,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:26",
+        "elapsedMs": 1.0012090000000171,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:27",
+        "elapsedMs": 0.8955410000003212,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:28",
+        "elapsedMs": 0.8096669999999904,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:29",
+        "elapsedMs": 0.9765830000005735,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:30",
+        "elapsedMs": 0.8784999999998035,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:31",
+        "elapsedMs": 1.087999999999738,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:32",
+        "elapsedMs": 0.940082999999504,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:33",
+        "elapsedMs": 0.8886670000001686,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:34",
+        "elapsedMs": 1.1283749999993233,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:35",
+        "elapsedMs": 0.9012080000002243,
+        "status": 202
+      },
+      {
+        "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:36",
+        "elapsedMs": 0.7687089999999444,
+        "status": 202
+      }
+    ],
+    "metrics": {
+      "runId": "22790d12-5a1b-443e-b13b-9441d0a0cf34",
+      "elapsedMs": 1917.473541,
+      "measurement": "responseWaitMs includes external model/controller time; localElapsedMs includes runtime and relay work, not pure CPU",
+      "receivedCount": 36,
+      "pending": null,
+      "stages": [
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:1",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 7.69704200000001,
+          "schemaMs": 0.44874999999998977,
+          "inputBytes": 17113,
+          "schemaBytes": 1690,
+          "readyAt": "2026-09-08T01:35:45.024Z",
+          "respondedAt": "2026-09-08T01:35:45.086Z",
+          "responseWaitMs": 62.866833,
+          "validation": "accepted",
+          "payloadBuildMs": 0.5506249999999966
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:2",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 3.863291000000004,
+          "schemaMs": 0.027417000000014013,
+          "inputBytes": 7127,
+          "schemaBytes": 1237,
+          "readyAt": "2026-09-08T01:35:45.093Z",
+          "respondedAt": "2026-09-08T01:35:45.121Z",
+          "responseWaitMs": 27.73845800000001,
+          "validation": "accepted",
+          "payloadBuildMs": 0.06508400000001302
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:3",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:1",
+          "phase": "awaiting_character_day_planning",
+          "localPreparationMs": 3.6927909999999997,
+          "schemaMs": 0.025708999999977777,
+          "inputBytes": 6315,
+          "schemaBytes": 1237,
+          "readyAt": "2026-09-08T01:35:45.127Z",
+          "respondedAt": "2026-09-08T01:35:45.154Z",
+          "responseWaitMs": 27.559499999999986,
+          "validation": "accepted",
+          "payloadBuildMs": 0.06491699999997991
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:4",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 14.748666999999983,
+          "schemaMs": 0.689625000000035,
+          "inputBytes": 116851,
+          "schemaBytes": 37044,
+          "readyAt": "2026-09-08T01:35:45.172Z",
+          "respondedAt": "2026-09-08T01:35:45.202Z",
+          "responseWaitMs": 29.833958999999993,
+          "validation": "accepted",
+          "payloadBuildMs": 1.067416000000037
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:5",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 19.807166999999993,
+          "schemaMs": 0.19429199999996172,
+          "inputBytes": 292029,
+          "schemaBytes": 13996,
+          "readyAt": "2026-09-08T01:35:45.222Z",
+          "respondedAt": "2026-09-08T01:35:45.253Z",
+          "responseWaitMs": 30.958958999999993,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7228329999999801
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:6",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.910500000000013,
+          "schemaMs": 0.4190409999999929,
+          "inputBytes": 95386,
+          "schemaBytes": 36751,
+          "readyAt": "2026-09-08T01:35:45.289Z",
+          "respondedAt": "2026-09-08T01:35:45.318Z",
+          "responseWaitMs": 29.713292000000024,
+          "validation": "accepted",
+          "payloadBuildMs": 0.759791000000007
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:7",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 12.560958000000028,
+          "schemaMs": 0.24904199999997445,
+          "inputBytes": 267079,
+          "schemaBytes": 13512,
+          "readyAt": "2026-09-08T01:35:45.332Z",
+          "respondedAt": "2026-09-08T01:35:45.362Z",
+          "responseWaitMs": 30.623707999999965,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7636249999999905
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:8",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:2",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 7.67108300000001,
+          "schemaMs": 0.39283399999999347,
+          "inputBytes": 98718,
+          "schemaBytes": 37981,
+          "readyAt": "2026-09-08T01:35:45.389Z",
+          "respondedAt": "2026-09-08T01:35:45.417Z",
+          "responseWaitMs": 28.585125000000005,
+          "validation": "accepted",
+          "payloadBuildMs": 0.777499999999975
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:9",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:2",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 10.613707999999974,
+          "schemaMs": 0.15295800000001236,
+          "inputBytes": 264473,
+          "schemaBytes": 13760,
+          "readyAt": "2026-09-08T01:35:45.429Z",
+          "respondedAt": "2026-09-08T01:35:45.459Z",
+          "responseWaitMs": 30.058042,
+          "validation": "accepted",
+          "payloadBuildMs": 1.394292000000064
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:10",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.969000000000051,
+          "schemaMs": 0.31837499999994634,
+          "inputBytes": 128367,
+          "schemaBytes": 41104,
+          "readyAt": "2026-09-08T01:35:45.487Z",
+          "respondedAt": "2026-09-08T01:35:45.516Z",
+          "responseWaitMs": 29.441708999999946,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7530829999999469
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:11",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 12.911082999999962,
+          "schemaMs": 0.14354200000002493,
+          "inputBytes": 340085,
+          "schemaBytes": 15261,
+          "readyAt": "2026-09-08T01:35:45.530Z",
+          "respondedAt": "2026-09-08T01:35:45.561Z",
+          "responseWaitMs": 31.344625000000065,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7630830000000515
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:12",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 8.797041000000036,
+          "schemaMs": 0.30912499999999454,
+          "inputBytes": 112615,
+          "schemaBytes": 41351,
+          "readyAt": "2026-09-08T01:35:45.592Z",
+          "respondedAt": "2026-09-08T01:35:45.621Z",
+          "responseWaitMs": 29.384208000000058,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7611249999999927
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:13",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 12.971875000000068,
+          "schemaMs": 0.1538749999999709,
+          "inputBytes": 315568,
+          "schemaBytes": 15070,
+          "readyAt": "2026-09-08T01:35:45.635Z",
+          "respondedAt": "2026-09-08T01:35:45.665Z",
+          "responseWaitMs": 30.271875000000023,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7807080000000042
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:14",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:3",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 9.485290999999961,
+          "schemaMs": 0.31691699999998946,
+          "inputBytes": 114677,
+          "schemaBytes": 40505,
+          "readyAt": "2026-09-08T01:35:45.696Z",
+          "respondedAt": "2026-09-08T01:35:45.725Z",
+          "responseWaitMs": 29.430165999999986,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7160000000000082
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:15",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:3",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 10.491416000000072,
+          "schemaMs": 0.1387089999999489,
+          "inputBytes": 291638,
+          "schemaBytes": 15283,
+          "readyAt": "2026-09-08T01:35:45.737Z",
+          "respondedAt": "2026-09-08T01:35:45.769Z",
+          "responseWaitMs": 31.397500000000036,
+          "validation": "accepted",
+          "payloadBuildMs": 1.5634589999999662
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:16",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.413875000000075,
+          "schemaMs": 0.3349159999999074,
+          "inputBytes": 144027,
+          "schemaBytes": 43254,
+          "readyAt": "2026-09-08T01:35:45.799Z",
+          "respondedAt": "2026-09-08T01:35:45.829Z",
+          "responseWaitMs": 29.593124999999986,
+          "validation": "accepted",
+          "payloadBuildMs": 0.8190829999999778
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:17",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 13.035209000000009,
+          "schemaMs": 0.14666599999998198,
+          "inputBytes": 361503,
+          "schemaBytes": 16656,
+          "readyAt": "2026-09-08T01:35:45.843Z",
+          "respondedAt": "2026-09-08T01:35:45.875Z",
+          "responseWaitMs": 31.671249999999986,
+          "validation": "accepted",
+          "payloadBuildMs": 1.045415999999932
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:18",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 10.797665999999936,
+          "schemaMs": 0.3204170000000204,
+          "inputBytes": 128274,
+          "schemaBytes": 43760,
+          "readyAt": "2026-09-08T01:35:45.910Z",
+          "respondedAt": "2026-09-08T01:35:45.940Z",
+          "responseWaitMs": 29.821083000000158,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7133750000000418
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:19",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 12.491915999999947,
+          "schemaMs": 0.14895900000010442,
+          "inputBytes": 334828,
+          "schemaBytes": 16565,
+          "readyAt": "2026-09-08T01:35:45.953Z",
+          "respondedAt": "2026-09-08T01:35:45.984Z",
+          "responseWaitMs": 30.60679200000004,
+          "validation": "accepted",
+          "payloadBuildMs": 0.786750000000211
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:20",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.657249999999976,
+          "schemaMs": 0.3645839999999225,
+          "inputBytes": 129279,
+          "schemaBytes": 42645,
+          "readyAt": "2026-09-08T01:35:46.012Z",
+          "respondedAt": "2026-09-08T01:35:46.041Z",
+          "responseWaitMs": 29.684166000000005,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7802090000000135
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:21",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 12.538542000000007,
+          "schemaMs": 0.1408329999999296,
+          "inputBytes": 310848,
+          "schemaBytes": 16662,
+          "readyAt": "2026-09-08T01:35:46.057Z",
+          "respondedAt": "2026-09-08T01:35:46.087Z",
+          "responseWaitMs": 30.300040999999965,
+          "validation": "accepted",
+          "payloadBuildMs": 2.94991600000003
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:22",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 13.679499999999962,
+          "schemaMs": 0.36954100000002654,
+          "inputBytes": 159524,
+          "schemaBytes": 45112,
+          "readyAt": "2026-09-08T01:35:46.127Z",
+          "respondedAt": "2026-09-08T01:35:46.157Z",
+          "responseWaitMs": 29.687124999999924,
+          "validation": "accepted",
+          "payloadBuildMs": 0.8582499999999982
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:23",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 13.43100000000004,
+          "schemaMs": 0.13008400000012443,
+          "inputBytes": 378536,
+          "schemaBytes": 17993,
+          "readyAt": "2026-09-08T01:35:46.171Z",
+          "respondedAt": "2026-09-08T01:35:46.201Z",
+          "responseWaitMs": 30.52229199999988,
+          "validation": "accepted",
+          "payloadBuildMs": 0.8200420000000577
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:24",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 12.073415999999952,
+          "schemaMs": 0.3282920000001468,
+          "inputBytes": 129819,
+          "schemaBytes": 43180,
+          "readyAt": "2026-09-08T01:35:46.242Z",
+          "respondedAt": "2026-09-08T01:35:46.271Z",
+          "responseWaitMs": 29.032375000000002,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7186670000000959
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:25",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.644875000000184,
+          "schemaMs": 0.13466699999980847,
+          "inputBytes": 324887,
+          "schemaBytes": 16995,
+          "readyAt": "2026-09-08T01:35:46.284Z",
+          "respondedAt": "2026-09-08T01:35:46.314Z",
+          "responseWaitMs": 30.648500000000013,
+          "validation": "accepted",
+          "payloadBuildMs": 0.8217499999998381
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:26",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.823417000000063,
+          "schemaMs": 0.3713329999998223,
+          "inputBytes": 138617,
+          "schemaBytes": 44365,
+          "readyAt": "2026-09-08T01:35:46.343Z",
+          "respondedAt": "2026-09-08T01:35:46.373Z",
+          "responseWaitMs": 30.016374999999925,
+          "validation": "accepted",
+          "payloadBuildMs": 0.8119999999998981
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:27",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.548999999999978,
+          "schemaMs": 0.1535839999999098,
+          "inputBytes": 329069,
+          "schemaBytes": 17789,
+          "readyAt": "2026-09-08T01:35:46.387Z",
+          "respondedAt": "2026-09-08T01:35:46.417Z",
+          "responseWaitMs": 30.53470900000002,
+          "validation": "accepted",
+          "payloadBuildMs": 1.727999999999838
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:28",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:6",
+          "phase": "awaiting_character_reflection",
+          "localPreparationMs": 6.67512499999998,
+          "schemaMs": 0.04004099999997379,
+          "inputBytes": 22930,
+          "schemaBytes": 1448,
+          "readyAt": "2026-09-08T01:35:46.451Z",
+          "respondedAt": "2026-09-08T01:35:46.479Z",
+          "responseWaitMs": 28.114458000000013,
+          "validation": "accepted",
+          "payloadBuildMs": 0.1329160000000229
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:29",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.54320800000005,
+          "schemaMs": 0.31312500000012733,
+          "inputBytes": 129821,
+          "schemaBytes": 41971,
+          "readyAt": "2026-09-08T01:35:46.498Z",
+          "respondedAt": "2026-09-08T01:35:46.528Z",
+          "responseWaitMs": 29.661125000000084,
+          "validation": "accepted",
+          "payloadBuildMs": 0.748833999999988
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:30",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.708750000000009,
+          "schemaMs": 0.13691700000003948,
+          "inputBytes": 318319,
+          "schemaBytes": 16933,
+          "readyAt": "2026-09-08T01:35:46.541Z",
+          "respondedAt": "2026-09-08T01:35:46.571Z",
+          "responseWaitMs": 30.09895800000004,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7825840000000426
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:31",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.339582999999948,
+          "schemaMs": 0.30495799999994233,
+          "inputBytes": 146247,
+          "schemaBytes": 45284,
+          "readyAt": "2026-09-08T01:35:46.611Z",
+          "respondedAt": "2026-09-08T01:35:46.640Z",
+          "responseWaitMs": 29.376250000000027,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7407499999999345
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:32",
+          "characterId": "char_xyy_zhoumin",
+          "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.53125,
+          "schemaMs": 0.13245800000004238,
+          "inputBytes": 345510,
+          "schemaBytes": 18453,
+          "readyAt": "2026-09-08T01:35:46.654Z",
+          "respondedAt": "2026-09-08T01:35:46.684Z",
+          "responseWaitMs": 29.960792000000083,
+          "validation": "accepted",
+          "payloadBuildMs": 1.751207999999906
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:33",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.234875000000102,
+          "schemaMs": 0.2966670000000704,
+          "inputBytes": 156391,
+          "schemaBytes": 44954,
+          "readyAt": "2026-09-08T01:35:46.725Z",
+          "respondedAt": "2026-09-08T01:35:46.753Z",
+          "responseWaitMs": 28.511749999999893,
+          "validation": "accepted",
+          "payloadBuildMs": 0.7562920000000304
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:34",
+          "characterId": "char_xyy_xiezenshi",
+          "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.962167000000136,
+          "schemaMs": 0.13912499999992178,
+          "inputBytes": 382713,
+          "schemaBytes": 18715,
+          "readyAt": "2026-09-08T01:35:46.766Z",
+          "respondedAt": "2026-09-08T01:35:46.798Z",
+          "responseWaitMs": 31.761708,
+          "validation": "accepted",
+          "payloadBuildMs": 0.8142499999999018
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:35",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+          "phase": "awaiting_subjective_appraisal_and_candidates",
+          "localPreparationMs": 11.107666999999992,
+          "schemaMs": 0.2646660000000338,
+          "inputBytes": 140152,
+          "schemaBytes": 45733,
+          "readyAt": "2026-09-08T01:35:46.837Z",
+          "respondedAt": "2026-09-08T01:35:46.866Z",
+          "responseWaitMs": 29.693958000000066,
+          "validation": "accepted",
+          "payloadBuildMs": 0.6829580000000988
+        },
+        {
+          "stageId": "22790d12-5a1b-443e-b13b-9441d0a0cf34:36",
+          "characterId": "char_xyy_luozhao",
+          "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+          "phase": "awaiting_agent_choice_and_turn_commit",
+          "localPreparationMs": 11.527666999999838,
+          "schemaMs": 0.14550000000008367,
+          "inputBytes": 359638,
+          "schemaBytes": 17791,
+          "readyAt": "2026-09-08T01:35:46.879Z",
+          "respondedAt": "2026-09-08T01:35:46.909Z",
+          "responseWaitMs": 30.465374999999995,
+          "validation": "accepted",
+          "payloadBuildMs": 0.797666000000163
+        }
+      ],
+      "turns": [
+        {
+          "settledCount": 1,
+          "state": "settled",
+          "elapsedMs": 73.877959,
+          "externalWaitMs": 62.866833,
+          "localElapsedMs": 11.011126000000004
+        },
+        {
+          "settledCount": 2,
+          "state": "settled",
+          "elapsedMs": 33.73275000000001,
+          "externalWaitMs": 27.73845800000001,
+          "localElapsedMs": 5.9942920000000015
+        },
+        {
+          "settledCount": 3,
+          "state": "settled",
+          "elapsedMs": 33.135290999999995,
+          "externalWaitMs": 27.559499999999986,
+          "localElapsedMs": 5.5757910000000095
+        },
+        {
+          "settledCount": 4,
+          "state": "settled",
+          "elapsedMs": 120.89950000000002,
+          "externalWaitMs": 60.792917999999986,
+          "localElapsedMs": 60.10658200000003
+        },
+        {
+          "settledCount": 5,
+          "state": "settled",
+          "elapsedMs": 103.08079100000003,
+          "externalWaitMs": 60.33699999999999,
+          "localElapsedMs": 42.743791000000044
+        },
+        {
+          "settledCount": 6,
+          "state": "settled",
+          "elapsedMs": 94.87616700000001,
+          "externalWaitMs": 58.643167000000005,
+          "localElapsedMs": 36.233000000000004
+        },
+        {
+          "settledCount": 7,
+          "state": "settled",
+          "elapsedMs": 107.18775000000005,
+          "externalWaitMs": 60.78633400000001,
+          "localElapsedMs": 46.40141600000004
+        },
+        {
+          "settledCount": 8,
+          "state": "settled",
+          "elapsedMs": 103.23283300000003,
+          "externalWaitMs": 59.65608300000008,
+          "localElapsedMs": 43.57674999999995
+        },
+        {
+          "settledCount": 9,
+          "state": "settled",
+          "elapsedMs": 101.565875,
+          "externalWaitMs": 60.82766600000002,
+          "localElapsedMs": 40.73820899999998
+        },
+        {
+          "settledCount": 10,
+          "state": "settled",
+          "elapsedMs": 111.57350000000008,
+          "externalWaitMs": 61.26437499999997,
+          "localElapsedMs": 50.30912500000011
+        },
+        {
+          "settledCount": 11,
+          "state": "settled",
+          "elapsedMs": 100.69162499999993,
+          "externalWaitMs": 60.4278750000002,
+          "localElapsedMs": 40.26374999999973
+        },
+        {
+          "settledCount": 12,
+          "state": "settled",
+          "elapsedMs": 113.1122919999998,
+          "externalWaitMs": 59.98420699999997,
+          "localElapsedMs": 53.12808499999983
+        },
+        {
+          "settledCount": 13,
+          "state": "settled",
+          "elapsedMs": 117.08912499999997,
+          "externalWaitMs": 60.2094169999998,
+          "localElapsedMs": 56.879708000000164
+        },
+        {
+          "settledCount": 14,
+          "state": "settled",
+          "elapsedMs": 101.27704100000005,
+          "externalWaitMs": 59.680875000000015,
+          "localElapsedMs": 41.59616600000004
+        },
+        {
+          "settledCount": 15,
+          "state": "settled",
+          "elapsedMs": 113.60291699999993,
+          "externalWaitMs": 60.551083999999946,
+          "localElapsedMs": 53.05183299999999
+        },
+        {
+          "settledCount": 16,
+          "state": "settled",
+          "elapsedMs": 41.79074999999989,
+          "externalWaitMs": 28.114458000000013,
+          "localElapsedMs": 13.676291999999876
+        },
+        {
+          "settledCount": 17,
+          "state": "settled",
+          "elapsedMs": 112.82483300000013,
+          "externalWaitMs": 59.76008300000012,
+          "localElapsedMs": 53.064750000000004
+        },
+        {
+          "settledCount": 18,
+          "state": "settled",
+          "elapsedMs": 113.80020799999988,
+          "externalWaitMs": 59.33704200000011,
+          "localElapsedMs": 54.463165999999774
+        },
+        {
+          "settledCount": 19,
+          "state": "settled",
+          "elapsedMs": 112.07704200000012,
+          "externalWaitMs": 60.27345799999989,
+          "localElapsedMs": 51.80358400000023
+        },
+        {
+          "settledCount": 20,
+          "state": "settled",
+          "elapsedMs": 102.20558299999993,
+          "externalWaitMs": 60.15933300000006,
+          "localElapsedMs": 42.04624999999987
+        }
+      ]
+    }
+  }
+}

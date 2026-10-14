@@ -1,0 +1,1352 @@
+{
+  "blueprintVersion": 1,
+  "meta": {
+    "id": "river_town",
+    "title": "青溪渡",
+    "premise": "青溪渡是山水相依的渡口小镇，水路通达、渡客往来。今晨官船要靠岸，船上的重锚断了一齿，水手又受了寒；铁匠铺和百草堂都得赶在午前把东西备好。",
+    "genre": "古风水镇",
+    "tone": "温情里带点悬疑",
+    "language": "zh-Hans",
+    "startDay": "霜降前三日",
+    "startClock": "08:00",
+    "startLabel": "清晨辰时",
+    "seed": 42
+  },
+  "town": {
+    "name": "青溪渡",
+    "terrain": {
+      "river": "south",
+      "forest": "west",
+      "hills": null,
+      "fields": null
+    },
+    "sites": [
+      {
+        "id": "iron_forge",
+        "type": "smithy",
+        "name": "铁匠铺",
+        "householdId": "tie_house"
+      },
+      {
+        "id": "river_inn",
+        "type": "inn",
+        "name": "青溪客栈",
+        "householdId": "lin_house"
+      },
+      {
+        "id": "baicao_hall",
+        "type": "herb_shop",
+        "name": "百草堂",
+        "householdId": "song_house"
+      },
+      {
+        "id": "chen_residence",
+        "type": "home",
+        "name": "陈家木屋",
+        "householdId": "chen_house"
+      },
+      {
+        "id": "zhou_residence",
+        "type": "home",
+        "name": "周家渔舍",
+        "householdId": "zhou_house"
+      },
+      {
+        "id": "stone_bridge",
+        "type": "bridge",
+        "name": "青溪石桥"
+      },
+      {
+        "id": "river_pier",
+        "type": "river_bank",
+        "name": "青溪渡口"
+      },
+      {
+        "id": "south_market",
+        "type": "market",
+        "name": "南街早市"
+      },
+      {
+        "id": "bamboo_wood",
+        "type": "forest",
+        "name": "西山竹林"
+      }
+    ]
+  },
+  "households": [
+    {
+      "id": "tie_house",
+      "name": "铁家",
+      "siteId": "iron_forge"
+    },
+    {
+      "id": "lin_house",
+      "name": "林家",
+      "siteId": "river_inn"
+    },
+    {
+      "id": "song_house",
+      "name": "宋家",
+      "siteId": "baicao_hall"
+    },
+    {
+      "id": "chen_house",
+      "name": "陈家",
+      "siteId": "chen_residence"
+    },
+    {
+      "id": "zhou_house",
+      "name": "周家",
+      "siteId": "zhou_residence"
+    }
+  ],
+  "residents": [
+    {
+      "id": "tie_kui",
+      "name": "铁魁",
+      "age": 46,
+      "role": "铁匠铺老铁匠",
+      "householdId": "tie_house",
+      "workSiteId": "iron_forge",
+      "appearance": {
+        "skin": "#b08060",
+        "hair": "#222222",
+        "robe": "#4a3c31",
+        "sash": "#2c221e",
+        "styles": [
+          "short"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.6,
+        "persistence": 0.85,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.4,
+        "care": 0.6,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "smithing"
+      ],
+      "speech": {
+        "style": "声如洪钟，言辞少而硬气。",
+        "samples": [
+          "打铁讲究火候，急不得。"
+        ]
+      },
+      "situation": "官船过境催修铁锚，手臂陈年暗伤又隐隐发作。",
+      "desires": [
+        {
+          "verb": "修好",
+          "object": "官船重锚",
+          "outcome": "赶在正午前把铁锚加固交付",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "不交残次物件"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在炉间锻打铁锚",
+          "siteId": "iron_forge"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三年前",
+          "content": "为了赶制农具累伤了右臂筋骨。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "tie_feng",
+      "name": "铁峰",
+      "age": 19,
+      "role": "铁匠学徒 / 铁魁之子",
+      "householdId": "tie_house",
+      "workSiteId": "iron_forge",
+      "appearance": {
+        "skin": "#c89470",
+        "hair": "#282420",
+        "robe": "#6a5445",
+        "sash": "#403228",
+        "styles": [],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.4,
+        "persistence": 0.7,
+        "conscientiousness": 0.6,
+        "competitiveness": 0.65,
+        "care": 0.5,
+        "caution": 0.4,
+        "impulsivity": 0.6
+      },
+      "skills": [
+        "smithing"
+      ],
+      "speech": {
+        "style": "直爽利落，心直口快。",
+        "samples": [
+          "爹，这炉火我来拉风箱！"
+        ]
+      },
+      "situation": "想证明自己能独当一面，暗中帮父亲承担重活。",
+      "desires": [
+        {
+          "verb": "打成",
+          "object": "官船重锚",
+          "outcome": "让父亲省力歇息并夸奖自己",
+          "strength": 0.75
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在炉房拉风箱打铁",
+          "siteId": "iron_forge"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨晚",
+          "content": "听见爹在屋里擦药酒叹气。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "lin_zhanggui",
+      "name": "林掌柜",
+      "age": 52,
+      "role": "青溪客栈掌柜",
+      "householdId": "lin_house",
+      "workSiteId": "river_inn",
+      "appearance": {
+        "skin": "#d8a480",
+        "hair": "#3a3028",
+        "robe": "#2c4a52",
+        "sash": "#1a2c32",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.3,
+        "persistence": 0.7,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.5,
+        "care": 0.6,
+        "caution": 0.7,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "圆融周到，面带笑意但精明利落。",
+        "samples": [
+          "南来北往皆是客，客官里边请。"
+        ]
+      },
+      "situation": "客栈来了位出手阔绰的神秘渡客，正紧盯大堂动静。",
+      "desires": [
+        {
+          "verb": "照看好",
+          "object": "青溪客栈",
+          "outcome": "今日大堂相安无事且账目清楚",
+          "strength": 0.7
+        }
+      ],
+      "principles": [
+        "和气生财"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在客栈大堂迎客算账",
+          "siteId": "river_inn"
+        }
+      ],
+      "memories": [
+        {
+          "when": "清晨",
+          "content": "那位渡客包下了最安静的东客房。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "lin_xiaoer",
+      "name": "林小二",
+      "age": 18,
+      "role": "客栈跑堂 / 林掌柜侄儿",
+      "householdId": "lin_house",
+      "workSiteId": "river_inn",
+      "appearance": {
+        "skin": "#e0b088",
+        "hair": "#322820",
+        "robe": "#8c7258",
+        "sash": "#4c3e30",
+        "styles": [],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.4,
+        "introversion": 0.2,
+        "persistence": 0.5,
+        "conscientiousness": 0.6,
+        "competitiveness": 0.4,
+        "care": 0.65,
+        "caution": 0.5,
+        "impulsivity": 0.6
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "嗓音清脆，脚步飞快。",
+        "samples": [
+          "热茶一壶，客官稍等！"
+        ]
+      },
+      "situation": "忙着招呼渡口下来的散客，端茶倒水。",
+      "desires": [
+        {
+          "verb": "沏好",
+          "object": "茶水",
+          "outcome": "青溪客栈大堂里的客人都有热茶喝",
+          "strength": 0.6
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在客栈大堂沏茶送水",
+          "siteId": "river_inn"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今晨",
+          "content": "渡客赏了他两枚崭新的铜钱。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "cui_yuniang",
+      "name": "崔玉娘",
+      "age": 45,
+      "role": "客栈厨娘 / 林掌柜妻子",
+      "householdId": "lin_house",
+      "workSiteId": "river_inn",
+      "appearance": {
+        "skin": "#dcab8a",
+        "hair": "#2e241e",
+        "robe": "#6e4854",
+        "sash": "#402a32",
+        "styles": [
+          "apron",
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.5,
+        "persistence": 0.7,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.3,
+        "care": 0.75,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "温和细致，说话慢条斯理。",
+        "samples": [
+          "锅里炖着鱼汤，鲜着呢。"
+        ]
+      },
+      "situation": "后厨正煨着给客官们的新鲜河鲜汤。",
+      "desires": [
+        {
+          "verb": "做好",
+          "object": "河鲜汤",
+          "outcome": "午市前在青溪客栈后厨备好几大锅热汤",
+          "strength": 0.65
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在后厨掌勺炖汤",
+          "siteId": "river_inn"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨晚",
+          "content": "向周渔夫预订了今晨刚打上来的青白鱼。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "song_daifu",
+      "name": "宋大夫",
+      "age": 58,
+      "role": "百草堂坐堂医",
+      "householdId": "song_house",
+      "workSiteId": "baicao_hall",
+      "appearance": {
+        "skin": "#deb090",
+        "hair": "#504840",
+        "robe": "#4a5a4a",
+        "sash": "#2a362a",
+        "styles": [
+          "beard",
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.65,
+        "introversion": 0.6,
+        "persistence": 0.8,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.3,
+        "care": 0.8,
+        "caution": 0.75,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "medicine",
+        "herbalism"
+      ],
+      "speech": {
+        "style": "沉稳严谨，医者仁心。",
+        "samples": [
+          "草药分毫之差，药效天壤之别。"
+        ]
+      },
+      "situation": "受托为官船水手配制避风清寒的散剂，正等药童取药。",
+      "desires": [
+        {
+          "verb": "配好",
+          "object": "清寒药散",
+          "outcome": "午时前合好药散交付渡口",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "对症下药，分文不欺"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在百草堂研药看诊",
+          "siteId": "baicao_hall"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天",
+          "content": "铁魁的手臂若再劳损，恐难再拿铁锤。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "song_ling",
+      "name": "宋苓",
+      "age": 16,
+      "role": "百草堂药童 / 宋大夫孙女",
+      "householdId": "song_house",
+      "workSiteId": "baicao_hall",
+      "appearance": {
+        "skin": "#f0c4a4",
+        "hair": "#2a221c",
+        "robe": "#5c7a68",
+        "sash": "#34483c",
+        "styles": [
+          "braid"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.4,
+        "persistence": 0.65,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.4,
+        "care": 0.7,
+        "caution": 0.6,
+        "impulsivity": 0.4
+      },
+      "skills": [
+        "herbalism"
+      ],
+      "speech": {
+        "style": "声音清润灵巧，极有条理。",
+        "samples": [
+          "爷爷，紫苏和甘草已经秤好了。"
+        ]
+      },
+      "situation": "在药柜前抓药秤药，细心包扎药方。",
+      "desires": [
+        {
+          "verb": "备齐",
+          "object": "清寒药散",
+          "outcome": "核验好每一味药材没有疏漏",
+          "strength": 0.7
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在铺面柜台抓药分包",
+          "siteId": "baicao_hall"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今晨",
+          "content": "仔细擦拭了爷爷最常用的紫铜小药秤。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "chen_laohan",
+      "name": "陈老汉",
+      "age": 62,
+      "role": "竹器老匠",
+      "householdId": "chen_house",
+      "workSiteId": "bamboo_wood",
+      "appearance": {
+        "skin": "#b88a68",
+        "hair": "#5a524a",
+        "robe": "#544638",
+        "sash": "#322820",
+        "styles": [
+          "short"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.7,
+        "persistence": 0.8,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.3,
+        "care": 0.65,
+        "caution": 0.65,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "沙哑缓和，饱经风霜。",
+        "samples": [
+          "山里的老竹子，韧性才够打渔篓。"
+        ]
+      },
+      "situation": "答应给周家编三只结实的大鱼篓，准备进竹林选材。",
+      "desires": [
+        {
+          "verb": "砍取",
+          "object": "青竹",
+          "outcome": "从西山竹林采选到合适的好竹",
+          "strength": 0.65
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "11:30",
+          "activity": "去竹林深处选砍青竹",
+          "siteId": "bamboo_wood"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三天前",
+          "content": "周渔夫托他做新鱼篓准备赶秋汛。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "chen_mu",
+      "name": "陈木",
+      "age": 25,
+      "role": "木匠 / 陈老汉之子",
+      "householdId": "chen_house",
+      "workSiteId": "chen_residence",
+      "appearance": {
+        "skin": "#cb9876",
+        "hair": "#2e241c",
+        "robe": "#705c48",
+        "sash": "#423428",
+        "styles": [],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.55,
+        "introversion": 0.5,
+        "persistence": 0.75,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.5,
+        "care": 0.6,
+        "caution": 0.55,
+        "impulsivity": 0.4
+      },
+      "skills": [
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "话不多但手脚麻利。",
+        "samples": [
+          "爹，沉的竹子我来扛。"
+        ]
+      },
+      "situation": "在院中刨木修整家具，顺便照应父亲。",
+      "desires": [
+        {
+          "verb": "做好",
+          "object": "木凳",
+          "outcome": "修整好南街铺子要的木器",
+          "strength": 0.6
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在木屋堂屋刨木打榫",
+          "siteId": "chen_residence"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天",
+          "content": "在渡口帮客栈修好了松动的茶桌。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "chen_ahao",
+      "name": "陈阿豪",
+      "age": 12,
+      "role": "学童 / 陈木幼弟",
+      "householdId": "chen_house",
+      "workSiteId": "chen_residence",
+      "appearance": {
+        "skin": "#deb492",
+        "hair": "#28201a",
+        "robe": "#9c8064",
+        "sash": "#5c4838",
+        "styles": [],
+        "child": true
+      },
+      "personality": {
+        "autonomy": 0.4,
+        "introversion": 0.3,
+        "persistence": 0.4,
+        "conscientiousness": 0.4,
+        "competitiveness": 0.6,
+        "care": 0.5,
+        "caution": 0.4,
+        "impulsivity": 0.7
+      },
+      "skills": [],
+      "speech": {
+        "style": "机灵顽皮，好奇心旺盛。",
+        "samples": [
+          "二哥，渡口今天来了一艘好大的黑蓬船！"
+        ]
+      },
+      "situation": "被要求在家里温书，眼睛却总往窗外渡口瞟。",
+      "desires": [
+        {
+          "verb": "溜到",
+          "object": "南街早市",
+          "outcome": "去早市看捏糖人和大黑船",
+          "strength": 0.55
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "11:30",
+          "activity": "在堂屋温书写字",
+          "siteId": "chen_residence"
+        }
+      ],
+      "memories": [
+        {
+          "when": "清晨",
+          "content": "看见渡客从船上抬下来一只很沉的木箱。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "zhou_yufu",
+      "name": "周渔夫",
+      "age": 48,
+      "role": "资深老渔翁",
+      "householdId": "zhou_house",
+      "workSiteId": "river_pier",
+      "appearance": {
+        "skin": "#aa7a54",
+        "hair": "#3a322c",
+        "robe": "#3e4c56",
+        "sash": "#243038",
+        "styles": [
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.5,
+        "persistence": 0.8,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.5,
+        "care": 0.65,
+        "caution": 0.7,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "fishing"
+      ],
+      "speech": {
+        "style": "嗓音粗犷，见惯风浪。",
+        "samples": [
+          "水头急，走船得看青溪石桥的标线。"
+        ]
+      },
+      "situation": "今早收网大获，正忙着在渡口分拣鲜鱼交付客栈与早市。",
+      "desires": [
+        {
+          "verb": "送交",
+          "object": "鲜鱼篓",
+          "outcome": "将活鱼送到客栈崔玉娘手里",
+          "strength": 0.75
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在渡口泊船点鱼交付",
+          "siteId": "river_pier"
+        }
+      ],
+      "memories": [
+        {
+          "when": "拂晓",
+          "content": "在河湾里捞到一条肥美的青白鱼。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "zhou_dasao",
+      "name": "周大嫂",
+      "age": 46,
+      "role": "渔妇 / 周渔夫之妻",
+      "householdId": "zhou_house",
+      "workSiteId": "south_market",
+      "appearance": {
+        "skin": "#cb9874",
+        "hair": "#342a22",
+        "robe": "#584e44",
+        "sash": "#382e26",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.3,
+        "persistence": 0.7,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.55,
+        "care": 0.7,
+        "caution": 0.6,
+        "impulsivity": 0.4
+      },
+      "skills": [
+        "fishing"
+      ],
+      "speech": {
+        "style": "热情爽快，叫卖声响亮。",
+        "samples": [
+          "刚出水的青溪鲤鱼，鲜着呢！"
+        ]
+      },
+      "situation": "在南街早市支开鱼摊，热络张罗买卖。",
+      "desires": [
+        {
+          "verb": "卖完",
+          "object": "早市鱼摊",
+          "outcome": "半日前把今早的鲜鱼卖个好价钱",
+          "strength": 0.7
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在南街早市摆摊叫卖",
+          "siteId": "south_market"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今晨",
+          "content": "摊头早早就围了几个买鱼的镇民。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "zhou_xiaomei",
+      "name": "周小妹",
+      "age": 14,
+      "role": "渔家小女",
+      "householdId": "zhou_house",
+      "workSiteId": "zhou_residence",
+      "appearance": {
+        "skin": "#e0b490",
+        "hair": "#28201a",
+        "robe": "#6b7a84",
+        "sash": "#445058",
+        "styles": [
+          "braid"
+        ],
+        "child": true
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.4,
+        "persistence": 0.6,
+        "conscientiousness": 0.65,
+        "competitiveness": 0.4,
+        "care": 0.65,
+        "caution": 0.5,
+        "impulsivity": 0.5
+      },
+      "skills": [
+        "fishing"
+      ],
+      "speech": {
+        "style": "脆生生，带着水乡姑娘的灵动。",
+        "samples": [
+          "爹，渡口的缆绳我给系紧了！"
+        ]
+      },
+      "situation": "帮家里补缀晾晒的渔网，打扫柴舍。",
+      "desires": [
+        {
+          "verb": "补好",
+          "object": "麻线渔网",
+          "outcome": "在周家渔舍把破损的网眼全都织牢",
+          "strength": 0.6
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:00",
+          "to": "11:30",
+          "activity": "在渔舍门前补网",
+          "siteId": "zhou_residence"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天",
+          "content": "跟宋苓姐姐学会了辨认水边止血的青蒿。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "fang_ke",
+      "name": "方客",
+      "age": 32,
+      "role": "神秘渡客 / 借住周家旧舍",
+      "householdId": "zhou_house",
+      "workSiteId": "river_inn",
+      "appearance": {
+        "skin": "#d0a480",
+        "hair": "#1c1c1c",
+        "robe": "#28343c",
+        "sash": "#141c22",
+        "styles": [
+          "hat"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.85,
+        "introversion": 0.8,
+        "persistence": 0.75,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.6,
+        "care": 0.4,
+        "caution": 0.85,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "reading"
+      ],
+      "speech": {
+        "style": "压低嗓门，言简意赅，眼神警惕。",
+        "samples": [
+          "午时开船？那便好。"
+        ]
+      },
+      "situation": "带重物避风在此，等待午时北上的接应官船，暗中观察客栈与渡口。",
+      "desires": [
+        {
+          "verb": "登离",
+          "object": "接引官船",
+          "outcome": "在午时安稳登船离开青溪渡",
+          "strength": 0.85
+        }
+      ],
+      "principles": [
+        "不惹闲事"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "08:30",
+          "to": "11:30",
+          "activity": "在客栈东客房静坐候船",
+          "siteId": "river_inn"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨夜",
+          "content": "沿青溪顺流而下，天亮前将贵重铁匣寄存在石桥暗洞中。"
+        }
+      ],
+      "secrets": [
+        "石桥下的青铜机关匣"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "tie_feng",
+      "to": "tie_kui",
+      "label": "父子 / 敬重与担当",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 80,
+        "protection": 60
+      },
+      "unspoken": "爹的手腕不能再硬扛了。",
+      "misreading": ""
+    },
+    {
+      "from": "tie_kui",
+      "to": "tie_feng",
+      "label": "父子 / 严厉与期许",
+      "address": [
+        "峰儿"
+      ],
+      "feelings": {
+        "love": 80,
+        "power": 65
+      },
+      "unspoken": "这孩子骨架子长成了，是块好铁。",
+      "misreading": ""
+    },
+    {
+      "from": "lin_xiaoer",
+      "to": "lin_zhanggui",
+      "label": "叔侄 / 唯命是从",
+      "address": [
+        "二叔"
+      ],
+      "feelings": {
+        "love": 70,
+        "dependence": 60
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "lin_zhanggui",
+      "to": "lin_xiaoer",
+      "label": "叔侄 / 提点照看",
+      "address": [
+        "小二"
+      ],
+      "feelings": {
+        "love": 65,
+        "power": 60
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "cui_yuniang",
+      "to": "lin_zhanggui",
+      "label": "夫妻 / 默契操持",
+      "address": [
+        "当家的"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "lin_zhanggui",
+      "to": "cui_yuniang",
+      "label": "夫妻 / 信任倚重",
+      "address": [
+        "玉娘"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "song_ling",
+      "to": "song_daifu",
+      "label": "祖孙 / 依恋敬爱",
+      "address": [
+        "爷爷"
+      ],
+      "feelings": {
+        "love": 90,
+        "dependence": 70
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "song_daifu",
+      "to": "song_ling",
+      "label": "祖孙 / 慈爱传艺",
+      "address": [
+        "苓儿"
+      ],
+      "feelings": {
+        "love": 90,
+        "protection": 75
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "chen_mu",
+      "to": "chen_laohan",
+      "label": "父子 / 孝顺分忧",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 80,
+        "protection": 55
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "chen_laohan",
+      "to": "chen_mu",
+      "label": "父子 / 踏实安心",
+      "address": [
+        "木头"
+      ],
+      "feelings": {
+        "love": 80
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "chen_ahao",
+      "to": "chen_mu",
+      "label": "兄弟 / 缠人讨趣",
+      "address": [
+        "哥"
+      ],
+      "feelings": {
+        "love": 75
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "zhou_dasao",
+      "to": "zhou_yufu",
+      "label": "夫妻 / 同舟共济",
+      "address": [
+        "老周"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "zhou_yufu",
+      "to": "zhou_dasao",
+      "label": "夫妻 / 关照体谅",
+      "address": [
+        "孩他娘"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "zhou_xiaomei",
+      "to": "zhou_yufu",
+      "label": "父女 / 乖巧依顺",
+      "address": [
+        "爹"
+      ],
+      "feelings": {
+        "love": 85
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "fang_ke",
+      "to": "lin_zhanggui",
+      "label": "房客与掌柜 / 戒备周旋",
+      "address": [
+        "林掌柜"
+      ],
+      "feelings": {
+        "wantsToEscape": 50
+      },
+      "unspoken": "莫要多打听。",
+      "misreading": "以为掌柜盯梢自己"
+    },
+    {
+      "from": "zhou_yufu",
+      "to": "cui_yuniang",
+      "label": "商邻 / 供鱼送鲜",
+      "address": [
+        "崔娘子"
+      ],
+      "feelings": {
+        "love": 40
+      },
+      "unspoken": "",
+      "misreading": ""
+    },
+    {
+      "from": "song_daifu",
+      "to": "tie_kui",
+      "label": "医患与老友 / 关切提醒",
+      "address": [
+        "铁师傅"
+      ],
+      "feelings": {
+        "love": 50,
+        "protection": 50
+      },
+      "unspoken": "再拼命，手就废了。",
+      "misreading": ""
+    },
+    {
+      "from": "song_ling",
+      "to": "zhou_xiaomei",
+      "label": "同龄密友 / 欢喜相投",
+      "address": [
+        "小妹"
+      ],
+      "feelings": {
+        "love": 75
+      },
+      "unspoken": "",
+      "misreading": ""
+    }
+  ],
+  "opening": {
+    "situation": "青溪渡今晨晨雾渐散，官船过境催修重锚并求药散，渡客方客暗藏铁匣待渡。",
+    "positions": {
+      "tie_kui": "iron_forge",
+      "tie_feng": "iron_forge",
+      "lin_zhanggui": "river_inn",
+      "lin_xiaoer": "river_inn",
+      "cui_yuniang": "river_inn",
+      "song_daifu": "baicao_hall",
+      "song_ling": "baicao_hall",
+      "chen_laohan": "chen_residence",
+      "chen_mu": "chen_residence",
+      "chen_ahao": "chen_residence",
+      "zhou_yufu": "river_pier",
+      "zhou_dasao": "south_market",
+      "zhou_xiaomei": "zhou_residence",
+      "fang_ke": "river_inn"
+    },
+    "objects": [
+      {
+        "name": "官船重锚",
+        "siteId": "iron_forge",
+        "holder": null,
+        "madeAt": "iron_forge",
+        "needed": 2,
+        "known": "public",
+        "state": {}
+      },
+      {
+        "name": "清寒药散",
+        "siteId": "baicao_hall",
+        "holder": null,
+        "madeAt": "baicao_hall",
+        "needed": 1,
+        "known": "public",
+        "state": {}
+      },
+      {
+        "name": "鲜鱼篓",
+        "siteId": "river_pier",
+        "holder": "zhou_yufu",
+        "state": {
+          "delivered": false,
+          "count": 1
+        },
+        "known": "public"
+      },
+      {
+        "name": "青铜机关匣",
+        "siteId": "stone_bridge",
+        "holder": null,
+        "state": {
+          "opened": false,
+          "count": 1
+        },
+        "known": "hidden"
+      }
+    ],
+    "deadlines": [
+      {
+        "label": "午时前修好官船重锚，交到渡口周渔夫手里",
+        "dueClock": "12:00",
+        "responsible": [
+          "tie_kui",
+          "tie_feng"
+        ],
+        "knownBy": [
+          "tie_kui",
+          "tie_feng",
+          "lin_zhanggui",
+          "zhou_yufu"
+        ],
+        "conditions": [
+          {
+            "kind": "object_ready",
+            "object": "官船重锚"
+          },
+          {
+            "kind": "object_holder",
+            "object": "官船重锚",
+            "holder": "zhou_yufu"
+          }
+        ],
+        "consequence": "官船渡口延误，铁匠铺声誉受损且面临差役问责。"
+      },
+      {
+        "label": "巳时前配齐清寒药散，送到渡口周渔夫手里",
+        "dueClock": "10:30",
+        "responsible": [
+          "song_daifu",
+          "song_ling"
+        ],
+        "knownBy": [
+          "song_daifu",
+          "song_ling",
+          "zhou_yufu"
+        ],
+        "conditions": [
+          {
+            "kind": "object_ready",
+            "object": "清寒药散"
+          },
+          {
+            "kind": "object_holder",
+            "object": "清寒药散",
+            "holder": "zhou_yufu"
+          }
+        ],
+        "consequence": "官船水手受寒无药可服，宋大夫食言于人。"
+      }
+    ],
+    "mysteries": [
+      "石桥暗拱洞里隐约反射铜光的带锁方匣究竟藏着何物",
+      "方客腰间那块刻着飞雁纹样的青玉佩从何而来"
+    ],
+    "events": [],
+    "visitors": []
+  }
+}

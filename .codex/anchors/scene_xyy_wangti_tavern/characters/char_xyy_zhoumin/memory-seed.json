@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "ownerCharacterId": "char_xyy_zhoumin",
+  "status": "draft",
+  "emptyReason": "",
+  "sourcePolicy": {
+    "rule": "Only Zhou Min's owned experience, self-action, current subjective belief, or a directly received sourced request may enter this seed.",
+    "unassignedNumericFields": [
+      "confidence",
+      "retentionStrength",
+      "accessibility",
+      "importance"
+    ],
+    "forbiddenProspectiveEvents": [
+      "周珉已经因压力欺瞒、利用友情或伤害他人",
+      "谢真石已经答应或完成举荐",
+      "周珉已经获得考核资格或成为内门弟子",
+      "周珉已经因重大选择改变自我认识"
+    ]
+  },
+  "episodes": [
+    {
+      "id": "episode:zhoumin:mother-required-inner-court",
+      "objectiveEventId": "authoritative-prestory-fact:zhoumin:mother-required-inner-court",
+      "ownerCharacterId": "char_xyy_zhoumin",
+      "sourceType": "firsthand_direct_request_semantic_summary",
+      "source": {
+        "kind": "firsthand",
+        "immediateSourceCharacterId": "char_xyy_zhoumin_mother",
+        "speakerCharacterId": "char_xyy_zhoumin_mother",
+        "characterChain": [
+          "char_xyy_zhoumin_mother"
+        ],
+        "confidence": null,
+        "confidenceBand": "user_confirmed_direct_relationship_pressure",
+        "evidenceIds": [
+          "E_ZM_MATERNAL_DIRECT_DEMAND_001"
+        ]
+      },
+      "perceivedAt": {
+        "storyTime": "before_current_tavern_simulation",
+        "worldDay": null,
+        "seconds": null,
+        "timePrecision": "exact_time_unknown"
+      },
+      "locationId": "unknown_direct_contact_location",
+      "locationStatus": "not_confirmed",
+      "zoneId": "",
+      "perception": {
+        "modality": "direct_speech_semantic_summary",
+        "modalities": [
+          "direct_speech_semantic_summary"
+        ],
+        "content": "周珉的母亲明确要求他进入内门；具体原话、时间、地点和当时处境尚未确认。",
+        "topic": "母亲对内门身份的要求",
+        "fragments": []
+      },
+      "semanticFrame": {
+        "id": "frame:zhoumin:mother-requires-inner-court",
+        "kind": "family_expectation_request",
+        "predicate": "require_status_pursuit",
+        "topicId": "zhoumin_maternal_inner_court_expectation",
+        "roles": {
+          "speaker": "char_xyy_zhoumin_mother",
+          "requestedActor": "char_xyy_zhoumin",
+          "statusBeneficiary": "char_xyy_zhoumin",
+          "familyBeneficiary": "char_xyy_zhoumin_mother"
+        },
+        "object": {
+          "id": "status_xyy_tiyunzong_inner_court",
+          "label": "梯云宗内门弟子身份"
+        },
+        "truthValue": "directly_requested",
+        "lexicalAnchors": [
+          "母亲",
+          "内门",
+          "要求"
+        ],
+        "importance": null
+      },
+      "interpretations": [
+        {
+          "claim": "这里只确认母亲明确提出要求；不补写她的原话、动机、态度，也不把要求变成周珉必须服从的外部命令。",
+          "status": "semantic_boundary"
+        }
+      ],
+      "retrievalCues": [
+        "母亲",
+        "内门",
+        "乡里评价",
+        "钱与地位",
+        "受阻"
+      ],
+      "retentionStrength": null,
+      "accessibility": null,
+      "importance": null,
+      "protected": true
+    }
+  ],
+  "beliefs": [],
+  "commitments": [],
+  "impressions": [],
+  "selfNarrative": {
+    "currentClaims": [],
+    "versions": []
+  }
+}

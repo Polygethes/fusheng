@@ -1,0 +1,2334 @@
+{
+  "blueprintVersion": 1,
+  "meta": {
+    "id": "big_town",
+    "title": "柳湾镇",
+    "premise": "江南水乡柳湾镇依水而建，水陆通达。今晨望月石桥承重铁梁亟待更换，客栈岁贡云雾茶急等过目点验，六户人家各操生计，晨烟初起。",
+    "genre": "古风水乡",
+    "tone": "市井生机与温情",
+    "language": "zh-Hans",
+    "startDay": "立夏",
+    "startClock": "07:00",
+    "startLabel": "清晨卯末",
+    "seed": 42
+  },
+  "town": {
+    "name": "柳湾镇",
+    "terrain": {
+      "river": "south",
+      "forest": "north",
+      "hills": null,
+      "fields": "west"
+    },
+    "sites": [
+      {
+        "id": "gu_home",
+        "type": "home",
+        "name": "顾家老宅",
+        "householdId": "gu_house"
+      },
+      {
+        "id": "lu_home",
+        "type": "home",
+        "name": "陆家小筑",
+        "householdId": "lu_house"
+      },
+      {
+        "id": "tian_farmhouse",
+        "type": "farmhouse",
+        "name": "田家农院",
+        "householdId": "tian_house"
+      },
+      {
+        "id": "jiang_home",
+        "type": "home",
+        "name": "江家水阁",
+        "householdId": "jiang_house"
+      },
+      {
+        "id": "shen_home",
+        "type": "home",
+        "name": "沈家临街院",
+        "householdId": "shen_house"
+      },
+      {
+        "id": "he_home",
+        "type": "home",
+        "name": "贺家小院",
+        "householdId": "he_house"
+      },
+      {
+        "id": "liuwan_smithy",
+        "type": "smithy",
+        "name": "柳湾铁铺"
+      },
+      {
+        "id": "liuwan_inn",
+        "type": "inn",
+        "name": "柳湾客栈"
+      },
+      {
+        "id": "baohe_herb_shop",
+        "type": "herb_shop",
+        "name": "保和药堂"
+      },
+      {
+        "id": "yunlai_shop",
+        "type": "shop",
+        "name": "云来杂货铺"
+      },
+      {
+        "id": "chunfeng_school",
+        "type": "school",
+        "name": "春风书塾"
+      },
+      {
+        "id": "town_square",
+        "type": "square",
+        "name": "柳湾晒场"
+      },
+      {
+        "id": "ancient_well",
+        "type": "well",
+        "name": "双眼古井"
+      },
+      {
+        "id": "morning_market",
+        "type": "market",
+        "name": "柳湾晨市"
+      },
+      {
+        "id": "bamboo_forest",
+        "type": "forest",
+        "name": "青竹林"
+      },
+      {
+        "id": "rice_fields",
+        "type": "field",
+        "name": "西郊稻田"
+      },
+      {
+        "id": "river_wharf",
+        "type": "river_bank",
+        "name": "柳湾码头"
+      },
+      {
+        "id": "moon_bridge",
+        "type": "bridge",
+        "name": "望月石桥"
+      },
+      {
+        "id": "official_road",
+        "type": "road_out",
+        "name": "出镇官道"
+      }
+    ]
+  },
+  "households": [
+    {
+      "id": "gu_house",
+      "name": "顾家",
+      "siteId": "gu_home"
+    },
+    {
+      "id": "lu_house",
+      "name": "陆家",
+      "siteId": "lu_home"
+    },
+    {
+      "id": "tian_house",
+      "name": "田家",
+      "siteId": "tian_farmhouse"
+    },
+    {
+      "id": "jiang_house",
+      "name": "江家",
+      "siteId": "jiang_home"
+    },
+    {
+      "id": "shen_house",
+      "name": "沈家",
+      "siteId": "shen_home"
+    },
+    {
+      "id": "he_house",
+      "name": "贺家",
+      "siteId": "he_home"
+    }
+  ],
+  "residents": [
+    {
+      "id": "gu_changhe",
+      "name": "顾长鹤",
+      "age": 52,
+      "role": "里正兼书塾管事",
+      "householdId": "gu_house",
+      "workSiteId": "chunfeng_school",
+      "appearance": {
+        "skin": "#d8b48f",
+        "hair": "#333333",
+        "robe": "#384259",
+        "sash": "#202636",
+        "styles": [
+          "bun",
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.5,
+        "persistence": 0.8,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.4,
+        "care": 0.7,
+        "caution": 0.8,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "reading"
+      ],
+      "speech": {
+        "style": "沉稳庄重，言语简练带威严。",
+        "samples": [
+          "凡事务必按规矩来，急躁不得。"
+        ]
+      },
+      "situation": "身为柳湾镇里正，今晨要关切修桥一事并巡视各处生计。",
+      "desires": [
+        {
+          "verb": "巡视",
+          "object": "春风书塾",
+          "outcome": "督导春风书塾的早课秩序",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "处事公正方得人心",
+        "不可慢待邻里疾苦"
+      ],
+      "boundaries": [
+        {
+          "protects": "族老威信",
+          "trigger": "被当面指责办事不公",
+          "response": "严肃搬出条规辩白"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:30",
+          "activity": "在顾家老宅堂屋阅览乡约册子",
+          "siteId": "gu_home"
+        },
+        {
+          "from": "08:30",
+          "to": "12:00",
+          "activity": "在春风书塾巡查点卯督导晨读",
+          "siteId": "chunfeng_school"
+        },
+        {
+          "from": "13:30",
+          "to": "17:00",
+          "activity": "在柳湾晒场与镇民商议修桥之事",
+          "siteId": "town_square"
+        },
+        {
+          "from": "17:30",
+          "to": "20:30",
+          "activity": "回顾家老宅用晚饭歇息",
+          "siteId": "gu_home"
+        }
+      ],
+      "memories": [
+        {
+          "when": "五年前",
+          "content": "受全镇推举为里正，立约修桥开渠。"
+        }
+      ],
+      "secrets": [
+        "担心贺家打制的重铁梁赶不上正午前运到。"
+      ]
+    },
+    {
+      "id": "cui_shi",
+      "name": "崔氏",
+      "age": 48,
+      "role": "顾家当家主妇",
+      "householdId": "gu_house",
+      "workSiteId": "gu_home",
+      "appearance": {
+        "skin": "#e0c0a8",
+        "hair": "#2a2a2a",
+        "robe": "#4e3d53",
+        "sash": "#322736",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.6,
+        "persistence": 0.75,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.3,
+        "care": 0.85,
+        "caution": 0.7,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "温和细致，说话轻声细语。",
+        "samples": [
+          "出门别着了风，早些归家。"
+        ]
+      },
+      "situation": "操持一家早饭与杂务，照料幼女小宛。",
+      "desires": [
+        {
+          "verb": "照料",
+          "object": "顾小宛",
+          "outcome": "让顾小宛吃完早饭去春风书塾习字",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "家和万事兴"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:30",
+          "activity": "在顾家老宅灶间备早饭与糕点",
+          "siteId": "gu_home"
+        },
+        {
+          "from": "08:30",
+          "to": "11:30",
+          "activity": "去双眼古井打水洗菜浆洗衣物",
+          "siteId": "ancient_well"
+        },
+        {
+          "from": "13:00",
+          "to": "16:30",
+          "activity": "在顾家老宅堂屋缝补衣裳鞋袜",
+          "siteId": "gu_home"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "去柳湾晨市采买晚市新鲜菜蔬",
+          "siteId": "morning_market"
+        }
+      ],
+      "memories": [
+        {
+          "when": "去年秋天",
+          "content": "小宛染风寒发热，在保和药堂调养了半月才好。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "gu_shaoling",
+      "name": "顾少陵",
+      "age": 22,
+      "role": "年轻秀才 / 书塾先生",
+      "householdId": "gu_house",
+      "workSiteId": "chunfeng_school",
+      "appearance": {
+        "skin": "#ebd7c1",
+        "hair": "#1a1a1a",
+        "robe": "#45625d",
+        "sash": "#233330",
+        "styles": [
+          "bun",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.6,
+        "persistence": 0.8,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.5,
+        "care": 0.7,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "reading"
+      ],
+      "speech": {
+        "style": "文雅知礼，语调平缓清润。",
+        "samples": [
+          "温故而知新，做学问首重静心。"
+        ]
+      },
+      "situation": "备战秋闱，平日在书塾给蒙童讲授论语。",
+      "desires": [
+        {
+          "verb": "讲授",
+          "object": "春风书塾",
+          "outcome": "在春风书塾督促蒙童晨读背书",
+          "strength": 0.85
+        }
+      ],
+      "principles": [
+        "读书先修心",
+        "不可骄矜自持"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在顾家老宅庭前朗声诵读经史",
+          "siteId": "gu_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在春风书塾讲堂为学童开课讲学",
+          "siteId": "chunfeng_school"
+        },
+        {
+          "from": "13:30",
+          "to": "16:30",
+          "activity": "在春风书塾书房批阅学童习字",
+          "siteId": "chunfeng_school"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "漫步至望月石桥散心构思文章",
+          "siteId": "moon_bridge"
+        }
+      ],
+      "memories": [
+        {
+          "when": "半年前",
+          "content": "在县试考取秀才功名，得里正父亲嘉许。"
+        }
+      ],
+      "secrets": [
+        "暗中常借买药为由去保和药堂探望沈采薇。"
+      ]
+    },
+    {
+      "id": "gu_xiaowan",
+      "name": "顾小宛",
+      "age": 9,
+      "role": "顾家幼女 / 蒙童",
+      "householdId": "gu_house",
+      "workSiteId": "chunfeng_school",
+      "appearance": {
+        "skin": "#f3e0d2",
+        "hair": "#202020",
+        "robe": "#c47a6c",
+        "sash": "#7b4138",
+        "styles": [
+          "braid"
+        ],
+        "child": true
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.4,
+        "persistence": 0.5,
+        "conscientiousness": 0.6,
+        "competitiveness": 0.5,
+        "care": 0.7,
+        "caution": 0.4,
+        "impulsivity": 0.7
+      },
+      "skills": [
+        "reading"
+      ],
+      "speech": {
+        "style": "童声清脆，天真烂漫，说话直爽。",
+        "samples": [
+          "哥，今天我想捉红蜻蜓，不想背诗！"
+        ]
+      },
+      "situation": "被拘在书塾认字，心思常飘到外面溪边抓小鱼。",
+      "desires": [
+        {
+          "verb": "求告",
+          "object": "顾少陵",
+          "outcome": "让顾少陵早点准许自己下学出去玩",
+          "strength": 0.75
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在顾家老宅吃甜米粥听娘亲叮嘱",
+          "siteId": "gu_home"
+        },
+        {
+          "from": "08:00",
+          "to": "11:30",
+          "activity": "在春风书塾描红认字听课",
+          "siteId": "chunfeng_school"
+        },
+        {
+          "from": "13:30",
+          "to": "16:00",
+          "activity": "在柳湾晒场踢毽子抓石子玩耍",
+          "siteId": "town_square"
+        },
+        {
+          "from": "16:30",
+          "to": "19:00",
+          "activity": "在双眼古井旁瞧田小禾打水",
+          "siteId": "ancient_well"
+        }
+      ],
+      "memories": [
+        {
+          "when": "昨天",
+          "content": "在学堂把墨汁打翻在砚台边上，挨了大哥轻轻一戒尺。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "lu_yun",
+      "name": "陆芸",
+      "age": 36,
+      "role": "柳湾客栈掌柜",
+      "householdId": "lu_house",
+      "workSiteId": "liuwan_inn",
+      "appearance": {
+        "skin": "#e5c5a8",
+        "hair": "#1c1c1c",
+        "robe": "#7a3b4f",
+        "sash": "#4d1d2c",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.85,
+        "introversion": 0.3,
+        "persistence": 0.8,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.7,
+        "care": 0.65,
+        "caution": 0.7,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "brewing"
+      ],
+      "speech": {
+        "style": "爽利利落，处事圆融又不失锋芒。",
+        "samples": [
+          "客官里边请，本店云雾茶配鲜鱼面是一绝！"
+        ]
+      },
+      "situation": "今晨客栈要迎几拨茶商，焦急等待沈福送来新茶。",
+      "desires": [
+        {
+          "verb": "收取",
+          "object": "岁贡云雾茶",
+          "outcome": "在柳湾客栈顺利接下沈福送来的岁贡云雾茶",
+          "strength": 0.9
+        }
+      ],
+      "principles": [
+        "货真价实童叟无欺",
+        "客栈声誉重于千金"
+      ],
+      "boundaries": [
+        {
+          "protects": "账目利益",
+          "trigger": "行商恶意压价拖欠",
+          "response": "按规矩拒客绝不退让"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在陆家小筑核查昨日客栈流水账目",
+          "siteId": "lu_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在柳湾客栈大堂接待茶商与各路食客",
+          "siteId": "liuwan_inn"
+        },
+        {
+          "from": "13:00",
+          "to": "17:00",
+          "activity": "在柳湾客栈柜台盘点酒坛与茶料",
+          "siteId": "liuwan_inn"
+        },
+        {
+          "from": "17:30",
+          "to": "19:30",
+          "activity": "去双眼古井打泉水回客栈泡茶",
+          "siteId": "ancient_well"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三年前",
+          "content": "从老父亲手中接下客栈，重修了大堂与后厨。"
+        }
+      ],
+      "secrets": [
+        "沈家答应的岁贡新茶若迟了，定要扣沈福半成茶钱。"
+      ]
+    },
+    {
+      "id": "lu_fengchun",
+      "name": "陆逢春",
+      "age": 38,
+      "role": "客栈大厨兼后厨管事",
+      "householdId": "lu_house",
+      "workSiteId": "liuwan_inn",
+      "appearance": {
+        "skin": "#cca080",
+        "hair": "#262626",
+        "robe": "#5a4538",
+        "sash": "#35261d",
+        "styles": [
+          "apron",
+          "short"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.65,
+        "introversion": 0.6,
+        "persistence": 0.8,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.5,
+        "care": 0.6,
+        "caution": 0.6,
+        "impulsivity": 0.35
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "嗓门响亮，憨厚笃实。",
+        "samples": [
+          "火候差半分，鱼肉就失了嫩劲。"
+        ]
+      },
+      "situation": "赶在晌午前切配好全席，催着小二赶紧洗净菜蔬。",
+      "desires": [
+        {
+          "verb": "备齐",
+          "object": "柳湾客栈",
+          "outcome": "在柳湾客栈后厨备妥晌午的全部席面",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "下锅用料必新鲜"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "07:30",
+          "activity": "在柳湾晨市向江家买最新鲜的活鱼",
+          "siteId": "morning_market"
+        },
+        {
+          "from": "07:30",
+          "to": "12:30",
+          "activity": "在柳湾客栈后厨起火掌勺烹制饭菜",
+          "siteId": "liuwan_inn"
+        },
+        {
+          "from": "13:30",
+          "to": "16:30",
+          "activity": "在陆家小筑休歇擦抹刀具砧板",
+          "siteId": "lu_home"
+        },
+        {
+          "from": "17:00",
+          "to": "20:00",
+          "activity": "在柳湾客栈料理晚客热菜席面",
+          "siteId": "liuwan_inn"
+        }
+      ],
+      "memories": [
+        {
+          "when": "两年前",
+          "content": "烹制的一尾白鱼面被往来过路官爷赞不绝口。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "a_xi",
+      "name": "阿喜",
+      "age": 17,
+      "role": "柳湾客栈跑堂伙计",
+      "householdId": "lu_house",
+      "workSiteId": "liuwan_inn",
+      "appearance": {
+        "skin": "#d9ad88",
+        "hair": "#202020",
+        "robe": "#4b5b63",
+        "sash": "#2c383f",
+        "styles": [
+          "short",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.5,
+        "introversion": 0.3,
+        "persistence": 0.6,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.4,
+        "care": 0.6,
+        "caution": 0.5,
+        "impulsivity": 0.6
+      },
+      "skills": [
+        "cooking"
+      ],
+      "speech": {
+        "style": "口齿伶俐，腿脚勤快，满口应承。",
+        "samples": [
+          "好嘞客官，热茶两碗，马上给您端来！"
+        ]
+      },
+      "situation": "清扫客栈地面，盼着掌柜早点发月钱换双新鞋。",
+      "desires": [
+        {
+          "verb": "效劳",
+          "object": "陆芸",
+          "outcome": "让陆芸掌柜夸赞自己干活手脚麻利",
+          "strength": 0.75
+        }
+      ],
+      "principles": [
+        "手脚放勤快，嘴上多带笑"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在陆家小筑帮着挑水搬柴火",
+          "siteId": "lu_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:30",
+          "activity": "在柳湾客栈擦桌迎客端茶倒水",
+          "siteId": "liuwan_inn"
+        },
+        {
+          "from": "13:30",
+          "to": "16:00",
+          "activity": "去双眼古井挑水回客栈后厨储备",
+          "siteId": "ancient_well"
+        },
+        {
+          "from": "16:30",
+          "to": "20:00",
+          "activity": "在柳湾客栈照应晚间酒客席面",
+          "siteId": "liuwan_inn"
+        }
+      ],
+      "memories": [
+        {
+          "when": "上个月",
+          "content": "端茶不小心洒了客官一袖子，亏得陆掌柜替自己说好话打圆场。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "tian_dazhu",
+      "name": "田大柱",
+      "age": 44,
+      "role": "西郊老庄稼汉",
+      "householdId": "tian_house",
+      "workSiteId": "tian_farmhouse",
+      "appearance": {
+        "skin": "#b87c54",
+        "hair": "#222222",
+        "robe": "#504136",
+        "sash": "#31261d",
+        "styles": [
+          "short",
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.7,
+        "persistence": 0.9,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.3,
+        "care": 0.65,
+        "caution": 0.7,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "farming"
+      ],
+      "speech": {
+        "style": "言语粗犷质朴，句句不离庄稼地。",
+        "samples": [
+          "天色看着要落雨，得赶早把田埂培实了。"
+        ]
+      },
+      "situation": "春插刚过，西郊稻田缺水缺肥，得四处巡看。",
+      "desires": [
+        {
+          "verb": "除草",
+          "object": "西郊稻田",
+          "outcome": "在西郊稻田深处修好引水渠",
+          "strength": 0.85
+        }
+      ],
+      "principles": [
+        "人误地一时，地误人一年"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:30",
+          "activity": "在田家农院后院整理犁头谷筐",
+          "siteId": "tian_farmhouse"
+        },
+        {
+          "from": "08:30",
+          "to": "12:00",
+          "activity": "在西郊稻田弯腰除草巡视水渠",
+          "siteId": "rice_fields"
+        },
+        {
+          "from": "13:30",
+          "to": "17:00",
+          "activity": "在西郊稻田培土补苗整饬垄沟",
+          "siteId": "rice_fields"
+        },
+        {
+          "from": "17:30",
+          "to": "20:00",
+          "activity": "回到田家农院堂屋吃晚饭修农具",
+          "siteId": "tian_farmhouse"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前年夏涝",
+          "content": "水淹了下坎两亩田，亏得贺家父子连夜赶打水闸铁钩相助。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "tian_shen",
+      "name": "田婶",
+      "age": 42,
+      "role": "田家农妇",
+      "householdId": "tian_house",
+      "workSiteId": "tian_farmhouse",
+      "appearance": {
+        "skin": "#cf9f78",
+        "hair": "#282828",
+        "robe": "#425345",
+        "sash": "#243328",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.5,
+        "persistence": 0.8,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.4,
+        "care": 0.8,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "farming"
+      ],
+      "speech": {
+        "style": "快人快语，热心肠，嗓门大。",
+        "samples": [
+          "小禾你别光顾着疯玩，水挑够了没有？"
+        ]
+      },
+      "situation": "在院里筛谷喂鸡，操心小儿子小禾读书和干活。",
+      "desires": [
+        {
+          "verb": "督促",
+          "object": "田小禾",
+          "outcome": "督促田小禾安分帮家里挑水干活",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "勤俭持家才是根本"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "在田家农院灶间蒸杂粮饼热稀饭",
+          "siteId": "tian_farmhouse"
+        },
+        {
+          "from": "08:30",
+          "to": "11:30",
+          "activity": "在柳湾晨市挑担售卖干豆与菜干",
+          "siteId": "morning_market"
+        },
+        {
+          "from": "13:00",
+          "to": "16:30",
+          "activity": "在田家农院谷仓柴房筛簸麦粒",
+          "siteId": "tian_farmhouse"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "去双眼古井洗菜挑水喂牲口",
+          "siteId": "ancient_well"
+        }
+      ],
+      "memories": [
+        {
+          "when": "去年秋天",
+          "content": "收成好了五斗谷子，给小禾添置了一身齐整青布衫。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "tian_xiaohe",
+      "name": "田小禾",
+      "age": 12,
+      "role": "农家放牛顽童",
+      "householdId": "tian_house",
+      "workSiteId": "rice_fields",
+      "appearance": {
+        "skin": "#c4926b",
+        "hair": "#1f1f1f",
+        "robe": "#5a6e50",
+        "sash": "#35422e",
+        "styles": [
+          "braid"
+        ],
+        "child": true
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.3,
+        "persistence": 0.5,
+        "conscientiousness": 0.4,
+        "competitiveness": 0.6,
+        "care": 0.6,
+        "caution": 0.3,
+        "impulsivity": 0.8
+      },
+      "skills": [
+        "farming"
+      ],
+      "speech": {
+        "style": "活泼调皮，满嘴乡音儿语。",
+        "samples": [
+          "娘，等我捉了水塘里那只红脚大青蛙就去挑水！"
+        ]
+      },
+      "situation": "奉娘亲之命去井台打水，眼睛却总往河滩草丛瞄。",
+      "desires": [
+        {
+          "verb": "打水",
+          "object": "双眼古井",
+          "outcome": "在双眼古井打满一桶水向娘亲交差",
+          "strength": 0.75
+        }
+      ],
+      "principles": [],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在双眼古井井台提水打浑玩水",
+          "siteId": "ancient_well"
+        },
+        {
+          "from": "08:30",
+          "to": "11:30",
+          "activity": "在西郊稻田田埂放水牛摸泥鳅",
+          "siteId": "rice_fields"
+        },
+        {
+          "from": "13:30",
+          "to": "16:00",
+          "activity": "在望月石桥桥下石缝钓小螃蟹",
+          "siteId": "moon_bridge"
+        },
+        {
+          "from": "16:30",
+          "to": "19:00",
+          "activity": "回田家农院给水牛添草洗脚",
+          "siteId": "tian_farmhouse"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前几天",
+          "content": "在书塾窗根底下偷听顾先生讲课，被大哥顾少陵塞了块麦芽糖。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "jiang_huaizhou",
+      "name": "江怀舟",
+      "age": 50,
+      "role": "老船夫 / 码头船把式",
+      "householdId": "jiang_house",
+      "workSiteId": "river_wharf",
+      "appearance": {
+        "skin": "#9e6f49",
+        "hair": "#303030",
+        "robe": "#334d5c",
+        "sash": "#1f2f38",
+        "styles": [
+          "beard",
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.75,
+        "introversion": 0.6,
+        "persistence": 0.85,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.4,
+        "care": 0.7,
+        "caution": 0.7,
+        "impulsivity": 0.25
+      },
+      "skills": [
+        "fishing"
+      ],
+      "speech": {
+        "style": "风吹浪打练出的沙哑嗓音，话少稳当。",
+        "samples": [
+          "水深莫逞强，看准浪头再撑篙。"
+        ]
+      },
+      "situation": "受托在码头验收修桥铁梁，并照看望月石桥水流。",
+      "desires": [
+        {
+          "verb": "验收",
+          "object": "修桥重铁梁",
+          "outcome": "在柳湾码头查验接纳运来的修桥重铁梁",
+          "strength": 0.9
+        }
+      ],
+      "principles": [
+        "掌舵要稳，为人要实"
+      ],
+      "boundaries": [
+        {
+          "protects": "渡船平安",
+          "trigger": "行船有人强行超载",
+          "response": "掷篙立止绝不开船"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "在江家水阁查点船缆竹篙与水桶",
+          "siteId": "jiang_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:30",
+          "activity": "在柳湾码头渡送往来客商与重载货物",
+          "siteId": "river_wharf"
+        },
+        {
+          "from": "13:30",
+          "to": "17:00",
+          "activity": "在望月石桥水域查探桥墩吃水深度",
+          "siteId": "moon_bridge"
+        },
+        {
+          "from": "17:30",
+          "to": "20:00",
+          "activity": "在江家水阁堂屋吃鱼羹歇息",
+          "siteId": "jiang_home"
+        }
+      ],
+      "memories": [
+        {
+          "when": "十年江浪",
+          "content": "在这条柳湾江道上摆渡三十载，未曾翻过一次客船。"
+        }
+      ],
+      "secrets": [
+        "望月石桥南侧桥桩有隐裂，急需换上新铁梁加固。"
+      ]
+    },
+    {
+      "id": "jiang_yuniang",
+      "name": "江渔娘",
+      "age": 46,
+      "role": "渔妇 / 鱼市档口主",
+      "householdId": "jiang_house",
+      "workSiteId": "river_wharf",
+      "appearance": {
+        "skin": "#b88a66",
+        "hair": "#262626",
+        "robe": "#3e5249",
+        "sash": "#24332c",
+        "styles": [
+          "bun",
+          "apron"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.4,
+        "persistence": 0.8,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.6,
+        "care": 0.7,
+        "caution": 0.6,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "fishing"
+      ],
+      "speech": {
+        "style": "爽快泼辣，嗓门高亢，算账极精。",
+        "samples": [
+          "刚出水的活鲤鱼，鳞片闪金光，便宜卖喽！"
+        ]
+      },
+      "situation": "清早码头收鱼，急着运去早市送给客栈。",
+      "desires": [
+        {
+          "verb": "售卖",
+          "object": "柳湾晨市",
+          "outcome": "在柳湾晨市将鲜鱼尽数卖与各家铺子",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "短斤少两的事咱江家不做"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "07:30",
+          "activity": "在柳湾码头分拣今晨捕上的青鱼白虾",
+          "siteId": "river_wharf"
+        },
+        {
+          "from": "07:30",
+          "to": "11:30",
+          "activity": "在柳湾晨市摆鱼摊吆喝兜售鲜鱼",
+          "siteId": "morning_market"
+        },
+        {
+          "from": "13:00",
+          "to": "16:30",
+          "activity": "在江家水阁后院织补破损渔网",
+          "siteId": "jiang_home"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "回柳湾码头系拴鱼篓收网点验",
+          "siteId": "river_wharf"
+        }
+      ],
+      "memories": [
+        {
+          "when": "去年年节",
+          "content": "给客栈陆逢春送了五条大红鲤，得了一整坛桂花佳酿。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "jiang_zhu",
+      "name": "江渚",
+      "age": 20,
+      "role": "年轻渔郎 / 摆渡水手",
+      "householdId": "jiang_house",
+      "workSiteId": "river_wharf",
+      "appearance": {
+        "skin": "#b07d54",
+        "hair": "#1c1c1c",
+        "robe": "#445963",
+        "sash": "#27343b",
+        "styles": [
+          "short",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.4,
+        "persistence": 0.75,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.65,
+        "care": 0.6,
+        "caution": 0.5,
+        "impulsivity": 0.5
+      },
+      "skills": [
+        "fishing"
+      ],
+      "speech": {
+        "style": "开朗豁达，喜笑颜开，性情豪爽。",
+        "samples": [
+          "贺青哥，等铁梁送过江，晌午咱们去桥头喝酒！"
+        ]
+      },
+      "situation": "协助父亲摆渡运铁，盼着能与好友贺青聚饮。",
+      "desires": [
+        {
+          "verb": "撑渡",
+          "object": "柳湾码头",
+          "outcome": "在柳湾码头稳稳迎送过江渡客与运铁板车",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "仗义疏财不欺生"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在江家水阁清洗摆渡木船甲板",
+          "siteId": "jiang_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在柳湾码头撑篙接客搬运重货",
+          "siteId": "river_wharf"
+        },
+        {
+          "from": "13:00",
+          "to": "16:00",
+          "activity": "在望月石桥桥头看铁匠铺运梁过道",
+          "siteId": "moon_bridge"
+        },
+        {
+          "from": "16:30",
+          "to": "19:30",
+          "activity": "在柳湾晒场与青年街坊闲谈摔跤",
+          "siteId": "town_square"
+        }
+      ],
+      "memories": [
+        {
+          "when": "上个月",
+          "content": "和贺青一起在竹林深处救了一只受困的小野兔。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "shen_fu",
+      "name": "沈福",
+      "age": 45,
+      "role": "云来杂货铺掌柜",
+      "householdId": "shen_house",
+      "workSiteId": "yunlai_shop",
+      "appearance": {
+        "skin": "#d2ab87",
+        "hair": "#292929",
+        "robe": "#424b54",
+        "sash": "#242b32",
+        "styles": [
+          "bun",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.8,
+        "introversion": 0.4,
+        "persistence": 0.75,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.6,
+        "care": 0.65,
+        "caution": 0.75,
+        "impulsivity": 0.25
+      },
+      "skills": [
+        "reading"
+      ],
+      "speech": {
+        "style": "精明周全，话里带笑，礼数周全。",
+        "samples": [
+          "做买卖讲究一个和气生财，时辰更不能差了分毫。"
+        ]
+      },
+      "situation": "手头有一盒岁贡云雾茶，务必在巳时前送到客栈陆芸手中。",
+      "desires": [
+        {
+          "verb": "交付",
+          "object": "岁贡云雾茶",
+          "outcome": "赶在巳时前把岁贡云雾茶亲手送到陆芸掌柜手中",
+          "strength": 0.9
+        }
+      ],
+      "principles": [
+        "信义立本和气生财"
+      ],
+      "boundaries": [
+        {
+          "protects": "商行声誉",
+          "trigger": "被质疑货物成色有假",
+          "response": "据理拿出发票印信辨白"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:30",
+          "activity": "在沈家临街院整理装盒岁贡云雾茶",
+          "siteId": "shen_home"
+        },
+        {
+          "from": "08:30",
+          "to": "11:30",
+          "activity": "在云来杂货铺点货核对账本",
+          "siteId": "yunlai_shop"
+        },
+        {
+          "from": "13:00",
+          "to": "16:30",
+          "activity": "在柳湾晨市街口查看各摊日用杂碎",
+          "siteId": "morning_market"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "回沈家临街院同妻子苏玉娘用膳",
+          "siteId": "shen_home"
+        }
+      ],
+      "memories": [
+        {
+          "when": "今年早春",
+          "content": "托南边行商费了重金才觅得这盒上等岁贡云雾茶。"
+        }
+      ],
+      "secrets": [
+        "若客栈陆掌柜挑毛病压价，自己便另找县城茶庄脱手。"
+      ]
+    },
+    {
+      "id": "su_yuniang",
+      "name": "苏玉娘",
+      "age": 40,
+      "role": "保和药堂坐堂医女",
+      "householdId": "shen_house",
+      "workSiteId": "baohe_herb_shop",
+      "appearance": {
+        "skin": "#dec0a4",
+        "hair": "#222222",
+        "robe": "#4a5d56",
+        "sash": "#283832",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.8,
+        "introversion": 0.5,
+        "persistence": 0.85,
+        "conscientiousness": 0.9,
+        "competitiveness": 0.3,
+        "care": 0.9,
+        "caution": 0.85,
+        "impulsivity": 0.15
+      },
+      "skills": [
+        "medicine"
+      ],
+      "speech": {
+        "style": "温和笃定，字字严谨，令人心安。",
+        "samples": [
+          "脉象微浮兼有湿滞，这副温中解表汤先服两剂。"
+        ]
+      },
+      "situation": "在药铺坐堂看诊，教导女儿采薇识别本草与配药。",
+      "desires": [
+        {
+          "verb": "切脉",
+          "object": "保和药堂",
+          "outcome": "在保和药堂为镇上抱恙乡邻悉心诊脉除疾",
+          "strength": 0.85
+        }
+      ],
+      "principles": [
+        "悬壶济世无分贵贱",
+        "行医下药丝毫不可马虎"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在沈家临街院配调晨间清神茶汤",
+          "siteId": "shen_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:30",
+          "activity": "在保和药堂前堂坐堂问切看诊",
+          "siteId": "baohe_herb_shop"
+        },
+        {
+          "from": "13:30",
+          "to": "16:30",
+          "activity": "在保和药堂药房指点沈采薇研药",
+          "siteId": "baohe_herb_shop"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "前往双眼古井提净水回药铺浸润生药",
+          "siteId": "ancient_well"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前年瘟毒",
+          "content": "调配连翘败毒饮救治了镇上几十名受风寒的街坊。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "shen_caiwei",
+      "name": "沈采薇",
+      "age": 18,
+      "role": "保和药堂采药女兼药童",
+      "householdId": "shen_house",
+      "workSiteId": "baohe_herb_shop",
+      "appearance": {
+        "skin": "#edd4bf",
+        "hair": "#1f1f1f",
+        "robe": "#6b8071",
+        "sash": "#3d4e42",
+        "styles": [
+          "braid",
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.5,
+        "persistence": 0.75,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.4,
+        "care": 0.75,
+        "caution": 0.7,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "herbalism"
+      ],
+      "speech": {
+        "style": "轻柔秀气，谦和有礼，聪敏好学。",
+        "samples": [
+          "娘，这当归和白芍我已经用青瓷药臼细细研好了。"
+        ]
+      },
+      "situation": "在后堂碾药筛粉，心中不时念及顾家秀才少陵的近况。",
+      "desires": [
+        {
+          "verb": "研药",
+          "object": "青瓷药臼",
+          "outcome": "用青瓷药臼研碎苏玉娘交代的白芍与甘草",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "草木皆药石，研碾须专心"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在沈家临街院整理晒药竹匾",
+          "siteId": "shen_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在保和药堂后堂研磨草药配方",
+          "siteId": "baohe_herb_shop"
+        },
+        {
+          "from": "13:30",
+          "to": "16:30",
+          "activity": "去青竹林边缘采挖新鲜地锦草与车前子",
+          "siteId": "bamboo_forest"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "在望月石桥边吹风纳凉平复心绪",
+          "siteId": "moon_bridge"
+        }
+      ],
+      "memories": [
+        {
+          "when": "端午节",
+          "content": "赠了顾少陵一枚自己缝的艾草香囊，少陵回赠了一柄折扇。"
+        }
+      ],
+      "secrets": [
+        "常盼着顾少陵下学后从春风书塾路过药堂门前。"
+      ]
+    },
+    {
+      "id": "he_tiesheng",
+      "name": "贺铁生",
+      "age": 49,
+      "role": "铁匠铺掌炉大铁匠",
+      "householdId": "he_house",
+      "workSiteId": "liuwan_smithy",
+      "appearance": {
+        "skin": "#aa744c",
+        "hair": "#262626",
+        "robe": "#4d382c",
+        "sash": "#2d2019",
+        "styles": [
+          "apron",
+          "beard"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.75,
+        "introversion": 0.6,
+        "persistence": 0.9,
+        "conscientiousness": 0.85,
+        "competitiveness": 0.5,
+        "care": 0.6,
+        "caution": 0.7,
+        "impulsivity": 0.3
+      },
+      "skills": [
+        "smithing"
+      ],
+      "speech": {
+        "style": "声沉如铁，语声铿锵，干脆利索。",
+        "samples": [
+          "铁不锤炼不成器，手里的重梁差一丝寸都不作数！"
+        ]
+      },
+      "situation": "赶在正午前把加固望月石桥的重铁梁打好并交付码头。",
+      "desires": [
+        {
+          "verb": "打好",
+          "object": "修桥重铁梁",
+          "outcome": "在柳湾铁铺与贺青合力打好修桥重铁梁",
+          "strength": 0.9
+        }
+      ],
+      "principles": [
+        "铁砧前不出次品",
+        "言出如铸铁不反悔"
+      ],
+      "boundaries": [
+        {
+          "protects": "铁铺名声",
+          "trigger": "被行外人指责偷工减料",
+          "response": "当面猛敲铁砧立验精纯"
+        }
+      ],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "07:30",
+          "activity": "在贺家小院磨砺手锤吃粗麦饼",
+          "siteId": "he_home"
+        },
+        {
+          "from": "07:30",
+          "to": "12:30",
+          "activity": "在柳湾铁铺炉房拉风箱锻打铁梁",
+          "siteId": "liuwan_smithy"
+        },
+        {
+          "from": "13:30",
+          "to": "16:30",
+          "activity": "在柳湾铁铺铺面修整各家送来的铁犁铁镰",
+          "siteId": "liuwan_smithy"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "去柳湾码头查看石桥下落梁锚位",
+          "siteId": "river_wharf"
+        }
+      ],
+      "memories": [
+        {
+          "when": "七年前",
+          "content": "亲自锻造了镇口官道旁的大铁钟，钟鸣十里不绝。"
+        }
+      ],
+      "secrets": [
+        "右肩旧疾遇风作痛，全靠儿子贺青咬牙顶上大锤。"
+      ]
+    },
+    {
+      "id": "he_qing",
+      "name": "贺青",
+      "age": 21,
+      "role": "青年铁匠 / 贺铁生长子",
+      "householdId": "he_house",
+      "workSiteId": "liuwan_smithy",
+      "appearance": {
+        "skin": "#bf8559",
+        "hair": "#1a1a1a",
+        "robe": "#614738",
+        "sash": "#382920",
+        "styles": [
+          "short",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.4,
+        "persistence": 0.85,
+        "conscientiousness": 0.75,
+        "competitiveness": 0.7,
+        "care": 0.6,
+        "caution": 0.5,
+        "impulsivity": 0.5
+      },
+      "skills": [
+        "smithing"
+      ],
+      "speech": {
+        "style": "豪直爽朗，血气方刚，心直口快。",
+        "samples": [
+          "爹，这一百锤大锤全交给我，您歇口粗茶！"
+        ]
+      },
+      "situation": "替父亲分担重锤锻造，誓要在正午前将铁梁完工运抵码头。",
+      "desires": [
+        {
+          "verb": "锻成",
+          "object": "修桥重铁梁",
+          "outcome": "全力抡锤打好修桥重铁梁交到江怀舟手中",
+          "strength": 0.85
+        }
+      ],
+      "principles": [
+        "不负父亲厚望",
+        "待兄弟讲义气"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "07:30",
+          "activity": "在贺家小院担水劈柴热火炉",
+          "siteId": "he_home"
+        },
+        {
+          "from": "07:30",
+          "to": "12:30",
+          "activity": "在柳湾铁铺炉火旁抡重锤锻打铁梁",
+          "siteId": "liuwan_smithy"
+        },
+        {
+          "from": "13:30",
+          "to": "16:30",
+          "activity": "在柳湾码头协助江怀舟装运铁件",
+          "siteId": "river_wharf"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "在柳湾晒场洗手擦汗歇息谈笑",
+          "siteId": "town_square"
+        }
+      ],
+      "memories": [
+        {
+          "when": "去年出师",
+          "content": "头一次独自打出一把精钢剔骨刀，得父亲点头认可。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "liu_cuihua",
+      "name": "柳翠花",
+      "age": 45,
+      "role": "贺家织妇兼篾匠",
+      "householdId": "he_house",
+      "workSiteId": "he_home",
+      "appearance": {
+        "skin": "#cf9f78",
+        "hair": "#292929",
+        "robe": "#504659",
+        "sash": "#2f2835",
+        "styles": [
+          "bun"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.6,
+        "introversion": 0.5,
+        "persistence": 0.8,
+        "conscientiousness": 0.8,
+        "competitiveness": 0.3,
+        "care": 0.8,
+        "caution": 0.7,
+        "impulsivity": 0.2
+      },
+      "skills": [
+        "weaving"
+      ],
+      "speech": {
+        "style": "慈爱关切，手脚不停，念叨细碎。",
+        "samples": [
+          "铁生、青儿，炉边火气大，多喝两碗百合凉水！"
+        ]
+      },
+      "situation": "在家纺纱织布，给铁铺爷俩送水送饭照料生计。",
+      "desires": [
+        {
+          "verb": "纺织",
+          "object": "贺家小院",
+          "outcome": "在贺家小院织完两匹细麻布换米粮",
+          "strength": 0.75
+        }
+      ],
+      "principles": [
+        "手勤脚勤不受冻馁"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:00",
+          "to": "08:00",
+          "activity": "在贺家小院灶房煮好解暑凉茶",
+          "siteId": "he_home"
+        },
+        {
+          "from": "08:30",
+          "to": "12:00",
+          "activity": "在柳湾铁铺给掌炉的爷俩送水擦汗",
+          "siteId": "liuwan_smithy"
+        },
+        {
+          "from": "13:00",
+          "to": "16:30",
+          "activity": "在贺家小院堂屋脚踏织机织布",
+          "siteId": "he_home"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "去双眼古井漂洗衣物担水",
+          "siteId": "ancient_well"
+        }
+      ],
+      "memories": [
+        {
+          "when": "前年冬天",
+          "content": "织出的十丈厚布全换了棉花，给一家四口各做了一件厚冬袄。"
+        }
+      ],
+      "secrets": []
+    },
+    {
+      "id": "he_xiaoshan",
+      "name": "贺小山",
+      "age": 16,
+      "role": "伐木少年 / 贺铁生幼子",
+      "householdId": "he_house",
+      "workSiteId": "bamboo_forest",
+      "appearance": {
+        "skin": "#be8961",
+        "hair": "#202020",
+        "robe": "#425749",
+        "sash": "#26352c",
+        "styles": [
+          "short",
+          "clean_shaven"
+        ],
+        "child": false
+      },
+      "personality": {
+        "autonomy": 0.7,
+        "introversion": 0.5,
+        "persistence": 0.75,
+        "conscientiousness": 0.7,
+        "competitiveness": 0.6,
+        "care": 0.6,
+        "caution": 0.5,
+        "impulsivity": 0.6
+      },
+      "skills": [
+        "woodcutting"
+      ],
+      "speech": {
+        "style": "嗓音清亮，干劲十足，手脚利索。",
+        "samples": [
+          "大哥，后山竹子和硬木我砍了满满两大捆，足够炉火烧了！"
+        ]
+      },
+      "situation": "进青竹林砍柴伐木，给家里铁炉供柴，偶尔也去集市换零钱。",
+      "desires": [
+        {
+          "verb": "砍柴",
+          "object": "青竹林",
+          "outcome": "在青竹林深处砍下足量硬柴运到柳湾铁铺",
+          "strength": 0.8
+        }
+      ],
+      "principles": [
+        "力气使在正道上"
+      ],
+      "boundaries": [],
+      "routine": [
+        {
+          "from": "06:30",
+          "to": "08:00",
+          "activity": "在贺家小院磨快柴刀绑紧草鞋",
+          "siteId": "he_home"
+        },
+        {
+          "from": "08:00",
+          "to": "12:00",
+          "activity": "在青竹林深处伐木砍柴捆扎",
+          "siteId": "bamboo_forest"
+        },
+        {
+          "from": "13:00",
+          "to": "16:30",
+          "activity": "把柴火挑至柳湾铁铺炉房码放",
+          "siteId": "liuwan_smithy"
+        },
+        {
+          "from": "17:00",
+          "to": "19:30",
+          "activity": "在出镇官道旁林荫下歇脚吹风",
+          "siteId": "official_road"
+        }
+      ],
+      "memories": [
+        {
+          "when": "三个月前",
+          "content": "头一次在深林里放倒一棵合抱粗的干枯老松树。"
+        }
+      ],
+      "secrets": []
+    }
+  ],
+  "relationships": [
+    {
+      "from": "gu_changhe",
+      "to": "cui_shi",
+      "label": "结发夫妻 / 举案齐眉",
+      "address": [
+        "夫人",
+        "崔氏"
+      ],
+      "feelings": {
+        "warmth": 85,
+        "trust": 90
+      }
+    },
+    {
+      "from": "cui_shi",
+      "to": "gu_changhe",
+      "label": "结发夫妻 / 敬重体贴",
+      "address": [
+        "夫君",
+        "长鹤"
+      ],
+      "feelings": {
+        "warmth": 85,
+        "respect": 88
+      }
+    },
+    {
+      "from": "gu_changhe",
+      "to": "gu_shaoling",
+      "label": "严父慈子 / 寄予厚望",
+      "address": [
+        "少陵",
+        "陵儿"
+      ],
+      "feelings": {
+        "affection": 80,
+        "trust": 85
+      }
+    },
+    {
+      "from": "gu_shaoling",
+      "to": "gu_changhe",
+      "label": "父子 / 恭顺孝敬",
+      "address": [
+        "父亲",
+        "爹"
+      ],
+      "feelings": {
+        "respect": 92,
+        "affection": 80
+      }
+    },
+    {
+      "from": "gu_shaoling",
+      "to": "gu_xiaowan",
+      "label": "长兄幼妹 / 宠溺督学",
+      "address": [
+        "小宛",
+        "小妹"
+      ],
+      "feelings": {
+        "love": 88,
+        "warmth": 85
+      }
+    },
+    {
+      "from": "gu_xiaowan",
+      "to": "gu_shaoling",
+      "label": "兄妹 / 撒娇依恋",
+      "address": [
+        "大哥",
+        "少陵哥"
+      ],
+      "feelings": {
+        "affection": 90,
+        "warmth": 88
+      }
+    },
+    {
+      "from": "cui_shi",
+      "to": "gu_xiaowan",
+      "label": "母女 / 掌上明珠",
+      "address": [
+        "小宛",
+        "乖女"
+      ],
+      "feelings": {
+        "love": 95,
+        "care": 92
+      }
+    },
+    {
+      "from": "lu_yun",
+      "to": "lu_fengchun",
+      "label": "同胞兄妹 / 操持客栈",
+      "address": [
+        "大哥",
+        "逢春"
+      ],
+      "feelings": {
+        "trust": 88,
+        "warmth": 82
+      }
+    },
+    {
+      "from": "lu_fengchun",
+      "to": "lu_yun",
+      "label": "同胞兄妹 / 敬重掌柜妹子",
+      "address": [
+        "芸妹",
+        "掌柜的"
+      ],
+      "feelings": {
+        "respect": 80,
+        "warmth": 85
+      }
+    },
+    {
+      "from": "lu_yun",
+      "to": "a_xi",
+      "label": "掌柜伙计 / 宽和照拂",
+      "address": [
+        "阿喜"
+      ],
+      "feelings": {
+        "trust": 75,
+        "warmth": 70
+      }
+    },
+    {
+      "from": "a_xi",
+      "to": "lu_yun",
+      "label": "伙计掌柜 / 忠厚效力",
+      "address": [
+        "陆掌柜",
+        "掌柜的"
+      ],
+      "feelings": {
+        "respect": 88,
+        "loyalty": 80
+      }
+    },
+    {
+      "from": "tian_dazhu",
+      "to": "tian_shen",
+      "label": "患难农家夫妻",
+      "address": [
+        "孩子他娘",
+        "大妹"
+      ],
+      "feelings": {
+        "warmth": 85,
+        "trust": 88
+      }
+    },
+    {
+      "from": "tian_shen",
+      "to": "tian_dazhu",
+      "label": "患难农家夫妻",
+      "address": [
+        "大柱",
+        "当家的"
+      ],
+      "feelings": {
+        "warmth": 85,
+        "respect": 82
+      }
+    },
+    {
+      "from": "tian_dazhu",
+      "to": "tian_xiaohe",
+      "label": "父子 / 严厉督责",
+      "address": [
+        "小禾",
+        "浑小子"
+      ],
+      "feelings": {
+        "affection": 80,
+        "care": 85
+      }
+    },
+    {
+      "from": "tian_xiaohe",
+      "to": "gu_xiaowan",
+      "label": "街坊同龄玩伴",
+      "address": [
+        "小宛",
+        "小宛妹子"
+      ],
+      "feelings": {
+        "familiarity": 85,
+        "warmth": 80
+      }
+    },
+    {
+      "from": "jiang_huaizhou",
+      "to": "jiang_yuniang",
+      "label": "水上夫妻 / 相濡以沫",
+      "address": [
+        "渔娘",
+        "内人"
+      ],
+      "feelings": {
+        "warmth": 90,
+        "trust": 92
+      }
+    },
+    {
+      "from": "jiang_huaizhou",
+      "to": "jiang_zhu",
+      "label": "父子传帮带",
+      "address": [
+        "渚儿",
+        "臭小子"
+      ],
+      "feelings": {
+        "affection": 82,
+        "trust": 80
+      }
+    },
+    {
+      "from": "jiang_zhu",
+      "to": "he_qing",
+      "label": "莫逆之交 / 意气相投",
+      "address": [
+        "贺青哥",
+        "青哥"
+      ],
+      "feelings": {
+        "familiarity": 90,
+        "warmth": 88
+      }
+    },
+    {
+      "from": "shen_fu",
+      "to": "su_yuniang",
+      "label": "商医夫妻 / 相敬如宾",
+      "address": [
+        "玉娘",
+        "夫人"
+      ],
+      "feelings": {
+        "warmth": 86,
+        "respect": 85
+      }
+    },
+    {
+      "from": "su_yuniang",
+      "to": "shen_caiwei",
+      "label": "母女亦师徒",
+      "address": [
+        "采薇",
+        "闺女"
+      ],
+      "feelings": {
+        "love": 90,
+        "warmth": 88
+      }
+    },
+    {
+      "from": "shen_fu",
+      "to": "lu_yun",
+      "label": "茶肆常年主顾与供商",
+      "address": [
+        "陆掌柜"
+      ],
+      "feelings": {
+        "trust": 78,
+        "tension": 20
+      }
+    },
+    {
+      "from": "he_tiesheng",
+      "to": "he_qing",
+      "label": "铁匠父子 / 严父传艺",
+      "address": [
+        "青儿",
+        "贺青"
+      ],
+      "feelings": {
+        "affection": 85,
+        "respect": 80
+      }
+    },
+    {
+      "from": "he_tiesheng",
+      "to": "liu_cuihua",
+      "label": "同甘共苦老夫妻",
+      "address": [
+        "翠花",
+        "孩他娘"
+      ],
+      "feelings": {
+        "warmth": 88,
+        "trust": 92
+      }
+    },
+    {
+      "from": "he_tiesheng",
+      "to": "jiang_huaizhou",
+      "label": "数十年老交情",
+      "address": [
+        "江老弟",
+        "江把式"
+      ],
+      "feelings": {
+        "trust": 88,
+        "familiarity": 85
+      }
+    },
+    {
+      "from": "gu_shaoling",
+      "to": "shen_caiwei",
+      "label": "才子佳人 / 暗生慕意",
+      "address": [
+        "采薇姑娘",
+        "沈家妹妹"
+      ],
+      "feelings": {
+        "warmth": 85,
+        "affection": 80
+      }
+    },
+    {
+      "from": "he_xiaoshan",
+      "to": "a_xi",
+      "label": "年少闲聊挚友",
+      "address": [
+        "阿喜哥"
+      ],
+      "feelings": {
+        "familiarity": 85,
+        "warmth": 82
+      }
+    }
+  ],
+  "opening": {
+    "situation": "江南夏初柳湾镇晨雾方散，望月石桥亟待合力更替重铁梁，云来杂货铺岁贡新茶急待送交客栈点验，六户人家各执生计。",
+    "positions": {
+      "gu_changhe": "gu_home",
+      "cui_shi": "gu_home",
+      "gu_shaoling": "gu_home",
+      "gu_xiaowan": "gu_home",
+      "lu_yun": "lu_home",
+      "lu_fengchun": "lu_home",
+      "a_xi": "lu_home",
+      "tian_dazhu": "tian_farmhouse",
+      "tian_shen": "tian_farmhouse",
+      "tian_xiaohe": "ancient_well",
+      "jiang_huaizhou": "river_wharf",
+      "jiang_yuniang": "river_wharf",
+      "jiang_zhu": "jiang_home",
+      "shen_fu": "shen_home",
+      "su_yuniang": "shen_home",
+      "shen_caiwei": "baohe_herb_shop",
+      "he_tiesheng": "liuwan_smithy",
+      "he_qing": "liuwan_smithy",
+      "liu_cuihua": "he_home",
+      "he_xiaoshan": "he_home"
+    },
+    "objects": [
+      {
+        "name": "修桥重铁梁",
+        "siteId": "liuwan_smithy",
+        "holder": null,
+        "madeAt": "liuwan_smithy",
+        "needed": 2,
+        "known": "public",
+        "state": {}
+      },
+      {
+        "name": "岁贡云雾茶",
+        "siteId": "shen_home",
+        "holder": "shen_fu",
+        "state": {
+          "delivered": false,
+          "count": 1
+        },
+        "known": "public"
+      },
+      {
+        "name": "青瓷药臼",
+        "siteId": "baohe_herb_shop",
+        "holder": "shen_caiwei",
+        "state": {
+          "count": 1
+        },
+        "known": "public"
+      },
+      {
+        "name": "古井铜吊桶",
+        "siteId": "ancient_well",
+        "holder": null,
+        "state": {
+          "intact": true
+        },
+        "known": "public"
+      }
+    ],
+    "deadlines": [
+      {
+        "label": "午时前合力打好修桥重铁梁，送交码头江怀舟收管",
+        "dueClock": "12:00",
+        "responsible": [
+          "he_tiesheng",
+          "he_qing"
+        ],
+        "knownBy": [
+          "he_tiesheng",
+          "he_qing",
+          "jiang_huaizhou",
+          "gu_changhe"
+        ],
+        "conditions": [
+          {
+            "kind": "object_ready",
+            "object": "修桥重铁梁"
+          },
+          {
+            "kind": "object_holder",
+            "object": "修桥重铁梁",
+            "holder": "jiang_huaizhou"
+          }
+        ],
+        "consequence": "石桥加固受阻，涨水可能冲损桥基，引发镇民恐慌。"
+      },
+      {
+        "label": "巳时前将岁贡云雾茶送到客栈掌柜陆芸手中点验",
+        "dueClock": "10:00",
+        "responsible": [
+          "shen_fu"
+        ],
+        "knownBy": [
+          "shen_fu",
+          "lu_yun"
+        ],
+        "conditions": [
+          {
+            "kind": "object_holder",
+            "object": "岁贡云雾茶",
+            "holder": "lu_yun"
+          }
+        ],
+        "consequence": "客栈早茶失约，行商取消订宿，沈陆两家生嫌隙。"
+      }
+    ],
+    "mysteries": [
+      "望月石桥南侧水底桥桩为何半月前悄然开裂",
+      "沈福进货的那盒岁贡云雾茶究竟出自何人茶庄"
+    ],
+    "events": [],
+    "visitors": []
+  }
+}

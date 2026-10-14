@@ -1,0 +1,21 @@
+import assert from "node:assert/strict";
+import { initialState } from "../src/data/seed.js";
+import { ensureCharacterPlans, auditIntentPlans, buildIntentPlan, summarizePlan } from "../src/state/intentPlanner.js";
+import { playNext } from "../src/engine/mockEngine.js";
+
+const state = structuredClone(initialState);
+state.ui.engineMode = "mock";
+state.ui.activeCharacterIds = ["char_shen", "char_lin"];
+const plans = ensureCharacterPlans(state);
+assert.ok(plans.length >= state.characters.length, "each character should receive an intent plan");
+assert.ok(plans.some((plan) => plan.shortTermPlan && plan.midTermMask && plan.longTermSelfMyth), "plan should expose short/mid/long layers");
+const custom = buildIntentPlan(state, state.characters[0], { mode: "plant_evidence", targetCharacterId: "char_lin" });
+assert.equal(custom.currentTactic, "plant_evidence");
+assert.ok(summarizePlan(custom, state).includes("自主计划"));
+state.characterPlans = plans;
+const draft = playNext(state);
+assert.ok(draft.agentOutputs.some((output) => output.planInfluence), "mock agent should expose plan influence");
+const audit = auditIntentPlans({ ...state, characterPlans: plans }, draft);
+assert.ok(typeof audit.planPressureScore === "number");
+assert.ok(typeof audit.planChangedActionScore === "number");
+console.log("intentPlanner:test passed", { plans: plans.length, planPressureScore: audit.planPressureScore, planChangedActionScore: audit.planChangedActionScore });

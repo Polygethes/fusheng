@@ -1,0 +1,400 @@
+{
+  "status": "verified",
+  "model": "gpt-5.6-luna",
+  "reasoningEffort": "high",
+  "completedTurns": 10,
+  "freshOutputTurns": 10,
+  "actualInvocationSettingsVerified": true,
+  "rawFileHashesVerified": true,
+  "separateCharacterConversations": 3,
+  "worldSettlementMatchesCheckpoint": true,
+  "fixtureFallback": false,
+  "elapsedMs": 2627771,
+  "activeRunMs": 2367893.7431260003,
+  "interventionGapMs": 259873,
+  "modelInvocationMs": 2366848.5098330006,
+  "runtimeOutsideInvocationMs": 1045.2332929996774,
+  "medianActionTurnMs": 221347.6645,
+  "rejections": 7,
+  "rows": [
+    {
+      "index": 1,
+      "character": "谢真石",
+      "type": "私人日计划",
+      "status": null,
+      "speech": "",
+      "plan": "酒馆杂务、恢复与安顿、适度剑术练习、酒馆日常事务、处理宗门与人情事务、休整与独处、准备返宗与考核",
+      "effects": [],
+      "rawEffects": [],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 32246.766708,
+      "calls": 1,
+      "repairs": 0,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/001.output.json"
+      ]
+    },
+    {
+      "index": 2,
+      "character": "洛照",
+      "type": "私人日计划",
+      "status": null,
+      "speech": "",
+      "plan": "观察环境与整理来意、谨慎打探消息、安静休整与照看随身物件、进食饮水与休整、辨认与整理传闻、休息与自我照料、回顾所得消息并保留余地",
+      "effects": [],
+      "rawEffects": [],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 28958.055292,
+      "calls": 1,
+      "repairs": 0,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/002.output.json"
+      ]
+    },
+    {
+      "index": 3,
+      "character": "周珉",
+      "type": "私人日计划",
+      "status": null,
+      "speech": "",
+      "plan": "安顿与观察、处理送药交接、日常起居、休整、思量内门去向、整理后续打算",
+      "effects": [],
+      "rawEffects": [],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 24664.830292,
+      "calls": 1,
+      "repairs": 0,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/003.output.json"
+      ]
+    },
+    {
+      "index": 4,
+      "character": "谢真石",
+      "type": "行动",
+      "status": "success",
+      "speech": "",
+      "plan": "",
+      "effects": [
+        "从堂前移动至后院"
+      ],
+      "rawEffects": [
+        {
+          "kind": "actor_movement",
+          "actorId": "char_xyy_xiezenshi",
+          "fromZoneId": "hall",
+          "toZoneId": "courtyard"
+        }
+      ],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 205261.89099999997,
+      "calls": 2,
+      "repairs": 0,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/004.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/005.output.json"
+      ]
+    },
+    {
+      "index": 5,
+      "character": "洛照",
+      "type": "行动",
+      "status": "success",
+      "speech": "",
+      "plan": "",
+      "effects": [
+        "观察谢真石"
+      ],
+      "rawEffects": [
+        {
+          "kind": "visual_attention_established",
+          "targetId": "char_xyy_xiezenshi"
+        }
+      ],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [
+        "后院有一人；身上可见短剑"
+      ],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 221347.6645,
+      "calls": 3,
+      "repairs": 1,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/006.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/007.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-two-call-shared-jP6lak/calls/008.output.json"
+      ]
+    },
+    {
+      "index": 6,
+      "character": "周珉",
+      "type": "行动",
+      "status": "success",
+      "speech": "真石兄，等我一下。",
+      "plan": "",
+      "effects": [
+        "从堂前移动至后院",
+        "话语已发出",
+        "话语已投递给谢真石",
+        "话语已投递给洛照"
+      ],
+      "rawEffects": [
+        {
+          "kind": "actor_movement",
+          "actorId": "char_xyy_zhoumin",
+          "fromZoneId": "hall",
+          "toZoneId": "courtyard"
+        },
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:2:speech",
+          "vocalMode": "call_out"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:2:speech",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "call_out",
+          "soundDistance": 1
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:2:speech",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "call_out",
+          "soundDistance": 0
+        }
+      ],
+      "incidentalEffects": [
+        {
+          "kind": "social_boundary_crossed_without_permission",
+          "actorId": "char_xyy_zhoumin",
+          "fromZoneId": "hall",
+          "toZoneId": "courtyard",
+          "boundaryIds": [
+            "social-boundary:tavern:work-areas"
+          ],
+          "claimantIds": [
+            "char_xyy_xieheng",
+            "char_xyy_xiemu",
+            "char_xyy_xiezenshi"
+          ],
+          "evidenceIds": [
+            "social-fact:tavern:household-ownership"
+          ]
+        }
+      ],
+      "incidentalDescriptions": [
+        "未经允准进入后院"
+      ],
+      "observationResults": [],
+      "submittedBodyDelta": "脚步朝后院加快半步。",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 141304.47333399998,
+      "calls": 3,
+      "repairs": 0,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/001.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/002.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/003.output.json"
+      ]
+    },
+    {
+      "index": 7,
+      "character": "谢真石",
+      "type": "行动",
+      "status": "success",
+      "speech": "",
+      "plan": "",
+      "effects": [
+        "留意周珉的声音"
+      ],
+      "rawEffects": [
+        {
+          "kind": "auditory_attention_established",
+          "targetId": "char_xyy_zhoumin",
+          "targetKind": "character"
+        }
+      ],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [],
+      "submittedBodyDelta": "脚步停住，脸转向周珉。",
+      "bodyDeltaAbsentFromWorldRecord": true,
+      "failures": [],
+      "elapsedMs": 336825.75404200004,
+      "calls": 4,
+      "repairs": 1,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/004.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/005.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/006.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/007.output.json"
+      ]
+    },
+    {
+      "index": 8,
+      "character": "洛照",
+      "type": "行动",
+      "status": "success",
+      "speech": "",
+      "plan": "",
+      "effects": [
+        "观察谢真石"
+      ],
+      "rawEffects": [
+        {
+          "kind": "visual_attention_established",
+          "targetId": "char_xyy_xiezenshi"
+        }
+      ],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [
+        "后院有一人；身上可见短剑"
+      ],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 199585.04400000005,
+      "calls": 3,
+      "repairs": 0,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/008.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/009.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/010.output.json"
+      ]
+    },
+    {
+      "index": 9,
+      "character": "周珉",
+      "type": "行动",
+      "status": "success",
+      "speech": "",
+      "plan": "",
+      "effects": [
+        "观察谢真石"
+      ],
+      "rawEffects": [
+        {
+          "kind": "visual_attention_established",
+          "targetId": "char_xyy_xiezenshi"
+        }
+      ],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [
+        "后院有一人；可见随身物：短剑"
+      ],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 384552.3077090001,
+      "calls": 4,
+      "repairs": 1,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/011.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/012.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/013.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/014.output.json"
+      ]
+    },
+    {
+      "index": 10,
+      "character": "谢真石",
+      "type": "行动",
+      "status": "success",
+      "speech": "周珉，你要我等什么？",
+      "plan": "",
+      "effects": [
+        "话语已发出",
+        "话语已投递给洛照",
+        "话语已投递给周珉"
+      ],
+      "rawEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+          "vocalMode": "conversational"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+          "targetCharacterId": "char_xyy_zhoumin",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        }
+      ],
+      "incidentalEffects": [],
+      "incidentalDescriptions": [],
+      "observationResults": [],
+      "submittedBodyDelta": "",
+      "bodyDeltaAbsentFromWorldRecord": false,
+      "failures": [],
+      "elapsedMs": 398088.10533299996,
+      "calls": 4,
+      "repairs": 1,
+      "rawOutputFiles": [
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/015.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/016.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/017.output.json",
+        "<run-artifacts>/luna-high-20260911/gtown-auto-three-call-shared-PJPAby/calls/018.output.json"
+      ]
+    }
+  ],
+  "finalStateChanges": [
+    {
+      "entity": "谢真石",
+      "field": "zoneId",
+      "before": "hall",
+      "after": "courtyard"
+    },
+    {
+      "entity": "周珉",
+      "field": "zoneId",
+      "before": "hall",
+      "after": "courtyard"
+    }
+  ],
+  "worldElapsedSeconds": 11,
+  "speechTurns": 2
+}

@@ -1,0 +1,11 @@
+{
+  "ownerAuthority": "character-agent",
+  "planBlocks": [
+    { "relativeStartSeconds": 0, "relativeEndSeconds": 7200, "activityType": "在堂前客位坐定，等提短剑的男子忙完手头的活", "desiredZoneHandle": "hall", "privatePurpose": "人来是投帖问剑，不是催债；他家店里的活计正忙，急不得。", "sourceIds": ["episode:luozhao:accepted-visit-and-arrived-wangti", "episode:char_xyy_luozhao:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:2"] },
+    { "relativeStartSeconds": 7200, "relativeEndSeconds": 18000, "activityType": "找机会自报门户，呈上拜帖", "desiredZoneHandle": "hall", "privatePurpose": "名帖递到，来意摆明，下面的话才好说。", "sourceIds": ["belief:luozhao:xiezenshi-name-and-hearsay", "episode:luozhao:accepted-visit-and-arrived-wangti"] },
+    { "relativeStartSeconds": 18000, "relativeEndSeconds": 36000, "activityType": "在堂中用些茶饭，顺带留意店里的动线", "desiredZoneHandle": "hall", "privatePurpose": "饭要吃，剑也要养精神；看他做工的章法，也是看人。", "sourceIds": ["character-private-body-need:char_xyy_luozhao:hunger", "belief:char_xyy_luozhao:subjective::提短剑的男子在望梯酒馆做工_可能是谢家子弟_"] },
+    { "relativeStartSeconds": 36000, "relativeEndSeconds": 50400, "activityType": "在门槛边活动筋骨，把状态养住", "desiredZoneHandle": "threshold", "privatePurpose": "若真有交手的机会，身子得是热的那种利落，不是赶路的僵。", "sourceIds": ["character-private-body-need:char_xyy_luozhao:stamina", "character-private-body-need:char_xyy_luozhao:fatigue"] },
+    { "relativeStartSeconds": 50400, "relativeEndSeconds": 64800, "activityType": "再寻他说话，探探应约较量的口风", "desiredZoneHandle": "hall", "privatePurpose": "光明正大地问，成不成都有个准信；不在堂前贸然拔剑。", "sourceIds": ["belief:luozhao:xiezenshi-name-and-hearsay", "episode:luozhao:accepted-visit-and-arrived-wangti"] },
+    { "relativeStartSeconds": 64800, "relativeEndSeconds": 86400, "activityType": "晚间在灯下读帖歇息，明日再作道理", "desiredZoneHandle": "hall", "privatePurpose": "一日办不成不勉强；帖在人在，来日方长。", "sourceIds": ["activity:char_xyy_luozhao:initial", "character-private-body-need:char_xyy_luozhao:fatigue"] }
+  ]
+}

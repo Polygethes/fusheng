@@ -1,0 +1,12 @@
+{
+  "ownerAuthority": "character-agent",
+  "planBlocks": [
+    { "relativeStartSeconds": 0, "relativeEndSeconds": 3600, "activityType": "把药包和清单送到能验收的人面前", "desiredZoneHandle": "hall", "privatePurpose": "娘的肺疾拖不得，药包一天交不出去我一天安心不了；先办交付，别的事都往后排。", "sourceIds": ["duty_zhoumin_complete_delivery", "episode:zhoumin:mother-required-inner-court"] },
+    { "relativeStartSeconds": 3600, "relativeEndSeconds": 14400, "activityType": "在堂中等验收回音，顺带用些早点", "desiredZoneHandle": "hall", "privatePurpose": "东西交出去不等于办完，得亲眼看到有人接手验收；空着肚子等也等不住。", "sourceIds": ["duty_zhoumin_complete_delivery", "character-private-body-need:char_xyy_zhoumin:hunger"] },
+    { "relativeStartSeconds": 14400, "relativeEndSeconds": 28800, "activityType": "挑人少的时候向谢真石请教功课上的关窍", "desiredZoneHandle": "hall", "privatePurpose": "求指点是求指点，交付是交付，两件事要分开开口；人少时说话才不像是当众讨人情。", "sourceIds": ["delivery_guest", "episode:zhoumin:mother-required-inner-court"] },
+    { "relativeStartSeconds": 28800, "relativeEndSeconds": 43200, "activityType": "午间在堂中歇脚，留意酒馆里各人的走动", "desiredZoneHandle": "hall", "privatePurpose": "歇一歇脚，也看看这家店里什么人说了算；以后再登门，心里得有数。", "sourceIds": ["delivery_guest", "character-private-body-need:char_xyy_zhoumin:fatigue"] },
+    { "relativeStartSeconds": 43200, "relativeEndSeconds": 57600, "activityType": "在门槛边透透气，顺带活动一下筋骨", "desiredZoneHandle": "threshold", "privatePurpose": "赶了远路身子发僵，趁下午透透气；气血通了，晚上精神才够。", "sourceIds": ["character-private-body-need:char_xyy_zhoumin:stamina", "character-private-body-need:char_xyy_zhoumin:pain"] },
+    { "relativeStartSeconds": 57600, "relativeEndSeconds": 72000, "activityType": "向堂内讨碗茶，慢慢喝着等回音", "desiredZoneHandle": "hall", "privatePurpose": "交付若有了回音，好趁势把后续问清楚；没有回音，也得想好明天再来是哪一套说辞。", "sourceIds": ["duty_zhoumin_complete_delivery", "character-private-body-need:char_xyy_zhoumin:thirst"] },
+    { "relativeStartSeconds": 72000, "relativeEndSeconds": 86400, "activityType": "确认药包验收的下落，再决定是否留宿", "desiredZoneHandle": "hall", "privatePurpose": "离店前必须知道药包到了谁手里；若验收的人还没露面，就得问清楚是等还是明日再来。", "sourceIds": ["duty_zhoumin_complete_delivery", "episode:zhoumin:mother-required-inner-court"] }
+  ]
+}

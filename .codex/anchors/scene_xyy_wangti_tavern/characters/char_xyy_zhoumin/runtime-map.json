@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "sceneId": "scene_xyy_wangti_tavern",
+  "characterId": "char_xyy_zhoumin",
+  "status": "behavior-accepted",
+  "authoritySurfaces": {
+    "sceneFacts": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "TAVERN_SCENE_TOPOLOGY",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/scene-contract.json",
+        "src/worldbuilding/skills.js"
+      ]
+    },
+    "psychology": {
+      "path": "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+      "symbol": "getValidatedCharacterAnchorRuntime",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_zhoumin/character-foundation.json",
+        "src/data/validatedCharacterAnchorRegistry.js"
+      ]
+    },
+    "voice": {
+      "path": "src/server/pipeline/tavernCharacterVoice.mjs",
+      "symbol": "buildTavernVoiceContract",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_zhoumin/character-foundation.json",
+        "src/server/ecology/validatedCharacterAnchorRuntime.mjs"
+      ]
+    },
+    "relationships": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "buildTavernOwnedRelationshipContext",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_zhoumin/memory-seed.json",
+        "src/server/ecology/tavernRelationshipSeeds.mjs",
+        "src/server/ecology/tavernRelationshipDynamics.mjs"
+      ]
+    },
+    "memory": {
+      "path": "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+      "symbol": "mergeValidatedCharacterAnchorMemoryState",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_zhoumin/memory-seed.json",
+        "src/data/validatedCharacterAnchorRegistry.js",
+        "src/engine/characterAgentMemory.js"
+      ]
+    },
+    "presence": {
+      "path": "src/server/pipeline/presenceResolver.mjs",
+      "symbol": "resolvePresenceDecision",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_zhoumin/character-foundation.json",
+        "src/server/ecology/tavernEcologyProfile.mjs"
+      ]
+    },
+    "candidateCompilation": {
+      "path": "src/server/pipeline/tavernEcologyRuntime.mjs",
+      "symbol": "ecologyAgentCandidateBundle",
+      "derivedProjectionPaths": [
+        ".codex/anchors/scene_xyy_wangti_tavern/characters/char_xyy_zhoumin/character-foundation.json",
+        "src/server/ecology/validatedCharacterAnchorRuntime.mjs",
+        "src/server/ecology/tavernEcologyProfile.mjs"
+      ]
+    },
+    "validation": {
+      "path": "src/server/pipeline/tavernCausalScene.mjs",
+      "symbol": "normalizeTavernCharacterDecision",
+      "derivedProjectionPaths": [
+        "src/engine/semanticTurnValidator.js",
+        "src/server/pipeline/tavernCausalEconomy.mjs",
+        "src/server/simulation/characterPostChoiceContinuity.mjs"
+      ]
+    }
+  },
+  "acceptanceTests": [
+    {
+      "category": "agent_non_top_choice",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "unresolved_desire_survives_delay",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "rumor_differs_from_direct_knowledge",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "private_zone_blocks_propagation",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "relationship_changes_expression_not_desire",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "voice_changes_by_function",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "body_state_changes_behavior",
+      "passed": true,
+      "evidenceLevel": "candidate-pressure-only",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    },
+    {
+      "category": "non_luozhao_portability",
+      "passed": true,
+      "evidenceLevel": "deterministic-causal-contract",
+      "command": "npm run validated-character-behavior-acceptance:test",
+      "source": "scripts/validatedCharacterBehaviorAcceptance.mjs"
+    }
+  ],
+  "behaviorReview": {
+    "status": "accepted",
+    "acceptedAt": "2026-07-20",
+    "authority": "author",
+    "scope": [
+      "char_xyy_xiezenshi_visible_turn",
+      "char_xyy_zhoumin_visible_turn",
+      "full_two_agent_causal_exchange"
+    ],
+    "evidence": {
+      "gate": "zhoumin-gate8-real-tavern-behavior",
+      "provider": "openai-codex-chatgpt",
+      "model": "gpt-5.6-sol",
+      "remoteRequestCount": 4,
+      "inputAuditPassed": true,
+      "exchangeIntegrity": "complete",
+      "authorDecision": "accepted"
+    },
+    "boundary": "作者验收的是本次真实双 Agent 样本及其完整因果互动，不把样本台词写回人物 foundation、memory seed 或运行时提示，也不把一次通过解释为所有未来场景均已自然。"
+  },
+  "remainingGaps": [
+    {
+      "id": "zhoumin_numeric_personality_calibration",
+      "status": "open",
+      "boundary": "通用人格八维尚未由作者数值校准；运行数学使用有标记的中性 engine defaults，领域差异仍来自 foundation dispositions、threats 与 inhibitors。"
+    }
+  ],
+  "runtimeBoundary": {
+    "agentInputArtifactIds": [
+      "characterFoundation",
+      "memorySeed"
+    ],
+    "forbiddenAgentInputArtifactIds": [
+      "anchorPayload",
+      "calibrationEvidence",
+      "holdouts"
+    ],
+    "compilerMayReadAuthoringArtifacts": true,
+    "agentReceivesCompiledProjectionOnly": true
+  }
+}

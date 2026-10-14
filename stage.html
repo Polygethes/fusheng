@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>像素观察台</title>
+<link rel="stylesheet" href="/src/stage.css">
+</head>
+<body>
+<div class="app observer">
+  <header>
+    <h1 id="title">像素观察台</h1>
+    <span class="badge" id="runBadge"><span class="dot"></span><span id="runStatus">载入中</span></span>
+    <span class="badge warn" id="provBadge" title="画面只呈现世界结算过的事实：说出的话、真正听见的人、物件的实际变化、失败的原因。人物意图只在人物栏以“私人”标注。"></span>
+    <span class="spacer"></span>
+    <button class="btn savebtn" id="savesBtn" title="读取存档">存档</button>
+    <button class="btn" id="settingsBtn" title="设置模型与 API">设置</button>
+    <button class="btn" id="resumeRun" style="display:none">继续 ▶</button>
+    <button class="btn" id="newRun">新的开始</button>
+  </header>
+  <div class="grid">
+    <div class="col">
+      <div id="mapBar" class="px map-bar" style="display:none">
+        <button class="btn" id="mapExterior">外景</button>
+        <span class="ctitle" id="mapTitle"></span>
+        <button class="btn" id="mapExit" style="display:none">出门</button>
+        <label class="map-follow-indoor"><input type="checkbox" id="followIndoor" checked> 跟进屋</label>
+      </div>
+      <div class="px stage"><canvas id="stage"></canvas></div>
+      <div class="px dialog" id="dialogBox">
+        <canvas id="portrait" width="24" height="24"></canvas>
+        <div class="dbody"><div class="dhead"><span class="dname" id="dname"></span><span class="dto" id="dto"></span><span class="dtag" id="dtag"></span></div><div class="dtext" id="dtext"></div><div class="dheard" id="dheard"></div></div>
+        <span class="cursor" id="dcursor">▼</span>
+      </div>
+      <div class="px controls">
+        <button class="btn" id="play" aria-label="暂停">❚❚</button>
+        <button class="btn" id="speed">×1</button>
+        <button class="btn on" id="follow" title="有新回合时自动跟到最新">跟随</button>
+        <canvas id="timeline" height="22"></canvas>
+        <span class="clock" id="clock"></span>
+      </div>
+    </div>
+    <div class="side">
+      <aside class="people">
+      <div class="px alt">
+        <div class="roster" id="roster"></div>
+        <div class="who"><span class="ctitle" id="cname"></span> <span class="cmeta" id="cmeta"></span></div>
+        <div class="label">手中</div><div id="cheld">—</div>
+        <div class="label">最近听见</div><div id="cheard" class="cmeta">—</div>
+        <div class="label">最近意图 · 私人 · 未发生</div><div class="inner" id="cinner">—</div>
+        <div class="label">心里的变化 · 私人</div><div class="inner" id="cledger">—</div>
+        <div class="label">身子 · 私人</div><div class="inner" id="cbody">—</div>
+      </div>
+    </aside>
+    <aside class="ledger">
+      <div class="px alt" id="minimapBox" style="display:none; text-align:center;">
+        <canvas id="minimap"></canvas>
+      </div>
+      <div class="px alt"><div class="ctitle">时辰与账目</div><div id="hud"></div></div>
+      <div class="px alt" id="heavenBox" hidden><div class="ctitle">天意</div><div id="heaven"></div></div>
+      <div class="px alt logbox"><div class="ctitle">已结算</div><div class="log" id="log"></div></div>
+    </aside>
+    </div>
+  </div>
+</div>
+
+<div class="modal saves" id="savesModal" hidden>
+  <div class="px panel">
+    <div class="savesHead"><span class="ctitle">读取存档</span><span class="tabs" id="savesTabs"></span><button class="btn" id="savesClose" aria-label="关闭">✕</button></div>
+    <div class="savesList" id="savesList"></div>
+  </div>
+</div>
+
+<div class="modal" id="settingsModal" hidden>
+  <div class="px panel">
+    <div class="ctitle">设置 · 模型与 API</div>
+    <label>提供方 <select id="setProvider"><option value="gemini">Google Gemini API (官方)</option><option value="openai-compatible">OpenAI 兼容网关 (第三方/中转)</option><option value="deepseek">DeepSeek（官方）</option></select></label>
+    <label id="rowSetBaseUrl" style="display:none">网关地址 <input id="setBaseUrl" placeholder="https://gateway.example/v1" spellcheck="false"></label>
+    <label>API 密钥 <input id="setApiKey" type="password" placeholder="填入 API Key" autocomplete="off" spellcheck="false"></label>
+    <label>模型名称 <input id="setModel" value="gemini-3.8-flash" spellcheck="false"></label>
+    <label>输出格式 <select id="setFormat"><option value="json_object">json_object（网关兼容）</option><option value="json_schema">json_schema</option></select></label>
+    <div class="note" id="setStatus"></div>
+    <div class="actions">
+      <button class="btn" id="setTest">测试连接</button>
+      <button class="btn" id="setCancel">取消</button>
+      <button class="btn primary" id="setSave">保存</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="startModal" hidden>
+  <div class="px panel">
+    <div class="ctitle" id="modalTitle">开新运行 · 真实模型</div>
+    <label id="rowWorld">世界 <select id="fWorld"></select></label>
+    <label id="rowResume" style="display:none">基于存档 <input id="fResumeRun" readonly style="opacity:0.85"></label>
+    <label>回合数 <input id="fTurns" type="number" min="1" max="1000" value="10"></label>
+    <label>请求上限 <input id="fRequests" type="number" min="1" max="6000" value="60"></label>
+    <label>模型 <input id="fModel" value="gemini-3.8-flash-high" spellcheck="false"></label>
+    <label>人物模式 <select id="fMode"><option value="performance">演绎模式（一次调用，自由说话，推荐）</option><option value="hybrid">混合模式（演绎 + 心理账本，一次调用）</option><option value="three-call">深层心理（三段调用，慢）</option></select></label>
+    <div class="note" id="fModeNote"></div>
+    <label>输出格式 <select id="fFormat"><option value="json_object">json_object（网关兼容）</option><option value="json_schema">json_schema</option></select></label>
+    <div class="note" id="fGateway"></div>
+    <label class="check"><input type="checkbox" id="fAuth"> 我授权本次运行调用真实模型，最多发出上面填写的请求数</label>
+    <div class="err" id="fError"></div>
+    <div class="actions"><button class="btn" id="fCancel">取消</button><button class="btn primary" id="fStart">开始</button></div>
+  </div>
+</div>
+<script type="module" src="/src/stage/main.js"></script>
+</body>
+</html>

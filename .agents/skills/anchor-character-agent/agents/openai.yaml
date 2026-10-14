@@ -1,0 +1,4 @@
+interface:
+  display_name: "场景与人物 Agent 锚定"
+  short_description: "通过场景契约、控制变量问答和阶段校验建立可复用人物 Agent"
+  default_prompt: "Use $anchor-character-agent to establish a scene contract, interview a new character, and produce validated psychology, voice, relationship, memory, and runtime mappings."

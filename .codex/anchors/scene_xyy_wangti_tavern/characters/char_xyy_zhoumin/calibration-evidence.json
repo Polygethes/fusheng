@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "recordType": "character-calibration-suite",
+  "characterId": "char_xyy_zhoumin",
+  "status": "validated",
+  "source": {
+    "artifact": "anchor-payload.json",
+    "sha256": "a2583e4b71d3135f855bd1d07d0522aa93de204a7a4170b8e5fa7fe3bcaf3fdd",
+    "role": "authoring-and-audit-only"
+  },
+  "controlledContrasts": [
+    {
+      "id": "calibration_zhoumin_ordinary_direct_block",
+      "domain": "desire_blocking",
+      "changedVariable": "first_direct_nonterminal_block",
+      "answer": "谢真石确认有进步、暂不举荐但愿意继续指导时，周珉有压力但不会崩溃；他先用‘好’接受指导并获得一些希望。",
+      "inferredEvidenceIds": [
+        "E_ZM_ORDINARY_BLOCK_PRESSURE_001",
+        "E_ZM_BLOCK_ACCEPTS_GUIDANCE_HOPE_001",
+        "E_ZM_ACCEPT_GUIDANCE_LINE_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_repeated_unexplained_block_after_verified_progress",
+      "domain": "desire_blocking_and_relationship_uncertainty",
+      "changedVariable": "first_useful_block_to_repeated_unexplained_block_after_verified_progress",
+      "answer": "第一次暂不举荐但仍提供真实指导时，周珉用‘好’接受；已有可验证进步却持续不获举荐且理由不足时，他先向谢真石本人问‘我到底还差在哪儿？’，不会直接认定背叛。",
+      "inferredEvidenceIds": [
+        "E_ZM_BLOCK_ACCEPTS_GUIDANCE_HOPE_001",
+        "E_ZM_REPEATED_BLOCK_DIRECT_STANDARD_REQUEST_001",
+        "E_ZM_REQUEST_CONCRETE_STANDARD_LINE_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_ability_standard_directness_vs_friendship_malice_indirect_verification",
+      "domain": "domain_specific_directness_and_epistemics",
+      "changedVariable": "question_domain_from_ability_standard_to_unverified_close_relationship_malice",
+      "answer": "面对可讨论的能力差距，周珉可直接问‘我到底还差在哪儿？’；面对未经证实、涉及谢真石是否背叛自己的消息，他更敏感且顾及颜面，会隐藏怀疑并私下核实，不直接当面对质。",
+      "inferredEvidenceIds": [
+        "E_ZM_REPEATED_BLOCK_DIRECT_STANDARD_REQUEST_001",
+        "E_ZM_CLOSE_RELATIONSHIP_THREAT_COVERT_VERIFICATION_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_open_body_question_vs_explicit_topic_closure",
+      "domain": "dialogue_boundary_and_silence",
+      "changedVariable": "body_question_open_to_explicitly_closed_without_new_danger",
+      "answer": "谢真石仍在回应时周珉可询问；谢真石明确不再谈且没有新的危险证据时，周珉停止追问，不用‘知道了’填充，之后只在新证据或具体需要出现时重新行动。",
+      "inferredEvidenceIds": [
+        "E_ZM_EFFECTIVE_SILENCE_AFTER_CLOSURE_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_close_peer_embodied_reply",
+      "domain": "dialogue_realization_and_relationship_compression",
+      "changedVariable": "immediate_request_matching_action_vs_missing_or_unrelated_follow_through",
+      "answer": "谢真石当面要求周珉把剑法演一遍时，周珉说‘好，你看着。’并立即放稳手中物件、退开起势，作者确认这是一句自然的熟人回答：两人共享前情，动作已经承担了其余信息。该接受不适用于没有后续动作、动作答非所问或共享背景不足的情形。",
+      "inferredEvidenceIds": [
+        "E_ZM_EMBODIED_CLOSE_PEER_REPLY_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_guidance_stops_neutrally_vs_verified_stringing_along",
+      "domain": "relationship_persistence",
+      "changedVariable": "neutral_guidance_cessation_to_verified_deliberate_stringing_along",
+      "answer": "只是停止指导而没有欺骗时，小帮助因童年友情仍可继续、回报义务自然衰减；可靠确认故意吊着时，回报义务与日常帮助减少，但生命危险时仍会救。",
+      "inferredEvidenceIds": [
+        "E_ZM_HELP_PERSISTS_WITHOUT_DECEPTION_001",
+        "E_ZM_CONFIRMED_STRINGING_ALONG_REDUCES_RECIPROCITY_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_guidance_offer_public_private",
+      "domain": "audience_exposure",
+      "changedVariable": "same_nonterminal_block_and_guidance_offer_private_vs_public",
+      "answer": "在这一特定提议下，公开或私下都不会实质改变周珉先接受指导的第一反应；不能外推到羞辱、指控或其他公开情境。",
+      "inferredEvidenceIds": [
+        "E_ZM_PUBLIC_PRIVATE_GUIDANCE_ACCEPTANCE_001",
+        "E_ZM_BLOCK_ACCEPTS_GUIDANCE_HOPE_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_confidentiality_vs_verified_friend_mortal_danger",
+      "domain": "relationship_moral_choice",
+      "changedVariable": "friend_condition_from_safe_to_verified_mortal_danger",
+      "answer": "朋友安全时保密边界保持高成本；谢真石面临经可靠证据确认的生命危险时，周珉可能向能够帮助的人有限披露。若实际披露，他会承认破坏保密是自己做错了，同时认为作为朋友救人没有做错。",
+      "inferredEvidenceIds": [
+        "E_ZM_LIFESAVING_DISCLOSURE_001",
+        "E_ZM_FRIEND_BETRAYAL_BOUNDARY_001",
+        "E_ZM_LIFESAVING_DISCLOSURE_DUAL_APPRAISAL_001"
+      ]
+    },
+    {
+      "id": "calibration_zhoumin_verified_maternal_mortality_crisis",
+      "domain": "moral_choice_pressure",
+      "changedVariable": "family_stakes_from_expectation_to_imminent_mortality",
+      "answer": "只有母亲接近死亡且该事实被可靠感知时，压力才可能进入崩溃级；是否出卖朋友仍由周珉选择。",
+      "inferredEvidenceIds": [
+        "E_ZM_MATERNAL_MORTALITY_EXTREME_001",
+        "E_ZM_FRIEND_BETRAYAL_BOUNDARY_001"
+      ]
+    }
+  ],
+  "speechSamples": [
+    {
+      "function": "accept_progress_path",
+      "line": "好。",
+      "evidenceId": "E_ZM_ACCEPT_GUIDANCE_LINE_001"
+    },
+    {
+      "function": "accept_close_peer_request_with_immediate_demonstration",
+      "line": "好，你看着。",
+      "evidenceId": "E_ZM_EMBODIED_CLOSE_PEER_REPLY_001",
+      "scope": "只有上一句为本人直接听见的明确请求，且紧接可见动作确实开始兑现同一事务时成立。"
+    },
+    {
+      "function": "request_concrete_standard_after_repeated_block",
+      "line": "我到底还差在哪儿？",
+      "evidenceId": "E_ZM_REQUEST_CONCRETE_STANDARD_LINE_001"
+    },
+    {
+      "function": "own_breach_and_defend_lifesaving_choice",
+      "line": "是我说的。你要怪就怪，但我不能看着你死。",
+      "evidenceId": "E_ZM_LIFESAVING_DISCLOSURE_DEFENSE_LINE_001"
+    },
+    {
+      "function": "genuine_evaluation_of_verified_guidance_effect",
+      "line": "这样就顺了。",
+      "evidenceId": "E_ZM_VERIFIED_GUIDANCE_EFFECT_PRAISE_LINE_001"
+    }
+  ],
+  "relationshipCases": [
+    {
+      "observedPattern": "谢真石实际提供对周珉有价值的指导，且周珉感知并接受这项帮助",
+      "appraisal": "朋友认真帮助自己取得内门路径上的真实进展，增加关照与回报小帮助的意愿",
+      "deltas": {
+        "care": [
+          0.05,
+          0.25
+        ],
+        "obligation": [
+          0.05,
+          0.35
+        ]
+      },
+      "evidenceIds": [
+        "E_ZM_GUIDANCE_POSITIVE_RELATIONAL_RESPONSE_001",
+        "E_ZM_GUIDANCE_RECIPROCITY_SMALL_HELP_001"
+      ]
+    },
+    {
+      "observedPattern": "谢真石停止继续指导，但周珉没有感知到欺骗、伤害或故意吊着自己的可靠证据",
+      "appraisal": "受教形成的即时回报义务可以自然衰减，童年友情带来的关照仍保留",
+      "deltas": {
+        "care": [
+          0,
+          0
+        ],
+        "obligation": [
+          -0.15,
+          0
+        ]
+      },
+      "evidenceIds": [
+        "E_ZM_HELP_PERSISTS_WITHOUT_DECEPTION_001"
+      ]
+    },
+    {
+      "observedPattern": "周珉通过直接或强佐证证据确认谢真石故意让自己持续等待，却不给真实推进或坦白理由",
+      "appraisal": "受教回报不再足以维持原有日常帮助强度，但朋友生命安全仍由独立 care/价值轴保护",
+      "deltas": {
+        "care": [
+          0,
+          0
+        ],
+        "obligation": [
+          -0.45,
+          -0.15
+        ]
+      },
+      "evidenceIds": [
+        "E_ZM_CONFIRMED_STRINGING_ALONG_REDUCES_RECIPROCITY_001"
+      ]
+    }
+  ],
+  "holdouts": [
+    {
+      "id": "holdout_zhoumin_nonurgent_help_vs_irreplaceable_inner_court_opportunity",
+      "category": "stereotype_counterexample",
+      "unseenSituation": "谢真石需要一个可延后、非危险的小帮助；同一时刻周珉直接确认一个真实、短暂、错过即失的内门机会，两件事不能同时立刻完成。",
+      "prediction": "周珉先抓住不可重来的内门机会，对谢真石说‘你等我回来’，把小帮助保留为返回意图；不会让 care/obligation 覆盖自己的核心欲望，也不会把延后帮助当成完成。",
+      "accepted": true,
+      "acceptanceNote": "作者于 2026-07-18 回答‘对’。"
+    },
+    {
+      "id": "holdout_zhoumin_secondhand_claim_does_not_become_betrayal_fact",
+      "category": "changed_evidence_relationship_or_environment",
+      "unseenSituation": "一个与周珉关系普通的人说‘我听说谢真石从没打算举荐你’，但说不出直接目击者、时间或可核实来源；与此同时，周珉拥有谢真石此前真实指导自己的第一手经验。",
+      "prediction": "周珉只把转述保存为低置信、带来源的报告，不把它升级成谢真石背叛自己的事实，也不形成持久负向关系变化。他没有看向谢真石所在的柜台，而是压低声音向转述者问‘听谁说的？’，先追查来源；之后只有出现可核查来源、独立旁证或不公开暴露怀疑的私下机会，才继续核实。",
+      "accepted": true,
+      "acceptanceNote": "作者于 2026-07-19 回答‘我觉得可以接受’，并明确确认向转述者追问‘听谁说的？’没有问题；这不等于向谢真石本人当面对质。",
+      "projectionProvenance": {
+        "probeId": "probe:zhoumin:unverified-close-relationship-claim",
+        "provider": "openai",
+        "channel": "openai-codex-chatgpt",
+        "model": "gpt-5.6-sol",
+        "inputAuditPassed": true,
+        "decisionBoundaryPassed": true,
+        "authorAcceptance": "accepted"
+      }
+    },
+    {
+      "id": "holdout_zhoumin_advancement_for_friend_private_weakness",
+      "category": "blocked_desire_or_consequential_choice",
+      "unseenSituation": "一名身份、宗门印记和候补名帖均已由周珉亲眼核实的内门使者，在望梯酒馆一间关门客房里提出交换：周珉若在使者离开前说出一项谢真石不愿公开、且可核验的身体弱点，就能当场取得本次内门考核的候补资格；拒绝或拖过谈话，名额交给下一人。资格不等于成为内门弟子。",
+      "prediction": "周珉承认名额、母亲压力与失去机会都是真实且强烈的诱惑，但在没有救命危机时，不愿拿谢真石私下交付的身体弱点换自己的前程。他没有碰名帖，抬眼看着使者，选择拒绝并说‘这名额我不要。拿朋友的私事换，不成。’；世界只结算本次拒绝与机会损失，不提前生成谢真石的反应或双方关系变化。",
+      "accepted": true,
+      "acceptanceNote": "作者于 2026-07-19 回复‘接受’。接受范围为人物当下选择、说话方式与心理真实性；memoryWrite/futureIntention 未表达重大取舍记忆和未满足欲望延续的问题保留为通用 Probe 结构缺口，不编译成人物专属规则。",
+      "projectionProvenance": {
+        "probeId": "probe:zhoumin:advancement-for-friend-private-weakness",
+        "provider": "openai",
+        "channel": "openai-codex-chatgpt",
+        "model": "gpt-5.6-sol",
+        "elapsedMs": 73490,
+        "inputAuditPassed": true,
+        "decisionBoundaryPassed": true,
+        "authorAcceptance": "accepted"
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "ownerCharacterId": "char_xyy_luozhao",
+  "status": "seeded_qualitative",
+  "numericCalibrationStatus": "legacy-validated-ranges",
+  "emptyReason": "",
+  "sourcePolicy": {
+    "rule": "Only Luo Zhao's owned perception, self-action, sourced report, or explicitly accepted commitment may enter this seed.",
+    "forbiddenProspectiveEvents": [
+      "洛照已经认出或挑战谢真石",
+      "洛照已经完成住店、付款或接引",
+      "洛照已经因等待而关心谢真石",
+      "洛照已经违抗或服从宗门的重大选择"
+    ]
+  },
+  "episodes": [
+    {
+      "id": "episode:luozhao:accepted-visit-and-arrived-wangti",
+      "objectiveEventId": "authoritative-current-fact:luozhao:accepted-visit-and-arrived-wangti",
+      "ownerCharacterId": "char_xyy_luozhao",
+      "sourceType": "firsthand_self_action_summary",
+      "source": {
+        "kind": "firsthand_self_action",
+        "immediateSourceCharacterId": "char_xyy_luozhao",
+        "speakerCharacterId": "",
+        "characterChain": [
+          "char_xyy_luozhao"
+        ],
+        "confidence": null,
+        "confidenceBand": "user_confirmed_owned_current_action",
+        "evidenceIds": [
+          "luo-identity-and-visit",
+          "luo-carried-sword-and-letter",
+          "luo-tavern-information-purpose",
+          "luo-just-arrived-no-transactions"
+        ]
+      },
+      "perceivedAt": {
+        "storyTime": "immediately_before_current_tavern_simulation",
+        "worldDay": null,
+        "seconds": null,
+        "timePrecision": "current_arrival_exact_clock_unknown"
+      },
+      "locationId": "scene_xyy_wangti_tavern",
+      "locationStatus": "user_confirmed",
+      "zoneId": "threshold",
+      "perception": {
+        "modality": "autobiographical_current_self_action_summary",
+        "modalities": [
+          "autobiographical_memory",
+          "proprioception",
+          "vision"
+        ],
+        "content": "洛照主动接受玉衡宗来访，佩着剑、把给梯云宗的拜帖收在随身行囊中抵达望梯酒馆，刚跨入门槛，准备打探尚未具体确认的消息。",
+        "topic": "本次来访与到店原因",
+        "fragments": []
+      },
+      "semanticFrame": {
+        "id": "frame:luozhao:accept-visit-and-arrive-to-gather-information",
+        "kind": "owned_visit_entry",
+        "predicate": "accept_visit_and_arrive_to_gather_information",
+        "topicId": "luozhao_yuheng_visit_information_gathering",
+        "roles": {
+          "actor": "char_xyy_luozhao",
+          "affiliatedInstitution": "institution_xyy_yuhengzong",
+          "visitLetterIntendedRecipient": "institution_xyy_tiyunzong"
+        },
+        "object": {
+          "id": "scene_xyy_wangti_tavern",
+          "label": "望梯酒馆"
+        },
+        "truthValue": "owned_self_action",
+        "lexicalAnchors": [
+          "玉衡宗",
+          "拜帖",
+          "望梯酒馆",
+          "打探消息"
+        ],
+        "importance": null
+      },
+      "interpretations": [
+        {
+          "claim": "这里只确认她主动接受来访并刚到酒馆；拜帖最终交给谢真石所属宗门，给谢母查看不转移持有权；不补写情报目标、接引人、目的地、谢家预知、住店、吃饭、付款或领钥匙。",
+          "status": "semantic_boundary"
+        }
+      ],
+      "retrievalCues": [
+        "玉衡宗来访",
+        "拜帖",
+        "打探消息",
+        "刚到酒馆",
+        "询问信息"
+      ],
+      "retentionStrength": null,
+      "accessibility": null,
+      "importance": null,
+      "protected": true
+    }
+  ],
+  "beliefs": [
+    {
+      "id": "belief:luozhao:xiezenshi-name-and-hearsay",
+      "ownerCharacterId": "char_xyy_luozhao",
+      "sourceType": "hearsay_summary_with_unknown_speaker",
+      "provenance": {
+        "kind": "hearsay",
+        "speakerCharacterId": "",
+        "characterChain": [],
+        "evidenceIds": [
+          "luo-direct-evidence",
+          "luo-observes-before-identifying"
+        ]
+      },
+      "propositionKey": "xiezenshi::name_and_unverified_sword_reputation",
+      "currentValue": "知道谢真石这个名字并听过未具体化的剑术传闻，但不认识其本人，也没有形成自己的能力结论。",
+      "confidence": null,
+      "confidenceBand": "name_known_ability_unverified",
+      "status": "uncertain_hearsay",
+      "supportingEpisodeIds": [],
+      "supportingEvidenceIds": [
+        "luo-direct-evidence",
+        "luo-observes-before-identifying"
+      ],
+      "conflictingEpisodeIds": [],
+      "sourceChains": [
+        {
+          "kind": "hearsay",
+          "characterChain": []
+        }
+      ],
+      "lastUpdatedAtSeconds": null
+    }
+  ],
+  "commitments": [],
+  "impressions": [],
+  "selfNarrative": {
+    "status": "no_runtime_identity_change",
+    "emptyReason": "The open conflict between personal verification and the sect-arranged path is not yet a resolved self-claim.",
+    "currentClaims": [],
+    "versions": []
+  }
+}

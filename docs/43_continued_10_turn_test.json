@@ -1,0 +1,1863 @@
+{
+  "status": "verified",
+  "requestedAdditionalTurns": 10,
+  "completedGlobalTurns": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "modelSegments": [
+    {
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "high",
+      "globalTurns": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "elapsedMs": 1298747.372375,
+      "protocolRejections": 0,
+      "rawReport": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/report.json",
+      "interruption": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/interruption.json"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurns": [
+        16,
+        17
+      ],
+      "elapsedMs": 795832.0795829999,
+      "protocolRejections": 1,
+      "rawReport": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/report.json",
+      "interruption": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/interruption.json"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurns": [
+        18,
+        19,
+        20
+      ],
+      "additionalRuntimeFix": "retained-source-reference-maintenance",
+      "elapsedMs": 813108.812333,
+      "protocolRejections": 1,
+      "rawReport": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/report.json"
+    }
+  ],
+  "wholeElapsedMs": 3859765,
+  "activeRunMs": 2910004.272832,
+  "modelInvocationMs": 2908119.9903720007,
+  "runtimeOutsideInvocationMs": 1884.2824599994346,
+  "clientRepairAndModelSwitchGapMs": 949760.7271679998,
+  "completedModelResponses": 32,
+  "invocationAttempts": 35,
+  "initialLaunchFailure": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-sbootf/report.json",
+  "intentionalInterruption": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/interruption.json",
+  "modelSwitchManifest": "<run-artifacts>/sol-medium-20260912/model-switch-manifest.json",
+  "protocolRejections": [
+    {
+      "turnIndex": 3,
+      "stage": "subjective_appraisal_and_candidates",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+      "characterId": "char_xyy_zhoumin",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "SUBJECTIVE_EPISTEMIC_SOURCE_UNKNOWN",
+          "path": "epistemicPositions[4].basisPsychologicalSourceIds",
+          "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+        }
+      ]
+    },
+    {
+      "turnIndex": 3,
+      "stage": "agent_turn_commit",
+      "phase": "awaiting_agent_turn_commit",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+      "characterId": "char_xyy_luozhao",
+      "repairAttempt": 1,
+      "issues": [
+        {
+          "code": "CHARACTER_AGENT_CONVERSATION_SELECTION_WITHOUT_SPEECH",
+          "path": "publicExpression.utterance.literalSpeech",
+          "message": "Revise the submitted value at this path to satisfy the current stage schema and owned-reference contract."
+        }
+      ]
+    }
+  ],
+  "worldSeconds": 128,
+  "actualSpeechTurns": 6,
+  "actionTurns": 10,
+  "maintenanceTurns": 0,
+  "actualAttentionBodyCases": [],
+  "actualPracticeTurns": [
+    15,
+    20
+  ],
+  "worldSettlementMatchesCheckpoint": true,
+  "originalCharacterSessionsPreserved": true,
+  "fixtureFallback": false,
+  "latestWorldCheckpoint": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/latest-world-checkpoint.json",
+  "latestModelCheckpoint": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/model-checkpoint.json",
+  "rows": [
+    {
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "high",
+      "globalTurn": 11,
+      "character": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:4",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "listen",
+      "speech": "",
+      "submittedBody": "",
+      "bodyRecorded": false,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [],
+      "sensoryResults": [
+        {
+          "kind": "listening_result",
+          "recipient": "洛照",
+          "content": "周珉，你要我等什么？"
+        },
+        {
+          "kind": "own_action_result",
+          "recipient": "洛照",
+          "content": "刚才的动作已经落定。"
+        }
+      ],
+      "effects": [
+        "倾听谢真石"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "auditory_attention_established",
+          "targetId": "char_xyy_xiezenshi",
+          "targetKind": "character"
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "listening_oriented",
+          "actorId": "char_xyy_luozhao",
+          "targetId": "char_xyy_xiezenshi",
+          "targetKind": "character"
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_luozhao:4:listening:char_xyy_luozhao",
+          "eventKind": "listening_result",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:4:speech",
+          "content": "周珉，你要我等什么？"
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:4:char_xyy_luozhao:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "content": "刚才的动作已经落定。",
+          "directed": true,
+          "occurredAtSeconds": 12,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "listen",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "auditory_attention_established"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "listening_oriented"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "听清那人后续是否继续谈及周珉或等待之事，判断这段话是否与我有关。",
+      "privateDecisionBasis": "我选择先听。声音证明那人至少能清楚交流，且短剑仍是直接可见的线索；但话语点名周珉，并未明确向我发问。此前重复观察已出现无新增收益，贸然进入后院又没有许可。听取是低成本、可逆且能继续核验的下一步，同时不替换我最终要亲自完成的有效攻防。",
+      "elapsedMs": 296239.23054200003,
+      "invocationMs": 296086.101375,
+      "calls": [
+        1,
+        2,
+        3
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:4"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "high",
+      "globalTurn": 12,
+      "character": "周珉",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:4",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "speak",
+      "speech": "我想请你指点一下剑法，看看我还有哪里不对。",
+      "submittedBody": "开口前略顿了一下，目光在谢真石脸上多停了一瞬。",
+      "bodyRecorded": true,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [
+        "谢真石",
+        "洛照"
+      ],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "周珉",
+          "content": "刚才的动作已经落定。话已经说出。"
+        }
+      ],
+      "effects": [
+        "话已说出",
+        "送达undefined",
+        "送达洛照"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech",
+          "vocalMode": "conversational"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "utterance_emitted",
+          "actorId": "char_xyy_zhoumin",
+          "utterance": "我想请你指点一下剑法，看看我还有哪里不对。",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "vocalMode": "conversational",
+          "visibleAction": "开口前略顿了一下，目光在谢真石脸上多停了一瞬。",
+          "observableAffectiveTexture": [
+            {
+              "channel": "gaze",
+              "modality": "visual",
+              "feature": "目光在谢真石脸上多停了一瞬，才稍稍移开。"
+            }
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_zhoumin:4",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:4"
+          }
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech:char_xyy_xiezenshi",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech",
+          "content": "我想请你指点一下剑法，看看我还有哪里不对。",
+          "directed": true,
+          "overheard": false,
+          "speechAct": "answer",
+          "speechFunctions": [
+            "answer"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_zhoumin:4",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:4"
+          },
+          "observableAffectiveTexture": [
+            {
+              "channel": "gaze",
+              "modality": "visual",
+              "feature": "目光在谢真石脸上多停了一瞬，才稍稍移开。"
+            }
+          ],
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        },
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech:char_xyy_luozhao",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:4:speech",
+          "content": "我想请你指点一下剑法，看看我还有哪里不对。",
+          "directed": false,
+          "overheard": true,
+          "speechAct": "answer",
+          "speechFunctions": [
+            "answer"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_zhoumin:4",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:4"
+          },
+          "observableAffectiveTexture": [
+            {
+              "channel": "gaze",
+              "modality": "visual",
+              "feature": "目光在谢真石脸上多停了一瞬，才稍稍移开。"
+            }
+          ],
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_zhoumin:4:char_xyy_zhoumin:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "content": "刚才的动作已经落定。话已经说出。",
+          "directed": true,
+          "occurredAtSeconds": 13,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "speak",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "speech_emitted",
+                "speech_delivered"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "utterance_emitted"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "先只说明有事想请谢真石指点，暂不把举荐请求一次说满。",
+      "privateDecisionBasis": "我选择先问具体指点，直接回应谢真石的追问，也能检验他的真实意愿。举荐仍然重要，只把它延后一层，不让急切毁掉这次已经打开的谈话。",
+      "elapsedMs": 248945.864542,
+      "invocationMs": 248819.14583400002,
+      "calls": [
+        4,
+        5,
+        6
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_zhoumin:4"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "high",
+      "globalTurn": 13,
+      "character": "谢真石",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:5",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "speak",
+      "speech": "那你先使一遍。",
+      "submittedBody": "",
+      "bodyRecorded": false,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [
+        "洛照",
+        "周珉"
+      ],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "谢真石",
+          "content": "刚才的动作已经落定。话已经说出。"
+        }
+      ],
+      "effects": [
+        "话已说出",
+        "送达洛照",
+        "送达undefined"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech",
+          "vocalMode": "conversational"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech",
+          "targetCharacterId": "char_xyy_zhoumin",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "utterance_emitted",
+          "actorId": "char_xyy_xiezenshi",
+          "utterance": "那你先使一遍。",
+          "targetCharacterId": "char_xyy_zhoumin",
+          "vocalMode": "conversational",
+          "visibleAction": "",
+          "observableAffectiveTexture": [],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:5",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_zhoumin:4"
+          }
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech:char_xyy_luozhao",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech",
+          "content": "那你先使一遍。",
+          "directed": false,
+          "overheard": true,
+          "speechAct": "answer",
+          "speechFunctions": [
+            "answer"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:5",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_zhoumin:4"
+          },
+          "observableAffectiveTexture": [],
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech:char_xyy_zhoumin",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:5:speech",
+          "content": "那你先使一遍。",
+          "directed": true,
+          "overheard": false,
+          "speechAct": "answer",
+          "speechFunctions": [
+            "answer"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:5",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_zhoumin:4"
+          },
+          "observableAffectiveTexture": [],
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:5:char_xyy_xiezenshi:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "content": "刚才的动作已经落定。话已经说出。",
+          "directed": true,
+          "occurredAtSeconds": 14,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "speak",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "speech_emitted",
+                "speech_delivered"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "utterance_emitted"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "请周珉先把实际剑路展示出来，让我根据亲眼看到的动作判断他哪里不对。",
+      "privateDecisionBasis": "周珉的来意已经明确，但尚无亲眼剑术证据。先请求展示最符合我对实际动作的判断习惯，也保留之后是否继续指点、是否回到柴务的决定权。",
+      "elapsedMs": 268236.190958,
+      "invocationMs": 268102.1015819999,
+      "calls": [
+        7,
+        8,
+        9
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:5"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "high",
+      "globalTurn": 14,
+      "character": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:5",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "observe",
+      "speech": "",
+      "submittedBody": "",
+      "bodyRecorded": false,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [],
+      "sensoryResults": [
+        {
+          "kind": "observation_result",
+          "recipient": "洛照",
+          "content": "身上可见短剑"
+        },
+        {
+          "kind": "own_action_result",
+          "recipient": "洛照",
+          "content": "刚才的动作已经落定。"
+        }
+      ],
+      "effects": [
+        "观察谢真石"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "visual_attention_established",
+          "targetId": "char_xyy_xiezenshi"
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "attention_oriented",
+          "actorId": "char_xyy_luozhao",
+          "targetId": "char_xyy_xiezenshi",
+          "modality": "visual"
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_luozhao:5:observation:char_xyy_luozhao",
+          "eventKind": "observation_result",
+          "modality": "visual",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "sourceObjectId": "",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "content": "身上可见短剑",
+          "semanticFrame": {
+            "observationResult": {
+              "targetKind": "character",
+              "attentionTags": [
+                "weapon",
+                "social"
+              ],
+              "observableFeatures": [
+                {
+                  "kind": "held_object",
+                  "text": "身上可见短剑",
+                  "domainTags": [
+                    "carried-object",
+                    "sword",
+                    "weapon"
+                  ],
+                  "objectId": "xiezenshi_short_sword"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:5:char_xyy_luozhao:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "content": "刚才的动作已经落定。",
+          "directed": true,
+          "occurredAtSeconds": 15,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "observe",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "visual_attention_established"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "attention_oriented"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "观察持剑者如何看待并回应另一人的演示，核验其剑术判断与真实回应能力。",
+      "privateDecisionBasis": "我选择先看持剑者如何回应另一人的演示。这个回应比先前的开口更接近我需要的剑术证据，且观察可逆，不会把未获许可的后院介入变成既成事实；身份和完整状态仍悬置，但不值得因此放过眼前的新线索。",
+      "elapsedMs": 244080.6762910001,
+      "invocationMs": 243934.61124999996,
+      "calls": [
+        10,
+        11,
+        12
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:5"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "high",
+      "globalTurn": 15,
+      "character": "周珉",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:5",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "practice",
+      "speech": "",
+      "submittedBody": "脚下先错半步，随即收稳；手臂沿熟悉的剑路连走数式，最后停在收势。",
+      "bodyRecorded": true,
+      "visualBodyRecipients": [
+        "谢真石",
+        "洛照"
+      ],
+      "publicSpeechRecipients": [],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "周珉",
+          "content": "刚才的动作已经落定。"
+        }
+      ],
+      "effects": [
+        "actor_practicing"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "actor_practicing",
+          "actorId": "char_xyy_zhoumin"
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "actor_practicing",
+          "actorId": "char_xyy_zhoumin",
+          "visibleAction": "脚下先错半步，随即收稳；手臂沿熟悉的剑路连走数式，最后停在收势。"
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_zhoumin:5:actor_practicing:char_xyy_xiezenshi",
+          "eventKind": "actor_practicing",
+          "modality": "visual",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "content": "脚下先错半步，随即收稳；手臂沿熟悉的剑路连走数式，最后停在收势。"
+        },
+        {
+          "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_zhoumin:5:actor_practicing:char_xyy_luozhao",
+          "eventKind": "actor_practicing",
+          "modality": "visual",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "content": "脚下先错半步，随即收稳；手臂沿熟悉的剑路连走数式，最后停在收势。"
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_zhoumin:5:char_xyy_zhoumin:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "content": "刚才的动作已经落定。",
+          "directed": true,
+          "occurredAtSeconds": 75,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "practice",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "actor_practicing"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "actor_practicing"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "立刻使一遍自己熟悉的剑法，让谢真石从实际动作看出我的问题。",
+      "privateDecisionBasis": "谢真石已经明确要求先使一遍，展示动作是当前最直接、可逆且能获得反馈的回应。",
+      "elapsedMs": 203739.11525000003,
+      "invocationMs": 203613.6550820002,
+      "calls": [
+        13,
+        14,
+        15
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_zhoumin:5"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurn": 16,
+      "character": "谢真石",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:6",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "speak",
+      "speech": "起手那半步错了。不过你收得快，后面几式也稳住了。",
+      "submittedBody": "",
+      "bodyRecorded": false,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [
+        "洛照",
+        "周珉"
+      ],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "谢真石",
+          "content": "刚才的动作已经落定。话已经说出。"
+        }
+      ],
+      "effects": [
+        "话已说出",
+        "送达洛照",
+        "送达undefined"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech",
+          "vocalMode": "conversational"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech",
+          "targetCharacterId": "char_xyy_zhoumin",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "utterance_emitted",
+          "actorId": "char_xyy_xiezenshi",
+          "utterance": "起手那半步错了。不过你收得快，后面几式也稳住了。",
+          "targetCharacterId": "char_xyy_zhoumin",
+          "vocalMode": "conversational",
+          "visibleAction": "",
+          "observableAffectiveTexture": [],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:5"
+          }
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech:char_xyy_luozhao",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech",
+          "content": "起手那半步错了。不过你收得快，后面几式也稳住了。",
+          "directed": false,
+          "overheard": true,
+          "speechAct": "inform",
+          "speechFunctions": [
+            "inform"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:5"
+          },
+          "observableAffectiveTexture": [],
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech:char_xyy_zhoumin",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:6:speech",
+          "content": "起手那半步错了。不过你收得快，后面几式也稳住了。",
+          "directed": true,
+          "overheard": false,
+          "speechAct": "inform",
+          "speechFunctions": [
+            "inform"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:5"
+          },
+          "observableAffectiveTexture": [],
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:6:char_xyy_xiezenshi:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "content": "刚才的动作已经落定。话已经说出。",
+          "directed": true,
+          "occurredAtSeconds": 76,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "speak",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "speech_emitted",
+                "speech_delivered"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "utterance_emitted"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "直接指出周珉起步时脚下错了半步，也承认他随即收稳；把评价限制在这次亲眼所见，不延伸成整体达线或举荐承诺。",
+      "privateDecisionBasis": "我选择先给具体反馈。重演的学习价值略高，但眼前已有足够可靠、低误判且可修正的局部观察；先回应更符合我对熟人求教给出真实内容的方式，也能避免把一次短暂失误夸大成整体判断。",
+      "elapsedMs": 241716.035375,
+      "invocationMs": 241564.520874,
+      "calls": [
+        1,
+        2,
+        3
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:6"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurn": 17,
+      "character": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:6",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "speak",
+      "speech": "你看得准。若你此刻能完整出手，和我走一轮。",
+      "submittedBody": "",
+      "bodyRecorded": false,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [
+        "谢真石",
+        "周珉"
+      ],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "洛照",
+          "content": "刚才的动作已经落定。话已经说出。"
+        }
+      ],
+      "effects": [
+        "话已说出",
+        "送达undefined",
+        "送达周珉"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech",
+          "vocalMode": "conversational"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "utterance_emitted",
+          "actorId": "char_xyy_luozhao",
+          "utterance": "你看得准。若你此刻能完整出手，和我走一轮。",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "vocalMode": "conversational",
+          "visibleAction": "",
+          "observableAffectiveTexture": [],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:6"
+          }
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech:char_xyy_xiezenshi",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech",
+          "content": "你看得准。若你此刻能完整出手，和我走一轮。",
+          "directed": true,
+          "overheard": false,
+          "speechAct": "inform",
+          "speechFunctions": [
+            "inform"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:6"
+          },
+          "observableAffectiveTexture": [],
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech:char_xyy_zhoumin",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_luozhao:6:speech",
+          "content": "你看得准。若你此刻能完整出手，和我走一轮。",
+          "directed": false,
+          "overheard": true,
+          "speechAct": "inform",
+          "speechFunctions": [
+            "inform"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_luozhao:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_xiezenshi:6"
+          },
+          "observableAffectiveTexture": [],
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:6:char_xyy_luozhao:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "content": "刚才的动作已经落定。话已经说出。",
+          "directed": true,
+          "occurredAtSeconds": 77,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "speak",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "speech_emitted",
+                "speech_delivered"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "utterance_emitted"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "直接向持剑者确认其是否愿意与我进行一轮受控剑术验证，并借回应继续核验身份与状态。",
+      "privateDecisionBasis": "继续旁听的边际价值已经下降，贸然进入后院又会制造无关的场地冲突。直接开口最可逆，也最符合我只凭当前证据推进验证的方式；我暂信此人值得接触，但不把其身份、完整状态或最终能力当成已确认。",
+      "elapsedMs": 291176.070708,
+      "invocationMs": 291013.205708,
+      "calls": [
+        4,
+        5,
+        6
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:6"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurn": 18,
+      "character": "周珉",
+      "characterId": "char_xyy_zhoumin",
+      "agentTurnId": "agent-turn:char_xyy_zhoumin:6",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "speak",
+      "speech": "真石，起手那半步该怎么改？",
+      "submittedBody": "目光朝堂前偏了一下，随即转回谢真石。",
+      "bodyRecorded": true,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [
+        "谢真石",
+        "洛照"
+      ],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "周珉",
+          "content": "刚才的动作已经落定。话已经说出。"
+        }
+      ],
+      "effects": [
+        "话已说出",
+        "送达undefined",
+        "送达洛照"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech",
+          "vocalMode": "conversational"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "utterance_emitted",
+          "actorId": "char_xyy_zhoumin",
+          "utterance": "真石，起手那半步该怎么改？",
+          "targetCharacterId": "char_xyy_xiezenshi",
+          "vocalMode": "conversational",
+          "visibleAction": "目光朝堂前偏了一下，随即转回谢真石。",
+          "observableAffectiveTexture": [
+            {
+              "channel": "attentionLock",
+              "modality": "visual",
+              "feature": "目光转回后便紧紧停在谢真石身上。"
+            }
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_zhoumin:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:6"
+          }
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech:char_xyy_xiezenshi",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech",
+          "content": "真石，起手那半步该怎么改？",
+          "directed": true,
+          "overheard": false,
+          "speechAct": "ask",
+          "speechFunctions": [
+            "ask"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_zhoumin:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:6"
+          },
+          "observableAffectiveTexture": [
+            {
+              "channel": "attentionLock",
+              "modality": "visual",
+              "feature": "目光转回后便紧紧停在谢真石身上。"
+            }
+          ],
+          "vocalMode": "conversational",
+          "soundDistance": 0
+        },
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech:char_xyy_luozhao",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_zhoumin:6:speech",
+          "content": "真石，起手那半步该怎么改？",
+          "directed": false,
+          "overheard": true,
+          "speechAct": "ask",
+          "speechFunctions": [
+            "ask"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_zhoumin:6",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:6"
+          },
+          "observableAffectiveTexture": [
+            {
+              "channel": "attentionLock",
+              "modality": "visual",
+              "feature": "目光转回后便紧紧停在谢真石身上。"
+            }
+          ],
+          "vocalMode": "conversational",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_zhoumin:6:char_xyy_zhoumin:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_zhoumin",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "content": "刚才的动作已经落定。话已经说出。",
+          "directed": true,
+          "occurredAtSeconds": 78,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "speak",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "speech_emitted",
+                "speech_delivered"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "utterance_emitted"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "直接向谢真石追问起手那半步究竟该怎样改，把已有判断收束成可以照做的动作标准。",
+      "privateDecisionBasis": "先追问改法最符合我刚才求教的连续性。谢真石的判断值得暂信，但只知道错处还不足以让我盲目重练；问一句可逆、代价低，也不会把来人的含糊邀约擅自认作与我有关。",
+      "elapsedMs": 198939.596,
+      "invocationMs": 198772.707125,
+      "calls": [
+        1,
+        2,
+        3
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_zhoumin:6"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurn": 19,
+      "character": "谢真石",
+      "characterId": "char_xyy_xiezenshi",
+      "agentTurnId": "agent-turn:char_xyy_xiezenshi:7",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "speak",
+      "speech": "你先使几式给我看。看过了，我再决定走不走这一轮。",
+      "submittedBody": "",
+      "bodyRecorded": false,
+      "visualBodyRecipients": [],
+      "publicSpeechRecipients": [
+        "洛照",
+        "周珉"
+      ],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "谢真石",
+          "content": "刚才的动作已经落定。话已经说出。"
+        }
+      ],
+      "effects": [
+        "话已说出",
+        "送达undefined",
+        "送达周珉"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "speech_emitted",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech",
+          "vocalMode": "call_out"
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech",
+          "targetCharacterId": "char_xyy_luozhao",
+          "directed": true,
+          "overheard": false,
+          "vocalMode": "call_out",
+          "soundDistance": 1
+        },
+        {
+          "kind": "speech_delivered",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "directed": false,
+          "overheard": true,
+          "vocalMode": "call_out",
+          "soundDistance": 0
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "utterance_emitted",
+          "actorId": "char_xyy_xiezenshi",
+          "utterance": "你先使几式给我看。看过了，我再决定走不走这一轮。",
+          "targetCharacterId": "char_xyy_luozhao",
+          "vocalMode": "call_out",
+          "visibleAction": "",
+          "observableAffectiveTexture": [
+            {
+              "channel": "gaze",
+              "modality": "visual",
+              "feature": "视线迅速转向堂前来人，并停在对方身上。"
+            }
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:7",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:6"
+          }
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech:char_xyy_luozhao",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech",
+          "content": "你先使几式给我看。看过了，我再决定走不走这一轮。",
+          "directed": true,
+          "overheard": false,
+          "speechAct": "answer",
+          "speechFunctions": [
+            "answer"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:7",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:6"
+          },
+          "observableAffectiveTexture": [
+            {
+              "channel": "gaze",
+              "modality": "visual",
+              "feature": "视线迅速转向堂前来人，并停在对方身上。"
+            }
+          ],
+          "vocalMode": "call_out",
+          "soundDistance": 1
+        },
+        {
+          "deliveryId": "delivery:signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech:char_xyy_zhoumin",
+          "eventKind": "speech",
+          "modality": "sound",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "signalId": "signal:action-attempt:agent-turn:char_xyy_xiezenshi:7:speech",
+          "content": "你先使几式给我看。看过了，我再决定走不走这一轮。",
+          "directed": false,
+          "overheard": true,
+          "speechAct": "answer",
+          "speechFunctions": [
+            "answer"
+          ],
+          "provenance": {
+            "sourceActionId": "action-attempt:agent-turn:char_xyy_xiezenshi:7",
+            "sourceThreadId": "live_thread:action-attempt:agent-turn:char_xyy_zhoumin:2",
+            "responseToTurnId": "action-attempt:agent-turn:char_xyy_luozhao:6"
+          },
+          "observableAffectiveTexture": [
+            {
+              "channel": "gaze",
+              "modality": "visual",
+              "feature": "视线迅速转向堂前来人，并停在对方身上。"
+            }
+          ],
+          "vocalMode": "call_out",
+          "soundDistance": 0
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_xiezenshi:7:char_xyy_xiezenshi:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_xiezenshi",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "content": "刚才的动作已经落定。话已经说出。",
+          "directed": true,
+          "occurredAtSeconds": 79,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "speak",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "speech_emitted",
+                "speech_delivered"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "utterance_emitted"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "先请身份不明的来人展示几式或说明要怎么走这一轮，让我在不立即完整出手的情况下核验他的剑术与邀约分寸。",
+      "privateDecisionBasis": "我选择先让来人展示。直接受控交手能得到更多信息，却把身体、身份不明和交手分寸同时押上；追问他为何提完整出手又会把话题推近我的弱处。先看他出手最符合我亲眼判断的习惯，错误代价低，也保留以后接受、拒绝或改变交手方式的余地。",
+      "elapsedMs": 254472.472834,
+      "invocationMs": 254318.86399999994,
+      "calls": [
+        4,
+        5,
+        6
+      ],
+      "protocolRepairCount": 0,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_xiezenshi:7"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "medium",
+      "globalTurn": 20,
+      "character": "洛照",
+      "characterId": "char_xyy_luozhao",
+      "agentTurnId": "agent-turn:char_xyy_luozhao:7",
+      "turnKind": "action",
+      "status": "success",
+      "primitive": "practice",
+      "speech": "",
+      "submittedBody": "她束袖的手停下，重心随即压低，脚下切出半步，双臂循着剑路接连走起数式。",
+      "bodyRecorded": true,
+      "visualBodyRecipients": [
+        "谢真石",
+        "周珉"
+      ],
+      "publicSpeechRecipients": [],
+      "sensoryResults": [
+        {
+          "kind": "own_action_result",
+          "recipient": "洛照",
+          "content": "刚才的动作已经落定。"
+        }
+      ],
+      "effects": [
+        "actor_practicing"
+      ],
+      "failures": [],
+      "incidentalEffects": [],
+      "resolvedEffects": [
+        {
+          "kind": "actor_practicing",
+          "actorId": "char_xyy_luozhao"
+        }
+      ],
+      "committedFacts": [
+        {
+          "kind": "actor_practicing",
+          "actorId": "char_xyy_luozhao",
+          "visibleAction": "她束袖的手停下，重心随即压低，脚下切出半步，双臂循着剑路接连走起数式。"
+        }
+      ],
+      "deliveries": [
+        {
+          "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_luozhao:7:actor_practicing:char_xyy_xiezenshi",
+          "eventKind": "actor_practicing",
+          "modality": "visual",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_xiezenshi",
+          "content": "她束袖的手停下，重心随即压低，脚下切出半步，双臂循着剑路接连走起数式。"
+        },
+        {
+          "deliveryId": "delivery:action-attempt:agent-turn:char_xyy_luozhao:7:actor_practicing:char_xyy_zhoumin",
+          "eventKind": "actor_practicing",
+          "modality": "visual",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_zhoumin",
+          "content": "她束袖的手停下，重心随即压低，脚下切出半步，双臂循着剑路接连走起数式。"
+        },
+        {
+          "deliveryId": "delivery:world-event:action-attempt:agent-turn:char_xyy_luozhao:7:char_xyy_luozhao:own-action-result",
+          "eventKind": "own_action_result",
+          "modality": "proprioception",
+          "sourceCharacterId": "char_xyy_luozhao",
+          "recipientCharacterId": "char_xyy_luozhao",
+          "content": "刚才的动作已经落定。",
+          "directed": true,
+          "occurredAtSeconds": 139,
+          "semanticFrame": {
+            "actionResult": {
+              "status": "success",
+              "primitive": "practice",
+              "failureCodes": [],
+              "resolvedEffectKinds": [
+                "actor_practicing"
+              ],
+              "incidentalEffectKinds": [],
+              "attemptSurfaceKinds": [
+                "actor_practicing"
+              ]
+            }
+          }
+        }
+      ],
+      "selectedIntention": "按对方要求展示数式，但保持长剑不出鞘，以步法、重心与带鞘剑路接受其判断。",
+      "privateDecisionBasis": "对方已经给出明确而可逆的检验条件，身份线索也足以支持边做边验。继续说话或先移动都会稀释这个直接机会，闯入后院又有无关边界成本；我选择立即展示，但以不出鞘和受控力度约束兴奋，绝不把展示当成已经获得想要的攻防经验。",
+      "elapsedMs": 359617.48954200005,
+      "invocationMs": 359439.00566700014,
+      "calls": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "protocolRepairCount": 1,
+      "outcomeId": "world-outcome:action-attempt:agent-turn:char_xyy_luozhao:7"
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "globalTurn": 11,
+      "character": "洛照",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 168451.967,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/001.output.json"
+    },
+    {
+      "index": 2,
+      "globalTurn": 11,
+      "character": "洛照",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 106881.6325,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/002.output.json"
+    },
+    {
+      "index": 3,
+      "globalTurn": 11,
+      "character": "洛照",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 20752.501875000016,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/003.output.json"
+    },
+    {
+      "index": 4,
+      "globalTurn": 12,
+      "character": "周珉",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 141103.75862500002,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/004.output.json"
+    },
+    {
+      "index": 5,
+      "globalTurn": 12,
+      "character": "周珉",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 41980.67474999995,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/005.output.json"
+    },
+    {
+      "index": 6,
+      "globalTurn": 12,
+      "character": "周珉",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 65734.71245900006,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/006.output.json"
+    },
+    {
+      "index": 7,
+      "globalTurn": 13,
+      "character": "谢真石",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 148632.70033299993,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/007.output.json"
+    },
+    {
+      "index": 8,
+      "globalTurn": 13,
+      "character": "谢真石",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 97203.78758300003,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/008.output.json"
+    },
+    {
+      "index": 9,
+      "globalTurn": 13,
+      "character": "谢真石",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 22265.61366599996,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/009.output.json"
+    },
+    {
+      "index": 10,
+      "globalTurn": 14,
+      "character": "洛照",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 178866.72066699993,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/010.output.json"
+    },
+    {
+      "index": 11,
+      "globalTurn": 14,
+      "character": "洛照",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 47794.897540999926,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/011.output.json"
+    },
+    {
+      "index": 12,
+      "globalTurn": 14,
+      "character": "洛照",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 17272.993042000104,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/012.output.json"
+    },
+    {
+      "index": 13,
+      "globalTurn": 15,
+      "character": "周珉",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 126238.80983300018,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/013.output.json"
+    },
+    {
+      "index": 14,
+      "globalTurn": 15,
+      "character": "周珉",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 43732.674541000044,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/014.output.json"
+    },
+    {
+      "index": 15,
+      "globalTurn": 15,
+      "character": "周珉",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 33642.17070799996,
+      "outputFile": "<run-artifacts>/luna-high-20260912/gtown-auto-three-call-shared-SE9h2W/calls/015.output.json"
+    },
+    {
+      "index": 1,
+      "globalTurn": 16,
+      "character": "谢真石",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 174273.817125,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/001.output.json"
+    },
+    {
+      "index": 2,
+      "globalTurn": 16,
+      "character": "谢真石",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 47162.34991600001,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/002.output.json"
+    },
+    {
+      "index": 3,
+      "globalTurn": 16,
+      "character": "谢真石",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 20128.353833,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/003.output.json"
+    },
+    {
+      "index": 4,
+      "globalTurn": 17,
+      "character": "洛照",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 180605.13074999998,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/004.output.json"
+    },
+    {
+      "index": 5,
+      "globalTurn": 17,
+      "character": "洛照",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 86283.65054200002,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/005.output.json"
+    },
+    {
+      "index": 6,
+      "globalTurn": 17,
+      "character": "洛照",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 24124.424416000023,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/006.output.json"
+    },
+    {
+      "index": 7,
+      "globalTurn": 18,
+      "character": "周珉",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": false,
+      "invocationMs": 160207.31741700007,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-XvjNfZ/calls/007.output.json"
+    },
+    {
+      "index": 1,
+      "globalTurn": 18,
+      "character": "周珉",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 121593.644583,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/001.output.json"
+    },
+    {
+      "index": 2,
+      "globalTurn": 18,
+      "character": "周珉",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 42805.140709,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/002.output.json"
+    },
+    {
+      "index": 3,
+      "globalTurn": 18,
+      "character": "周珉",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 34373.921833,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/003.output.json"
+    },
+    {
+      "index": 4,
+      "globalTurn": 19,
+      "character": "谢真石",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 182280.7415,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/004.output.json"
+    },
+    {
+      "index": 5,
+      "globalTurn": 19,
+      "character": "谢真石",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 45777.16537499998,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/005.output.json"
+    },
+    {
+      "index": 6,
+      "globalTurn": 19,
+      "character": "谢真石",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 26260.957124999957,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/006.output.json"
+    },
+    {
+      "index": 7,
+      "globalTurn": 20,
+      "character": "洛照",
+      "phase": "awaiting_subjective_appraisal_and_candidates",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 168652.06358400005,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/007.output.json"
+    },
+    {
+      "index": 8,
+      "globalTurn": 20,
+      "character": "洛照",
+      "phase": "awaiting_agent_choice_and_regulation",
+      "repair": false,
+      "accepted": true,
+      "invocationMs": 65594.50725000002,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/008.output.json"
+    },
+    {
+      "index": 9,
+      "globalTurn": 20,
+      "character": "洛照",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": false,
+      "accepted": false,
+      "invocationMs": 52363.805082999985,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/009.output.json"
+    },
+    {
+      "index": 10,
+      "globalTurn": 20,
+      "character": "洛照",
+      "phase": "awaiting_agent_turn_commit",
+      "repair": true,
+      "accepted": true,
+      "invocationMs": 72828.62975000008,
+      "outputFile": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/calls/010.output.json"
+    }
+  ],
+  "finalEntityPositions": {
+    "谢真石": "后院",
+    "洛照": "堂前",
+    "周珉": "后院"
+  },
+  "objectChanges": [],
+  "additionalVisualFix": {
+    "actualModelRunUsedEarlierRegistry": true,
+    "verification": "offline replay of actual turn 18 output and spatial channel regression contracts",
+    "replay": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/speech-body-offline-replay.json",
+    "provenance": "<run-artifacts>/sol-medium-20260912/gtown-auto-three-call-shared-Hog2UK/final-fix-provenance.json",
+    "worldHistoryRewritten": false
+  },
+  "finalCommitRepair": {
+    "globalTurn": 20,
+    "code": "CHARACTER_AGENT_CONVERSATION_SELECTION_WITHOUT_SPEECH",
+    "acceptedActionUnchanged": true,
+    "finalLiteralSpeech": ""
+  },
+  "relevantContractScriptsPassed": 18
+}
