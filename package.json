@@ -30,6 +30,7 @@
     "town-day:test": "node scripts/townDayContracts.mjs",
     "blueprint-generation:test": "node scripts/blueprintGenerationContracts.mjs",
     "create-api:test": "node scripts/createApiContracts.mjs",
+    "script-import:test": "node scripts/scriptImportContracts.mjs",
     "build-api:test": "node scripts/buildApiContracts.mjs",
     "blueprint-model:test": "node scripts/blueprintModelContracts.mjs",
     "editor-common:test": "node scripts/editorCommonContracts.mjs",

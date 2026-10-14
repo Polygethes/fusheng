@@ -1,6 +1,7 @@
 import { estimateDraftCalls } from "../blueprintModel.js";
 import { saveDraft } from "../draft.js";
 import { readEvents } from "../sse.js";
+import { openImportWindow, describeImport, detectSpeakers, suggestedSize, measureSource } from "../importWindow.js";
 
 const SIZES = [
   { value: "small", label: "小（约 6 人）", residents: 6 },
@@ -17,6 +18,7 @@ const STOPPED_NAMES = {
 };
 
 const PLACEHOLDER = "江南水乡的小镇，梅雨季，茶馆老板娘和失踪多年的哥哥\n北方矿镇，冬天封山前的最后一周，人人都在囤货";
+const ADAPT_PLACEHOLDER = "可以不写，照原作来。也可以写改编要求，比如：\n从第一集离家那天的清晨开始，只留顾家和邻居";
 
 function escapeHtml(str) {
   return String(str ?? "")
@@ -32,7 +34,8 @@ export function render(root, ctx) {
   let configured = true;
   let isGenerating = false;
   let sourceText = "";
-  let sourceFileName = "";
+  let sourceMode = "adapt";
+  let importWindow = null;
   let selectedSize = "medium";
   let abortController = null;
   let reviewTimer = null;
@@ -47,20 +50,27 @@ export function render(root, ctx) {
 
     <div class="quick-panel px">
       <div class="quick-field">
-        <label class="quick-label" for="quick-idea">你的想法</label>
-        <textarea id="quick-idea" class="quick-textarea" rows="6" maxlength="2000" placeholder="${escapeHtml(PLACEHOLDER)}"></textarea>
+        <span class="quick-label">剧本或参考文本（可选）</span>
+        <div class="quick-import">
+          <div class="quick-import-empty">
+            <button type="button" class="btn btn-import">导入剧本或文本…</button>
+            <span class="quick-import-hint">贴一段故事、上传剧本或设定稿，模型可以照原作改编。</span>
+          </div>
+          <div class="quick-import-info" hidden>
+            <span class="quick-import-summary"></span>
+            <span class="quick-import-buttons">
+              <button type="button" class="btn btn-import-edit">修改</button>
+              <button type="button" class="btn btn-import-remove">移除</button>
+            </span>
+          </div>
+          <div class="quick-import-cost" hidden></div>
+          <div class="quick-import-size" hidden></div>
+        </div>
       </div>
 
       <div class="quick-field">
-        <label class="quick-label">参考资料（可选）</label>
-        <div class="quick-file-zone">
-          <input type="file" class="quick-file-input" accept=".txt,.md,text/plain,text/markdown">
-          <div class="quick-file-info" hidden>
-            <span class="quick-file-name"></span>
-            <button type="button" class="btn btn-remove-file">移除</button>
-          </div>
-          <div class="quick-file-error" hidden></div>
-        </div>
+        <label class="quick-label" for="quick-idea">你的想法</label>
+        <textarea id="quick-idea" class="quick-textarea" rows="6" maxlength="2000" placeholder="${escapeHtml(PLACEHOLDER)}"></textarea>
       </div>
 
       <div class="quick-field">
@@ -115,11 +125,15 @@ export function render(root, ctx) {
   const settingsWarningEl = root.querySelector(".quick-settings-warning");
   const formPanel = root.querySelector(".quick-panel");
   const ideaEl = root.querySelector("#quick-idea");
-  const fileInput = root.querySelector(".quick-file-input");
-  const fileInfoEl = root.querySelector(".quick-file-info");
-  const fileNameEl = root.querySelector(".quick-file-name");
-  const removeFileBtn = root.querySelector(".btn-remove-file");
-  const fileErrorEl = root.querySelector(".quick-file-error");
+  const ideaLabelEl = root.querySelector('label[for="quick-idea"]');
+  const importBtn = root.querySelector(".btn-import");
+  const importEmptyEl = root.querySelector(".quick-import-empty");
+  const importInfoEl = root.querySelector(".quick-import-info");
+  const importSummaryEl = root.querySelector(".quick-import-summary");
+  const importEditBtn = root.querySelector(".btn-import-edit");
+  const importRemoveBtn = root.querySelector(".btn-import-remove");
+  const importSizeEl = root.querySelector(".quick-import-size");
+  const importCostEl = root.querySelector(".quick-import-cost");
   const sizeRadios = root.querySelectorAll('input[name="quick-size"]');
   const estimateEl = root.querySelector(".quick-estimate");
   const maxRequestsEl = root.querySelector("#quick-max-requests");
@@ -156,8 +170,10 @@ export function render(root, ctx) {
     isGenerating = disabled;
     formPanel.classList.toggle("is-disabled", disabled);
     ideaEl.disabled = disabled;
-    fileInput.disabled = disabled;
-    removeFileBtn.disabled = disabled;
+    importBtn.disabled = disabled;
+    importEditBtn.disabled = disabled;
+    importRemoveBtn.disabled = disabled;
+    importSizeEl.querySelector(".btn-import-size")?.toggleAttribute("disabled", disabled);
     sizeRadios.forEach((r) => { r.disabled = disabled; });
     maxRequestsEl.disabled = disabled;
     authCheckbox.disabled = disabled;
@@ -200,43 +216,62 @@ export function render(root, ctx) {
       if (r.checked) {
         selectedSize = r.value;
         updateEstimateAndDefaultMax();
+        showImport();
       }
     });
   });
 
-  fileInput.addEventListener("change", () => {
-    fileErrorEl.hidden = true;
-    fileErrorEl.textContent = "";
-    const file = fileInput.files?.[0];
-    if (!file) return;
-    if (file.size > 200 * 1024) {
-      fileErrorEl.hidden = false;
-      fileErrorEl.textContent = "参考资料不能超过 200KB";
-      fileInput.value = "";
-      return;
+  // What the imported text is shown as, and what the idea box asks for with it.
+  function showImport() {
+    const has = sourceText.length > 0;
+    importEmptyEl.hidden = has;
+    importInfoEl.hidden = !has;
+    importSummaryEl.textContent = has ? describeImport({ text: sourceText, mode: sourceMode }) : "";
+    const adapt = has && sourceMode === "adapt";
+    // Spending is asked for up front: the text rides along with the calls, so each one costs more.
+    importCostEl.hidden = !has;
+    importCostEl.textContent = has
+      ? `这份文本（模型读 ${measureSource(sourceText).modelChars.toLocaleString("en-US")} 字）会随${adapt ? "几乎每一次" : "起草世界和居民的"}调用一起发给模型，每次调用的费用比只写一句想法高。`
+      : "";
+    ideaLabelEl.textContent = adapt ? "改编要求（可选）" : "你的想法";
+    ideaEl.placeholder = adapt ? ADAPT_PLACEHOLDER : PLACEHOLDER;
+    const fit = adapt ? suggestedSize(detectSpeakers(sourceText)) : null;
+    importSizeEl.hidden = !fit || fit === selectedSize;
+    importSizeEl.innerHTML = "";
+    if (fit && fit !== selectedSize) {
+      const label = SIZES.find((row) => row.value === fit)?.label || fit;
+      importSizeEl.innerHTML = `<span>原作里说话的人数和「${escapeHtml(label)}」的规模更接近。</span><button type="button" class="btn btn-import-size">改成${escapeHtml(label)}</button>`;
+      importSizeEl.querySelector(".btn-import-size")?.addEventListener("click", () => {
+        const radio = [...sizeRadios].find((r) => r.value === fit);
+        if (!radio || isGenerating) return;
+        radio.checked = true;
+        selectedSize = fit;
+        updateEstimateAndDefaultMax();
+        showImport();
+      });
     }
-    const reader = new FileReader();
-    reader.onload = () => {
-      if (closed) return;
-      sourceText = String(reader.result || "");
-      sourceFileName = file.name;
-      fileInput.hidden = true;
-      fileInfoEl.hidden = false;
-      fileNameEl.textContent = `${sourceFileName}（${sourceText.length} 字）`;
-      updateGenerateButtonState();
-    };
-    reader.readAsText(file);
-  });
-
-  removeFileBtn.addEventListener("click", () => {
-    sourceText = "";
-    sourceFileName = "";
-    fileInput.value = "";
-    fileInput.hidden = false;
-    fileInfoEl.hidden = true;
-    fileErrorEl.hidden = true;
-    fileErrorEl.textContent = "";
     updateGenerateButtonState();
+  }
+
+  function openImport() {
+    if (isGenerating || importWindow) return;
+    importWindow = openImportWindow({
+      text: sourceText,
+      mode: sourceMode,
+      onConfirm: ({ text, mode }) => {
+        sourceText = text;
+        sourceMode = mode;
+        showImport();
+      },
+      onClose: () => { importWindow = null; },
+    });
+  }
+
+  importBtn.addEventListener("click", openImport);
+  importEditBtn.addEventListener("click", openImport);
+  importRemoveBtn.addEventListener("click", () => {
+    sourceText = "";
+    showImport();
   });
 
   cancelBtn.addEventListener("click", () => {
@@ -275,6 +310,7 @@ export function render(root, ctx) {
         body: JSON.stringify({
           idea,
           sourceText,
+          sourceMode,
           sizeHint: selectedSize,
           maxRequests,
           authorized: true,
@@ -366,6 +402,9 @@ export function render(root, ctx) {
   });
 
   updateEstimateAndDefaultMax();
+  showImport();
+  // Arriving from the "导入剧本" card opens the window straight away.
+  if (ctx.params?.[0] === "import") openImport();
 
   ctx.settingsStatus?.().then((settings) => {
     if (closed) return;
@@ -385,6 +424,7 @@ export function render(root, ctx) {
 
   return () => {
     closed = true;
+    importWindow?.close();
     if (reviewTimer) clearTimeout(reviewTimer);
     if (abortController) abortController.abort();
   };
