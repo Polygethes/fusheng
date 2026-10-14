@@ -49,12 +49,19 @@ export function render(root, ctx) {
         <p class="card-sub">不用模型也能完成；想偷懒时可以让模型补全某个人。</p>
         <button class="btn primary btn-craft">开始</button>
       </div>
+      <div class="card px">
+        <h3 class="card-title">导入剧本</h3>
+        <p class="card-desc">已经有剧本、小说或设定稿？贴进来或选文件，模型照原作的人物、关系和地方起草小镇，你再一页一页改。</p>
+        <p class="card-sub">需要模型 API；支持 .txt、.md、.fountain，原作很长时模型只读前 3 万字。</p>
+        <button class="btn primary btn-import">导入</button>
+      </div>
     </div>
   `;
 
   root.querySelector(".btn-back")?.addEventListener("click", () => ctx.go(""));
   root.querySelector(".btn-quick")?.addEventListener("click", () => ctx.go("quick"));
   root.querySelector(".btn-craft")?.addEventListener("click", () => ctx.go("craft"));
+  root.querySelector(".btn-import")?.addEventListener("click", () => ctx.go("quick/import"));
 
   if (draft) {
     root.querySelector(".btn-draft-continue")?.addEventListener("click", () => ctx.go("review"));

@@ -5,7 +5,7 @@
 // and never echo the model key in any event, response or error.
 import { readSettings, modelEnv, normalizeSettings } from "../localData.mjs";
 import { callModelJson } from "../model/modelClient.mjs";
-import { generateBlueprint, rewriteSection } from "../../worlds/generation/generateBlueprint.mjs";
+import { generateBlueprint, rewriteSection, SOURCE_MODES } from "../../worlds/generation/generateBlueprint.mjs";
 import { SIZE_PLANS } from "../../worlds/generation/stages.mjs";
 
 export const SOURCE_BYTES_LIMIT = 200 * 1024;
@@ -87,6 +87,8 @@ export function createCreateApi({ env = process.env, callModel = null } = {}) {
     if (sizeHint == null) return json(res, 400, { ok: false, code: "SIZE_INVALID", message: "规模只能是 small、medium、large 或 4–30 的人数。" });
     const idea = String(body.idea ?? "");
     const sourceText = String(body.sourceText ?? "");
+    const sourceMode = String(body.sourceMode ?? "reference");
+    if (!SOURCE_MODES.includes(sourceMode)) return json(res, 400, { ok: false, code: "SOURCE_MODE_INVALID", message: "导入文本的用法只能是 reference（参考）或 adapt（按原作改编）。" });
     if (idea.length > IDEA_LIMIT) return json(res, 400, { ok: false, code: "IDEA_TOO_LONG", message: `想法不超过 ${IDEA_LIMIT} 字；长文本请作为参考资料上传。` });
     if (!idea.trim() && !sourceText.trim()) return json(res, 400, { ok: false, code: "IDEA_REQUIRED", message: "写一句想法，或者上传一段参考资料。" });
     if (Buffer.byteLength(sourceText, "utf8") > SOURCE_BYTES_LIMIT) return json(res, 413, { ok: false, code: "SOURCE_TOO_LARGE", message: "参考资料不能超过 200KB。" });
@@ -100,7 +102,7 @@ export function createCreateApi({ env = process.env, callModel = null } = {}) {
     res.writeHead(200, { "content-type": "text/event-stream; charset=utf-8", "cache-control": "no-store", connection: "keep-alive", "x-accel-buffering": "no" });
     const send = (event, data) => { if (!res.writableEnded && !res.destroyed) res.write(`event: ${event}\ndata: ${redact(JSON.stringify(data))}\n\n`); };
     try {
-      const result = await generateBlueprint({ idea, sourceText, sizeHint }, {
+      const result = await generateBlueprint({ idea, sourceText, sourceMode, sizeHint }, {
         maxRequests,
         callModel: (request) => model.call({ ...request, signal: controller.signal }),
         onProgress: (row) => send("progress", row),

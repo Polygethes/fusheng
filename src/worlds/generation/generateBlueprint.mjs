@@ -1,5 +1,6 @@
-// Quick-mode drafting (spec §3, P5): one idea (and optional reference text)
-// becomes a WorldBlueprint in a handful of model calls. Every stage is
+// Quick-mode drafting (spec §3, P5): one idea (and optional reference text,
+// or an imported script to adapt) becomes a WorldBlueprint in a handful of
+// model calls. Every stage is
 // checked; a failing answer is asked again with the list of problems (at most
 // twice); if it still fails, drafting stops and hands back what it has, so
 // the review page can take over. Nothing is invented by code: an empty or
@@ -16,6 +17,8 @@ import { worldPrompt, residentsPrompt, relationshipsPrompt, openingPrompt, repai
 
 export const STAGE_RETRIES = 2;
 export const REPAIR_ROUNDS = 2;
+/** How the reference text is read: loose material to borrow from, or the original to adapt. */
+export const SOURCE_MODES = Object.freeze(["reference", "adapt"]);
 
 function fail(code, message, extra = {}) {
   return Object.assign(new Error(message), { code, ...extra });
@@ -57,10 +60,11 @@ async function runStage(caller, { stage, label, schema, prompt, check }) {
 /**
  * @returns {Promise<{ ok, blueprint, issues, requests, stoppedAt? }>}
  */
-export async function generateBlueprint({ idea = "", sourceText = "", sizeHint = "medium" } = {}, { callModel, maxRequests = 20, onProgress } = {}) {
+export async function generateBlueprint({ idea = "", sourceText = "", sourceMode = "reference", sizeHint = "medium" } = {}, { callModel, maxRequests = 20, onProgress } = {}) {
   if (typeof callModel !== "function") throw fail("GENERATION_MODEL_REQUIRED", "需要一个模型调用函数。");
   const plan = sizePlan(sizeHint);
   const text = clip(sourceText);
+  const mode = sourceMode === "adapt" && text ? "adapt" : "reference";
   const caller = budgetedCaller(callModel, maxRequests, onProgress);
   const parts = { world: null, residents: [], relationships: [], opening: null };
   const partial = () => (parts.world ? assembleBlueprint(parts) : null);
@@ -69,22 +73,22 @@ export async function generateBlueprint({ idea = "", sourceText = "", sizeHint =
   try {
     onProgress?.({ event: "stage", stage: "world", label: "世界与小镇" });
     parts.world = await runStage(caller, { stage: "world", label: "世界与小镇", schema: WORLD_STAGE_SCHEMA,
-      prompt: (issues) => worldPrompt({ idea, sourceText: text, plan, issues }), check: (output) => checkWorldStage(output, { plan }) });
+      prompt: (issues) => worldPrompt({ idea, sourceText: text, sourceMode: mode, plan, issues }), check: (output) => checkWorldStage(output, { plan }) });
     for (const batch of residentBatches(parts.world)) {
       const label = `居民：${batch.householdName}（${batch.count} 人）`;
       onProgress?.({ event: "stage", stage: "residents", label });
       const reply = await runStage(caller, { stage: "residents", label, schema: RESIDENTS_STAGE_SCHEMA,
-        prompt: (issues) => residentsPrompt({ idea, sourceText: text, world: parts.world, batch, earlier: parts.residents, issues }),
+        prompt: (issues) => residentsPrompt({ idea, sourceText: text, sourceMode: mode, world: parts.world, batch, earlier: parts.residents, issues }),
         check: (output) => checkResidentsStage(output, { world: parts.world, batch, earlier: parts.residents }) });
       parts.residents.push(...reply.residents);
     }
     onProgress?.({ event: "stage", stage: "relationships", label: "关系" });
     parts.relationships = (await runStage(caller, { stage: "relationships", label: "关系", schema: RELATIONSHIPS_STAGE_SCHEMA,
-      prompt: (issues) => relationshipsPrompt({ world: parts.world, residents: parts.residents, issues }),
+      prompt: (issues) => relationshipsPrompt({ world: parts.world, residents: parts.residents, sourceText: text, sourceMode: mode, issues }),
       check: (output) => checkRelationshipsStage(output, { residents: parts.residents }) })).relationships;
     onProgress?.({ event: "stage", stage: "opening", label: "开场" });
     parts.opening = (await runStage(caller, { stage: "opening", label: "开场", schema: OPENING_STAGE_SCHEMA,
-      prompt: (issues) => openingPrompt({ world: parts.world, residents: parts.residents, relationships: parts.relationships, issues }),
+      prompt: (issues) => openingPrompt({ world: parts.world, residents: parts.residents, relationships: parts.relationships, idea, sourceText: text, sourceMode: mode, issues }),
       check: (output) => checkOpeningStage(output, { world: parts.world, residents: parts.residents }) })).opening;
   } catch (error) {
     if (["GENERATION_STAGE_FAILED", "GENERATION_BUDGET_EXCEEDED"].includes(error.code)) return stopped(error);
