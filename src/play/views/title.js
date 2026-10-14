@@ -14,7 +14,7 @@ export function render(root, ctx) {
   root.innerHTML = `
     <canvas class="title-bg" aria-hidden="true"></canvas>
     <div class="title-panel px">
-      <h1 class="title-name">人物小镇</h1>
+      <h1 class="title-name">浮生镇</h1>
       <p class="title-sub">一个会自己过日子的像素小镇</p>
       <nav class="title-menu">${MENU.map((row) => `<button class="btn title-item" data-id="${row.id}">${row.label}</button>`).join("")}</nav>
       <p class="title-note" hidden></p>

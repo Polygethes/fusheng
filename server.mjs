@@ -504,7 +504,7 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, HOST, () => {
   const status = modelStatus();
-  console.log(`人物小镇 MVP v1.2 running at http://${HOST}:${server.address().port}`);
+  console.log(`浮生镇 running at http://${HOST}:${server.address().port}`);
   console.log(`Engine provider: ${status.provider}; mode: ${status.defaultMode}`);
   console.log(`Model: ${status.openaiModel}`);
   console.log(`v2.7 CharacterModel: ${tavernV27CharacterModelProviderConfig.displayLabel} · ${tavernV27CharacterModelProviderConfig.model}`);

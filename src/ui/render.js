@@ -89,7 +89,7 @@ function renderTopbar(state) {
     <header class="workspace-header">
       <div class="brand-lockup">
         <div class="brand">
-          <div class="brand-title">${escapeHtml(state.town?.name || "人物小镇")}</div>
+          <div class="brand-title">${escapeHtml(state.town?.name || "浮生镇")}</div>
           <div class="brand-status">
             <span>${escapeHtml(getBranchTitle(state, state.ui.activeBranchId))}</span>
             <span>${engineModeLabel(state.ui.engineMode)}</span>
